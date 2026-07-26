@@ -13,14 +13,15 @@ import {
   ConstellationDetail,
 } from '../../_models/character';
 import { FormsModule } from '@angular/forms';
-import { SafeHtml } from '@angular/platform-browser';
 import { FormatterService } from '../../_services/formatter.service';
 import { Settings, SettingsService } from '../../_services/settings.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { AstNode } from '../../_models/ast-nodes';
+import { FormattedTextComponent } from '../formatted-text-component/formatted-text.component';
 
 @Component({
   selector: 'app-skill-details',
-  imports: [FormsModule],
+  imports: [FormsModule, FormattedTextComponent],
   templateUrl: './skill-details.component.html',
   styleUrl: './skill-details.component.css',
 })
@@ -34,7 +35,7 @@ export class SkillDetailsComponent implements OnInit, OnChanges {
   talentLevel = 9;
   isCombatSkill = false;
 
-  talentDesc: SafeHtml = '';
+  talentDesc: AstNode[] = [];
 
   settings: Settings | undefined;
 
@@ -131,7 +132,9 @@ export class SkillDetailsComponent implements OnInit, OnChanges {
     const finalDesc = this.settings?.detailed
       ? this.skill?.descriptionRaw
       : this.briefDescription;
-    this.talentDesc = this.formatter.getFormattedText(finalDesc ?? '');
+
+    this.talentDesc = this.formatter.parse(finalDesc ?? '');
+
     this.cdr.markForCheck();
   }
 }

@@ -1,0 +1,11 @@
+<span class="game-link">
+  <ng-content></ng-content>
+
+  @if (hyperlink) {
+    <span class="tooltip">
+      <strong>{{ hyperlink.name }}</strong>
+
+      <app-ast-renderer [nodes]="descriptionNodes"> </app-ast-renderer>
+    </span>
+  }
+</span>

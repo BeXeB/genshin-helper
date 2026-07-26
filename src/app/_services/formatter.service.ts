@@ -1,54 +1,128 @@
 import { Injectable } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { AstNode, ColorNode, LinkNode, LineBreakNode, TextNode } from '../_models/ast-nodes';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FormatterService {
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor() {}
 
-  getFormattedText(description: string | undefined): SafeHtml {
-    if (!description) {
-      return '';
+  parse(text: string | undefined): AstNode[] {
+    if (!text) {
+      return [];
     }
 
-    description = description.replace(/(\{LAYOUT_[^#}]+#[^}]+\})+/g, 'Press');
+    const state = {
+      index: 0,
+    };
 
-    description = description.replace(/\{LINK#[^}]+\}(.*?)\{\/LINK\}/g, '$1');
-
-    description = description.replace(
-      /<color="?(#?[0-9A-Fa-f]{3,8})"?>(.*?)<\/color>/g,
-      (_, color, text) => {
-        const normalizedColor = color.startsWith('#') ? color : `#${color}`;
-        return `<span style="color:${normalizedColor}">${text}</span>`;
-      },
-    );
-
-    description = description.replaceAll('\n', '<br>');
-
-    description = description.replaceAll(
-      /<br><br>/g,
-      `</div><div style="margin: 14px 0;">`,
-    );
-
-    description = description.replaceAll(/<br>/g, '</div><div>');
-
-    const htmlString = `<div style="margin: 0px 0px 14px;">${description}</div>`;
-
-    const formattedDescription: SafeHtml =
-      this.sanitizer.bypassSecurityTrustHtml(htmlString);
-
-    return formattedDescription;
+    return this.parseNodes(text, state);
   }
 
-  /**
-   * Convert newlines to HTML <br> tags and sanitize
-   * Used for simple text-to-HTML conversion in detail pages
-   */
-  simpleHtmlConvert(text: string | undefined): SafeHtml {
-    if (!text) {
-      return '';
+  private parseNodes(
+    text: string,
+    state: { index: number },
+    endTag?: string,
+  ): AstNode[] {
+    const nodes: AstNode[] = [];
+
+    while (state.index < text.length) {
+      if (endTag && text.startsWith(endTag, state.index)) {
+        state.index += endTag.length;
+        break;
+      }
+
+      if (text.startsWith('<color=', state.index)) {
+        nodes.push(this.parseColor(text, state));
+        continue;
+      }
+
+      if (text.startsWith('{LINK#', state.index)) {
+        nodes.push(this.parseLink(text, state));
+        continue;
+      }
+
+      if (text[state.index] === '\n') {
+        nodes.push({
+          type: 'lineBreak',
+        } satisfies LineBreakNode);
+
+        state.index++;
+        continue;
+      }
+
+      nodes.push(this.parseText(text, state));
     }
-    return this.sanitizer.bypassSecurityTrustHtml(text.replaceAll('\n', '<br>'));
+
+    return nodes;
+  }
+
+  private parseText(
+    text: string,
+    state: { index: number },
+  ): TextNode {
+    const start = state.index;
+
+    while (
+      state.index < text.length &&
+      !text.startsWith('<color=', state.index) &&
+      !text.startsWith('{LINK#', state.index) &&
+      text[state.index] !== '\n' &&
+      !text.startsWith('</color>', state.index) &&
+      !text.startsWith('{/LINK}', state.index)
+    ) {
+      state.index++;
+    }
+
+    return {
+      type: 'text',
+      text: text.substring(start, state.index),
+    };
+  }
+
+  private parseColor(
+    text: string,
+    state: { index: number },
+  ): ColorNode {
+    const end = text.indexOf('>', state.index);
+
+    const tag = text.substring(state.index, end + 1);
+
+    const match = tag.match(/<color="?([^">]+)"?>/);
+
+    if (!match) {
+      throw new Error(`Invalid color tag: ${tag}`);
+    }
+
+    state.index = end + 1;
+
+    return {
+      type: 'color',
+      color: match[1],
+      children: this.parseNodes(text, state, '</color>'),
+    };
+  }
+
+  private parseLink(
+    text: string,
+    state: { index: number },
+  ): LinkNode {
+    const end = text.indexOf('}', state.index);
+
+    const tag = text.substring(state.index, end + 1);
+
+    const match = tag.match(/\{LINK#.?(\d+)\}/);
+
+    if (!match) {
+      throw new Error(`Invalid link tag: ${tag}`);
+    }
+
+    state.index = end + 1;
+
+    return {
+      type: 'link',
+      id: Number(match[1]),
+      children: this.parseNodes(text, state, '{/LINK}'),
+    };
   }
 }

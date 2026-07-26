@@ -14,10 +14,11 @@
         />
         <div class="details">
           <div class="name">{{ material.name }}</div>
-          <div
-            class="description"
-            [innerHTML]="toHtml(material.description)"
-          ></div>
+          <div class="description">
+            <app-formatted-text
+              [nodes]="parseText(material.description)"
+            ></app-formatted-text>
+          </div>
           @if (material.daysOfWeek) {
             <div class="farm">
               <div>
@@ -49,8 +50,10 @@
                 <div class="amount">{{ cMat.count }}</div>
               </div>
             }
-            <div class="craft-mat card"
-              [routerLink]="`/materials/${mora?.normalizedName}`">
+            <div
+              class="craft-mat card"
+              [routerLink]="`/materials/${mora?.normalizedName}`"
+            >
               <img
                 [title]="mora?.name"
                 [src]="

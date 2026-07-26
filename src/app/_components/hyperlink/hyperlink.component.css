@@ -1,0 +1,7 @@
+.tooltip {
+  display: none;
+}
+
+.game-link:hover .tooltip {
+  display: block;
+}

@@ -1,9 +1,9 @@
 import { OnInit, OnDestroy, Directive } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
-import { SafeHtml } from '@angular/platform-browser';
 import { FormatterService } from '../_services/formatter.service';
 import { switchMap, takeUntil } from 'rxjs';
+import { AstNode } from '../_models/ast-nodes';
 
 @Directive()
 export abstract class BaseDetailComponent<T>
@@ -38,7 +38,7 @@ export abstract class BaseDetailComponent<T>
     this.destroy$.complete();
   }
 
-  protected toHtml(desc: string | undefined): SafeHtml {
-    return this.formatterService.simpleHtmlConvert(desc);
+  protected parseText(desc: string | undefined): AstNode[] {
+    return this.formatterService.parse(desc);
   }
 }

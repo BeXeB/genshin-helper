@@ -17,11 +17,13 @@ import { FormatterService } from '../../_services/formatter.service';
 import { BaseDetailComponent } from '../../_components/base-detail.component';
 import { ImageService } from '../../_services/image.service';
 import { StatTypeLabel } from '../../_models/enum';
+import { AstNode } from '../../_models/ast-nodes';
+import { FormattedTextComponent } from "../../_components/formatted-text-component/formatted-text.component";
 
 @Component({
   selector: 'app-weapon-details',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [PageTitleComponent, FormsModule, DecimalPipe, RouterLink],
+  imports: [PageTitleComponent, FormsModule, DecimalPipe, RouterLink, FormattedTextComponent],
   templateUrl: './weapon-details.component.html',
   styleUrl: './weapon-details.component.css',
 })
@@ -128,12 +130,12 @@ export class WeaponDetailsComponent extends BaseDetailComponent<WeaponResolved> 
       });
   }
 
-  effectToHtml(effectRefine: WeaponRefine | undefined): SafeHtml {
+  effectToNodes(effectRefine: WeaponRefine | undefined): AstNode[] {
     if (!effectRefine) {
-      return '';
+      return [];
     }
 
-    return this.formatterService.getFormattedText(effectRefine.description);
+    return this.formatterService.parse(effectRefine.description);
   }
 
   hasRefine(ref: number): boolean {

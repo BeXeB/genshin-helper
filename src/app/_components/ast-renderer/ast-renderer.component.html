@@ -1,0 +1,25 @@
+@for (node of nodes; track $index) {
+
+  @switch (node.type) {
+
+    @case ('text') {
+      {{ node.text }}
+    }
+
+    @case ('lineBreak') {
+      <br>
+    }
+
+    @case ('color') {
+      <span [style.color]="node.color"><app-ast-renderer [nodes]="node.children"></app-ast-renderer></span>
+    }
+
+    @case ('link') {
+      <app-hyperlink [id]="node.id">
+        <app-ast-renderer [nodes]="node.children"></app-ast-renderer>
+      </app-hyperlink>
+    }
+
+  }
+
+}

@@ -7,11 +7,12 @@ import { map, switchMap, takeUntil } from 'rxjs';
 import { PageTitleComponent } from '../../_components/page-title/page-title.component';
 import { FormatterService } from '../../_services/formatter.service';
 import { BaseDetailComponent } from '../../_components/base-detail.component';
+import { FormattedTextComponent } from "../../_components/formatted-text-component/formatted-text.component";
 
 @Component({
   selector: 'app-material-details',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [PageTitleComponent, RouterLink],
+  imports: [PageTitleComponent, RouterLink, FormattedTextComponent],
   templateUrl: './material-details.component.html',
   styleUrl: './material-details.component.css',
 })

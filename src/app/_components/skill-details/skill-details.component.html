@@ -4,7 +4,9 @@
       <img [src]="imageUrl" />
       <div>{{ skill?.name }}</div>
     </div>
-    <div class="skill-description" [innerHTML]="talentDesc"></div>
+    <div class="skill-description">
+      <app-formatted-text [nodes]="talentDesc"></app-formatted-text>
+    </div>
   </div>
 
   @if (isCombatSkill && skill && settings?.detailed) {
