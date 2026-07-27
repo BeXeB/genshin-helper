@@ -1,5 +1,12 @@
 import { Injectable } from '@angular/core';
-import { AstNode, ColorNode, LinkNode, LineBreakNode, TextNode } from '../_models/ast-nodes';
+import {
+  AstNode,
+  ColorNode,
+  LinkNode,
+  LineBreakNode,
+  ItalicNode,
+  TextNode,
+} from '../_models/ast-nodes';
 
 @Injectable({
   providedIn: 'root',
@@ -37,8 +44,20 @@ export class FormatterService {
         continue;
       }
 
+      if (text.startsWith('<i>', state.index)) {
+        nodes.push(this.parseItalic(text, state));
+        continue;
+      }
+
       if (text.startsWith('{LINK#', state.index)) {
-        nodes.push(this.parseLink(text, state));
+        const result = this.parseLink(text, state);
+
+        if (Array.isArray(result)) {
+          nodes.push(...result);
+        } else {
+          nodes.push(result);
+        }
+
         continue;
       }
 
@@ -57,18 +76,17 @@ export class FormatterService {
     return nodes;
   }
 
-  private parseText(
-    text: string,
-    state: { index: number },
-  ): TextNode {
+  private parseText(text: string, state: { index: number }): TextNode {
     const start = state.index;
 
     while (
       state.index < text.length &&
       !text.startsWith('<color=', state.index) &&
       !text.startsWith('{LINK#', state.index) &&
+      !text.startsWith('<i>', state.index) &&
       text[state.index] !== '\n' &&
       !text.startsWith('</color>', state.index) &&
+      !text.startsWith('</i>', state.index) &&
       !text.startsWith('{/LINK}', state.index)
     ) {
       state.index++;
@@ -80,10 +98,7 @@ export class FormatterService {
     };
   }
 
-  private parseColor(
-    text: string,
-    state: { index: number },
-  ): ColorNode {
+  private parseColor(text: string, state: { index: number }): ColorNode {
     const end = text.indexOf('>', state.index);
 
     const tag = text.substring(state.index, end + 1);
@@ -106,23 +121,41 @@ export class FormatterService {
   private parseLink(
     text: string,
     state: { index: number },
-  ): LinkNode {
+  ): LinkNode | AstNode[] {
     const end = text.indexOf('}', state.index);
 
     const tag = text.substring(state.index, end + 1);
 
-    const match = tag.match(/\{LINK#.?(\d+)\}/);
+    const match = tag.match(/\{LINK#([NS])(\d+)\}/);
 
     if (!match) {
       throw new Error(`Invalid link tag: ${tag}`);
     }
 
+    const type = match[1];
+    const id = Number(match[2]);
+
     state.index = end + 1;
+
+    const children = this.parseNodes(text, state, '{/LINK}');
+
+    if (type === 'S') {
+      return children;
+    }
 
     return {
       type: 'link',
-      id: Number(match[1]),
-      children: this.parseNodes(text, state, '{/LINK}'),
+      id,
+      children,
+    };
+  }
+
+  private parseItalic(text: string, state: { index: number }): ItalicNode {
+    state.index += '<i>'.length;
+
+    return {
+      type: 'italic',
+      children: this.parseNodes(text, state, '</i>'),
     };
   }
 }

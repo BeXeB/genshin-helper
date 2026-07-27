@@ -2,6 +2,7 @@ export type AstNode =
   | TextNode
   | ColorNode
   | LinkNode
+  | ItalicNode
   | LineBreakNode;
 
 export interface TextNode {
@@ -23,4 +24,9 @@ export interface LinkNode {
 
 export interface LineBreakNode {
   type: 'lineBreak';
+}
+
+export interface ItalicNode {
+  type: 'italic';
+  children: AstNode[];
 }

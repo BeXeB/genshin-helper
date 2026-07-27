@@ -1,11 +1,19 @@
-<span class="game-link">
+<div class="game-link">
   <ng-content></ng-content>
-
   @if (hyperlink) {
-    <span class="tooltip">
+    <div
+      #tooltip
+      class="tooltip"
+      [class.top]="tooltipPosition === 'top'"
+      [class.bottom]="tooltipPosition === 'bottom'"
+      [style.border-color]="elementColor"
+    >
       <strong>{{ hyperlink.name }}</strong>
-
-      <app-ast-renderer [nodes]="descriptionNodes"> </app-ast-renderer>
-    </span>
+      <app-ast-renderer
+        [nodes]="descriptionNodes"
+        [elementColor]="elementColor"
+      >
+      </app-ast-renderer>
+    </div>
   }
-</span>
+</div>

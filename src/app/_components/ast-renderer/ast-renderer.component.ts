@@ -9,6 +9,6 @@ import { HyperlinkComponent } from '../hyperlink/hyperlink.component';
   styleUrl: './ast-renderer.component.css',
 })
 export class AstRendererComponent {
-  @Input({ required: true })
-  nodes: AstNode[] = [];
+  @Input({ required: true }) nodes: AstNode[] = [];
+  @Input() elementColor: string = 'var(--light-gray)';
 }

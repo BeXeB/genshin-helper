@@ -5,7 +5,10 @@
       <div>{{ skill?.name }}</div>
     </div>
     <div class="skill-description">
-      <app-formatted-text [nodes]="talentDesc"></app-formatted-text>
+      <app-formatted-text
+        [nodes]="talentDesc"
+        [elementColor]="elementColor ?? 'var(--light-gray)'"
+      ></app-formatted-text>
     </div>
   </div>
 

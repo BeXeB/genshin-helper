@@ -12,6 +12,7 @@ import { AstRendererComponent } from '../ast-renderer/ast-renderer.component';
 export class FormattedTextComponent {
   @Input() text?: string;
   @Input() nodes?: AstNode[];
+  @Input() elementColor: string = 'var(--light-gray)';
 
   constructor(private formatter: FormatterService) {}
 
