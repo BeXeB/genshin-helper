@@ -66,6 +66,10 @@
   text-align: right;
 }
 
+#combat-level {
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .skill {
     flex-direction: column;

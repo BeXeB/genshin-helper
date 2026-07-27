@@ -1,0 +1,49 @@
+.game-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: max-content;
+  max-width: 500px;
+  min-width: 120px;
+
+  padding: 15px 20px;
+
+  border-radius: 13px;
+  border: 1px solid var(--blue);
+  background: var(--darker-gray);
+  color: var(--white);
+
+  z-index: 10;
+}
+
+.tooltip.top {
+  bottom: calc(100%);
+}
+
+.tooltip.bottom {
+  top: calc(100%);
+}
+
+.tooltip strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--highlight)
+}
+
+.game-link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

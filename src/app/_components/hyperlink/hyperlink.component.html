@@ -1,0 +1,19 @@
+<div class="game-link">
+  <ng-content></ng-content>
+  @if (hyperlink) {
+    <div
+      #tooltip
+      class="tooltip"
+      [class.top]="tooltipPosition === 'top'"
+      [class.bottom]="tooltipPosition === 'bottom'"
+      [style.border-color]="elementColor"
+    >
+      <strong>{{ hyperlink.name }}</strong>
+      <app-ast-renderer
+        [nodes]="descriptionNodes"
+        [elementColor]="elementColor"
+      >
+      </app-ast-renderer>
+    </div>
+  }
+</div>

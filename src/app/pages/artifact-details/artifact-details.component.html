@@ -42,7 +42,9 @@
                 {{ artifact.flower.description }}
               </div>
               <div class="piece-story">Story</div>
-              <div [innerHTML]="toHtml(artifact.flower.story)"></div>
+              <app-formatted-text
+                [nodes]="parseText(artifact.flower.story)"
+              ></app-formatted-text>
             </div>
           </div>
         }
@@ -59,7 +61,9 @@
                 {{ artifact.plume.description }}
               </div>
               <div class="piece-story">Story</div>
-              <div [innerHTML]="toHtml(artifact.plume.story)"></div>
+              <app-formatted-text
+                [nodes]="parseText(artifact.plume.story)"
+              ></app-formatted-text>
             </div>
           </div>
         }
@@ -76,7 +80,9 @@
                 {{ artifact.sands.description }}
               </div>
               <div class="piece-story">Story</div>
-              <div [innerHTML]="toHtml(artifact.sands.story)"></div>
+              <app-formatted-text
+                [nodes]="parseText(artifact.sands.story)"
+              ></app-formatted-text>
             </div>
           </div>
         }
@@ -93,7 +99,9 @@
                 {{ artifact.goblet.description }}
               </div>
               <div class="piece-story">Story</div>
-              <div [innerHTML]="toHtml(artifact.goblet.story)"></div>
+              <app-formatted-text
+                [nodes]="parseText(artifact.goblet.story)"
+              ></app-formatted-text>
             </div>
           </div>
         }
@@ -110,7 +118,9 @@
                 {{ artifact.circlet.description }}
               </div>
               <div class="piece-story">Story</div>
-              <div [innerHTML]="toHtml(artifact.circlet.story)"></div>
+              <app-formatted-text
+                [nodes]="parseText(artifact.circlet.story)"
+              ></app-formatted-text>
             </div>
           </div>
         }

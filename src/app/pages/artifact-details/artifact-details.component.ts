@@ -6,11 +6,12 @@ import { PageTitleComponent } from '../../_components/page-title/page-title.comp
 import { FormatterService } from '../../_services/formatter.service';
 import { takeUntil } from 'rxjs';
 import { BaseDetailComponent } from '../../_components/base-detail.component';
+import { FormattedTextComponent } from "../../_components/formatted-text-component/formatted-text.component";
 
 @Component({
   selector: 'app-artifact-details',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [PageTitleComponent],
+  imports: [PageTitleComponent, FormattedTextComponent],
   templateUrl: './artifact-details.component.html',
   styleUrl: './artifact-details.component.css',
 })

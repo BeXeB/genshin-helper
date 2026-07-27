@@ -41,7 +41,9 @@
             </div>
             @if (weapon.mainStatType) {
               <div class="stat-row">
-                <span class="label">{{ StatTypeLabel[weapon.mainStatType] }}</span>
+                <span class="label">{{
+                  StatTypeLabel[weapon.mainStatType]
+                }}</span>
                 <span class="value"
                   >{{
                     (weapon.stats[level].specialized ?? 0) * 100
@@ -77,10 +79,12 @@
                   }
                 </div>
               </div>
-              <div
-                class="effect-text"
-                [innerHTML]="effectToHtml(weapon[refinements[selectedRefine]])"
-              ></div>
+              <div class="effect-text">
+                <app-formatted-text
+                  [nodes]="effectToNodes(weapon[refinements[selectedRefine]])"
+                >
+                </app-formatted-text>
+              </div>
             </div>
           }
           <div class="weapon-desc">{{ weapon.description }}</div>
@@ -98,7 +102,11 @@
       </div>
       <div class="weapon-story">
         <div class="story-header">Story</div>
-        <div class="story-text" [innerHTML]="toHtml(weapon.story)"></div>
+        <div class="story-text">
+          <app-formatted-text
+            [nodes]="parseText(weapon.story)"
+          ></app-formatted-text>
+        </div>
       </div>
     </div>
   }
