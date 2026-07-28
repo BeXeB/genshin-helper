@@ -1,0 +1,54 @@
+<div class="container">
+  <app-page-title title="Talent Editor" backLink="/tools" />
+
+  <div class="character-search">
+    <input
+      type="text"
+      placeholder="Karakter neve..."
+      [(ngModel)]="search"
+      (focus)="showDropdown = true"
+      (blur)="hideDropdown()"
+    />
+
+    @if (showDropdown) {
+      <div class="dropdown">
+        @for (char of filteredCharacters; track char.id) {
+          <div class="option" (mousedown)="selectCharacter(char)">
+            <img
+              class="option-icon"
+              [src]="getCharacterIcon(char.normalizedName)"
+              [alt]="char.name"
+            />
+            <span>{{ char.name }}</span>
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  @if (selectedCharacter) {
+    <div class="selected-character">
+      <img
+        class="character-icon"
+        [src]="getCharacterIcon(selectedCharacter.normalizedName)"
+        [alt]="selectedCharacter.name"
+      />
+      <span>{{ selectedCharacter.name }}</span>
+    </div>
+  }
+
+  <div class="editor">
+    @for (section of talentSections; track section.label) {
+      <div class="section-header">{{ section.label }}</div>
+      @for (row of section.rows; track row.key) {
+        <div class="talent-cell left-cell">
+          <div class="talent-name">{{ row.talent.name }}</div>
+          <app-formatted-text
+            [text]="row.talent.descriptionRaw"
+          ></app-formatted-text>
+        </div>
+        <div class="talent-cell right-cell placeholder"></div>
+      }
+    }
+  </div>
+</div>

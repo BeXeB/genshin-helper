@@ -111,7 +111,6 @@ export class TierlistMakerComponent implements OnInit {
         this.characterMap = new Map(data.map((c) => [c.normalizedName, c]));
 
         this.characters = data
-          .filter((c) => c.name !== 'Manekina' && c.name !== 'Manekin')
           .map((c) => ({
             id: c.id,
             apiKey: c.normalizedName,
