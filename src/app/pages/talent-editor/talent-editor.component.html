@@ -52,20 +52,27 @@
         </div>
         <div class="talent-cell right-cell">
           <div class="mini-toolbar">
-            <button type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'bold')">
+            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'bold')">
               <b>B</b>
             </button>
-            <button type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'italic')">
+            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'italic')">
               <i>I</i>
             </button>
             @for (preset of colorPresets; track preset.label) {
               <button
+                class="toolbar-btn preset-btn"
+                [ngClass]="{ 'highlight-btn': !preset.element }"
                 type="button"
-                [style.background]="preset.color"
                 [title]="preset.label"
                 (mousedown)="$event.preventDefault()"
                 (click)="wrapSelection(row.key, ta, 'color', preset.color)"
-              ></button>
+              >
+                @if (preset.element) {
+                  <span class="icon-mask" [style]="getPresetIconStyle(preset)"></span>
+                } @else {
+                  <i class="fa-solid fa-highlighter"></i>
+                }
+              </button>
             }
           </div>
           <textarea

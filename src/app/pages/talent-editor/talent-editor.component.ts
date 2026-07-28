@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CharacterService } from '../../_services/character.service';
 import { ImageService } from '../../_services/image.service';
+import { ElementType, ElementTypeLabel } from '../../_models/enum';
 import {
   Character,
   CharacterBriefDescriptions,
@@ -21,11 +23,12 @@ type TalentRow = {
 type ColorPreset = {
   label: string;
   color: string;
+  element?: ElementType;
 };
 
 @Component({
   selector: 'app-talent-editor',
-  imports: [FormsModule, PageTitleComponent, FormattedTextComponent],
+  imports: [CommonModule, FormsModule, PageTitleComponent, FormattedTextComponent],
   templateUrl: './talent-editor.component.html',
   styleUrl: './talent-editor.component.css',
 })
@@ -47,13 +50,13 @@ export class TalentEditorComponent implements OnInit {
 
   colorPresets: ColorPreset[] = [
     { label: 'Kiemelés', color: '#FFD780FF' },
-    { label: 'Anemo', color: '#80FFD7FF' },
-    { label: 'Cryo', color: '#99FFFFFF' },
-    { label: 'Dendro', color: '#99FF88FF' },
-    { label: 'Electro', color: '#FFACFFFF' },
-    { label: 'Geo', color: '#FFE699FF' },
-    { label: 'Hydro', color: '#80C0FFFF' },
-    { label: 'Pyro', color: '#FF9999FF' },
+    { label: 'Anemo', color: '#80FFD7FF', element: ElementType.ANEMO },
+    { label: 'Cryo', color: '#99FFFFFF', element: ElementType.CRYO },
+    { label: 'Dendro', color: '#99FF88FF', element: ElementType.DENDRO },
+    { label: 'Electro', color: '#FFACFFFF', element: ElementType.ELECTRO },
+    { label: 'Geo', color: '#FFE699FF', element: ElementType.GEO },
+    { label: 'Hydro', color: '#80C0FFFF', element: ElementType.HYDRO },
+    { label: 'Pyro', color: '#FF9999FF', element: ElementType.PYRO },
   ];
 
   ngOnInit(): void {
@@ -175,6 +178,26 @@ export class TalentEditorComponent implements OnInit {
     a.click();
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
+  }
+
+  getPresetIconStyle(preset: ColorPreset): Record<string, string> {
+    if (!preset.element) {
+      return {};
+    }
+
+    const iconUrl = this.imageService.getElementIcon(preset.element);
+    const elementName = ElementTypeLabel[preset.element].toLowerCase();
+    const backgroundColor = `var(--${elementName})`;
+
+    return {
+      'background-color': backgroundColor,
+      'mask-image': `url(${iconUrl})`,
+      '-webkit-mask-image': `url(${iconUrl})`,
+      'mask-size': 'cover',
+      '-webkit-mask-size': 'cover',
+      'mask-repeat': 'no-repeat',
+      '-webkit-mask-repeat': 'no-repeat',
+    };
   }
 
   wrapSelection(
