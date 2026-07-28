@@ -34,6 +34,9 @@
         [alt]="selectedCharacter.name"
       />
       <span>{{ selectedCharacter.name }}</span>
+      <button type="button" (click)="exportBriefDescriptionJson()">
+        Letöltés JSON-ként
+      </button>
     </div>
   }
 
@@ -47,7 +50,31 @@
             [text]="row.talent.descriptionRaw"
           ></app-formatted-text>
         </div>
-        <div class="talent-cell right-cell placeholder"></div>
+        <div class="talent-cell right-cell">
+          <div class="mini-toolbar">
+            <button type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'bold')">
+              <b>B</b>
+            </button>
+            <button type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'italic')">
+              <i>I</i>
+            </button>
+            @for (preset of colorPresets; track preset.label) {
+              <button
+                type="button"
+                [style.background]="preset.color"
+                [title]="preset.label"
+                (mousedown)="$event.preventDefault()"
+                (click)="wrapSelection(row.key, ta, 'color', preset.color)"
+              ></button>
+            }
+          </div>
+          <textarea
+            #ta
+            [(ngModel)]="briefDrafts[row.key]"
+            rows="4"
+            placeholder="Rövid leírás..."
+          ></textarea>
+        </div>
       }
     }
   </div>

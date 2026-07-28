@@ -15,6 +15,13 @@
       </i>
     }
 
+    @case ("bold") {
+      <b>
+        <app-ast-renderer [nodes]="node.children" [elementColor]="elementColor">
+        </app-ast-renderer>
+      </b>
+    }
+
     @case ("color") {
       <div [style.color]="node.color">
         <app-ast-renderer [nodes]="node.children" [elementColor]="elementColor">
