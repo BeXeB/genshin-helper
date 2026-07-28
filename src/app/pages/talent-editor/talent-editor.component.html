@@ -1,0 +1,97 @@
+<div class="container">
+  <app-page-title title="Talent Editor" backLink="/tools" />
+
+  <div class="character-search">
+    <input
+      type="text"
+      placeholder="Karakter neve..."
+      [(ngModel)]="search"
+      (focus)="showDropdown = true"
+      (blur)="hideDropdown()"
+    />
+
+    @if (showDropdown) {
+      <div class="dropdown">
+        @for (char of filteredCharacters; track char.id) {
+          <div class="option" (mousedown)="selectCharacter(char)">
+            <img
+              class="option-icon"
+              [src]="getCharacterIcon(char.normalizedName)"
+              [alt]="char.name"
+            />
+            <span>{{ char.name }}</span>
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  @if (selectedCharacter) {
+    <div class="selected-character">
+      <img
+        class="character-icon"
+        [src]="getCharacterIcon(selectedCharacter.normalizedName)"
+        [alt]="selectedCharacter.name"
+      />
+      <span>{{ selectedCharacter.name }}</span>
+      <button type="button" (click)="exportBriefDescriptionJson()">
+        Letöltés JSON-ként
+      </button>
+    </div>
+  }
+
+  <div class="editor">
+    @for (section of talentSections; track section.label) {
+      <div class="section-header">{{ section.label }}</div>
+      @for (row of section.rows; track row.key) {
+        <div class="talent-cell left-cell">
+          <div class="talent-name">{{ row.talent.name }}</div>
+          <app-formatted-text
+            [text]="row.talent.descriptionRaw"
+          ></app-formatted-text>
+        </div>
+        <div class="talent-cell right-cell">
+          <div class="mini-toolbar">
+            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'bold')">
+              <b>B</b>
+            </button>
+            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'italic')">
+              <i>I</i>
+            </button>
+            @for (preset of colorPresets; track preset.label) {
+              <button
+                class="toolbar-btn preset-btn"
+                [ngClass]="{ 'highlight-btn': !preset.element }"
+                type="button"
+                [title]="preset.label"
+                (mousedown)="$event.preventDefault()"
+                (click)="wrapSelection(row.key, ta, 'color', preset.color)"
+              >
+                @if (preset.element) {
+                  <span class="icon-mask" [style]="getPresetIconStyle(preset)"></span>
+                } @else {
+                  <i class="fa-solid fa-highlighter"></i>
+                }
+              </button>
+            }
+            <button class="toolbar-btn clear-btn" type="button" (mousedown)="$event.preventDefault()" (click)="clearFormatting(row.key, ta)" title="Clear formatting">
+              <i class="fa-solid fa-eraser"></i>
+            </button>
+          </div>
+          <textarea
+            #ta
+            [(ngModel)]="briefDrafts[row.key]"
+            rows="4"
+            placeholder="Rövid leírás..."
+          ></textarea>
+          @if (briefDrafts[row.key]) {
+            <div class="preview-label">Preview</div>
+            <div class="formatted-preview">
+              <app-formatted-text [text]="briefDrafts[row.key]"></app-formatted-text>
+            </div>
+          }
+        </div>
+      }
+    }
+  </div>
+</div>

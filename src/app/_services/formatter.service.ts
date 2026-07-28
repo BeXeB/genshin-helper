@@ -5,6 +5,7 @@ import {
   LinkNode,
   LineBreakNode,
   ItalicNode,
+  BoldNode,
   TextNode,
 } from '../_models/ast-nodes';
 
@@ -49,6 +50,11 @@ export class FormatterService {
         continue;
       }
 
+      if (text.startsWith('<b>', state.index)) {
+        nodes.push(this.parseBold(text, state));
+        continue;
+      }
+
       if (text.startsWith('{LINK#', state.index)) {
         const result = this.parseLink(text, state);
 
@@ -84,9 +90,11 @@ export class FormatterService {
       !text.startsWith('<color=', state.index) &&
       !text.startsWith('{LINK#', state.index) &&
       !text.startsWith('<i>', state.index) &&
+      !text.startsWith('<b>', state.index) &&
       text[state.index] !== '\n' &&
       !text.startsWith('</color>', state.index) &&
       !text.startsWith('</i>', state.index) &&
+      !text.startsWith('</b>', state.index) &&
       !text.startsWith('{/LINK}', state.index)
     ) {
       state.index++;
@@ -156,6 +164,15 @@ export class FormatterService {
     return {
       type: 'italic',
       children: this.parseNodes(text, state, '</i>'),
+    };
+  }
+
+  private parseBold(text: string, state: { index: number }): BoldNode {
+    state.index += '<b>'.length;
+
+    return {
+      type: 'bold',
+      children: this.parseNodes(text, state, '</b>'),
     };
   }
 }
