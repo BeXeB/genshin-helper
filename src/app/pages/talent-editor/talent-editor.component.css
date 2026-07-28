@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .character-search {
@@ -54,10 +53,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px 16px;
-  align-items: stretch;
+  align-items: start;
   margin-top: 16px;
-  flex: 1;
-  overflow-y: auto;
+  width: 100%;
 }
 
 .talent-cell {
@@ -66,6 +64,7 @@
   border: 1px solid #444;
   border-radius: 4px;
   padding: 8px;
+  min-width: 0;
 }
 
 .talent-name {
@@ -77,15 +76,15 @@
 .right-cell {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .right-cell textarea {
   width: 100%;
-  flex: 1;
   resize: vertical;
   font-family: inherit;
   box-sizing: border-box;
-  min-height: 60px;
+  min-height: 200px;
 }
 
 .mini-toolbar {
@@ -118,6 +117,29 @@
 .highlight-btn i {
   color: var(--highlight);
   font-size: 1.1em;
+}
+
+.clear-btn i {
+  color: #ff6b6b;
+}
+
+.preview-label {
+  font-size: 0.85em;
+  color: #888;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  flex-shrink: 0;
+}
+
+.formatted-preview {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+  overflow-y: auto;
 }
 
 .section-header {

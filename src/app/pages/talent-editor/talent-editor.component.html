@@ -74,6 +74,9 @@
                 }
               </button>
             }
+            <button class="toolbar-btn clear-btn" type="button" (mousedown)="$event.preventDefault()" (click)="clearFormatting(row.key, ta)" title="Clear formatting">
+              <i class="fa-solid fa-eraser"></i>
+            </button>
           </div>
           <textarea
             #ta
@@ -81,6 +84,12 @@
             rows="4"
             placeholder="Rövid leírás..."
           ></textarea>
+          @if (briefDrafts[row.key]) {
+            <div class="preview-label">Preview</div>
+            <div class="formatted-preview">
+              <app-formatted-text [text]="briefDrafts[row.key]"></app-formatted-text>
+            </div>
+          }
         </div>
       }
     }

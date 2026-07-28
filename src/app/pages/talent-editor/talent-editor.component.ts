@@ -240,4 +240,34 @@ export class TalentEditorComponent implements OnInit {
       textarea.setSelectionRange(newStart, newEnd);
     });
   }
+
+  clearFormatting(
+    key: keyof CharacterBriefDescriptions,
+    textarea: HTMLTextAreaElement,
+  ) {
+    const value = this.briefDrafts[key] ?? '';
+    const start = textarea.selectionStart ?? 0;
+    const end = textarea.selectionEnd ?? 0;
+    const selected = value.substring(start, end);
+
+    // Remove all formatting tags
+    const cleared = selected
+      .replace(/<b>/g, '')
+      .replace(/<\/b>/g, '')
+      .replace(/<i>/g, '')
+      .replace(/<\/i>/g, '')
+      .replace(/<color=[^>]*>/g, '')
+      .replace(/<\/color>/g, '');
+
+    const newValue =
+      value.slice(0, start) + cleared + value.slice(end);
+    this.briefDrafts[key] = newValue;
+
+    const newEnd = start + cleared.length;
+
+    setTimeout(() => {
+      textarea.focus();
+      textarea.setSelectionRange(start, newEnd);
+    });
+  }
 }
