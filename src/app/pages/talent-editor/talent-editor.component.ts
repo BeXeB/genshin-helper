@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  QueryList,
+  ViewChildren,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CharacterService } from '../../_services/character.service';
@@ -39,11 +46,14 @@ type HistoryEntry = {
   templateUrl: './talent-editor.component.html',
   styleUrl: './talent-editor.component.css',
 })
-export class TalentEditorComponent implements OnInit {
+export class TalentEditorComponent implements OnInit, AfterViewInit {
   constructor(
     private characterSerivce: CharacterService,
     private imageService: ImageService,
   ) {}
+
+  @ViewChildren('sectionBtnEl') sectionBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
+  @ViewChildren('talentBtnEl') talentBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
 
   characters: CharacterProfile[] = [];
 
@@ -83,6 +93,29 @@ export class TalentEditorComponent implements OnInit {
       .subscribe((data: CharacterProfile[]) => {
         this.characters = data.sort((b, a) => a.sortId - b.sortId);
       });
+  }
+
+  ngAfterViewInit(): void {
+    this.sectionBtnEls.changes.subscribe(() => this.equalizeButtonWidths(this.sectionBtnEls));
+    this.talentBtnEls.changes.subscribe(() => this.equalizeButtonWidths(this.talentBtnEls));
+  }
+
+  // Makes every button in the given group as wide as the widest one, so the
+  // buttons stay compact when short (e.g. "C1") but grow when needed (e.g.
+  // "Elemental Skill"), while remaining uniform within their own group.
+  private equalizeButtonWidths(list: QueryList<ElementRef<HTMLButtonElement>>): void {
+    const buttons = list.map((ref) => ref.nativeElement);
+    if (buttons.length === 0) return;
+
+    for (const btn of buttons) {
+      btn.style.width = 'auto';
+    }
+
+    const maxWidth = Math.max(...buttons.map((btn) => btn.offsetWidth));
+
+    for (const btn of buttons) {
+      btn.style.width = `${maxWidth}px`;
+    }
   }
 
   get filteredCharacters(): CharacterProfile[] {
@@ -357,16 +390,16 @@ export class TalentEditorComponent implements OnInit {
       combat1: 'Normal Attack',
       combat2: 'Elemental Skill',
       combat3: 'Elemental Burst',
-      passive1: 'Passive 1',
-      passive2: 'Passive 2',
-      passive3: 'Passive 3',
-      passive4: 'Passive 4',
-      c1: 'Constellation 1',
-      c2: 'Constellation 2',
-      c3: 'Constellation 3',
-      c4: 'Constellation 4',
-      c5: 'Constellation 5',
-      c6: 'Constellation 6',
+      passive1: 'P1',
+      passive2: 'P2',
+      passive3: 'P3',
+      passive4: 'P4',
+      c1: 'C1',
+      c2: 'C2',
+      c3: 'C3',
+      c4: 'C4',
+      c5: 'C5',
+      c6: 'C6',
     };
     return labelMap[row.key] || row.talent.name;
   }
