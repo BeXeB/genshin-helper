@@ -40,22 +40,49 @@
     </div>
   }
 
-  <div class="editor">
-    @for (section of talentSections; track section.label) {
-      <div class="section-header">{{ section.label }}</div>
-      @for (row of section.rows; track row.key) {
+  @if (selectedCharacterDetails && talentSections.length > 0) {
+    <div class="section-selector">
+      @for (section of talentSections; track section.label) {
+        <button
+          class="section-btn"
+          [class.active]="selectedSection === section.label"
+          type="button"
+          (click)="selectSection(section.label)"
+        >
+          {{ section.label }}
+        </button>
+      }
+    </div>
+
+    @if (getCurrentSection(); as currentSection) {
+      <div class="talent-button-group">
+        <div class="buttons-wrapper">
+          @for (row of currentSection.rows; track row.key) {
+            <button
+              class="talent-btn"
+              [class.active]="selectedTalentKey === row.key"
+              type="button"
+              (click)="selectTalent(row.key)"
+            >
+              {{ getTalentTabLabel(row) }}
+            </button>
+          }
+        </div>
+      </div>
+    }
+
+    @if (getSelectedTalent(); as selectedRow) {
+      <div class="talent-container">
         <div class="talent-cell left-cell">
-          <div class="talent-name">{{ row.talent.name }}</div>
-          <app-formatted-text
-            [text]="row.talent.descriptionRaw"
-          ></app-formatted-text>
+          <div class="talent-name">{{ selectedRow.talent.name }}</div>
+          <app-formatted-text [text]="selectedRow.talent.descriptionRaw"></app-formatted-text>
         </div>
         <div class="talent-cell right-cell">
           <div class="mini-toolbar">
-            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'bold')">
+            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(selectedRow.key, ta, 'bold')">
               <b>B</b>
             </button>
-            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(row.key, ta, 'italic')">
+            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(selectedRow.key, ta, 'italic')">
               <i>I</i>
             </button>
             @for (preset of colorPresets; track preset.label) {
@@ -65,7 +92,7 @@
                 type="button"
                 [title]="preset.label"
                 (mousedown)="$event.preventDefault()"
-                (click)="wrapSelection(row.key, ta, 'color', preset.color)"
+                (click)="wrapSelection(selectedRow.key, ta, 'color', preset.color)"
               >
                 @if (preset.element) {
                   <span class="icon-mask" [style]="getPresetIconStyle(preset)"></span>
@@ -74,24 +101,24 @@
                 }
               </button>
             }
-            <button class="toolbar-btn clear-btn" type="button" (mousedown)="$event.preventDefault()" (click)="clearFormatting(row.key, ta)" title="Clear formatting">
+            <button class="toolbar-btn clear-btn" type="button" (mousedown)="$event.preventDefault()" (click)="clearFormatting(selectedRow.key, ta)" title="Clear formatting">
               <i class="fa-solid fa-eraser"></i>
             </button>
           </div>
           <textarea
             #ta
-            [(ngModel)]="briefDrafts[row.key]"
+            [(ngModel)]="briefDrafts[selectedRow.key]"
             rows="4"
             placeholder="Rövid leírás..."
           ></textarea>
-          @if (briefDrafts[row.key]) {
+          @if (briefDrafts[selectedRow.key]) {
             <div class="preview-label">Preview</div>
             <div class="formatted-preview">
-              <app-formatted-text [text]="briefDrafts[row.key]"></app-formatted-text>
+              <app-formatted-text [text]="briefDrafts[selectedRow.key]"></app-formatted-text>
             </div>
           }
         </div>
-      }
+      </div>
     }
-  </div>
+  }
 </div>

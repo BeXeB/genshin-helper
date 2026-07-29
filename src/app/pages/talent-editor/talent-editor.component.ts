@@ -18,6 +18,7 @@ import { FormattedTextComponent } from '../../_components/formatted-text-compone
 type TalentRow = {
   key: keyof CharacterBriefDescriptions;
   talent: CombatTalent | PassiveTalent | ConstellationDetail;
+  section: string;
 };
 
 type ColorPreset = {
@@ -45,6 +46,8 @@ export class TalentEditorComponent implements OnInit {
 
   selectedCharacter: CharacterProfile | null = null;
   selectedCharacterDetails: Character | null = null;
+  selectedTalentKey: keyof CharacterBriefDescriptions | null = null;
+  selectedSection: string | null = null;
 
   briefDrafts: Partial<CharacterBriefDescriptions> = {};
 
@@ -85,11 +88,22 @@ export class TalentEditorComponent implements OnInit {
     this.search = profile.name;
     this.showDropdown = false;
     this.briefDrafts = {};
+    this.selectedTalentKey = null;
+    this.selectedSection = null;
 
     this.characterSerivce
       .getCharacterDetails(profile.normalizedName)
       .subscribe((details: Character) => {
         this.selectedCharacterDetails = details;
+        // Set first section and talent as selected
+        const firstSection = this.talentSections[0];
+        if (firstSection) {
+          this.selectedSection = firstSection.label;
+          const firstRow = firstSection.rows[0];
+          if (firstRow) {
+            this.selectedTalentKey = firstRow.key;
+          }
+        }
       });
 
     this.characterSerivce
@@ -118,20 +132,20 @@ export class TalentEditorComponent implements OnInit {
       sections.push({
         label: 'Skillek',
         rows: [
-          { key: 'combat1', talent: skills.combat1 },
-          { key: 'combat2', talent: skills.combat2 },
-          { key: 'combat3', talent: skills.combat3 },
+          { key: 'combat1', talent: skills.combat1, section: 'Skillek' },
+          { key: 'combat2', talent: skills.combat2, section: 'Skillek' },
+          { key: 'combat3', talent: skills.combat3, section: 'Skillek' },
         ],
       });
 
       const passiveRows: TalentRow[] = [
-        { key: 'passive1', talent: skills.passive1 },
-        { key: 'passive2', talent: skills.passive2 },
+        { key: 'passive1', talent: skills.passive1, section: 'Passzívok' },
+        { key: 'passive2', talent: skills.passive2, section: 'Passzívok' },
       ];
       if (skills.passive3)
-        passiveRows.push({ key: 'passive3', talent: skills.passive3 });
+        passiveRows.push({ key: 'passive3', talent: skills.passive3, section: 'Passzívok' });
       if (skills.passive4)
-        passiveRows.push({ key: 'passive4', talent: skills.passive4 });
+        passiveRows.push({ key: 'passive4', talent: skills.passive4, section: 'Passzívok' });
 
       sections.push({ label: 'Passzívok', rows: passiveRows });
     }
@@ -140,17 +154,73 @@ export class TalentEditorComponent implements OnInit {
       sections.push({
         label: 'Konstellációk',
         rows: [
-          { key: 'c1', talent: constellation.c1 },
-          { key: 'c2', talent: constellation.c2 },
-          { key: 'c3', talent: constellation.c3 },
-          { key: 'c4', talent: constellation.c4 },
-          { key: 'c5', talent: constellation.c5 },
-          { key: 'c6', talent: constellation.c6 },
+          { key: 'c1', talent: constellation.c1, section: 'Konstellációk' },
+          { key: 'c2', talent: constellation.c2, section: 'Konstellációk' },
+          { key: 'c3', talent: constellation.c3, section: 'Konstellációk' },
+          { key: 'c4', talent: constellation.c4, section: 'Konstellációk' },
+          { key: 'c5', talent: constellation.c5, section: 'Konstellációk' },
+          { key: 'c6', talent: constellation.c6, section: 'Konstellációk' },
         ],
       });
     }
 
     return sections;
+  }
+
+  getAllTalentRows(): TalentRow[] {
+    const rows: TalentRow[] = [];
+    for (const section of this.talentSections) {
+      rows.push(...section.rows);
+    }
+    return rows;
+  }
+
+  getTalentTabLabel(row: TalentRow): string {
+    const labelMap: Record<keyof CharacterBriefDescriptions, string> = {
+      combat1: 'Normal Attack',
+      combat2: 'Elemental Skill',
+      combat3: 'Elemental Burst',
+      passive1: 'Passive 1',
+      passive2: 'Passive 2',
+      passive3: 'Passive 3',
+      passive4: 'Passive 4',
+      c1: 'Constellation 1',
+      c2: 'Constellation 2',
+      c3: 'Constellation 3',
+      c4: 'Constellation 4',
+      c5: 'Constellation 5',
+      c6: 'Constellation 6',
+    };
+    return labelMap[row.key] || row.talent.name;
+  }
+
+  getSelectedTalent(): TalentRow | null {
+    if (!this.selectedTalentKey) return null;
+    return this.getAllTalentRows().find(row => row.key === this.selectedTalentKey) || null;
+  }
+
+  selectTalent(key: keyof CharacterBriefDescriptions) {
+    this.selectedTalentKey = key;
+    // Update selected section based on talent
+    for (const section of this.talentSections) {
+      if (section.rows.some(row => row.key === key)) {
+        this.selectedSection = section.label;
+        break;
+      }
+    }
+  }
+
+  selectSection(sectionLabel: string) {
+    this.selectedSection = sectionLabel;
+    // Select first talent in the section
+    const section = this.talentSections.find(s => s.label === sectionLabel);
+    if (section && section.rows.length > 0) {
+      this.selectedTalentKey = section.rows[0].key;
+    }
+  }
+
+  getCurrentSection(): { label: string; rows: TalentRow[] } | null {
+    return this.talentSections.find(s => s.label === this.selectedSection) || null;
   }
 
   exportBriefDescriptionJson() {

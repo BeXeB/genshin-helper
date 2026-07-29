@@ -49,13 +49,86 @@
   height: 40px;
 }
 
-.editor {
+.section-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.section-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--dark-gray);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  color: var(--light-gray);
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.section-btn:hover {
+  background-color: var(--gray);
+  border-color: var(--blue);
+  color: var(--white);
+}
+
+.section-btn.active {
+  background-color: var(--dark-gray);
+  border-color: var(--blue);
+  color: var(--white);
+}
+
+.talent-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.talent-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--dark-gray);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  color: var(--light-gray);
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.talent-btn:hover {
+  background-color: var(--gray);
+  border-color: var(--blue);
+  color: var(--white);
+}
+
+.talent-btn.active {
+  background-color: var(--dark-gray);
+  border-color: var(--blue);
+  color: var(--white);
+}
+
+.talent-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px 16px;
-  align-items: start;
-  margin-top: 16px;
-  width: 100%;
+  padding: 16px;
+  min-height: 500px;
 }
 
 .talent-cell {
@@ -84,7 +157,7 @@
   resize: vertical;
   font-family: inherit;
   box-sizing: border-box;
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .mini-toolbar {
@@ -142,12 +215,4 @@
   overflow-y: auto;
 }
 
-.section-header {
-  grid-column: 1 / -1;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 12px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #444;
-  flex-shrink: 0;
-}
+
