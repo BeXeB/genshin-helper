@@ -27,6 +27,12 @@ type ColorPreset = {
   element?: ElementType;
 };
 
+type HistoryEntry = {
+  value: string;
+  selectionStart: number;
+  selectionEnd: number;
+};
+
 @Component({
   selector: 'app-talent-editor',
   imports: [CommonModule, FormsModule, PageTitleComponent, FormattedTextComponent],
@@ -50,6 +56,15 @@ export class TalentEditorComponent implements OnInit {
   selectedSection: string | null = null;
 
   briefDrafts: Partial<CharacterBriefDescriptions> = {};
+
+  // History tracking - per talent key
+  private history: Map<keyof CharacterBriefDescriptions, HistoryEntry[]> = new Map();
+  private historyIndex: Map<keyof CharacterBriefDescriptions, number> = new Map();
+  private readonly MAX_HISTORY = 50; // Prevent memory bloat
+
+  // Debounce timers for capturing snapshots while the user is actively typing
+  private inputTimers: Map<keyof CharacterBriefDescriptions, ReturnType<typeof setTimeout>> = new Map();
+  private readonly INPUT_DEBOUNCE_MS = 500;
 
   colorPresets: ColorPreset[] = [
     { label: 'Kiemelés', color: '#FFD780FF' },
@@ -102,6 +117,7 @@ export class TalentEditorComponent implements OnInit {
           const firstRow = firstSection.rows[0];
           if (firstRow) {
             this.selectedTalentKey = firstRow.key;
+            this.ensureHistoryInitialized(firstRow.key);
           }
         }
       });
@@ -110,7 +126,168 @@ export class TalentEditorComponent implements OnInit {
       .getBriefDescriptions(profile.normalizedName)
       .subscribe((data) => {
         this.briefDrafts = { ...data };
+        for (const timer of this.inputTimers.values()) {
+          clearTimeout(timer);
+        }
+        this.inputTimers.clear();
+        this.history.clear();
+        this.historyIndex.clear();
+        for (const key of Object.keys(this.briefDrafts) as (keyof CharacterBriefDescriptions)[]) {
+          this.initializeHistory(key);
+        }
       });
+  }
+
+  onTextareaInput(key: keyof CharacterBriefDescriptions, textarea: HTMLTextAreaElement) {
+    const existing = this.inputTimers.get(key);
+    if (existing) clearTimeout(existing);
+
+    const timer = setTimeout(() => {
+      this.inputTimers.delete(key);
+      this.captureSnapshot(key, textarea.selectionStart, textarea.selectionEnd);
+    }, this.INPUT_DEBOUNCE_MS);
+
+    this.inputTimers.set(key, timer);
+  }
+
+  flushPendingCapture(key: keyof CharacterBriefDescriptions, textarea?: HTMLTextAreaElement) {
+    const timer = this.inputTimers.get(key);
+    if (timer) {
+      clearTimeout(timer);
+      this.inputTimers.delete(key);
+    }
+    this.captureSnapshot(key, textarea?.selectionStart, textarea?.selectionEnd);
+  }
+
+  initializeHistory(key: keyof CharacterBriefDescriptions) {
+    const initialValue = this.briefDrafts[key] ?? '';
+    this.history.set(key, [
+      {
+        value: initialValue,
+        selectionStart: initialValue.length,
+        selectionEnd: initialValue.length,
+      },
+    ]);
+    this.historyIndex.set(key, 0);
+  }
+
+  // Initialize history only if it doesn't exist yet, so the true original
+  // value is captured before any edits happen (avoids lazily reading an
+  // already-mutated draft as the "initial" state).
+  ensureHistoryInitialized(key: keyof CharacterBriefDescriptions) {
+    if (!this.history.has(key)) {
+      this.initializeHistory(key);
+    }
+  }
+
+  captureSnapshot(
+    key: keyof CharacterBriefDescriptions,
+    selectionStart?: number,
+    selectionEnd?: number,
+  ) {
+    const value = this.briefDrafts[key] ?? '';
+    let stack = this.history.get(key);
+    let index = this.historyIndex.get(key);
+
+    if (!stack || index === undefined) {
+      this.initializeHistory(key);
+      stack = this.history.get(key)!;
+      index = this.historyIndex.get(key)!;
+    }
+
+    // Avoid pushing duplicate consecutive snapshots
+    if (stack[index].value === value) return;
+
+    const entry: HistoryEntry = {
+      value,
+      selectionStart: selectionStart ?? value.length,
+      selectionEnd: selectionEnd ?? value.length,
+    };
+
+    // Trim future history if user was in middle of undo chain and made new change
+    stack = stack.slice(0, index + 1);
+    stack.push(entry);
+
+    // Enforce MAX_HISTORY limit
+    if (stack.length > this.MAX_HISTORY) {
+      stack = stack.slice(stack.length - this.MAX_HISTORY);
+    }
+
+    this.history.set(key, stack);
+    this.historyIndex.set(key, stack.length - 1);
+  }
+
+  undo(key: keyof CharacterBriefDescriptions, textarea?: HTMLTextAreaElement): boolean {
+    this.flushPendingCapture(key, textarea);
+
+    const stack = this.history.get(key);
+    const index = this.historyIndex.get(key);
+    if (!stack || index === undefined || index <= 0) return false;
+
+    const newIndex = index - 1;
+    const entry = stack[newIndex];
+    this.historyIndex.set(key, newIndex);
+    this.briefDrafts[key] = entry.value;
+
+    if (textarea) {
+      setTimeout(() => {
+        textarea.focus();
+        textarea.setSelectionRange(entry.selectionStart, entry.selectionEnd);
+      });
+    }
+
+    return true;
+  }
+
+  redo(key: keyof CharacterBriefDescriptions, textarea?: HTMLTextAreaElement): boolean {
+    this.flushPendingCapture(key, textarea);
+
+    const stack = this.history.get(key);
+    const index = this.historyIndex.get(key);
+    if (!stack || index === undefined || index >= stack.length - 1) return false;
+
+    const newIndex = index + 1;
+    const entry = stack[newIndex];
+    this.historyIndex.set(key, newIndex);
+    this.briefDrafts[key] = entry.value;
+
+    if (textarea) {
+      setTimeout(() => {
+        textarea.focus();
+        textarea.setSelectionRange(entry.selectionStart, entry.selectionEnd);
+      });
+    }
+
+    return true;
+  }
+
+  canUndo(key: keyof CharacterBriefDescriptions): boolean {
+    const index = this.historyIndex.get(key);
+    return index !== undefined && index > 0;
+  }
+
+  canRedo(key: keyof CharacterBriefDescriptions): boolean {
+    const stack = this.history.get(key);
+    const index = this.historyIndex.get(key);
+    return !!stack && index !== undefined && index < stack.length - 1;
+  }
+
+  handleTextareaKeydown(
+    event: KeyboardEvent,
+    key: keyof CharacterBriefDescriptions,
+    textarea: HTMLTextAreaElement,
+  ) {
+    const isMod = event.ctrlKey || event.metaKey;
+    if (!isMod) return;
+
+    const k = event.key.toLowerCase();
+    if (k === 'z' && !event.shiftKey) {
+      event.preventDefault();
+      this.undo(key, textarea);
+    } else if (k === 'y' || (k === 'z' && event.shiftKey)) {
+      event.preventDefault();
+      this.redo(key, textarea);
+    }
   }
 
   hideDropdown() {
@@ -201,6 +378,7 @@ export class TalentEditorComponent implements OnInit {
 
   selectTalent(key: keyof CharacterBriefDescriptions) {
     this.selectedTalentKey = key;
+    this.ensureHistoryInitialized(key);
     // Update selected section based on talent
     for (const section of this.talentSections) {
       if (section.rows.some(row => row.key === key)) {
@@ -216,6 +394,7 @@ export class TalentEditorComponent implements OnInit {
     const section = this.talentSections.find(s => s.label === sectionLabel);
     if (section && section.rows.length > 0) {
       this.selectedTalentKey = section.rows[0].key;
+      this.ensureHistoryInitialized(section.rows[0].key);
     }
   }
 
@@ -276,6 +455,8 @@ export class TalentEditorComponent implements OnInit {
     tag: 'bold' | 'italic' | 'color',
     color?: string,
   ) {
+    this.flushPendingCapture(key, textarea);
+
     const value = this.briefDrafts[key] ?? '';
     const start = textarea.selectionStart ?? 0;
     const end = textarea.selectionEnd ?? 0;
@@ -304,6 +485,7 @@ export class TalentEditorComponent implements OnInit {
 
     const newStart = start + openTag.length;
     const newEnd = newStart + selected.length;
+    this.captureSnapshot(key, newStart, newEnd);
 
     setTimeout(() => {
       textarea.focus();
@@ -315,6 +497,8 @@ export class TalentEditorComponent implements OnInit {
     key: keyof CharacterBriefDescriptions,
     textarea: HTMLTextAreaElement,
   ) {
+    this.flushPendingCapture(key, textarea);
+
     const value = this.briefDrafts[key] ?? '';
     const start = textarea.selectionStart ?? 0;
     const end = textarea.selectionEnd ?? 0;
@@ -334,6 +518,7 @@ export class TalentEditorComponent implements OnInit {
     this.briefDrafts[key] = newValue;
 
     const newEnd = start + cleared.length;
+    this.captureSnapshot(key, start, newEnd);
 
     setTimeout(() => {
       textarea.focus();

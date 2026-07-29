@@ -196,6 +196,20 @@
   color: #ff6b6b;
 }
 
+.undo-btn i,
+.redo-btn i {
+  color: #4a9eff;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.toolbar-btn:disabled:hover {
+  background-color: transparent;
+}
+
 .preview-label {
   font-size: 0.85em;
   color: #888;
