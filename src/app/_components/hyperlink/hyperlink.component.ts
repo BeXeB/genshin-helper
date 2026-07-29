@@ -30,6 +30,7 @@ export class HyperlinkComponent implements OnInit {
   tooltipPosition: 'top' | 'bottom' = 'bottom';
 
   private readonly tooltipHeightEstimate = 150;
+  private readonly viewportMargin = 8;
 
   constructor(
     private hyperlinkService: HyperlinkService,
@@ -74,7 +75,9 @@ export class HyperlinkComponent implements OnInit {
     }
 
     const linkRect = link.getBoundingClientRect();
-    const tooltipHeight = this.tooltip.nativeElement.offsetHeight;
+    const tooltipEl = this.tooltip.nativeElement;
+    const tooltipHeight = tooltipEl.offsetHeight;
+    const tooltipWidth = tooltipEl.offsetWidth;
 
     const spaceBelow = window.innerHeight - linkRect.bottom;
     const spaceAbove = linkRect.top;
@@ -83,5 +86,20 @@ export class HyperlinkComponent implements OnInit {
       spaceBelow < tooltipHeight && spaceAbove >= tooltipHeight
         ? 'top'
         : 'bottom';
+
+    // Keep the tooltip from overflowing the left/right edges of the viewport
+    // by nudging it horizontally away from its default centered position.
+    const centerX = linkRect.left + linkRect.width / 2;
+    const idealLeft = centerX - tooltipWidth / 2;
+    const idealRight = centerX + tooltipWidth / 2;
+
+    let shift = 0;
+    if (idealLeft < this.viewportMargin) {
+      shift = this.viewportMargin - idealLeft;
+    } else if (idealRight > window.innerWidth - this.viewportMargin) {
+      shift = window.innerWidth - this.viewportMargin - idealRight;
+    }
+
+    tooltipEl.style.setProperty('--tooltip-shift', `${shift}px`);
   }
 }
