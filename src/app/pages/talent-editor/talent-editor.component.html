@@ -30,12 +30,31 @@
 
   @if (selectedCharacter) {
     <div class="selected-character card card-no-hover">
-      <img
-        class="character-icon"
-        [src]="getCharacterIcon(selectedCharacter.normalizedName)"
-        [alt]="selectedCharacter.name"
-      />
-      <span>{{ selectedCharacter.name }}</span>
+      <div class="character-info">
+        <img
+          class="character-icon"
+          [src]="getCharacterIcon(selectedCharacter.normalizedName)"
+          [alt]="selectedCharacter.name"
+        />
+        <span>{{ selectedCharacter.name }}</span>
+      </div>
+
+      @if (getVariantElements().length > 0) {
+        <div class="element-selector">
+          @for (element of getVariantElements(); track element) {
+            <button
+              class="element-btn"
+              [class.active]="selectedElement === element"
+              type="button"
+              (click)="selectElement(element)"
+              [title]="element"
+            >
+              <span class="element-icon icon-mask" [style]="getElementIconStyle(element)"></span>
+            </button>
+          }
+        </div>
+      }
+
       <button class="export-btn" type="button" (click)="exportBriefDescriptionJson()">
         Letöltés JSON-ként
       </button>
