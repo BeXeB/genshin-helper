@@ -17,6 +17,22 @@
   width: 100%;
 }
 
+.search-and-export {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.selected-character-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .dropdown {
   position: absolute;
   top: 100%;
@@ -52,8 +68,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 16px;
   cursor: default;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.character-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.character-info .character-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .selected-character .character-icon {
@@ -66,6 +99,7 @@
   height: auto;
   padding: 10px 16px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .section-selector {
@@ -256,5 +290,46 @@
   min-height: 80px;
   overflow-y: auto;
 }
+
+.element-selector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.element-btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-gray);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.element-btn:hover {
+  background-color: var(--gray);
+  border-color: var(--blue);
+}
+
+.element-btn.active {
+  background-color: var(--dark-gray);
+  border-color: var(--blue);
+  box-shadow: 0 0 8px var(--shadow-blue);
+}
+
+.element-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
 
 

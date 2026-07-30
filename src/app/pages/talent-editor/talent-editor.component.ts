@@ -64,6 +64,7 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
   selectedCharacterDetails: Character | null = null;
   selectedTalentKey: keyof CharacterBriefDescriptions | null = null;
   selectedSection: string | null = null;
+  selectedElement: ElementType | null = null;
 
   briefDrafts: Partial<CharacterBriefDescriptions> = {};
 
@@ -138,11 +139,19 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     this.briefDrafts = {};
     this.selectedTalentKey = null;
     this.selectedSection = null;
+    this.selectedElement = null;
 
     this.characterSerivce
       .getCharacterDetails(profile.normalizedName)
       .subscribe((details: Character) => {
         this.selectedCharacterDetails = details;
+
+        // Initialize element selection for characters with variants
+        const variantElements = this.getVariantElements();
+        if (variantElements.length > 0) {
+          this.selectedElement = variantElements[0];
+        }
+
         // Set first section and talent as selected
         const firstSection = this.talentSections[0];
         if (firstSection) {
@@ -333,10 +342,65 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     return this.imageService.getCharacterIcon(apiKey);
   }
 
+  getElementIcon(element: ElementType): string {
+    return this.imageService.getElementIcon(element);
+  }
+
+  // Mask-based coloring (like the toolbar color presets) so the icon itself is tinted.
+  getElementIconStyle(element: ElementType): Record<string, string> {
+    const iconUrl = this.imageService.getElementIcon(element);
+    const elementName = ElementTypeLabel[element].toLowerCase();
+    const backgroundColor = `var(--${elementName})`;
+
+    return {
+      'background-color': backgroundColor,
+      'mask-image': `url(${iconUrl})`,
+      '-webkit-mask-image': `url(${iconUrl})`,
+      'mask-size': 'cover',
+      '-webkit-mask-size': 'cover',
+      'mask-repeat': 'no-repeat',
+      '-webkit-mask-repeat': 'no-repeat',
+    };
+  }
+
+  getVariantElements(): ElementType[] {
+    if (!this.selectedCharacterDetails?.variants) {
+      return [];
+    }
+    return Object.keys(this.selectedCharacterDetails.variants) as ElementType[];
+  }
+
+  selectElement(element: ElementType) {
+    this.selectedElement = element;
+    this.selectedTalentKey = null;
+    this.selectedSection = null;
+
+    // Set first section and talent as selected for new element
+    const firstSection = this.talentSections[0];
+    if (firstSection) {
+      this.selectedSection = firstSection.label;
+      const firstRow = firstSection.rows[0];
+      if (firstRow) {
+        this.selectedTalentKey = firstRow.key;
+        this.ensureHistoryInitialized(firstRow.key);
+      }
+    }
+  }
+
   get talentSections(): { label: string; rows: TalentRow[] }[] {
     const sections: { label: string; rows: TalentRow[] }[] = [];
-    const skills = this.selectedCharacterDetails?.skills;
-    const constellation = this.selectedCharacterDetails?.constellation;
+
+    // Use variant data if available and selected
+    let skills = this.selectedCharacterDetails?.skills;
+    let constellation = this.selectedCharacterDetails?.constellation;
+
+    if (this.selectedElement && this.selectedCharacterDetails?.variants) {
+      const variant = this.selectedCharacterDetails.variants[this.selectedElement];
+      if (variant) {
+        skills = variant.skills;
+        constellation = variant.constellation;
+      }
+    }
 
     if (skills) {
       sections.push({
