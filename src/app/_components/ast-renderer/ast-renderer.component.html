@@ -39,5 +39,14 @@
         </app-ast-renderer>
       </app-hyperlink>
     }
+
+    @case ("param") {
+      <app-param-value
+        [groupId]="node.groupId"
+        [level]="node.level"
+        [paramIndex]="node.paramIndex"
+        [multiplier]="node.multiplier"
+      ></app-param-value>
+    }
   }
 }

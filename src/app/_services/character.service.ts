@@ -15,6 +15,7 @@ import {
 
 interface CharacterTalentIndex {
   skills: Map<number, CombatTalent>;
+  skillGroups: Map<number, CombatTalent>;
   passives: Map<number, PassiveTalent>;
   constellations: Map<number, ConstellationDetail>;
 }
@@ -56,6 +57,12 @@ export class CharacterService {
     return this.getTalentIndex().pipe(map((index) => index.skills.get(id)));
   }
 
+  getSkillByGroupId(groupId: number): Observable<CombatTalent | undefined> {
+    return this.getTalentIndex().pipe(
+      map((index) => index.skillGroups.get(groupId)),
+    );
+  }
+
   getPassiveTalent(id: number): Observable<PassiveTalent | undefined> {
     return this.getTalentIndex().pipe(
       map((index) => index.passives.get(id)),
@@ -83,6 +90,7 @@ export class CharacterService {
         map((characters) => {
           const index: CharacterTalentIndex = {
             skills: new Map(),
+            skillGroups: new Map(),
             passives: new Map(),
             constellations: new Map(),
           };
@@ -121,6 +129,10 @@ export class CharacterService {
     for (const skill of [talents.combat1, talents.combat2, talents.combat3]) {
       if (skill) {
         index.skills.set(skill.id, skill);
+
+        if (skill.proudSkillGroupId) {
+          index.skillGroups.set(skill.proudSkillGroupId, skill);
+        }
       }
     }
 

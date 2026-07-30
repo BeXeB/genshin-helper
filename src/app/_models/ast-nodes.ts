@@ -4,7 +4,8 @@ export type AstNode =
   | LinkNode
   | ItalicNode
   | BoldNode
-  | LineBreakNode;
+  | LineBreakNode
+  | ParamNode;
 
 export type LinkType = 'N' | 'S' | 'P' | 'T';
 
@@ -38,4 +39,12 @@ export interface ItalicNode {
 export interface BoldNode {
   type: 'bold';
   children: AstNode[];
+}
+
+export interface ParamNode {
+  type: 'param';
+  groupId: number;
+  level: number;
+  paramIndex: number;
+  multiplier: number;
 }
