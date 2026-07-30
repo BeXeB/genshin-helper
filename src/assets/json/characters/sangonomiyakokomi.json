@@ -374,7 +374,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive attacks that take the form of swimming fish, dealing <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Hydro, Kokomi plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
             "id": 10541,
-            "name": "The Shape of Water"
+            "name": "The Shape of Water",
+            "proudSkillGroupId": 5431
         },
         "combat2": {
             "attributes": {
@@ -474,7 +475,8 @@
             },
             "descriptionRaw": "Summons a \"Bake-Kurage\" created from water that can heal her allies.\nUsing this skill will apply the <color=#80C0FFFF>Wet</color> status to Sangonomiya Kokomi.\n\n<color=#FFD780FF>Bake-Kurage</color>\nDeals <color=#80C0FFFF>Hydro DMG</color> to surrounding opponents and heals nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP.\n\n<i>Kokomi needs timely \"refreshment\" in order to maintain optimal work efficiency</i>.",
             "id": 10542,
-            "name": "Kurage's Oath"
+            "name": "Kurage's Oath",
+            "proudSkillGroupId": 5432
         },
         "combat3": {
             "attributes": {
@@ -646,7 +648,8 @@
             },
             "descriptionRaw": "Summons the might of Watatsumi, dealing <color=#80C0FFFF>Hydro DMG</color> to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.\n\n<color=#FFD780FF>Ceremonial Garment</color>\n·Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her Max HP.\n·When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her Max HP.\n·Increases Sangonomiya Kokomi's resistance to interruption and allows her to walk on the water's surface.\n\nThese effects will be cleared once Sangonomiya Kokomi leaves the field.\n\n<i>Clear light coalesces into robes around Her Excellency, Sangonomiya Kokomi, reflecting her magnificent form.</i>",
             "id": 10545,
-            "name": "Nereid's Ascension"
+            "name": "Nereid's Ascension",
+            "proudSkillGroupId": 5439
         },
         "costs": {
             "lvl10": [

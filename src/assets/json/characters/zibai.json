@@ -426,7 +426,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 11261,
-            "name": "Golden Blade's Petaled Touch"
+            "name": "Golden Blade's Petaled Touch",
+            "proudSkillGroupId": 12631
         },
         "combat2": {
             "attributes": {
@@ -651,7 +652,8 @@
             },
             "descriptionRaw": "Summoning a shadow of her former powers, she switches to the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK} mode.\nIn this mode, Zibai's Normal Attacks and Charged Attacks will deal <color=#FFE699FF>Geo DMG</color> that cannot be overridden by other infusions, and she can accrue special <color=#FFD780FF>Phase Shift Radiance</color> through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill <color=#FFD780FF>Spirit Steed's Stride</color>.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>\nWhile in the <color=#FFD780FF>Lunar Phase Shift</color> mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of <color=#FFE699FF>Geo DMG</color>, which is considered Lunar-Crystallize Reaction DMG.",
             "id": 11262,
-            "name": "Heaven and Earth Made Manifest"
+            "name": "Heaven and Earth Made Manifest",
+            "proudSkillGroupId": 12632
         },
         "combat3": {
             "attributes": {
@@ -734,7 +736,8 @@
             },
             "descriptionRaw": "Zibai operates the Jadelight Canopy, dealing two instances of <color=#FFE699FF>Geo DMG</color>, with the second damage instance being considered Lunar-Crystallize Reaction DMG.\nWhen cast, if Zibai is in the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK}, the duration of the current Lunar Phase Shift will extend by an additional 1.7s.",
             "id": 11265,
-            "name": "Tri-Sphere Eminence"
+            "name": "Tri-Sphere Eminence",
+            "proudSkillGroupId": 12639
         },
         "costs": {
             "lvl10": [

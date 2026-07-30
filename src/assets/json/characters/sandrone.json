@@ -410,7 +410,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nGenerates threads that control her weapon using formulae, performing up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nSummons the Facilitatrice Automatisee Generaliste Interactive et Omnitache, or \"<color=#FFD780FF>Fagio</color>,\" and switches it to <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode: Unleashes a sweeping fire attack on enemies in front, as well as periodically fires condensed beams, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG.\nWhile in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> will continuously increase. Firing condensed beams will also further increase its Decoding Power.\nWhen Fagio's Decoding Power reaches the maximum of 100 points, it switches to <color=#FFD780FF>Power Overdrive</color> mode, in which it fires at opponents with longer intervals, dealing <color=#99FFFFFF>Cryo DMG</color>. It will be unable to switch to Decoding mode at this time.\nWhen not in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>Decoding Power</color> gradually decreases. When Sandrone is off-field, she will focus on maintaining Fagio, causing its Decoding Power to decrease at 300% the original rate.\nFagio exits <color=#FFD780FF>Power Overdrive</color> mode when its <color=#FFD780FF>Decoding Power</color> has decreased to under 50.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from midair to strike the ground below, dealing DMG to opponents along their path and causing AoE DMG on landing.",
             "id": 11331,
-            "name": "Formule Phenomenale: Self-Evident Proposition"
+            "name": "Formule Phenomenale: Self-Evident Proposition",
+            "proudSkillGroupId": 13331
         },
         "combat2": {
             "attributes": {
@@ -475,7 +476,8 @@
             },
             "descriptionRaw": "With her impeccable, ladylike poise, Sandrone boards the <color=#FFD780FF>Tea Party Tactical Assault Hovermech</color> and hovers forward for 6s. During this time, Sandrone can control the travel direction of the craft. Pressing Sprint consumes 10 Stamina and launches her into an elegant high-speed hover mode, in which she will move even faster at the cost of 15 Stamina per second.\n\nWhen Sandrone starts hovering, if there are opponents nearby, she will also summon a Prismatic Resonance Cannon and fire 2 Prism Shots at any opponents who have yet to cool down, dealing <color=#99FFFFFF>Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The second Prism Shot will instead deal <color=#99FFFFFF>Cryo DMG</color> that is considered Stellar-Conduct DMG.\n\nWhen on the Tea Party Tactical Assault Hovermech, Sandrone will also elegantly and quietly repair Fagio, causing <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> to swiftly decrease.",
             "id": 11332,
-            "name": "Formule Phenomenale: Differential Analysis"
+            "name": "Formule Phenomenale: Differential Analysis",
+            "proudSkillGroupId": 13332
         },
         "combat3": {
             "attributes": {
@@ -576,7 +578,8 @@
             },
             "descriptionRaw": "In line with established ladylike behavior, Sandrone summons a large number of Prismatic Resonance Cannons for a frontal bombardment before firing on her foes with a Convective Inhibition Ray, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The Convective Inhibition Ray instead deals <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG.",
             "id": 11335,
-            "name": "Formule Phenomenale: Q.E.D."
+            "name": "Formule Phenomenale: Q.E.D.",
+            "proudSkillGroupId": 13339
         },
         "costs": {
             "lvl10": [

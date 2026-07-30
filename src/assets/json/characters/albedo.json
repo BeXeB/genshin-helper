@@ -427,7 +427,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10386,
-            "name": "Favonius Bladework - Weiss"
+            "name": "Favonius Bladework - Weiss",
+            "proudSkillGroupId": 3831
         },
         "combat2": {
             "attributes": {
@@ -510,7 +511,8 @@
             },
             "descriptionRaw": "Albedo creates a Solar Isotoma using alchemy, which deals <color=#FFE699FF>AoE Geo DMG</color> on appearance.\n\n<color=#FFD780FF>Solar Isotoma</color>\nhas the following properties:\n·When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal <color=#FFE699FF>AoE Geo DMG</color>. DMG dealt scales off Albedo's DEF. \n·Transient Blossoms can only be generated once every 2s.\n·When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.\n·Solar Isotoma is considered a <color=#FFE699FF>Geo construct</color>. Only one Solar Isotoma created by Albedo himself can exist at a time. \n\n<color=#FFD780FF>Hold</color> to designate the location of the skill.\n\n<i>This Geo bloom has an unusual property mirrored in the aim of alchemy. To rise from the earth, soar into the sky, and become the sun.</i>",
             "id": 10387,
-            "name": "Abiogenesis: Solar Isotoma"
+            "name": "Abiogenesis: Solar Isotoma",
+            "proudSkillGroupId": 3832
         },
         "combat3": {
             "attributes": {
@@ -593,7 +595,8 @@
             },
             "descriptionRaw": "Under Albedo's command, Geo crystals surge and burst forth, dealing <color=#FFE699FF>AoE Geo DMG</color> in front of him.\nIf a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing <color=#FFE699FF>AoE Geo DMG</color>.\n\nTectonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms.\n\n<i>Under the Kreideprinz's command, the tectonic tide of creation seethes into life.</i>",
             "id": 10388,
-            "name": "Rite of Progeniture: Tectonic Tide"
+            "name": "Rite of Progeniture: Tectonic Tide",
+            "proudSkillGroupId": 3839
         },
         "costs": {
             "lvl10": [

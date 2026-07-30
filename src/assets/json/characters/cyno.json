@@ -409,7 +409,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10711,
-            "name": "Invoker's Spear"
+            "name": "Invoker's Spear",
+            "proudSkillGroupId": 7131
         },
         "combat2": {
             "attributes": {
@@ -510,7 +511,8 @@
             },
             "descriptionRaw": "Performs a swift thrust, dealing <color=#FFACFFFF>Electro DMG</color> to opponents along the path.\n\nWhen Cyno is under the Pactsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, he will instead unleash a <color=#FFD780FF>Mortuary Rite</color> that deals thunderous <color=#FFACFFFF>AoE Electro DMG</color> and extends the duration of Pactsworn Pathclearer.\n\n<i>\"This judgment brooks no choice. There is no rejection or acceptance here... We have both long been bound up in this conviction.\"</i>",
             "id": 10712,
-            "name": "Secret Rite: Chasmic Soulfarer"
+            "name": "Secret Rite: Chasmic Soulfarer",
+            "proudSkillGroupId": 7132
         },
         "combat3": {
             "attributes": {
@@ -789,7 +791,8 @@
             },
             "descriptionRaw": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer.\n\n<color=#FFD780FF>Pactsworn Pathclearer</color>\nCyno's Normal, Charged, and Plunging Attacks will be converted to <color=#FFACFFFF>Electro DMG</color> that cannot be overridden.\n·Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG.\n\nThis effect will be canceled when Cyno leaves the field and lasts a maximum of 18s.\n\n<i>The secret rituals passed down within the ancient nation are as a final judgment to the General Mahamatra.</i>\n<i>Whether now or in the past, whether great storm or serpent, none shall shake the majesty of the law.</i>",
             "id": 10715,
-            "name": "Sacred Rite: Wolf's Swiftness"
+            "name": "Sacred Rite: Wolf's Swiftness",
+            "proudSkillGroupId": 7139
         },
         "costs": {
             "lvl10": [

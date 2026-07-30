@@ -426,7 +426,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 11151,
-            "name": "Favonius Bladework - Ritual"
+            "name": "Favonius Bladework - Ritual",
+            "proudSkillGroupId": 11531
         },
         "combat2": {
             "attributes": {
@@ -473,7 +474,8 @@
             },
             "descriptionRaw": "Time for a fun little trick! Summons the Sacramental Shower in different ways depending on whether you Tap or Hold it.\n\n<color=#FFD780FF>Tap</color>\nAfter a short prayer, summons the Sacramental Shower in front.\n\n<color=#FFD780FF>Hold</color>\nEngages in continuous prayer, and when done, summons forth a Sacramental Shower in the designated position.\n\n<color=#FFD780FF>Sacramental Shower</color>\nWhen opponents or nearby party members touch the Sacramental Shower, different effects will occur depending on the one who touches it:\nIf an opponent touches the Shower, it will explode and deal <color=#80C0FFFF>AoE Hydro DMG</color> to nearby opponents.\nIf a nearby party member touches it, it will bounce the one who touches it high in the air.\n\nOnly 1 Sacramental Shower summoned by Dahlia himself can be on the field at once.",
             "id": 11152,
-            "name": "Immersive Ordinance"
+            "name": "Immersive Ordinance",
+            "proudSkillGroupId": 11532
         },
         "combat3": {
             "attributes": {
@@ -591,7 +593,8 @@
             },
             "descriptionRaw": "Appeals to the divine with earnestness and song, dealing <color=#80C0FFFF>AoE Hydro DMG</color> to nearby opponents and granting his party members Favonian Favor, summoning a Shield of Sacred Favor.\nThe Shield of Sacred Favor's DMG absorption is based on Dahlia's Max HP, and it will absorb <color=#80C0FFFF>Hydro DMG</color> with 250% effectiveness.\n\n<color=#FFD780FF>Favonian Favor</color>\nWhile this effect is active, 1 Benison stack may be consumed to summon a new Shield of Sacred Favor when an existing Shield is broken via DMG.\n\nDahlia can obtain Benison via the following methods:\n· He will gain 1 Benison stack when his own active party member hits opponents 4 times with Normal Attacks while affected by Favonian Favor.\n· After triggering the effect of his Ascension Talent, \"The Wind's Gentle Grace\" (You must first unlock this Ascension Talent.)\nDahlia can gain a maximum of 4 Benison stacks per Favonian Favor duration.",
             "id": 11155,
-            "name": "Radiant Psalter"
+            "name": "Radiant Psalter",
+            "proudSkillGroupId": 11539
         },
         "costs": {
             "lvl10": [

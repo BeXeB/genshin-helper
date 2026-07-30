@@ -409,7 +409,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a spinning attack.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 11161,
-            "name": "Cyclonic Duster"
+            "name": "Cyclonic Duster",
+            "proudSkillGroupId": 11631
         },
         "combat2": {
             "attributes": {
@@ -545,7 +546,8 @@
             },
             "descriptionRaw": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of <color=#FFACFFFF>AoE Electro DMG</color> to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK}.\nThe Optical Flow Shield Barrier absorbs DMG based on Ineffa's ATK, and it will absorb <color=#FFACFFFF>Electro DMG</color> with 250% effectiveness.",
             "id": 11162,
-            "name": "Cleaning Mode: Carrier Frequency"
+            "name": "Cleaning Mode: Carrier Frequency",
+            "proudSkillGroupId": 11632
         },
         "combat3": {
             "attributes": {
@@ -610,7 +612,8 @@
             },
             "descriptionRaw": "Through Multipurpose Smart Assistance Unit, {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK}, Ineffa can use Rocket Punches to quickly clean up opponents! Shoots Birgitta into the fray, dealing <color=#FFACFFFF>AoE Electro DMG</color> and allowing Birgitta to remain on the field.\n\nIf Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration.",
             "id": 11165,
-            "name": "Supreme Instruction: Cyclonic Exterminator"
+            "name": "Supreme Instruction: Cyclonic Exterminator",
+            "proudSkillGroupId": 11639
         },
         "costs": {
             "lvl10": [

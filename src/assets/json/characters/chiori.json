@@ -426,7 +426,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10941,
-            "name": "Weaving Blade"
+            "name": "Weaving Blade",
+            "proudSkillGroupId": 9431
         },
         "combat2": {
             "attributes": {
@@ -561,7 +562,8 @@
             },
             "descriptionRaw": "Dashes nimbly forward with silken steps. Once this dash ends, Chiori will summon the automaton doll \"Tamoto\" beside her and sweep her blade upward, dealing <color=#FFE699FF>AoE Geo DMG</color> to nearby opponents based on her ATK and DEF.\nHolding the Skill will cause it to behave differently.\n\n<color=#FFD780FF>Hold</color>\nEnter Aiming Mode to adjust the dash direction.\n\n<color=#FFD780FF>Tamoto</color>\n· Will slash at nearby opponents at intervals, dealing <color=#FFE699FF>AoE Geo DMG</color> based on Chiori's ATK and DEF.\n· While active, if there are nearby <color=#FFE699FF>Geo Construct(s)</color> or <color=#FFE699FF>Geo Construct(s)</color> are created nearby, an additional Tamoto will be summoned next to your active character. Only 1 additional Tamoto can be summoned in this manner, and its duration is independently counted.\n\n<i>\"Sakura red dyes the brocade, the fragrance suffuses the sleeves, the orioles intoxicated.\"</i>",
             "id": 10942,
-            "name": "Fluttering Hasode"
+            "name": "Fluttering Hasode",
+            "proudSkillGroupId": 9432
         },
         "combat3": {
             "attributes": {
@@ -643,7 +645,8 @@
             },
             "descriptionRaw": "Twin blades leave their sheaths as Chiori slices with the clean cuts of a master tailor, dealing <color=#FFE699FF>AoE Geo DMG</color> based on her ATK and DEF.\n\n<i>\"Master one principle, and the path to all others shall open to you.\"</i>",
             "id": 10945,
-            "name": "Hiyoku: Twin Blades"
+            "name": "Hiyoku: Twin Blades",
+            "proudSkillGroupId": 9439
         },
         "costs": {
             "lvl10": [

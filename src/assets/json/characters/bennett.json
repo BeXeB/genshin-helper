@@ -427,7 +427,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10321,
-            "name": "Strike of Fortune"
+            "name": "Strike of Fortune",
+            "proudSkillGroupId": 3231
         },
         "combat2": {
             "attributes": {
@@ -596,7 +597,8 @@
             },
             "descriptionRaw": "#Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is...\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nA single, swift flame strike that deals <color=#FF9999FF>Pyro DMG</color>.\n\n<color=#FFD780FF>Hold (Short)</color>\nCharges up, resulting in different effects when unleashed based on the Charge Level.\n·Level 1: Strikes twice, dealing <color=#FF9999FF>Pyro DMG</color> and launching opponents.\n·Level 2: Unleashes 3 consecutive attacks that deal impressive <color=#FF9999FF>Pyro DMG</color>, but the last attack triggers an explosion that launches both Bennett and the enemy.\nBennett takes no damage from being launched.\n\n<i>An attack that combines Bennett's dreams and passion with Pyro. But passion is sometimes overblown, and Pyro sometimes blows over.</i>",
             "id": 10322,
-            "name": "Passion Overload"
+            "name": "Passion Overload",
+            "proudSkillGroupId": 3232
         },
         "combat3": {
             "attributes": {
@@ -732,7 +734,8 @@
             },
             "descriptionRaw": "Bennett performs a jumping attack that deals <color=#FF9999FF>Pyro DMG</color>, creating an Inspiration Field.\n\n<color=#FFD780FF>Inspiration Field</color>\n·If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP.\n·If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK.\n·Imbues characters within the AoE with <color=#FF9999FF>Pyro</color>.\n\n<i>Benny's Adventure Team's adventures are always fraught with unexpected danger. However, Bennett is more inclined to call them \"journeys full of wonder, excitement, and beauty.\"</i>",
             "id": 10323,
-            "name": "Fantastic Voyage"
+            "name": "Fantastic Voyage",
+            "proudSkillGroupId": 3239
         },
         "costs": {
             "lvl10": [
