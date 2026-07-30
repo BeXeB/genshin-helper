@@ -392,7 +392,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 water splash attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Hydro, Mona plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
             "id": 10411,
-            "name": "Ripple of Fate"
+            "name": "Ripple of Fate",
+            "proudSkillGroupId": 4131
         },
         "combat2": {
             "attributes": {
@@ -491,7 +492,8 @@
             },
             "descriptionRaw": "Creates an illusory Phantom of Fate from coalesced waterspouts.\n\n<color=#FFD780FF>Phantom</color>\nHas the following special properties:\n·Continuously taunts nearby opponents, attracting their fire.\n·Continuously deals <color=#80C0FFFF>Hydro DMG</color> to nearby opponents.\n·When its duration expires, the Phantom explodes, dealing <color=#80C0FFFF>AoE Hydro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nUtilizes water currents to move backwards swiftly before conjuring a Phantom.\n\nOnly one Phantom created by Mirror Reflection of Doom can exist at any time.\n\n<i>Skilled astrologers have always dreamed of using a phantom facsimile of themselves to ward off imminent ill fate, but Mona must be the first to make such a mockery of it in all of Teyvat.</i>",
             "id": 10412,
-            "name": "Mirror Reflection of Doom"
+            "name": "Mirror Reflection of Doom",
+            "proudSkillGroupId": 4132
         },
         "combat3": {
             "attributes": {
@@ -678,7 +680,8 @@
             },
             "descriptionRaw": "Mona summons the sparkling waves and creates a reflection of the starry sky, applying the Illusory Bubble status to opponents in a large AoE.\n\n<color=#FFD780FF>Illusory Bubble</color>\nTraps opponents inside a pocket of destiny and also makes them <color=#80C0FFFF>Wet</color>. Renders weaker opponents immobile.\nWhen an opponent affected by Illusory Bubble sustains DMG, it has the following effects:\n·Applies an Omen to the opponent, which gives a DMG Bonus, also increasing the DMG of the attack that causes it.\n·Removes the Illusory Bubble, dealing <color=#80C0FFFF>Hydro</color> DMG in the process.\n\n<color=#FFD780FF>Omen</color>\nDuring its duration, increases DMG taken by opponents.\n\n<i>It was from the time that gods first traced the lights in the heavens with their eyes that the notion of \"fate\" was born.</i>",
             "id": 10415,
-            "name": "Stellaris Phantasm"
+            "name": "Stellaris Phantasm",
+            "proudSkillGroupId": 4139
         },
         "costs": {
             "lvl10": [

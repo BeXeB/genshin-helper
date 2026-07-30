@@ -374,7 +374,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and fires off a shot, dealing <color=#80FFD7FF>AoE Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
             "id": 11131,
-            "name": "Rite of Dispelling Winds"
+            "name": "Rite of Dispelling Winds",
+            "proudSkillGroupId": 11331
         },
         "combat2": {
             "attributes": {
@@ -474,7 +475,8 @@
             },
             "descriptionRaw": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup.\nAfter using this skill, Ifa gains 80 Nightsoul points and enters the {LINK#N11130003}<color=#FFD780FF>Nightsoul's Blessing</color>{/LINK} state. In the Nightsoul's Blessing state, Ifa will hover with Cacucu's help. When he uses Normal Attacks in this state, he will use different kinds of {LINK#N11130001}<color=#FFD780FF>Supporting Fire</color>{/LINK} depending on whether you Tap or Hold, firing Tonicshots that are capable of healing all party members.\n\nAdditionally, Holding the Elemental Skill <color=#FFD780FF>Airborne Disease Prevention</color> while Ifa is in Nightsoul's Blessing will cause him to use a Nightsoul-aligned Plunging Attack. Letting go of the skill button will interrupt this Plunging Attack to maintain his hover. If Ifa lands due to this Plunging Attack, his Nightsoul's Blessing state will end.",
             "id": 11132,
-            "name": "Airborne Disease Prevention"
+            "name": "Airborne Disease Prevention",
+            "proudSkillGroupId": 11332
         },
         "combat3": {
             "attributes": {
@@ -557,7 +559,8 @@
             },
             "descriptionRaw": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned <color=#80FFD7FF>AoE Anemo DMG</color>.\nWhen the Therapeutic Sedative hits an opponent affected by <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, it will apply a {LINK#N11130004}<color=#FFD780FF>Sedation Mark</color>{/LINK} to them.",
             "id": 11135,
-            "name": "Compound Sedation Field"
+            "name": "Compound Sedation Field",
+            "proudSkillGroupId": 11339
         },
         "costs": {
             "lvl10": [

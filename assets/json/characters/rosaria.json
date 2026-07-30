@@ -427,7 +427,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10451,
-            "name": "Spear of the Church"
+            "name": "Spear of the Church",
+            "proudSkillGroupId": 4531
         },
         "combat2": {
             "attributes": {
@@ -491,7 +492,8 @@
             },
             "descriptionRaw": "Rosaria swiftly shifts her position to appear behind her opponent, then stabs and slashes them with her polearm, dealing <color=#99FFFFFF>Cryo DMG</color>.\nThis ability cannot be used to travel behind opponents of a larger build.\n\n<i>Those who confess to Sister Rosaria will be granted no absolution. All sinners shall be met with the piercing cold of punishment proportionate to the weight of their sins.</i>",
             "id": 10452,
-            "name": "Ravaging Confession"
+            "name": "Ravaging Confession",
+            "proudSkillGroupId": 4532
         },
         "combat3": {
             "attributes": {
@@ -609,7 +611,8 @@
             },
             "descriptionRaw": "Rosaria's unique take on this prayer ritual: First, she swings her weapon to slash surrounding opponents; then, she summons a frigid Ice Lance that strikes the ground. Both actions deal <color=#99FFFFFF>Cryo DMG</color>.\nWhile active, the Ice Lance periodically releases a blast of cold air, dealing <color=#99FFFFFF>Cryo DMG</color> to surrounding opponents.\n\n<i>Judgment is such a tedious ordeal — much easier to skip that phase and get straight to the last rites. Rosaria was never very devoted to the Anemo God anyway, which makes performing them all too easy.</i>",
             "id": 10453,
-            "name": "Rites of Termination"
+            "name": "Rites of Termination",
+            "proudSkillGroupId": 4539
         },
         "costs": {
             "lvl10": [

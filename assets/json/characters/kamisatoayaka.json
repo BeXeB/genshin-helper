@@ -444,7 +444,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash a flurry of sword ki.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.",
             "id": 10024,
-            "name": "Kamisato Art: Kabuki"
+            "name": "Kamisato Art: Kabuki",
+            "proudSkillGroupId": 231
         },
         "combat2": {
             "attributes": {
@@ -491,7 +492,8 @@
             },
             "descriptionRaw": "Summons blooming ice to launch nearby opponents, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<i>\"Clouds shroud the moonlit night. Longing descends like a fog, filling the one detained with wanderlust.\"</i>",
             "id": 10018,
-            "name": "Kamisato Art: Hyouka"
+            "name": "Kamisato Art: Hyouka",
+            "proudSkillGroupId": 232
         },
         "combat3": {
             "attributes": {
@@ -592,7 +594,8 @@
             },
             "descriptionRaw": "Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously.\n\n<color=#FFD780FF>Frostflake Seki no To</color>\n·A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing <color=#99FFFFFF>Cryo DMG</color>.\n·The snowstorm explodes after its duration ends, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<i>\"The blizzard veils the heron's thoughts, pity heavy in its heart.\"</i>",
             "id": 10019,
-            "name": "Kamisato Art: Soumetsu"
+            "name": "Kamisato Art: Soumetsu",
+            "proudSkillGroupId": 239
         },
         "costs": {
             "lvl10": [

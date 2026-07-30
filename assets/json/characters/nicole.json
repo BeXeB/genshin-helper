@@ -374,7 +374,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nProclaims a decree in the primordial tongue and performs up to 3 attacks that deal <color=#FF9999FF>Pyro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#FF9999FF>AoE Pyro DMG</color> to opponents in front of her after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nNicole plunges towards the ground from mid-air, damaging all opponents in her path. Also deals <color=#FF9999FF>AoE Pyro DMG</color> upon impact with the ground.",
             "id": 11311,
-            "name": "Allegoria"
+            "name": "Allegoria",
+            "proudSkillGroupId": 13131
         },
         "combat2": {
             "attributes": {
@@ -528,7 +529,8 @@
             },
             "descriptionRaw": "Recreates a fleeting glimpse of an age long past, when the angels acted on the authority of the heavens, bestowing the {LINK#N11310001}<color=#FFD780FF>Grace of Kenosis</color>{/LINK}{LINK#N11310002}{/LINK} effect on nearby party members. This increases their ATK and deals <color=#FF9999FF>AoE Pyro DMG</color>, as well as creates a Shield of Blazing Light.\nThe Shield of Blazing Light's DMG Absorption is based on Nicole's ATK, and it will absorb <color=#FF9999FF>Pyro DMG</color> at 250% effectiveness.",
             "id": 11312,
-            "name": "Revelation: Uncreated Light"
+            "name": "Revelation: Uncreated Light",
+            "proudSkillGroupId": 13132
         },
         "combat3": {
             "attributes": {
@@ -647,7 +649,8 @@
             },
             "descriptionRaw": "As Nicole weaves the path of anchored fate with golden threads of light, she deals <color=#FF9999FF>AoE Pyro DMG</color> and switches to Silent Contemplation mode.\nIn this mode, when nearby active party members hit an opponent, an Arcane Projection is summoned to perform a Coordinated Attack against the opponent, dealing AoE Elemental DMG of the character's corresponding Elemental Type. This DMG scales based on the corresponding character's ATK and will be considered as having been dealt by them.\nThis effect can occur once every 3s, and can be triggered up to 4 times each time Nicole switches to Silent Contemplation mode.\n\nIt is worth noting that Hexerei characters' Arcane Projections appear to differ somehow in appearance from the others...",
             "id": 11315,
-            "name": "Revelation: Ladder of Divine Ascent"
+            "name": "Revelation: Ladder of Divine Ascent",
+            "proudSkillGroupId": 13139
         },
         "costs": {
             "lvl10": [

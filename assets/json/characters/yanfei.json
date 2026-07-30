@@ -580,7 +580,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nShoots fireballs that deal up to three counts of <color=#FF9999FF>Pyro DMG</color>.\nWhen Yanfei's Normal Attacks hit enemies, they will grant her a single Scarlet Seal. Yanfei may possess a maximum of 3 Scarlet Seals, and each time this effect is triggered, the duration of currently possessed Scarlet Seals will refresh.\nEach Scarlet Seal will decrease Yanfei's Stamina consumption and will disappear when she leaves the field.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes Stamina and all Scarlet Seals before dealing <color=#FF9999FF>AoE Pyro DMG</color> to opponents after a short casting time.\nThis Charged Attack's AoE and DMG will increase according to the amount of Scarlet Seals consumed.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the power of Pyro, Yanfei plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#FF9999FF>AoE Pyro DMG</color> upon impact with the ground.",
             "id": 10481,
-            "name": "Seal of Approval"
+            "name": "Seal of Approval",
+            "proudSkillGroupId": 4831
         },
         "combat2": {
             "attributes": {
@@ -627,7 +628,8 @@
             },
             "descriptionRaw": "Summons blistering flames that deal <color=#FF9999FF>AoE Pyro DMG</color>.\nOpponents hit by the flames will grant Yanfei the maximum number of Scarlet Seals.\n\n<i>Apart from their legal uses, Yanfei's seals also come with her customized additional terms and conditions. Well, it's not as if the Ministry of Civil Affairs can change the laws of nature.</i>",
             "id": 10482,
-            "name": "Signed Edict"
+            "name": "Signed Edict",
+            "proudSkillGroupId": 4832
         },
         "combat3": {
             "attributes": {
@@ -746,7 +748,8 @@
             },
             "descriptionRaw": "Triggers a spray of intense flames that rush at nearby opponents, dealing <color=#FF9999FF>AoE Pyro DMG</color>, granting Yanfei the maximum number of Scarlet Seals, and applying Brilliance to her.\n\n<color=#FFD780FF>Brilliance</color>\nHas the following effects:\n·Grants Yanfei a Scarlet Seal at fixed intervals.\n·Increases the DMG dealt by her Charged Attacks.\nThe effects of Brilliance will end if Yanfei leaves the field or falls in battle.\n\n<i>\"Here are the full terms for this matter of life and death — by which I mean my life and your death!\"</i>",
             "id": 10485,
-            "name": "Done Deal"
+            "name": "Done Deal",
+            "proudSkillGroupId": 4839
         },
         "costs": {
             "lvl10": [

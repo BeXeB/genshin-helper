@@ -410,7 +410,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10231,
-            "name": "Dough-Fu"
+            "name": "Dough-Fu",
+            "proudSkillGroupId": 2331
         },
         "combat2": {
             "attributes": {
@@ -457,7 +458,8 @@
             },
             "descriptionRaw": "Summons Guoba, who will continuously breathe fire at opponents, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<i>Guoba loves to eat spicy food. Problem is, his stomach can't handle something this spicy.</i>",
             "id": 10232,
-            "name": "Guoba Attack"
+            "name": "Guoba Attack",
+            "proudSkillGroupId": 2332
         },
         "combat3": {
             "attributes": {
@@ -594,7 +596,8 @@
             },
             "descriptionRaw": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her.\nThe Pyronado will move with your character for the ability's duration, dealing <color=#FF9999FF>Pyro DMG</color> to all opponents in its path.\n\n<i>There will never be enough heat. Never.</i>",
             "id": 10235,
-            "name": "Pyronado"
+            "name": "Pyronado",
+            "proudSkillGroupId": 2339
         },
         "costs": {
             "lvl10": [

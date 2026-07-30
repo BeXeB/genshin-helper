@@ -392,7 +392,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, Dendro energy will accumulate on the arrowhead. A fully charged arrow will deal <color=#99FF88FF>Dendro DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
             "id": 10671,
-            "name": "Supplicant's Bowmanship"
+            "name": "Supplicant's Bowmanship",
+            "proudSkillGroupId": 6731
         },
         "combat2": {
             "attributes": {
@@ -439,7 +440,8 @@
             },
             "descriptionRaw": "Throws out a Floral Ring that deals 1 instance of <color=#99FF88FF>Dendro DMG</color> to targets it comes into contact with.\nThe Floral Ring will return after a set time, dealing <color=#99FF88FF>Dendro DMG</color> once again.\n\n<i>This is Collei's go-to gadget for dealing with unruly wild beasts. A few good thwacks from this tool will generally improve their behavior. This same principle works just as well on evildoers.</i>",
             "id": 10672,
-            "name": "Floral Brush"
+            "name": "Floral Brush",
+            "proudSkillGroupId": 6732
         },
         "combat3": {
             "attributes": {
@@ -540,7 +542,8 @@
             },
             "descriptionRaw": "Trusty Cuilein-Anbar comes to save the day!\nThrows the doll named Cuilein-Anbar, causing an explosion that deals <color=#99FF88FF>AoE Dendro DMG</color>, creating a Cuilein-Anbar Zone. Cuilein-Anbar will bounce around within this zone, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\n\n<i>\"Pretty impressive, huh? ... Eh? You want to know how I came up with the name Cuilein-Anbar? Uh, well, I...\"</i>",
             "id": 10675,
-            "name": "Trump-Card Kitty"
+            "name": "Trump-Card Kitty",
+            "proudSkillGroupId": 6739
         },
         "costs": {
             "lvl10": [

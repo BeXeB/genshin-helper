@@ -446,7 +446,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10241,
-            "name": "Oceanborne"
+            "name": "Oceanborne",
+            "proudSkillGroupId": 2431
         },
         "combat2": {
             "attributes": {
@@ -546,7 +547,8 @@
             },
             "descriptionRaw": "#Nothing to worry about. Should anyone raise a hand against her or her men, she will avenge it ten-fold with sword and thunder.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nAccumulating the power of lightning, Beidou swings her blade forward fiercely, dealing <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nLifts her weapon up as a shield. Max DMG absorbed scales off Beidou's Max HP.\nAttacks using the energy stored within the greatsword upon release or once this ability's duration expires, dealing <color=#FFACFFFF>Electro DMG</color>. DMG dealt scales with the number of times Beidou is attacked in the skill's duration. The greatest DMG Bonus will be attained once this effect is triggered twice.\nThe shield possesses the following properties:\n·Has 250% <color=#FFACFFFF>Electro DMG</color> Absorption Efficiency.\n·Applies the <color=#FFACFFFF>Electro element</color> to Beidou upon activation.\n\n<i>Conquer the high seas! Pursue the waves and chase the storm!</i>",
             "id": 10242,
-            "name": "Tidecaller"
+            "name": "Tidecaller",
+            "proudSkillGroupId": 2432
         },
         "combat3": {
             "attributes": {
@@ -665,7 +667,8 @@
             },
             "descriptionRaw": "Recalling her slaying of the great beast Haishan, Beidou calls upon that monstrous strength and the lightning to create a Thunderbeast's Targe around herself, dealing <color=#FFACFFFF>Electro DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Thunderbeast's Targe</color>\n·When Normal and Charged Attacks hit, they create a lightning discharge that can jump between opponents, dealing <color=#FFACFFFF>Electro DMG</color>.\n·Increases the character's resistance to interruption, and decreases DMG taken.\n\nA maximum of 1 lightning discharge can be triggered per second.\n\n<i>With a peal of thunder, Haishan is slain.</i>",
             "id": 10245,
-            "name": "Stormbreaker"
+            "name": "Stormbreaker",
+            "proudSkillGroupId": 2439
         },
         "costs": {
             "lvl10": [

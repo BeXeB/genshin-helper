@@ -427,7 +427,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10681,
-            "name": "Marvelous Sword-Dance (Modified)"
+            "name": "Marvelous Sword-Dance (Modified)",
+            "proudSkillGroupId": 6831
         },
         "combat2": {
             "attributes": {
@@ -492,7 +493,8 @@
             },
             "descriptionRaw": "Directs a Spirit-Warding Lamp to fire off a Troubleshooter Shot at opponents, dealing <color=#FFACFFFF>Electro DMG</color>.\nAfter the Troubleshooter Shot hits, it will create 2 After-Sales Service Rounds that will automatically track nearby opponents and deal <color=#FFACFFFF>Electro DMG</color>.\n\n<i>It is said that Dori can fix any problem for you... for the right price.</i>",
             "id": 10682,
-            "name": "Spirit-Warding Lamp: Troubleshooter Cannon"
+            "name": "Spirit-Warding Lamp: Troubleshooter Cannon",
+            "proudSkillGroupId": 6832
         },
         "combat3": {
             "attributes": {
@@ -628,7 +630,8 @@
             },
             "descriptionRaw": "Summons forth the Jinni within the lamp to give the client various kinds of aid.\n\n<color=#FFD780FF>Jinni</color>\nConnects to a nearby character. The connected character will:\n· Continuously restore HP based on Dori's Max HP.\n· Continuously regenerate Energy.\n· Be affected by <color=#FFACFFFF>Electro</color>.\nWhen the connector between the Jinni and the character touches opponents, it will deal one instance of <color=#FFACFFFF>Electro DMG</color> to them every 0.4s.\n\nOnly one Jinni can exist at one time.\n\n<i>\"Hmm? You'll pick this lamp, will you? Oh my, you've got good taste! Unfortunately, there's no price on this treasure — comparable, I'd say, to how you will not sell that mascot by your side for any price in the world.\"</i>",
             "id": 10685,
-            "name": "Alcazarzaray's Exactitude"
+            "name": "Alcazarzaray's Exactitude",
+            "proudSkillGroupId": 6839
         },
         "costs": {
             "lvl10": [

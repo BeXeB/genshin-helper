@@ -392,7 +392,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 water splash attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
             "id": 10070,
-            "name": "Whisper of Water"
+            "name": "Whisper of Water",
+            "proudSkillGroupId": 1431
         },
         "combat2": {
             "attributes": {
@@ -527,7 +528,8 @@
             },
             "descriptionRaw": "Summons water droplets resembling musical notes that form a Melody Loop, dealing <color=#80C0FFFF>Hydro DMG</color> to surrounding opponents and applying the <color=#80C0FFFF>Wet</color> status to them.\n\n<color=#FFD780FF>Melody Loop</color>\n·On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP.\n·On hit, Barbara's Charged Attack generates 4 times the amount of healing.\n·Periodically regenerates your own active character's HP.\n·Applies the <color=#80C0FFFF>Wet</color> status to the character and to opponents who come in contact with them.\n\n<i>Barbara's music is the magic that heals her companions.</i>",
             "id": 10071,
-            "name": "Let the Show Begin♪"
+            "name": "Let the Show Begin♪",
+            "proudSkillGroupId": 1432
         },
         "combat3": {
             "attributes": {
@@ -609,7 +611,8 @@
             },
             "descriptionRaw": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP.\n\n<i>Barbara's desire to heal strengthens her will to fight and sing.</i>",
             "id": 10072,
-            "name": "Shining Miracle♪"
+            "name": "Shining Miracle♪",
+            "proudSkillGroupId": 1439
         },
         "costs": {
             "lvl10": [
