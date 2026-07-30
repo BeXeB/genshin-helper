@@ -3,6 +3,7 @@ import {
   AstNode,
   ColorNode,
   LinkNode,
+  LinkType,
   LineBreakNode,
   ItalicNode,
   BoldNode,
@@ -56,14 +57,7 @@ export class FormatterService {
       }
 
       if (text.startsWith('{LINK#', state.index)) {
-        const result = this.parseLink(text, state);
-
-        if (Array.isArray(result)) {
-          nodes.push(...result);
-        } else {
-          nodes.push(result);
-        }
-
+        nodes.push(this.parseLink(text, state));
         continue;
       }
 
@@ -126,34 +120,28 @@ export class FormatterService {
     };
   }
 
-  private parseLink(
-    text: string,
-    state: { index: number },
-  ): LinkNode | AstNode[] {
+  private parseLink(text: string, state: { index: number }): LinkNode {
     const end = text.indexOf('}', state.index);
 
     const tag = text.substring(state.index, end + 1);
 
-    const match = tag.match(/\{LINK#([NS])(\d+)\}/);
+    const match = tag.match(/\{LINK#([NSPT])(\d+)\}/);
 
     if (!match) {
       throw new Error(`Invalid link tag: ${tag}`);
     }
 
-    const type = match[1];
+    const type = match[1] as LinkType;
     const id = Number(match[2]);
 
     state.index = end + 1;
 
     const children = this.parseNodes(text, state, '{/LINK}');
 
-    if (type === 'S') {
-      return children;
-    }
-
     return {
       type: 'link',
       id,
+      linkType: type,
       children,
     };
   }
