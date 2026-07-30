@@ -427,7 +427,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10073,
-            "name": "Ceremonial Bladework"
+            "name": "Ceremonial Bladework",
+            "proudSkillGroupId": 1531
         },
         "combat2": {
             "attributes": {
@@ -474,7 +475,8 @@
             },
             "descriptionRaw": "Unleashes a frigid blast, dealing <color=#99FFFFFF>Cryo DMG</color> to opponents in front of Kaeya.\n\n<i>Kaeya seems affable, but his nature is that of unyielding ice.</i>",
             "id": 10074,
-            "name": "Frostgnaw"
+            "name": "Frostgnaw",
+            "proudSkillGroupId": 1532
         },
         "combat3": {
             "attributes": {
@@ -557,7 +559,8 @@
             },
             "descriptionRaw": "Coalescing the frost in the air, Kaeya summons 3 icicles that revolve around him.\nThese icicles will follow the character around and deal <color=#99FFFFFF>Cryo DMG</color> to opponents in their path for the ability's duration.\n\n<i>A winsome smile, genial words, and the merciless hoarfrost that lies beneath... These are all Kaeya's weapons.</i>",
             "id": 10075,
-            "name": "Glacial Waltz"
+            "name": "Glacial Waltz",
+            "proudSkillGroupId": 1539
         },
         "costs": {
             "lvl10": [

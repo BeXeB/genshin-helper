@@ -1190,7 +1190,8 @@
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
                     "id": 100553,
-                    "name": "Foreign Ironwind"
+                    "name": "Foreign Ironwind",
+                    "proudSkillGroupId": 731
                 },
                 "combat2": {
                     "attributes": {
@@ -1309,7 +1310,8 @@
                     },
                     "descriptionRaw": "Grasping the wind's might, you form a vortex of vacuum in your palm, causing continuous <color=#80FFD7FF>Anemo DMG</color> to opponents in front of you.\nThe vacuum vortex explodes when the skill duration ends, causing a greater amount of Anemo DMG over a larger area.\n\n<color=#FFD780FF>Hold</color>\nDMG and AoE will gradually increase.\n\n<color=#FFD780FF>Elemental Absorption</color>\nIf the vortex comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.\n\n<i>You discussed the way to grasp the formless wind with Paimon.</i>",
                     "id": 10067,
-                    "name": "Palm Vortex"
+                    "name": "Palm Vortex",
+                    "proudSkillGroupId": 732
                 },
                 "combat3": {
                     "attributes": {
@@ -1410,7 +1412,8 @@
                     },
                     "descriptionRaw": "Guiding the path of the wind currents, you summon a forward-moving tornado that pulls objects and opponents towards itself, dealing continuous <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Elemental Absorption</color>\nIf the tornado comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.\n\n<i>You and Paimon studied the flapping of a butterfly's wings.</i>",
                     "id": 10068,
-                    "name": "Gust Surge"
+                    "name": "Gust Surge",
+                    "proudSkillGroupId": 739
                 },
                 "costs": {
                     "lvl10": [
@@ -1864,7 +1867,8 @@
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
                     "id": 100557,
-                    "name": "Foreign Fieldcleaver"
+                    "name": "Foreign Fieldcleaver",
+                    "proudSkillGroupId": 1131
                 },
                 "combat2": {
                     "attributes": {
@@ -1911,7 +1915,8 @@
                     },
                     "descriptionRaw": "With a flourish of your blade, you unleash a spray of razor-sharp leaves that go before you and deal <color=#99FF88FF>Dendro DMG</color>.\n\n<i>You and Paimon observed the flowing edges of grass and leaf.</i>",
                     "id": 10117,
-                    "name": "Razorgrass Blade"
+                    "name": "Razorgrass Blade",
+                    "proudSkillGroupId": 1132
                 },
                 "combat3": {
                     "attributes": {
@@ -2046,7 +2051,8 @@
                     },
                     "descriptionRaw": "Calling upon the might of the flora all around you, you create a Lea Lotus Lamp.\nThis Lamp will deal continuous <color=#99FF88FF>Dendro DMG</color> to opponents within its AoE.\n\n<color=#FFD780FF>Lotuslight Transfiguration</color>\nThe Lea Lotus Lamp will undergo the following changes after it comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FFACFFFF>Electro</color>/<color=#FF9999FF>Pyro</color>:\n·<color=#80C0FFFF>Hydro</color>: the Lamp's AoE and the AoE of its attacks are increased.\n·<color=#FFACFFFF>Electro</color>: the Lamp's ATK SPD is increased.\n·<color=#FF9999FF>Pyro</color>: the Lamp will explode after a short delay and then disappear, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\nThe Lea Lotus Lamp can only undergo one Lotuslight Transfiguration in its duration.\n\nOnly one Lamp created by the Traveler can exist at any one time.\n\n<i>You and Paimon studied the sounds of plants that sprout after the rain.</i>",
                     "id": 10118,
-                    "name": "Surgent Manifestation"
+                    "name": "Surgent Manifestation",
+                    "proudSkillGroupId": 1139
                 },
                 "costs": {
                     "lvl10": [
@@ -2500,7 +2506,8 @@
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
                     "id": 100556,
-                    "name": "Foreign Thundershock"
+                    "name": "Foreign Thundershock",
+                    "proudSkillGroupId": 1031
                 },
                 "combat2": {
                     "attributes": {
@@ -2619,7 +2626,8 @@
                     },
                     "descriptionRaw": "Unleashes three swift thunder shadows that deal <color=#FFACFFFF>Electro DMG</color> to opponents and leave an Abundance Amulet behind after hitting an opponent.\n2 Abundance Amulets can be created initially. Using this skill will reset any Abundance Amulets that were generated.\n\n<color=#FFD780FF>Abundance Amulets</color>\nWhen a character is near an Abundance Amulet, they will absorb it and obtain the following effects:\n·Restores Elemental Energy\n·Increases Energy Recharge during the Abundance Amulet's duration.\n\n<i>You and Paimon discuss the paths by which electricity might flow.</i>",
                     "id": 10602,
-                    "name": "Lightning Blade"
+                    "name": "Lightning Blade",
+                    "proudSkillGroupId": 1032
                 },
                 "combat3": {
                     "attributes": {
@@ -2738,7 +2746,8 @@
                     },
                     "descriptionRaw": "You call upon the protection of lightning, knocking nearby opponents back and dealing <color=#FFACFFFF>Electro DMG</color> to them.\n\n<color=#FFD780FF>Lightning Shroud</color>\nWhen your active character's Normal or Charged Attacks hit opponents, they will call Falling Thunder forth, dealing <color=#FFACFFFF>Electro DMG.</color>\nWhen Falling Thunder hits opponents, it will regenerate Energy for that character.\nOne instance of Falling Thunder can be generated every 0.5s.\n\n<i>You and Paimon studied the light that flashes through the clouds.</i>",
                     "id": 10605,
-                    "name": "Bellowing Thunder"
+                    "name": "Bellowing Thunder",
+                    "proudSkillGroupId": 1039
                 },
                 "costs": {
                     "lvl10": [
@@ -3192,7 +3201,8 @@
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
                     "id": 100555,
-                    "name": "Foreign Rockblade"
+                    "name": "Foreign Rockblade",
+                    "proudSkillGroupId": 731
                 },
                 "combat2": {
                     "attributes": {
@@ -3257,7 +3267,8 @@
                     },
                     "descriptionRaw": "You disgorge a meteorite from the depths of the earth, dealing <color=#FFE699FF>AoE Geo DMG</color>.\nThe meteorite is considered a <color=#FFE699FF>Geo Construct</color>, and can be climbed or used to block attacks.\n\n<color=#FFD780FF>Hold</color>\nThis skill's positioning may be adjusted.\n\n<i>You spoke with Paimon about the final destination of falling stars.</i>",
                     "id": 10077,
-                    "name": "Starfell Sword"
+                    "name": "Starfell Sword",
+                    "proudSkillGroupId": 932
                 },
                 "combat3": {
                     "attributes": {
@@ -3340,7 +3351,8 @@
                     },
                     "descriptionRaw": "Energizing the Geo deep underground, you set off expanding shockwaves.\nLaunches surrounding opponents back and deals <color=#FFE699FF>AoE Geo DMG</color>.\nA stone wall is erected at the edges of the shockwave.\nThe stone wall is considered a <color=#FFE699FF>Geo Construct</color>, and may be used to block attacks.\n\n<i>You and Paimon studied the pulse of the mountains.</i>",
                     "id": 10078,
-                    "name": "Wake of Earth"
+                    "name": "Wake of Earth",
+                    "proudSkillGroupId": 939
                 },
                 "costs": {
                     "lvl10": [
@@ -3794,7 +3806,8 @@
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
                     "id": 100552,
-                    "name": "Foreign Stream"
+                    "name": "Foreign Stream",
+                    "proudSkillGroupId": 631
                 },
                 "combat2": {
                     "attributes": {
@@ -3966,7 +3979,8 @@
                     },
                     "descriptionRaw": "Unleashes a torrent that can cleanse the world.\n\n<color=#FFD780FF>Press</color>\nSends a Torrent Surge forward that will deal <color=#80C0FFFF>Hydro DMG</color> to opponents it comes into contact with.\n\n<color=#FFD780FF>Hold</color>\nEnter Aiming Mode and constantly fire off Dewdrops in the direction in which you are aiming, dealing <color=#80C0FFFF>Hydro DMG</color> to opponents they hit.\nWhen the skill ends, it will send a Torrent Surge forward that will deal <color=#80C0FFFF>Hydro DMG</color> to opponents it comes into contact with.\nSuffusion: When using the Hold configuration of this skill, if the Traveler's HP is higher than 50%, the DMG dealt by Dewdrops will increase based on the Traveler's Max HP, and the Traveler will lose a fixed amount of HP every second.\n\n<color=#FFD780FF>Arkhe: Pneuma</color>\nAt certain intervals, after using Torrent Surge, this skill will unleash a Spiritbreath Thorn that pierces opponents, dealing Pneuma-aligned <color=#80C0FFFF>Hydro DMG</color>.\n\n<i>You studied the ripples in the water with Paimon.</i>",
                     "id": 10087,
-                    "name": "Aquacrest Saber"
+                    "name": "Aquacrest Saber",
+                    "proudSkillGroupId": 632
                 },
                 "combat3": {
                     "attributes": {
@@ -4049,7 +4063,8 @@
                     },
                     "descriptionRaw": "Unleashes a slow-moving floating bubble that deals continuous <color=#80C0FFFF>Hydro DMG</color> to nearby opponents.\n\n<i>You studied the ebb and flow of the tides with Paimon.</i>",
                     "id": 10088,
-                    "name": "Rising Waters"
+                    "name": "Rising Waters",
+                    "proudSkillGroupId": 639
                 },
                 "costs": {
                     "lvl10": [
@@ -4503,7 +4518,8 @@
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
                     "id": 100551,
-                    "name": "Foreign Blaze"
+                    "name": "Foreign Blaze",
+                    "proudSkillGroupId": 531
                 },
                 "combat2": {
                     "attributes": {
@@ -4604,7 +4620,8 @@
                     },
                     "descriptionRaw": "Wields a searing flame that can incinerate the very earth. Has different effects when Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\nCall forth flames in a raging blaze. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Blazing Threshold that follows the current active character.\nWhen the Blazing Threshold gets close to opponents, it will deal Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> to nearby opponents at intervals.\n\n<color=#FFD780FF>Hold</color>\nUnleash fire in a composed manner, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to nearby opponents. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Scorching Threshold that follows the current active character.\nWhen the current active character within a Scorching Threshold deals DMG to opponents, the Threshold will launch a Coordinated Attack that deals Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> based on the Traveler's ATK. This effect can occur once every 3s.\n\n<color=#FFD780FF>Nightsoul's Blessing: Traveler</color>\nContinuously consumes Nightsoul points. The Traveler's Nightsoul's Blessing state lasts 12s at maximum, and when their Nightsoul points are exhausted, this state will end. If this Elemental Skill is used again while active, the Traveler's Nightsoul points will be reset to 42 points.\nBlazing and Scorching Thresholds will disappear once the Traveler's Nightsoul's Blessing state ends, and only 1 Blazing or Scorching Threshold summoned by the Traveler themselves can exist at any one time.\n\n<i>Together, you and Paimon watched the shifting colors of the flowing flames.</i>",
                     "id": 10097,
-                    "name": "Flowfire Blade"
+                    "name": "Flowfire Blade",
+                    "proudSkillGroupId": 532
                 },
                 "combat3": {
                     "attributes": {
@@ -4669,7 +4686,8 @@
                     },
                     "descriptionRaw": "Condense the flames into a mark, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to opponents up ahead. The Traveler restores 7 Nightsoul points per second for the next 4s.\n\n<i>Together, you and Paimon studied the principles behind an undying flame.</i>",
                     "id": 10098,
-                    "name": "Plains Scorcher"
+                    "name": "Plains Scorcher",
+                    "proudSkillGroupId": 539
                 },
                 "costs": {
                     "lvl10": [

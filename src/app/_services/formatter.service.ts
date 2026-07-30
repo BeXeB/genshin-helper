@@ -8,6 +8,7 @@ import {
   ItalicNode,
   BoldNode,
   TextNode,
+  ParamNode,
 } from '../_models/ast-nodes';
 
 @Injectable({
@@ -61,6 +62,11 @@ export class FormatterService {
         continue;
       }
 
+      if (text.startsWith('{PARAM#', state.index)) {
+        nodes.push(this.parseParam(text, state));
+        continue;
+      }
+
       if (text[state.index] === '\n') {
         nodes.push({
           type: 'lineBreak',
@@ -83,6 +89,7 @@ export class FormatterService {
       state.index < text.length &&
       !text.startsWith('<color=', state.index) &&
       !text.startsWith('{LINK#', state.index) &&
+      !text.startsWith('{PARAM#', state.index) &&
       !text.startsWith('<i>', state.index) &&
       !text.startsWith('<b>', state.index) &&
       text[state.index] !== '\n' &&
@@ -143,6 +150,34 @@ export class FormatterService {
       id,
       linkType: type,
       children,
+    };
+  }
+
+  private parseParam(text: string, state: { index: number }): ParamNode {
+    const end = text.indexOf('}', state.index);
+
+    const tag = text.substring(state.index, end + 1);
+
+    const match = tag.match(/\{PARAM#P(\d+)\|(\d+)S(\d+)\}/);
+
+    if (!match) {
+      throw new Error(`Invalid param tag: ${tag}`);
+    }
+
+    const idStr = match[1];
+    const groupId = Number(idStr.slice(0, -2));
+    const level = Number(idStr.slice(-2));
+    const paramIndex = Number(match[2]);
+    const multiplier = Number(match[3]);
+
+    state.index = end + 1;
+
+    return {
+      type: 'param',
+      groupId,
+      level,
+      paramIndex,
+      multiplier,
     };
   }
 

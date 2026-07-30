@@ -374,7 +374,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nThrows things that go boom when they hit things! Performs up to 3 explosive attacks, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and deals <color=#FF9999FF>AoE Pyro DMG</color> to opponents after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#FF9999FF>AoE Pyro DMG</color> upon impact with the ground.",
             "id": 10291,
-            "name": "Kaboom!"
+            "name": "Kaboom!",
+            "proudSkillGroupId": 2931
         },
         "combat2": {
             "attributes": {
@@ -491,7 +492,8 @@
             },
             "descriptionRaw": "Jumpy Dumpty is tons of boom-bang-fun! \nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing <color=#FF9999FF>AoE Pyro DMG</color> with every bounce.\n\nOn the third bounce, the bomb splits into many mines.\nThe mines will explode upon contact with opponents, or after a short period of time, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\nStarts with 2 charges.\n\n<i>Jumpy Dumpty is Klee's good friend! She can't help but introduce him to everyone.</i>",
             "id": 10292,
-            "name": "Jumpy Dumpty"
+            "name": "Jumpy Dumpty",
+            "proudSkillGroupId": 2932
         },
         "combat3": {
             "attributes": {
@@ -591,7 +593,8 @@
             },
             "descriptionRaw": "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<i>The knights all believe that Klee must have a lucky star watching over her to have never been hurt by any of her own bombs...</i>",
             "id": 10295,
-            "name": "Sparks 'n' Splash"
+            "name": "Sparks 'n' Splash",
+            "proudSkillGroupId": 2939
         },
         "costs": {
             "lvl10": [

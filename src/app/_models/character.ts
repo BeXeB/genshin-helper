@@ -64,6 +64,7 @@ export type CharacterTalents = {
 
 export type CombatTalent = {
   id: number;
+  proudSkillGroupId: number;
   name: string;
   descriptionRaw: string;
   attributes: {

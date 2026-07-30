@@ -428,7 +428,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 kicks that deal <color=#99FF88FF>Dendro DMG</color> with the ferocity and grace of a striking serpent.\n\n<color=#FFD780FF>Charged Attack</color>\nNefer enters the Slither state, consuming Stamina to move rapidly forward for up to 2.5s. When the skill button is released, the duration ends, or Stamina runs out, Nefer will exit the Slither state and consume a certain amount of additional Stamina to deal <color=#99FF88FF>Dendro DMG</color> to opponents. When in the {LINK#N11220001}<color=#FFD780FF>Shadow Dance</color>{/LINK} state, additional Stamina consumption is decreased.\nAdditionally, unleashing the Elemental Skill <color=#FFD780FF>{LINK#S11222}Senet Strategy: Dance of a Thousand Nights{/LINK}</color> or sprinting while Nefer is in the Slither state will not cause her to exit the state.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the might of Dendro, Nefer plunges towards the ground from mid-air, damaging all opponents in her path and dealing <color=#99FF88FF>AoE Dendro DMG</color> upon impact with the ground.",
             "id": 11221,
-            "name": "Striking Serpent"
+            "name": "Striking Serpent",
+            "proudSkillGroupId": 12231
         },
         "combat2": {
             "attributes": {
@@ -652,7 +653,8 @@
             },
             "descriptionRaw": "A dance that dissolved dynasties, as chilling as a winter's night on the great sea of sand, yet lingering with the tenderness of moonlit gauze. Nefer charges forward, dealing <color=#99FF88FF>AoE Dendro DMG</color> and entering the {LINK#N11220001}<color=#FFD780FF>Shadow Dance</color>{/LINK} state.\nWhile in the Shadow Dance state, if you have at least 1 {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}, Nefer's Charged Attacks will be replaced with the special Charged Attack {LINK#N11220002}<color=#FFD780FF>Phantasm Performance</color>{/LINK}, which will not consume Stamina. When in the Shadow Dance state, Nefer's resistance to interruption is increased.\n\nTwo initial charges.\n\n<i>\"The world is a game in which the pieces remain hidden behind a veil. To avoid falling into a trap, one must collect every piece of information one can. This is the meaning of secrets.\"</i>",
             "id": 11222,
-            "name": "Senet Strategy: Dance of a Thousand Nights"
+            "name": "Senet Strategy: Dance of a Thousand Nights",
+            "proudSkillGroupId": 12232
         },
         "combat3": {
             "attributes": {
@@ -787,7 +789,8 @@
             },
             "descriptionRaw": "Grant \"revelation\" to the mysteries of the false through Thoth's true sight, dealing <color=#99FF88FF>AoE Dendro DMG</color> to opponents ahead. When unleashed, Nefer will consume all {LINK#N11220003}<color=#FFD780FF>Veils of Falsehood</color>{/LINK} to increase the DMG dealt by the current Elemental Burst.\n\n<i>The blessings of the Ibis King proclaimed by the singers of the burning sands are, in truth, more akin to dire curses.</i>",
             "id": 11225,
-            "name": "Sacred Vow: True Eye's Phantasm"
+            "name": "Sacred Vow: True Eye's Phantasm",
+            "proudSkillGroupId": 12239
         },
         "costs": {
             "lvl10": [

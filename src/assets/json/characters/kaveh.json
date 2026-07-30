@@ -428,7 +428,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nUses Mehrak to perform up to 4 consecutive attacks.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10811,
-            "name": "Schematic Setup"
+            "name": "Schematic Setup",
+            "proudSkillGroupId": 8131
         },
         "combat2": {
             "attributes": {
@@ -475,7 +476,8 @@
             },
             "descriptionRaw": "Uses Mehrak's mapping ability for offensive purposes, initiating a radial scan that deals <color=#99FF88FF>AoE Dendro DMG</color>. It will also scan all Dendro Cores in its AoE and cause them to immediately burst.\n\n<i>Mehrak was created through the modification of ancient technology and may have some other functions apart from mapping work...</i>",
             "id": 10812,
-            "name": "Artistic Ingenuity"
+            "name": "Artistic Ingenuity",
+            "proudSkillGroupId": 8132
         },
         "combat3": {
             "attributes": {
@@ -576,7 +578,8 @@
             },
             "descriptionRaw": "Completely unleashes Mehrak's energy and creates a cubic scanned space, dealing <color=#99FF88FF>AoE Dendro DMG</color> to all opponents within it, causing all Dendro Cores in its AoE to immediately burst, and granting Kaveh the following enhanced combat abilities for a specific duration:\n· Increases Kaveh's Normal, Charged, and Plunging Attack AoE, and converts his attack DMG to <color=#99FF88FF>Dendro DMG</color> that cannot be overridden.\n· All Dendro Cores created by all your own party members through Bloom and Lunar-Bloom reactions will deal additional DMG when they burst.\n· Increases Kaveh's resistance to interruption.\nThese effects will be canceled once Kaveh leaves the field.\n\n<i>\"Every building style includes the architect's unique worldview, and from this angle, one can say that the buildings themselves are coalescences of human memories.\"</i>",
             "id": 10815,
-            "name": "Painted Dome"
+            "name": "Painted Dome",
+            "proudSkillGroupId": 8139
         },
         "costs": {
             "lvl10": [

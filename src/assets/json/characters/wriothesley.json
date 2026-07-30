@@ -427,7 +427,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nCoalescing frost about his fist, Wriothesley will unleash powerful <color=#FFD780FF>Repelling Fists</color>, performing up to 5 rapid attacks that deal <color=#99FFFFFF>Cryo DMG</color>.\nApart from this, Normal Attack combo count will not reset for a short time after using Icefang Rush or sprinting.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a fixed amount of Stamina to leap and unleash a <color=#FFD780FF>Vaulting Fist</color>, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing <color=#99FFFFFF>AoE Cryo DMG</color> upon impact.",
             "id": 10861,
-            "name": "Forceful Fists of Frost"
+            "name": "Forceful Fists of Frost",
+            "proudSkillGroupId": 8631
         },
         "combat2": {
             "attributes": {
@@ -578,7 +579,8 @@
             },
             "descriptionRaw": "Adjusting his breathing, rhythm, and pace, Wriothesley sprints forward a short distance, entering the <color=#FFD780FF>Chilling Penalty</color> state and unleashing more powerful attacks than before.\n\n<color=#FFD780FF>Chilling Penalty</color>\n·Increases Wriothesley's interruption resistance\n·When his HP is above 50%, it will enhance the Repelling Fists of <color=#FFD780FF>Normal Attack: Forceful Fists of Frost</color> and increase its DMG. When such an attack hits, it will consume a fixed amount of Wriothesley's HP. HP can be lost this way once every 0.1s.\nThis effect will be canceled should Wriothesley leave the field.\n\n<i>\"Past convictions are past. It is our future choices that we must grasp.\"\n\"Defy your fate, or else this glutton be, to pay your fate's due, by the crime and thee.\"</i>",
             "id": 10862,
-            "name": "Icefang Rush"
+            "name": "Icefang Rush",
+            "proudSkillGroupId": 8632
         },
         "combat3": {
             "attributes": {
@@ -679,7 +681,8 @@
             },
             "descriptionRaw": "Activating his boxing gloves, Wriothesley strikes out with an icy straight, then uses Icicle Impact to cause multiple instances of <color=#99FFFFFF>AoE Cryo DMG</color> in a frontal area.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nAfter Icicle Impact ends, a Surging Blade will descend upon the opponent's position, dealing Ousia-aligned <color=#99FFFFFF>Cryo DMG</color>.\n\n<i>There are some things that even the Duke of the Fortress of Meropide can do little about — for example, complicated paperwork, the trivialities of a supervisor, or even... little kids pasting a whole host of cute but difficult-to-remove stickers on his boxing gloves.</i>",
             "id": 10865,
-            "name": "Darkgold Wolfbite"
+            "name": "Darkgold Wolfbite",
+            "proudSkillGroupId": 8639
         },
         "costs": {
             "lvl10": [

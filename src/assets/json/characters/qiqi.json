@@ -410,7 +410,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
             "id": 10351,
-            "name": "Ancient Sword Art"
+            "name": "Ancient Sword Art",
+            "proudSkillGroupId": 3531
         },
         "combat2": {
             "attributes": {
@@ -617,7 +618,8 @@
             },
             "descriptionRaw": "Using the Icevein Talisman, Qiqi brings forth the Herald of Frost, dealing <color=#99FFFFFF>Cryo DMG</color> to surrounding opponents.\n\n<color=#FFD780FF>Herald of Frost</color>\n·On hit, Qiqi's Normal and Charged Attacks regenerate HP for your own party members and nearby teammates. Healing scales based on Qiqi's ATK.\n·Periodically regenerates your active character's HP.\n·Follows the character around, dealing <color=#99FFFFFF>Cryo DMG</color> to opponents in their path.\n\n<i>I use this to prevent warming and rot... of Dr. Bai's precious ingredients. Yes.</i>",
             "id": 10352,
-            "name": "Adeptus Art: Herald of Frost"
+            "name": "Adeptus Art: Herald of Frost",
+            "proudSkillGroupId": 3532
         },
         "combat3": {
             "attributes": {
@@ -753,7 +755,8 @@
             },
             "descriptionRaw": "Qiqi releases the adeptus power sealed within her body, marking nearby opponents with a Fortune-Preserving Talisman that deals <color=#99FFFFFF>Cryo DMG</color>.\n\n<color=#FFD780FF>Fortune-Preserving Talisman</color>\nWhen opponents affected by this Talisman take DMG, the character that dealt this DMG regenerates HP.\n\n<i>\"I am the Fortune Preserver, the Maiden of Resurrection.\"</i>\n<i>— Qiqi does not remember these words.</i>",
             "id": 10353,
-            "name": "Adeptus Art: Preserver of Fortune"
+            "name": "Adeptus Art: Preserver of Fortune",
+            "proudSkillGroupId": 3539
         },
         "costs": {
             "lvl10": [

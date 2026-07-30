@@ -392,7 +392,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact.",
             "id": 10761,
-            "name": "Parthian Shot"
+            "name": "Parthian Shot",
+            "proudSkillGroupId": 7631
         },
         "combat2": {
             "attributes": {
@@ -509,7 +510,8 @@
             },
             "descriptionRaw": "Faruzan deploys a polyhedron that deals <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents. She will also enter the Manifest Gale state.\nWhile in the Manifest Gale state, Faruzan's next fully charged shot will consume this state and will become a Hurricane Arrow that contains high-pressure currents. This arrow deals <color=#80FFD7FF>Anemo DMG</color> based on the DMG of a fully charged Aimed Shot from \"Normal Attack: Parthian Shot.\"\n\n<color=#FFD780FF>Pressurized Collapse</color>\nThe Hurricane Arrow will apply a Pressurized Collapse effect to the opponent or character hit. This effect will be removed after a short delay, creating a vortex that deals <color=#80FFD7FF>AoE Anemo DMG</color> and pulls nearby objects and opponents in. If the Hurricane Arrow does not hit any opponent or character, it will create a Pressurized Collapse effect at its point of impact.\nThe vortex DMG is considered Elemental Skill DMG.\n\n<i>The winds of truth buffet the spirits of those who seek truth, dispersing the miasma of preconception.</i>",
             "id": 10762,
-            "name": "Wind Realm of Nasamjnin"
+            "name": "Wind Realm of Nasamjnin",
+            "proudSkillGroupId": 7632
         },
         "combat3": {
             "attributes": {
@@ -664,7 +666,8 @@
             },
             "descriptionRaw": "Faruzan deploys a Dazzling Polyhedron that unleashes a Whirlwind Pulse and deals <color=#80FFD7FF>AoE Anemo DMG</color>.\nWhile the Dazzling Polyhedron persists, it will continuously move along a triangular path. Once it reaches each corner of that triangular path, it will unleash 1 more Whirlwind Pulse.\n\n<color=#FFD780FF>Whirlwind Pulse</color>\n·When the Whirlwind Pulse is unleashed, it will apply Perfidious Wind's Bale to nearby opponents, decreasing their <color=#80FFD7FF>Anemo RES</color>.\n·The Whirlwind Pulse will also apply Prayerful Wind's Benefit to all nearby party members when it is unleashed, granting them an <color=#80FFD7FF>Anemo DMG Bonus</color>.\n\n<i>One must have respect for the unknown wisdom that one might find hidden in ancient ruins.</i>",
             "id": 10765,
-            "name": "The Wind's Secret Ways"
+            "name": "The Wind's Secret Ways",
+            "proudSkillGroupId": 7639
         },
         "costs": {
             "lvl10": [

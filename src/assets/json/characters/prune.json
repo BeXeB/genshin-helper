@@ -374,7 +374,8 @@
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks by swinging the Banehunter Oathhammer, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and performs an upward hammer swing, dealing <color=#80FFD7FF>Anemo DMG</color> to opponents in front.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
             "id": 11321,
-            "name": "Badaboom! Hexbuster Hammer"
+            "name": "Badaboom! Hexbuster Hammer",
+            "proudSkillGroupId": 13231
         },
         "combat2": {
             "attributes": {
@@ -439,7 +440,8 @@
             },
             "descriptionRaw": "Unleash the wind's might to defeat the evil witch and save Descartes! Prune strikes the Witchlure Bell with her Banehunter Oathhammer, dealing <color=#80FFD7FF>Anemo DMG</color>.\nIf Prune triggers Swirl on an opponent using this attack, <color=#FFD780FF>Ring-A-Ding-Ding! Hexhunter Chime</color> will be changed to <color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color> for the next 6s.\n\n<color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color>\nPrune's hammer is now enshrouded by the element involved in the previous Swirl reaction, causing {LINK#N11320001}<color=#FFD780FF>Banehunter Oathhammer</color>{/LINK} to undergo Elemental Conversion. When activated with a Press, Prune will leap up and kick the Banehunter Oathhammer forward, dealing Elemental DMG of the corresponding type to opponents in front of her.",
             "id": 11322,
-            "name": "Ring-A-Ding-Ding! Hexhunter Chime"
+            "name": "Ring-A-Ding-Ding! Hexhunter Chime",
+            "proudSkillGroupId": 13232
         },
         "combat3": {
             "attributes": {
@@ -540,7 +542,8 @@
             },
             "descriptionRaw": "Prune gently swings the Witchlure Bell, dealing <color=#80FFD7FF>Anemo DMG</color> to nearby opponents. After this, the Bell will enter the Hunter-Seeker mode.\n\n<color=#FFD780FF>Witchlure Bell: Hunter-Seeker</color>\nIn this mode, the Witchlure Bell will follow the current active character, attacking surrounding opponents at intervals and dealing <color=#80FFD7FF>AoE Anemo DMG</color>. This DMG is considered Elemental Burst DMG.",
             "id": 11325,
-            "name": "The Bell Tolls! The Hunt Is On!"
+            "name": "The Bell Tolls! The Hunt Is On!",
+            "proudSkillGroupId": 13239
         },
         "costs": {
             "lvl10": [

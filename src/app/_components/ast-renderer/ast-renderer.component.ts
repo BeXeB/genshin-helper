@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { AstNode } from '../../_models/ast-nodes';
 import { HyperlinkComponent } from '../hyperlink/hyperlink.component';
+import { ParamValueComponent } from '../param-value/param-value.component';
 
 @Component({
   selector: 'app-ast-renderer',
-  imports: [HyperlinkComponent],
+  imports: [HyperlinkComponent, ParamValueComponent],
   templateUrl: './ast-renderer.component.html',
   styleUrl: './ast-renderer.component.css',
 })
