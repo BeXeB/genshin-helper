@@ -947,26 +947,32 @@
             "constellation": {
                 "c1": {
                     "descriptionRaw": "<color=#FFD780FF>Palm Vortex</color> pulls in opponents and objects within a 5m radius.",
+                    "id": 71,
                     "name": "Raging Vortex"
                 },
                 "c2": {
                     "descriptionRaw": "Increases Energy Recharge by 16%.",
+                    "id": 72,
                     "name": "Uprising Whirlwind"
                 },
                 "c3": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Gust Surge</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 73,
                     "name": "Sweeping Gust"
                 },
                 "c4": {
                     "descriptionRaw": "Reduces DMG taken while casting <color=#FFD780FF>Palm Vortex</color> by 10%.",
+                    "id": 74,
                     "name": "Cherishing Breezes"
                 },
                 "c5": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Palm Vortex</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 75,
                     "name": "Vortex Stellaris"
                 },
                 "c6": {
                     "descriptionRaw": "Targets who take DMG from <color=#FFD780FF>Gust Surge</color> have their <color=#80FFD7FF>Anemo RES</color> decreased by 20%.\nIf an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%.",
+                    "id": 76,
                     "name": "Intertwined Winds"
                 },
                 "images": {
@@ -1183,6 +1189,7 @@
                         }
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+                    "id": 100553,
                     "name": "Foreign Ironwind"
                 },
                 "combat2": {
@@ -1301,6 +1308,7 @@
                         }
                     },
                     "descriptionRaw": "Grasping the wind's might, you form a vortex of vacuum in your palm, causing continuous <color=#80FFD7FF>Anemo DMG</color> to opponents in front of you.\nThe vacuum vortex explodes when the skill duration ends, causing a greater amount of Anemo DMG over a larger area.\n\n<color=#FFD780FF>Hold</color>\nDMG and AoE will gradually increase.\n\n<color=#FFD780FF>Elemental Absorption</color>\nIf the vortex comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.\n\n<i>You discussed the way to grasp the formless wind with Paimon.</i>",
+                    "id": 10067,
                     "name": "Palm Vortex"
                 },
                 "combat3": {
@@ -1401,6 +1409,7 @@
                         }
                     },
                     "descriptionRaw": "Guiding the path of the wind currents, you summon a forward-moving tornado that pulls objects and opponents towards itself, dealing continuous <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Elemental Absorption</color>\nIf the tornado comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.\n\n<i>You and Paimon studied the flapping of a butterfly's wings.</i>",
+                    "id": 10068,
                     "name": "Gust Surge"
                 },
                 "costs": {
@@ -1593,14 +1602,17 @@
                 },
                 "passive1": {
                     "descriptionRaw": "The last hit of a Normal Attack combo unleashes a wind blade, dealing 60% of ATK as <color=#80FFD7FF>Anemo DMG</color> to all opponents in its path.",
+                    "id": 72101,
                     "name": "Slitting Wind"
                 },
                 "passive2": {
                     "descriptionRaw": "<color=#FFD780FF>Palm Vortex</color> kills regenerate 2% HP for 5s.\nThis effect can only occur once every 5s.",
+                    "id": 72201,
                     "name": "Second Wind"
                 },
                 "passive3": {
                     "descriptionRaw": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\n\nAdditionally, when <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#99FFFFFF>Cryo</color>, or <color=#FFACFFFF>Electro</color> attacks from nearby party members hit opponents, Traveler will receive 1 stack of Blade of the Dawn Breeze. Each Elemental Type can grant 1 Blade of the Dawn Breeze stack. After obtaining at least 2 stacks of Blade of the Dawn Breeze, performing a Charged Attack will consume all stacks of Blade of the Dawn Breeze and transform into the special <color=#FFD780FF>Charged Attack: Whirlwind</color>.\n\n<color=#FFD780FF>Charged Attack: Whirlwind</color>\n· Each Charged Attack hit deals increased <color=#80FFD7FF>Anemo DMG</color>. Increase in DMG is equal to 60% of Traveler's ATK.\n· Every time a Blade of the Dawn Breeze of a certain elemental type is consumed, a Blade Wind matching this elemental type will also be summoned, dealing elemental DMG equal to 50% of Traveler's ATK. This DMG is considered Charged Attack DMG.\n· <color=#FFD780FF>Charged Attack: Whirlwind</color> can be triggered up to once every 15s.\n· For the duration of <color=#FFD780FF>Charged Attack: Whirlwind</color>, no Blade of the Dawn Breeze will be obtained.",
+                    "id": 75101,
                     "name": "Foreign Windwrath"
                 }
             }
@@ -1609,26 +1621,32 @@
             "constellation": {
                 "c1": {
                     "descriptionRaw": "After <color=#FFD780FF>Razorgrass Blade</color> hits an opponent, it will regenerate 3.5 Energy for the Traveler.",
+                    "id": 111,
                     "name": "Symbiotic Creeper"
                 },
                 "c2": {
                     "descriptionRaw": "<color=#FFD780FF>Lea Lotus Lamp</color>'s duration is increased by 3s.",
+                    "id": 112,
                     "name": "Green Resilience"
                 },
                 "c3": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Razorgrass Blade</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 113,
                     "name": "Whirling Weeds"
                 },
                 "c4": {
                     "descriptionRaw": "After the <color=#FFD780FF>Lea Lotus Lamp</color> triggers a Lotuslight Transfiguration, it will obtain 5 stacks of the Overflowing Lotuslight effect from the Ascension Talent \"Verdant Overgrowth.\"\nYou must first unlock the Ascension Talent \"Verdant Overgrowth.\"",
+                    "id": 114,
                     "name": "Treacle Grass"
                 },
                 "c5": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Surgent Manifestation</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 115,
                     "name": "Viridian Transience"
                 },
                 "c6": {
                     "descriptionRaw": "The <color=#99FF88FF>Dendro DMG Bonus</color> of the character under the effect of Overflowing Lotuslight as created by the <color=#FFD780FF>Lea Lotus Lamp</color> is increased by 12%. If the Lamp has experienced a Lotuslight Transfiguration previously, the character will also gain 12% DMG Bonus for the corresponding element.",
+                    "id": 116,
                     "name": "Withering Aggregation"
                 },
                 "images": {
@@ -1845,6 +1863,7 @@
                         }
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+                    "id": 100557,
                     "name": "Foreign Fieldcleaver"
                 },
                 "combat2": {
@@ -1891,6 +1910,7 @@
                         }
                     },
                     "descriptionRaw": "With a flourish of your blade, you unleash a spray of razor-sharp leaves that go before you and deal <color=#99FF88FF>Dendro DMG</color>.\n\n<i>You and Paimon observed the flowing edges of grass and leaf.</i>",
+                    "id": 10117,
                     "name": "Razorgrass Blade"
                 },
                 "combat3": {
@@ -2025,6 +2045,7 @@
                         }
                     },
                     "descriptionRaw": "Calling upon the might of the flora all around you, you create a Lea Lotus Lamp.\nThis Lamp will deal continuous <color=#99FF88FF>Dendro DMG</color> to opponents within its AoE.\n\n<color=#FFD780FF>Lotuslight Transfiguration</color>\nThe Lea Lotus Lamp will undergo the following changes after it comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FFACFFFF>Electro</color>/<color=#FF9999FF>Pyro</color>:\n·<color=#80C0FFFF>Hydro</color>: the Lamp's AoE and the AoE of its attacks are increased.\n·<color=#FFACFFFF>Electro</color>: the Lamp's ATK SPD is increased.\n·<color=#FF9999FF>Pyro</color>: the Lamp will explode after a short delay and then disappear, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\nThe Lea Lotus Lamp can only undergo one Lotuslight Transfiguration in its duration.\n\nOnly one Lamp created by the Traveler can exist at any one time.\n\n<i>You and Paimon studied the sounds of plants that sprout after the rain.</i>",
+                    "id": 10118,
                     "name": "Surgent Manifestation"
                 },
                 "costs": {
@@ -2217,14 +2238,17 @@
                 },
                 "passive1": {
                     "descriptionRaw": "<color=#FFD780FF>Lea Lotus Lamp</color> will obtain one level of Overflowing Lotuslight every second it is on the field, increasing the Elemental Mastery of active character(s) within its AoE by 6. Overflowing Lotuslight has a maximum of 10 stacks.",
+                    "id": 112101,
                     "name": "Verdant Overgrowth"
                 },
                 "passive2": {
                     "descriptionRaw": "Every point of Elemental Mastery the Traveler possesses increases the DMG dealt by <color=#FFD780FF>Razorgrass Blade</color> by 0.15% and the DMG dealt by <color=#FFD780FF>Surgent Manifestation</color> by 0.1%.",
+                    "id": 112201,
                     "name": "Verdant Luxury"
                 },
                 "passive3": {
                     "descriptionRaw": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}. \n\nAdditionally, when Dendro Cores (including Bountiful Cores, Seeds of Deceit) appear nearby on the field, or when the party obtains Verdant Dew, Traveler will receive 1 stack of Blade of Verdant Viridis. These two methods can each grant the Traveler up to 1 stack of Blade of Verdant Viridis every 4s, max 3 stacks. After obtaining 3 stacks of Blade of Verdant Viridis, performing a Charged Attack will consume all stacks of Blade of Verdant Viridis and transform into the special <color=#FFD780FF>Charged Attack: Verdessence</color>.\n\n<color=#FFD780FF>Charged Attack: Verdessence</color>\n· Each Charged Attack hit deals increased <color=#99FF88FF>Dendro DMG</color>. The increase in DMG is equal to 80% of Traveler's ATK. Two <color=#FFD780FF>Vinecores</color> will also be created on the spot, which will explode after 4/8s respectively, inflicting <color=#99FF88FF>Dendro DMG</color> equal to 120% of Traveler's ATK. This DMG is considered Charged Attack DMG.\n· <color=#FFD780FF>Charged Attack: Verdessence</color> can be triggered up to once every 15s.",
+                    "id": 115101,
                     "name": "Foreign Verdalume"
                 }
             }
@@ -2233,26 +2257,32 @@
             "constellation": {
                 "c1": {
                     "descriptionRaw": "The number of Abundance Amulets that can be generated using <color=#FFD780FF>Lightning Blade</color> is increased to 3.",
+                    "id": 101,
                     "name": "Spring Thunder of Fertility"
                 },
                 "c2": {
                     "descriptionRaw": "When Falling Thunder created by <color=#FFD780FF>Bellowing Thunder</color> hits an opponent, it will decrease their <color=#FFACFFFF>Electro RES</color> by 15% for 8s.",
+                    "id": 102,
                     "name": "Violet Vehemence"
                 },
                 "c3": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Bellowing Thunder</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 103,
                     "name": "Distant Crackling"
                 },
                 "c4": {
                     "descriptionRaw": "When a character obtains Abundance Amulets generated by <color=#FFD780FF>Lightning Blade</color>, if this character's Energy is less than 35%, the Energy restored by the Abundance Amulets is increased by 100%.",
+                    "id": 104,
                     "name": "Fickle Cloudstrike"
                 },
                 "c5": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Lightning Blade</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 105,
                     "name": "Clamor in the Wilds"
                 },
                 "c6": {
                     "descriptionRaw": "Every 2 Falling Thunder attacks triggered by <color=#FFD780FF>Bellowing Thunder</color> will greatly increase the DMG dealt by the next Falling Thunder, which will deal 200% of its original DMG and will restore an additional 1 Energy to the current character.",
+                    "id": 106,
                     "name": "World-Shaker"
                 },
                 "images": {
@@ -2469,6 +2499,7 @@
                         }
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+                    "id": 100556,
                     "name": "Foreign Thundershock"
                 },
                 "combat2": {
@@ -2587,6 +2618,7 @@
                         }
                     },
                     "descriptionRaw": "Unleashes three swift thunder shadows that deal <color=#FFACFFFF>Electro DMG</color> to opponents and leave an Abundance Amulet behind after hitting an opponent.\n2 Abundance Amulets can be created initially. Using this skill will reset any Abundance Amulets that were generated.\n\n<color=#FFD780FF>Abundance Amulets</color>\nWhen a character is near an Abundance Amulet, they will absorb it and obtain the following effects:\n·Restores Elemental Energy\n·Increases Energy Recharge during the Abundance Amulet's duration.\n\n<i>You and Paimon discuss the paths by which electricity might flow.</i>",
+                    "id": 10602,
                     "name": "Lightning Blade"
                 },
                 "combat3": {
@@ -2705,6 +2737,7 @@
                         }
                     },
                     "descriptionRaw": "You call upon the protection of lightning, knocking nearby opponents back and dealing <color=#FFACFFFF>Electro DMG</color> to them.\n\n<color=#FFD780FF>Lightning Shroud</color>\nWhen your active character's Normal or Charged Attacks hit opponents, they will call Falling Thunder forth, dealing <color=#FFACFFFF>Electro DMG.</color>\nWhen Falling Thunder hits opponents, it will regenerate Energy for that character.\nOne instance of Falling Thunder can be generated every 0.5s.\n\n<i>You and Paimon studied the light that flashes through the clouds.</i>",
+                    "id": 10605,
                     "name": "Bellowing Thunder"
                 },
                 "costs": {
@@ -2897,14 +2930,17 @@
                 },
                 "passive1": {
                     "descriptionRaw": "When another nearby character in the party obtains an Abundance Amulet created by <color=#FFD780FF>Lightning Blade</color>, <color=#FFD780FF>Lightning Blade's</color> CD is decreased by 1.5s.",
+                    "id": 102101,
                     "name": "Thunderflash"
                 },
                 "passive2": {
                     "descriptionRaw": "Increases the Energy Recharge effect granted by <color=#FFD780FF>Lightning Blade</color>'s Abundance Amulet by 10% of the Traveler's Energy Recharge.",
+                    "id": 102201,
                     "name": "Resounding Roar"
                 },
                 "passive3": {
                     "descriptionRaw": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\n\nIn addition, when nearby party members unleash an Elemental Burst, Traveler will receive 1 stack of Blade of Resounding Thunder, max 3 stacks. After obtaining 3 stacks of Blade of Resounding Thunder, performing a Charged Attack will consume all stacks of Blade of Resounding Thunder and transform into the special <color=#FFD780FF>Charged Attack: Detonate</color>.\n\n<color=#FFD780FF>Charged Attack: Detonate</color>\n· Each Charged Attack hit deals increased <color=#FFACFFFF>Electro DMG</color>. Increase in DMG is equal to 100% of Traveler's ATK. \n· 3s after hitting the enemy, 1 additional lightning strike will be triggered, dealing <color=#FFACFFFF>Electro DMG</color> equal to 200% of Traveler's ATK. 1 Abundance Amulet will also be created. This DMG is considered Charged Attack DMG.\n· <color=#FFD780FF>Charged Attack: Detonate</color> can be triggered up to once every 15s.",
+                    "id": 105101,
                     "name": "Foreign Thundertrail"
                 }
             }
@@ -2913,26 +2949,32 @@
             "constellation": {
                 "c1": {
                     "descriptionRaw": "Party members within the radius of <color=#FFD780FF>Wake of Earth</color> have their CRIT Rate increased by 10% and have increased resistance against interruption.",
+                    "id": 91,
                     "name": "Invincible Stonewall"
                 },
                 "c2": {
                     "descriptionRaw": "When the meteorite created by <color=#FFD780FF>Starfell Sword</color> is destroyed, it will also explode, dealing additional <color=#FFE699FF>AoE Geo DMG</color> equal to the amount of damage dealt by Starfell Sword.",
+                    "id": 92,
                     "name": "Rockcore Meltdown"
                 },
                 "c3": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Wake of Earth</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 93,
                     "name": "Will of the Rock"
                 },
                 "c4": {
                     "descriptionRaw": "The shockwave triggered by <color=#FFD780FF>Wake of Earth</color> regenerates 5 Energy for every opponent hit.\nA maximum of 25 Energy can be regenerated in this manner at any one time.",
+                    "id": 94,
                     "name": "Reaction Force"
                 },
                 "c5": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Starfell Sword</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 95,
                     "name": "Meteorite Impact"
                 },
                 "c6": {
                     "descriptionRaw": "The barrier created by <color=#FFD780FF>Wake of Earth</color> lasts 5s longer.\nThe meteorite created by <color=#FFD780FF>Starfell Sword</color> lasts 10s longer.",
+                    "id": 96,
                     "name": "Everlasting Boulder"
                 },
                 "images": {
@@ -3149,6 +3191,7 @@
                         }
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+                    "id": 100555,
                     "name": "Foreign Rockblade"
                 },
                 "combat2": {
@@ -3213,6 +3256,7 @@
                         }
                     },
                     "descriptionRaw": "You disgorge a meteorite from the depths of the earth, dealing <color=#FFE699FF>AoE Geo DMG</color>.\nThe meteorite is considered a <color=#FFE699FF>Geo Construct</color>, and can be climbed or used to block attacks.\n\n<color=#FFD780FF>Hold</color>\nThis skill's positioning may be adjusted.\n\n<i>You spoke with Paimon about the final destination of falling stars.</i>",
+                    "id": 10077,
                     "name": "Starfell Sword"
                 },
                 "combat3": {
@@ -3295,6 +3339,7 @@
                         }
                     },
                     "descriptionRaw": "Energizing the Geo deep underground, you set off expanding shockwaves.\nLaunches surrounding opponents back and deals <color=#FFE699FF>AoE Geo DMG</color>.\nA stone wall is erected at the edges of the shockwave.\nThe stone wall is considered a <color=#FFE699FF>Geo Construct</color>, and may be used to block attacks.\n\n<i>You and Paimon studied the pulse of the mountains.</i>",
+                    "id": 10078,
                     "name": "Wake of Earth"
                 },
                 "costs": {
@@ -3487,14 +3532,17 @@
                 },
                 "passive1": {
                     "descriptionRaw": "Reduces <color=#FFD780FF>Starfell Sword</color>'s CD by 2s.",
+                    "id": 92101,
                     "name": "Shattered Darkrock"
                 },
                 "passive2": {
                     "descriptionRaw": "The final hit of a Normal Attack combo triggers a collapse, dealing 60% of ATK as <color=#FFE699FF>AoE Geo DMG</color>.",
+                    "id": 92201,
                     "name": "Frenzied Rockslide"
                 },
                 "passive3": {
                     "descriptionRaw": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\n\nAdditionally, when nearby party members become protected by a shield, when the shield is replaced for any reason, or when <color=#FFE699FF>Geo Constructs</color> are created, the Traveler will receive 1 stack of Blade of Archaic Petra, max 3 stacks. Up to 1 stack may be obtained every second in this way. After obtaining 3 stacks of Blade of Archaic Petra, performing a Charged Attack will consume all stacks of Blade of Archaic Petra and transform into the special <color=#FFD780FF>Charged Attack: Rockfell</color>.\n\n<color=#FFD780FF>Charged Attack: Rockfell</color>\n· Each Charged Attack hit deals increased <color=#FFE699FF>Geo DMG</color>. Increase in DMG is equal to 120% of Traveler's ATK.\n· For 15s after hitting an opponent, nearby party members will have their shield strength temporarily increased by 20%.\n· <color=#FFD780FF>Charged Attack: Rockfell</color> can be triggered up to once every 15s.",
+                    "id": 95101,
                     "name": "Foreign Adamantine"
                 }
             }
@@ -3503,26 +3551,32 @@
             "constellation": {
                 "c1": {
                     "descriptionRaw": "Picking up a Sourcewater Droplet will restore 2 Energy to the Traveler.\nYou must first unlock the Ascension Talent \"Spotless Waters.\"",
+                    "id": 61,
                     "name": "Swelling Lake"
                 },
                 "c2": {
                     "descriptionRaw": "The Movement SPD of <color=#FFD780FF>Rising Waters</color>' bubble will be decreased by 30%, and its duration increased by 3s.",
+                    "id": 62,
                     "name": "Trickling Purity"
                 },
                 "c3": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Aquacrest Saber</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 63,
                     "name": "Turbulent Ripples"
                 },
                 "c4": {
                     "descriptionRaw": "When using <color=#FFD780FF>Aquacrest Saber</color>, an Aquacrest Aegis that can absorb 10% of the Traveler's Max HP in DMG will be created and will absorb <color=#80C0FFFF>Hydro DMG</color> with 250% effectiveness. It will persist until the Traveler finishes using the skill.\nOnce every 2s, after a Dewdrop hits an opponent, if the Traveler is being protected by Aquacrest Aegis, the DMG Absorption of the Aegis will be restored to 10% of the Traveler's Max HP. If the Traveler is not presently being protected by an Aegis, one will be redeployed.",
+                    "id": 64,
                     "name": "Pouring Descent"
                 },
                 "c5": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Rising Waters</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 65,
                     "name": "Churning Whirlpool"
                 },
                 "c6": {
                     "descriptionRaw": "When the Traveler picks up a Sourcewater Droplet, they will restore HP to a nearby party member with the lowest remaining HP percentage based on 6% of said member's Max HP.",
+                    "id": 66,
                     "name": "Tides of Justice"
                 },
                 "images": {
@@ -3739,6 +3793,7 @@
                         }
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+                    "id": 100552,
                     "name": "Foreign Stream"
                 },
                 "combat2": {
@@ -3910,6 +3965,7 @@
                         }
                     },
                     "descriptionRaw": "Unleashes a torrent that can cleanse the world.\n\n<color=#FFD780FF>Press</color>\nSends a Torrent Surge forward that will deal <color=#80C0FFFF>Hydro DMG</color> to opponents it comes into contact with.\n\n<color=#FFD780FF>Hold</color>\nEnter Aiming Mode and constantly fire off Dewdrops in the direction in which you are aiming, dealing <color=#80C0FFFF>Hydro DMG</color> to opponents they hit.\nWhen the skill ends, it will send a Torrent Surge forward that will deal <color=#80C0FFFF>Hydro DMG</color> to opponents it comes into contact with.\nSuffusion: When using the Hold configuration of this skill, if the Traveler's HP is higher than 50%, the DMG dealt by Dewdrops will increase based on the Traveler's Max HP, and the Traveler will lose a fixed amount of HP every second.\n\n<color=#FFD780FF>Arkhe: Pneuma</color>\nAt certain intervals, after using Torrent Surge, this skill will unleash a Spiritbreath Thorn that pierces opponents, dealing Pneuma-aligned <color=#80C0FFFF>Hydro DMG</color>.\n\n<i>You studied the ripples in the water with Paimon.</i>",
+                    "id": 10087,
                     "name": "Aquacrest Saber"
                 },
                 "combat3": {
@@ -3992,6 +4048,7 @@
                         }
                     },
                     "descriptionRaw": "Unleashes a slow-moving floating bubble that deals continuous <color=#80C0FFFF>Hydro DMG</color> to nearby opponents.\n\n<i>You studied the ebb and flow of the tides with Paimon.</i>",
+                    "id": 10088,
                     "name": "Rising Waters"
                 },
                 "costs": {
@@ -4184,14 +4241,17 @@
                 },
                 "passive1": {
                     "descriptionRaw": "After the Dewdrop fired by the Hold Mode of the <color=#FFD780FF>Aquacrest Saber</color> hits an opponent, a Sourcewater Droplet will be generated near to the Traveler. If the Traveler picks it up, they will restore 7% HP.\n1 Droplet can be created this way every second, and each use of Aquacrest Saber can create 4 Droplets at most.",
+                    "id": 62101,
                     "name": "Spotless Waters"
                 },
                 "passive2": {
                     "descriptionRaw": "If HP has been consumed via Suffusion while using the Hold Mode <color=#FFD780FF>Aquacrest Saber</color>, the Torrent Surge at the skill's end will deal Bonus DMG equal to 45% of the total HP the Traveler has consumed in this skill use via Suffusion.\nThe maximum DMG Bonus that can be gained this way is 5,000.",
+                    "id": 62201,
                     "name": "Clear Waters"
                 },
                 "passive3": {
                     "descriptionRaw": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\n\nAdditionally, when nearby party members' current HP increases or decreases by 5%, Traveler will receive 1 stack of Blade of Many Waters. You can gain 1 stack of Blade of Many Waters this way once every 4s, max 3 stacks. After obtaining 3 stacks of Blade of Many Waters, performing a Charged Attack will consume all stacks of Blade of Many Waters and transform into the special <color=#FFD780FF>Charged Attack: Tidebound</color>.\n\n<color=#FFD780FF>Charged Attack: Tidebound</color>\n· Each Charged Attack hit deals increased <color=#80C0FFFF>Hydro DMG</color>. Increase in DMG is equal to 150% of Traveler's ATK,\n· When Traveler's HP is no less than 50%, 10% of Traveler's Max HP will be consumed to increase DMG inflicted by each Charged Attack hit by 100% of Traveler's ATK.\n· When Traveler's HP is lower than 50%, one instance of healing equal to 25% of Traveler's Max HP will be restored upon hitting an enemy.\n· <color=#FFD780FF>Charged Attack: Tidebound</color> can be triggered up to once every 15s.",
+                    "id": 65101,
                     "name": "Foreign Aqualis"
                 }
             }
@@ -4200,26 +4260,32 @@
             "constellation": {
                 "c1": {
                     "descriptionRaw": "While <color=#FFD780FF>Blazing Threshold</color> or <color=#FFD780FF>Scorching Threshold</color> are active, the current active character deals 6% increased DMG. If said character is in the Nightsoul's Blessing state, they will deal an additional 9% DMG.",
+                    "id": 51,
                     "name": "Starfire's Flowing Light"
                 },
                 "c2": {
                     "descriptionRaw": "Within 12s of using the Elemental Skill <color=#FFD780FF>Flowfire Blade</color>, after nearby party members trigger a <color=#FF9999FF>Pyro-related reaction</color> on an opponent, the Traveler will regain 14 Nightsoul points. Each use of <color=#FFD780FF>Flowfire Blade</color> will restore at most 28 Nightsoul points in this way.",
+                    "id": 52,
                     "name": "Ever-Lit Candle"
                 },
                 "c3": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Flowfire Blade</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 53,
                     "name": "Relayed Beacon"
                 },
                 "c4": {
                     "descriptionRaw": "After using the Elemental Burst <color=#FFD780FF>Plains Scorcher</color>, the Traveler gains 20% <color=#FF9999FF>Pyro DMG Bonus</color> for 9s.",
+                    "id": 54,
                     "name": "Ravaging Flame"
                 },
                 "c5": {
                     "descriptionRaw": "Increases the Level of <color=#FFD780FF>Plains Scorcher</color> by 3.\nMaximum upgrade level is 15.",
+                    "id": 55,
                     "name": "The Fire Inextinguishable"
                 },
                 "c6": {
                     "descriptionRaw": "While in the Nightsoul's Blessing state, the Traveler's Normal, Charged, and Plunging Attacks will be converted to Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> that cannot be overridden, and the CRIT DMG of these attacks is increased by 40%.",
+                    "id": 56,
                     "name": "The Sacred Flame Imperishable"
                 },
                 "images": {
@@ -4436,6 +4502,7 @@
                         }
                     },
                     "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+                    "id": 100551,
                     "name": "Foreign Blaze"
                 },
                 "combat2": {
@@ -4536,6 +4603,7 @@
                         }
                     },
                     "descriptionRaw": "Wields a searing flame that can incinerate the very earth. Has different effects when Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\nCall forth flames in a raging blaze. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Blazing Threshold that follows the current active character.\nWhen the Blazing Threshold gets close to opponents, it will deal Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> to nearby opponents at intervals.\n\n<color=#FFD780FF>Hold</color>\nUnleash fire in a composed manner, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to nearby opponents. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Scorching Threshold that follows the current active character.\nWhen the current active character within a Scorching Threshold deals DMG to opponents, the Threshold will launch a Coordinated Attack that deals Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> based on the Traveler's ATK. This effect can occur once every 3s.\n\n<color=#FFD780FF>Nightsoul's Blessing: Traveler</color>\nContinuously consumes Nightsoul points. The Traveler's Nightsoul's Blessing state lasts 12s at maximum, and when their Nightsoul points are exhausted, this state will end. If this Elemental Skill is used again while active, the Traveler's Nightsoul points will be reset to 42 points.\nBlazing and Scorching Thresholds will disappear once the Traveler's Nightsoul's Blessing state ends, and only 1 Blazing or Scorching Threshold summoned by the Traveler themselves can exist at any one time.\n\n<i>Together, you and Paimon watched the shifting colors of the flowing flames.</i>",
+                    "id": 10097,
                     "name": "Flowfire Blade"
                 },
                 "combat3": {
@@ -4600,6 +4668,7 @@
                         }
                     },
                     "descriptionRaw": "Condense the flames into a mark, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to opponents up ahead. The Traveler restores 7 Nightsoul points per second for the next 4s.\n\n<i>Together, you and Paimon studied the principles behind an undying flame.</i>",
+                    "id": 10098,
                     "name": "Plains Scorcher"
                 },
                 "costs": {
@@ -4792,14 +4861,17 @@
                 },
                 "passive1": {
                     "descriptionRaw": "When the Traveler has over 20 Nightsoul points, the attack AoE of the Blazing and Scorching Thresholds from the Elemental Skill <color=#FFD780FF>Flowfire Blade</color> after they hit opponents is increased.",
+                    "id": 52101,
                     "name": "True Flame of Incineration"
                 },
                 "passive2": {
                     "descriptionRaw": "After the current active character inside a <color=#FFD780FF>Blazing Threshold</color> or <color=#FFD780FF>Scorching Threshold</color> triggers a <color=#FF9999FF>Pyro-related reaction</color>, the Traveler will regain 5 Energy. This can occur once every 12s. Additionally, when a nearby party member triggers a Nightsoul Burst, the Traveler will regain 4 Energy.",
+                    "id": 52201,
                     "name": "Embers Unspent"
                 },
                 "passive3": {
                     "descriptionRaw": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\n\nAdditionally, when nearby party members trigger Nightsoul Burst, Traveler will receive 1 stack of Blade of the Sacred Flame, max 2 stacks. After obtaining 2 stacks of Blade of the Sacred Flame, performing a Charged Attack will consume all stacks of Blade of the Sacred Flame and transform into a special <color=#FFD780FF>Charged Attack: Inferno</color>.\n\n<color=#FFD780FF>Charged Attack: Inferno</color>\n· Each Charged Attack hit deals increased, Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color>. Increase in DMG is equal to 200% of Traveler's ATK.\n· <color=#FFD780FF>Charged Attack: Inferno</color> can be triggered up to once every 15s.",
+                    "id": 55101,
                     "name": "Foreign Starfire"
                 }
             }

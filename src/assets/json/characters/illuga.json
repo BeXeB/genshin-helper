@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "After Illuga triggers a <color=#FFE699FF>Geo-related Reaction</color> on the field, he will regain 12 Elemental Energy. This effect can be triggered at most once every 15s.",
+            "id": 1271,
             "name": "Vigilant Sentinel"
         },
         "c2": {
             "descriptionRaw": "When Elemental Burst {LINK#S11275}<color=#FFD780FF>Shadowless Reflection</color>{/LINK}'s Haunted Night's Oriole-Song effect is active, for every 7 stacks of {LINK#N11270001}<color=#FFD780FF>Nightingale's Song</color>{/LINK} consumed, Illuga will summon Aedon, dealing a single instance of <color=#FFE699FF>Geo DMG</color> to 1 nearby opponent. The DMG dealt is based on 400% of Illuga's Elemental Mastery and 200% of his DEF. This DMG is considered Elemental Burst DMG.",
+            "id": 1272,
             "name": "Elk With Fanged Antlers"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of Elemental Burst <color=#FFD780FF>{LINK#S11275}Shadowless Reflection{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1273,
             "name": "Earthshaking Maw"
         },
         "c4": {
             "descriptionRaw": "When Elemental Burst <color=#FFD780FF>{LINK#S11275}Shadowless Reflection{/LINK}</color>'s Haunted Night's Oriole-Song effect is active, nearby active party members will have their DEF increased by 200.",
+            "id": 1274,
             "name": "Solarhunting Wolf"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of Elemental Skill <color=#FFD780FF>{LINK#S11272}Dawnbearing Songbird{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1275,
             "name": "Hurricane Steed"
         },
         "c6": {
             "descriptionRaw": "Enhances the Lightkeeper's Oath effect of the Ascension Talent <color=#FFD780FF>{LINK#P1272101}Torchforger's Covenant{/LINK}</color>: For <color=#FFE699FF>Geo DMG</color> dealt to opponents, CRIT Rate is increased by 10%, CRIT DMG is increased by 30%.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam:</color>\nWhen characters are affected by Lightkeeper's Oath, Elemental Mastery is increased by 80.\nYou must first unlock the Ascension Talent \"<color=#FFD780FF>Torchforger's Covenant</color>.\"",
+            "id": 1276,
             "name": "Nightmare Orioles"
         },
         "images": {
@@ -402,6 +408,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 11271,
             "name": "Oathkeeper's Spear"
         },
         "combat2": {
@@ -500,6 +507,7 @@
                 }
             },
             "descriptionRaw": "Summons the trusty messenger bird, \"Aedon.\" Different effects are produced depending on whether the skill is Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\nAedon dashes towards enemies in front, dealing <color=#FFE699FF>Geo DMG</color> to enemies it comes into contact with.\n\n<color=#FFD780FF>Hold</color>\nEnter aiming mode, and command Aedon to dash towards opponents being aimed at, dealing <color=#FFE699FF>Geo DMG</color> to opponents it comes into contact with.",
+            "id": 11272,
             "name": "Dawnbearing Songbird"
         },
         "combat3": {
@@ -671,6 +679,7 @@
                 }
             },
             "descriptionRaw": "Light the lamp, dealing <color=#FFE699FF>AoE Geo DMG</color>, and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of {LINK#N11270001}<color=#FFD780FF>Nightingale's Song</color>{/LINK}. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal <color=#FFE699FF>Geo DMG</color> to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further.\nWhen <color=#FFE699FF>Geo DMG</color> dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending on how many opponents are hit.\n\nAdditionally, if there are <color=#FFE699FF>Geo Constructs</color> created by nearby party members on the battlefield while Illuga unleashes his Elemental Burst, or when nearby party members create <color=#FFE699FF>Geo Constructs</color> while Haunted Night's Oriole-Song is active, every <color=#FFE699FF>Geo Construct</color> on the battlefield will allow Illuga to gain 5 additional stacks of Nightingale's Song. Within 20s after unleashing his Elemental Burst, Illuga can gain a maximum of 15 additional stacks of Nightingale's Song this way.\n\nWhen all stacks of Nightingale's Song have been consumed, or when the state's duration ends, the Haunted Night's Oriole-Song effect will end.",
+            "id": 11275,
             "name": "Shadowless Reflection"
         },
         "costs": {
@@ -864,18 +873,22 @@
         },
         "passive1": {
             "descriptionRaw": "After unleashing Elemental Skill <color=#FFD780FF>{LINK#S11272}Dawnbearing Songbird{/LINK}</color> or Elemental Burst <color=#FFD780FF>{LINK#S11275}Shadowless Reflection{/LINK}</color>, other nearby party members will gain the Lightkeeper's Oath effect for 20s: For <color=#FFE699FF>Geo DMG</color> dealt to opponents, CRIT Rate increases by 5% and CRIT DMG increases by 10%.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color> \nParty members affected by the Lightkeeper's Oath effect have their Elemental Mastery increased by 50.",
+            "id": 1272101,
             "name": "Torchforger's Covenant"
         },
         "passive2": {
             "descriptionRaw": "{LINK#N11270001}<color=#FFD780FF>Nightingale's Song</color>{/LINK}'s effects are enhanced: When there are 1/2/3 <color=#80C0FFFF>Hydro</color> or <color=#FFE699FF>Geo</color> characters in the party, Nightingale's Song will further increase DMG. Increase in DMG is equal to 7%/14%/24% of Illuga's Elemental Mastery. If this aforementioned DMG is inflicted by a Lunar-Crystallize reaction, increase in DMG is equal to 48%/96%/160% of Illuga's Elemental Mastery.",
+            "id": 1272201,
             "name": "Demonhunter's Dusk"
         },
         "passive3": {
             "descriptionRaw": "When Illuga is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+            "id": 1272301,
             "name": "Moonsign Benediction: Unwithering in Winter"
         },
         "passive4": {
             "descriptionRaw": "At night (18:00 – 06:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Swift Stride does not stack.\nAdditionally, Illuga appears to be able to decipher the whispers of the Wild Hunt...",
+            "id": 1272501,
             "name": "Night Warden's Stride"
         }
     },

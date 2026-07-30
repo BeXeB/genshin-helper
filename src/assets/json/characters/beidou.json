@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When <color=#FFD780FF>Stormbreaker</color> is used:\nCreates a shield that absorbs up to 16% of Beidou's Max HP for 15s.\nThis shield absorbs <color=#FFACFFFF>Electro DMG</color> 250% more effectively.",
+            "id": 241,
             "name": "Sea Beast's Scourge"
         },
         "c2": {
             "descriptionRaw": "<color=#FFD780FF>Stormbreaker</color>'s arc lightning can jump to 2 additional targets.",
+            "id": 242,
             "name": "Upon the Turbulent Sea, the Thunder Arises"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Tidecaller</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 243,
             "name": "Summoner of Storm"
         },
         "c4": {
             "descriptionRaw": "Upon being attacked, Beidou's Normal Attacks gain an additional instance of 20% <color=#FFACFFFF>Electro DMG</color> for 10s.",
+            "id": 244,
             "name": "Stunning Revenge"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Stormbreaker</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 245,
             "name": "Crimson Tidewalker"
         },
         "c6": {
             "descriptionRaw": "During the duration of <color=#FFD780FF>Stormbreaker</color>, the <color=#FFACFFFF>Electro RES</color> of surrounding opponents is decreased by 15%.",
+            "id": 246,
             "name": "Bane of Evil"
         },
         "images": {
@@ -439,6 +445,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10241,
             "name": "Oceanborne"
         },
         "combat2": {
@@ -538,6 +545,7 @@
                 }
             },
             "descriptionRaw": "#Nothing to worry about. Should anyone raise a hand against her or her men, she will avenge it ten-fold with sword and thunder.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nAccumulating the power of lightning, Beidou swings her blade forward fiercely, dealing <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nLifts her weapon up as a shield. Max DMG absorbed scales off Beidou's Max HP.\nAttacks using the energy stored within the greatsword upon release or once this ability's duration expires, dealing <color=#FFACFFFF>Electro DMG</color>. DMG dealt scales with the number of times Beidou is attacked in the skill's duration. The greatest DMG Bonus will be attained once this effect is triggered twice.\nThe shield possesses the following properties:\n·Has 250% <color=#FFACFFFF>Electro DMG</color> Absorption Efficiency.\n·Applies the <color=#FFACFFFF>Electro element</color> to Beidou upon activation.\n\n<i>Conquer the high seas! Pursue the waves and chase the storm!</i>",
+            "id": 10242,
             "name": "Tidecaller"
         },
         "combat3": {
@@ -656,6 +664,7 @@
                 }
             },
             "descriptionRaw": "Recalling her slaying of the great beast Haishan, Beidou calls upon that monstrous strength and the lightning to create a Thunderbeast's Targe around herself, dealing <color=#FFACFFFF>Electro DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Thunderbeast's Targe</color>\n·When Normal and Charged Attacks hit, they create a lightning discharge that can jump between opponents, dealing <color=#FFACFFFF>Electro DMG</color>.\n·Increases the character's resistance to interruption, and decreases DMG taken.\n\nA maximum of 1 lightning discharge can be triggered per second.\n\n<i>With a peal of thunder, Haishan is slain.</i>",
+            "id": 10245,
             "name": "Stormbreaker"
         },
         "costs": {
@@ -849,18 +858,22 @@
         },
         "passive1": {
             "descriptionRaw": "Counterattacking with <color=#FFD780FF>Tidecaller</color> at the precise moment when the character is hit grants the maximum DMG Bonus.",
+            "id": 242101,
             "name": "Retribution"
         },
         "passive2": {
             "descriptionRaw": "Gain the following effects for 10s after unleashing <color=#FFD780FF>Tidecaller</color> with its maximum DMG Bonus: \n·DMG dealt by Normal and Charged Attacks is increased by 15%. ATK SPD of Normal and Charged Attacks is increased by 15%.\n·Greatly reduced delay before unleashing Charged Attacks.",
+            "id": 242201,
             "name": "Lightning Storm"
         },
         "passive3": {
             "descriptionRaw": "Decreases swimming Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+            "id": 242301,
             "name": "Conqueror of Tides"
         },
         "passive4": {
             "descriptionRaw": "When holding down on the Elemental Skill <color=#FFD780FF>Tidecaller</color>, 1 stack of power will accumulate every 0.8s, even when not under attack. This increases the DMG dealt at the point of unleashing.\nAdditionally, holding down to unleash <color=#FFD780FF>Tidecaller</color> and hitting the opponent also gives extra boosts based on the power accumulated: every stack active decreases Beidou's Elemental Skill CD by 4s, as well as regenerates 8 Elemental Energy for her. This effect can trigger once every 15s.\nAdditionally, when inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, Beidou will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+            "id": 242401,
             "name": "Polaris"
         }
     },

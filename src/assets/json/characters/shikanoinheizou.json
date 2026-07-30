@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "For 5s after Shikanoin Heizou takes the field, his Normal Attack SPD is increased by 15%. He also gains 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 10s.",
+            "id": 591,
             "name": "Named Juvenile Casebook"
         },
         "c2": {
             "descriptionRaw": "The pull effect of the Arresting Windtunnel created by <color=#FFD780FF>Windmuster Kick</color> is enhanced, and its duration is increased to 1s.",
+            "id": 592,
             "name": "Investigative Collection"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Heartstopper Strike</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 593,
             "name": "Esoteric Puzzle Book"
         },
         "c4": {
             "descriptionRaw": "The first Windmuster Iris explosion in each <color=#FFD780FF>Windmuster Kick</color> will regenerate 9 Elemental Energy for Shikanoin Heizou. Every subsequent explosion in that Windmuster Kick will each regenerate an additional 1.5 Energy for Heizou.\nOne <color=#FFD780FF>Windmuster Kick</color> can regenerate a total of 13.5 Energy for Heizou in this manner.",
+            "id": 594,
             "name": "Tome of Lies"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Windmuster Kick</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 595,
             "name": "Secret Archive"
         },
         "c6": {
             "descriptionRaw": "Each Declension stack will increase the CRIT Rate of the <color=#FFD780FF>Heartstopper Strike</color> unleashed by 4%. When Heizou possesses Conviction, this Heartstopper Strike's CRIT DMG is increased by 32%.",
+            "id": 596,
             "name": "Curious Casefiles"
         },
         "images": {
@@ -437,6 +443,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 fisticuffs empowered by a mighty wind, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and performs a sweeping kick that deals <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the surging wind, Heizou plunges towards the ground from mid-air, damaging all opponents in his path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+            "id": 10591,
             "name": "Fudou Style Martial Arts"
         },
         "combat2": {
@@ -537,6 +544,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Tap</color>\nWields the swift winds to launch a Heartstopper Strike that deals <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nCharges energy to unleash an even stronger blow. He will obtain the Declension effect while charging, which will increase the power of the Heartstopper Strike. When the skill button is released or the skill finishes charging, he will strike forward, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Declension</color>\nIncreases the power of the next Heartstopper Strike. Max 4 stacks.\nWhen you possess 4 Declension stacks, the Conviction effect will be produced, which will cause the next Heartstopper Strike to be even stronger and have a larger AoE.\n\n<i>This seemingly ordinary strike contains Heizou's desire for criminals to honestly confess and repent.</i>",
+            "id": 10592,
             "name": "Heartstopper Strike"
         },
         "combat3": {
@@ -619,6 +627,7 @@
                 }
             },
             "descriptionRaw": "Leaps into the air and uses the Fudou Style Vacuum Slugger and kicks his opponent. The Vacuum Slugger will explode upon hit and create an Arresting Windtunnel that pulls in nearby objects and opponents, dealing <color=#80FFD7FF>AoE Anemo DMG</color>.\nWhen Vacuum Slugger hits opponents affected by <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, these opponents will be afflicted with Windmuster Iris. This Windmuster Iris will explode after a moment and dissipate, dealing AoE DMG of the corresponding aforementioned elemental type.\nVacuum Slugger can afflict a maximum of 4 opponents with the Windmuster Iris. A single opponent cannot be under the effect of Windmuster Irises of different elements at the same time.\n\n<i>A unique technique that gathers Anemo in one place before unleashing it all in one kick. Is always there in a pinch to land on some criminal's fleeing back.</i>",
+            "id": 10595,
             "name": "Windmuster Kick"
         },
         "costs": {
@@ -811,14 +820,17 @@
         },
         "passive1": {
             "descriptionRaw": "When Shikanoin Heizou activates a Swirl reaction while on the field, he will gain 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 0.1s.",
+            "id": 592101,
             "name": "Paradoxical Practice"
         },
         "passive2": {
             "descriptionRaw": "After Shikanoin Heizou's <color=#FFD780FF>Heartstopper Strike</color> hits an opponent, increases all party members' (excluding Shikanoin Heizou) Elemental Mastery by 80 for 10s.",
+            "id": 592201,
             "name": "Penetrative Reasoning"
         },
         "passive3": {
             "descriptionRaw": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+            "id": 592301,
             "name": "Pre-Existing Guilt"
         }
     },

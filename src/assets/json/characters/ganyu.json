@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.",
+            "id": 371,
             "name": "Dew-Drinker"
         },
         "c2": {
             "descriptionRaw": "<color=#FFD780FF>Trail of the Qilin</color> gains 1 additional charge.",
+            "id": 372,
             "name": "The Auspicious"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Celestial Shower</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 373,
             "name": "Cloud-Strider"
         },
         "c4": {
             "descriptionRaw": "Opponents standing within the AoE of <color=#FFD780FF>Celestial Shower</color> take increased DMG. This effect strengthens over time.\nIncreased DMG taken begins at 5% and increases by 5% every 3s, up to a maximum of 25%.\nThe effect lingers for 3s after the opponent leaves the AoE.",
+            "id": 374,
             "name": "Westward Sojourn"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Trail of the Qilin</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 375,
             "name": "The Merciful"
         },
         "c6": {
             "descriptionRaw": "Using <color=#FFD780FF>Trail of the Qilin</color> causes the next Frostflake Arrow shot within 30s to not require charging.",
+            "id": 376,
             "name": "The Clement"
         },
         "images": {
@@ -457,6 +463,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n·Charge Level 1: Fires off an icy arrow that deals <color=#99FFFFFF>Cryo DMG</color>.\n·Charge Level 2: Fires off a Frostflake Arrow that deals <color=#99FFFFFF>Cryo DMG</color>. The Frostflake Arrow blooms after hitting its target, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+            "id": 10371,
             "name": "Liutian Archery"
         },
         "combat2": {
@@ -539,6 +546,7 @@
                 }
             },
             "descriptionRaw": "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<color=#FFD780FF>Ice Lotus</color>\n·Continuously taunts surrounding opponents, attracting them to attack it.\n·Endurance scales based on Ganyu's Max HP.\n·Blooms profusely when destroyed or once its duration ends, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<i>\"You saw me, you say? You must be mistaken. I was working overtime then.\"</i>",
+            "id": 10372,
             "name": "Trail of the Qilin"
         },
         "combat3": {
@@ -621,6 +629,7 @@
                 }
             },
             "descriptionRaw": "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil.\nDuring its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing <color=#99FFFFFF>Cryo DMG</color>.\n\n<i>Ganyu can bring down sweet rains as a matter of course. But against demons and heretics, they become bitter, freezing snow.</i>",
+            "id": 10373,
             "name": "Celestial Shower"
         },
         "costs": {
@@ -813,14 +822,17 @@
         },
         "passive1": {
             "descriptionRaw": "After firing a Frostflake Arrow, the CRIT Rate of subsequent Frostflake Arrows and their resulting bloom effects is increased by 20% for 5s.",
+            "id": 372101,
             "name": "Undivided Heart"
         },
         "passive2": {
             "descriptionRaw": "<color=#FFD780FF>Celestial Shower</color> grants a 20% <color=#99FFFFFF>Cryo DMG Bonus</color> to active party members in the AoE.",
+            "id": 372201,
             "name": "Harmony Between Heaven and Earth"
         },
         "passive3": {
             "descriptionRaw": "Refunds 15% of the ore used when crafting Bow-type weapons.",
+            "id": 372301,
             "name": "Preserved for the Hunt"
         }
     },

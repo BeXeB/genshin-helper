@@ -63,6 +63,7 @@ export type CharacterTalents = {
 };
 
 export type CombatTalent = {
+  id: number;
   name: string;
   descriptionRaw: string;
   attributes: {
@@ -72,6 +73,7 @@ export type CombatTalent = {
 };
 
 export type PassiveTalent = {
+  id: number;
   name: string;
   descriptionRaw: string;
 };
@@ -106,6 +108,7 @@ export type CharacterConstellation = {
 };
 
 export type ConstellationDetail = {
+  id: number;
   name: string;
   descriptionRaw: string;
 };

@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "While <color=#FFD780FF>Sweeping Time</color> and <color=#FFD780FF>Breastplate</color> are both in effect, the chance of Breastplate's healing effects activating is increased to 100%.",
+            "id": 341,
             "name": "I Got Your Back"
         },
         "c2": {
             "descriptionRaw": "Decreases the Stamina Consumption of Noelle's Charged Attacks by 20% and increases her Charged Attack DMG by 15%.",
+            "id": 342,
             "name": "Combat Maid"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Breastplate</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 343,
             "name": "Invulnerable Maid"
         },
         "c4": {
             "descriptionRaw": "When <color=#FFD780FF>Breastplate</color>'s duration expires or it is destroyed by DMG, it will deal 400% of Noelle's ATK as <color=#FFE699FF>Geo DMG</color> to surrounding opponents.",
+            "id": 344,
             "name": "To Be Cleaned"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Sweeping Time</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 345,
             "name": "Favonius Sweeper Master"
         },
         "c6": {
             "descriptionRaw": "<color=#FFD780FF>Sweeping Time</color> increases Noelle's ATK by an additional 50% of her DEF.\nAdditionally, every opponent defeated during the skill's duration adds 1s to the duration, up to 10s.",
+            "id": 346,
             "name": "Must Be Spotless"
         },
         "images": {
@@ -421,6 +427,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10341,
             "name": "Favonius Bladework - Maid"
         },
         "combat2": {
@@ -573,6 +580,7 @@
                 }
             },
             "descriptionRaw": "Summons protective stone armor, dealing <color=#FFE699FF>Geo DMG</color> to surrounding opponents and creating a shield. The shield's DMG Absorption scales based on Noelle's DEF.\nThe shield has the following properties:\n·When Noelle's Normal and Charged Attacks hit a target, they have a certain chance to regenerate HP for all characters.\n·Possesses 150% DMG Absorption efficiency against all Elemental and Physical DMG.\n\nThe amount of HP healed when regeneration is triggered scales based on Noelle's DEF.\n\n<i>Noelle is both a dutiful maid and a valiant knight.</i>",
+            "id": 10342,
             "name": "Breastplate"
         },
         "combat3": {
@@ -691,6 +699,7 @@
                 }
             },
             "descriptionRaw": "Gathering the strength of stone around her weapon, Noelle strikes the opponents surrounding her within a large AoE, dealing <color=#FFE699FF>Geo DMG</color>.\nAfterwards, Noelle gains the following effects:\n·Larger attack AoE.\n·Converts attack DMG to <color=#FFE699FF>Geo DMG</color> that cannot be overridden by any other elemental infusion.\n·Increased ATK that scales based on her DEF.\n\n<i>Sometimes, it's not just dust that needs sweeping...</i>",
+            "id": 10343,
             "name": "Sweeping Time"
         },
         "costs": {
@@ -883,14 +892,17 @@
         },
         "passive1": {
             "descriptionRaw": "When Noelle is in the party but not on the field, this ability triggers automatically when your active character's HP falls below 30%:\nCreates a shield for your active character that lasts for 20s and absorbs DMG equal to 400% of Noelle's DEF.\nThe shield has a 150% DMG Absorption effectiveness against all Elemental and Physical DMG.\nThis effect can only occur once every 60s.",
+            "id": 342101,
             "name": "Devotion"
         },
         "passive2": {
             "descriptionRaw": "Noelle will decrease the CD of <color=#FFD780FF>Breastplate</color> by 1s for every 4 Normal or Charged Attack hits she scores on opponents.\nOne hit may be counted every 0.1s.",
+            "id": 342201,
             "name": "Nice and Clean"
         },
         "passive3": {
             "descriptionRaw": "When a Perfect Cooking is achieved on a DEF-boosting dish, Noelle has a 12% chance to obtain double the product.",
+            "id": 342301,
             "name": "Maid's Knighthood"
         }
     },

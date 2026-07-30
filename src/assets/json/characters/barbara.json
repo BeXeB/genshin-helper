@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Barbara regenerates 1 Energy every 10s.",
+            "id": 141,
             "name": "Gleeful Songs"
         },
         "c2": {
             "descriptionRaw": "Decreases the CD of <color=#FFD780FF>Let the Show Begin♪</color> by 15%.\nDuring the ability's duration, your active character gains a 15% <color=#80C0FFFF>Hydro DMG Bonus</color>.",
+            "id": 142,
             "name": "Vitality Burst"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Shining Miracle♪</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 143,
             "name": "Star of Tomorrow"
         },
         "c4": {
             "descriptionRaw": "Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her.\nA maximum of 5 energy can be regenerated in this manner with any one Charged Attack.",
+            "id": 144,
             "name": "Attentiveness Be My Power"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Let the Show Begin♪</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 145,
             "name": "The Purest Companionship"
         },
         "c6": {
             "descriptionRaw": "When Barbara is in the party but not on the field, and one of your own party members falls:\n·Automatically revives the fallen character.\n·Fully restores the revived character's HP to 100%.\nThis effect can only occur once every 15 mins.",
+            "id": 146,
             "name": "Dedicating Everything to You"
         },
         "images": {
@@ -385,6 +391,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 water splash attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+            "id": 10070,
             "name": "Whisper of Water"
         },
         "combat2": {
@@ -519,6 +526,7 @@
                 }
             },
             "descriptionRaw": "Summons water droplets resembling musical notes that form a Melody Loop, dealing <color=#80C0FFFF>Hydro DMG</color> to surrounding opponents and applying the <color=#80C0FFFF>Wet</color> status to them.\n\n<color=#FFD780FF>Melody Loop</color>\n·On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP.\n·On hit, Barbara's Charged Attack generates 4 times the amount of healing.\n·Periodically regenerates your own active character's HP.\n·Applies the <color=#80C0FFFF>Wet</color> status to the character and to opponents who come in contact with them.\n\n<i>Barbara's music is the magic that heals her companions.</i>",
+            "id": 10071,
             "name": "Let the Show Begin♪"
         },
         "combat3": {
@@ -600,6 +608,7 @@
                 }
             },
             "descriptionRaw": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP.\n\n<i>Barbara's desire to heal strengthens her will to fight and sing.</i>",
+            "id": 10072,
             "name": "Shining Miracle♪"
         },
         "costs": {
@@ -792,14 +801,17 @@
         },
         "passive1": {
             "descriptionRaw": "The Stamina Consumption of characters within <color=#FFD780FF>Let the Show Begin♪</color>'s Melody Loop is reduced by 12%.",
+            "id": 142101,
             "name": "Glorious Season"
         },
         "passive2": {
             "descriptionRaw": "When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of <color=#FFD780FF>Let the Show Begin♪</color> is extended by 1s.\nThe maximum extension is 5s.",
+            "id": 142201,
             "name": "Encore"
         },
         "passive3": {
             "descriptionRaw": "When a Perfect Cooking is achieved on a dish with restorative effects, there is a 12% chance to obtain double the product.",
+            "id": 142301,
             "name": "With My Whole Heart♪"
         }
     },

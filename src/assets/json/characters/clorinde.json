@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "While <color=#FFD780FF>Hunter's Vigil</color>'s Night Vigil state is active, when <color=#FFACFFFF>Electro DMG</color> from Clorinde's Normal Attacks hit opponents, they will trigger 2 coordinated attacks from a Nightvigil Shade summoned near the hit opponent, each dealing 30% of Clorinde's ATK as <color=#FFACFFFF>Electro DMG</color>.\nThis effect can occur once every 1.2s. DMG dealt this way is considered Normal Attack DMG.",
+            "id": 981,
             "name": "\"From This Day, I Pass the Candle's Shadow-Veil\""
         },
         "c2": {
             "descriptionRaw": "Enhance the Ascension Talent \"Dark-Shattering Flame\": After a nearby party member triggers an <color=#FFACFFFF>Electro-related reaction</color> against an opponent, <color=#FFACFFFF>Electro DMG</color> dealt by Clorinde's Normal Attacks and <color=#FFD780FF>Last Lightfall</color> will be increased by 30% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. When you have 3 stacks, Clorinde's interruption resistance will be increased. The Maximum DMG increase achievable this way for the above attacks is 2,700.\nYou must first unlock the Ascension Talent \"Dark-Shattering Flame.\"",
+            "id": 982,
             "name": "\"Now, As We Face the Perils of the Long Night\""
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Hunter's Vigil</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 983,
             "name": "\"I Pledge to Remember the Oath of Daylight\""
         },
         "c4": {
             "descriptionRaw": "When <color=#FFD780FF>Last Lightfall</color> deals DMG to opponent(s), DMG dealt is increased based on Clorinde's Bond of Life percentage. Every 1% of her current Bond of Life will increase <color=#FFD780FF>Last Lightfall</color> DMG by 2%. The maximum <color=#FFD780FF>Last Lightfall</color> DMG increase achievable this way is 200%.",
+            "id": 984,
             "name": "\"To Enshrine Tears, Life, and Love\""
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Last Lightfall</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 985,
             "name": "\"Holding Dawn's Coming as My Votive\""
         },
         "c6": {
             "descriptionRaw": "For 12s after <color=#FFD780FF>Hunter's Vigil</color> is used, Clorinde's CRIT Rate will be increased by 10%, and her CRIT DMG by 70%.\nAdditionally, while Night Vigil is active, a Glimbright Shade will appear under specific circumstances, executing an attack that deals 200% of Clorinde's ATK as <color=#FFACFFFF>Electro DMG</color>. DMG dealt this way is considered Normal Attack DMG.\nThe Glimbright Shade will appear under the following circumstances:\n· When Clorinde is about to be hit by an attack.\n· When Clorinde uses Impale the Night: Pact.\n1 Glimbright Shade can be summoned in the aforementioned ways every 1s. 6 Shades can be summoned per single Night Vigil duration.\nIn addition, while Night Vigil is active, the DMG Clorinde receives is decreased by 80% and her interruption resistance is increased. This effect will disappear after the Night Vigil state ends or 1s after she summons 6 Glimbright Shades.",
+            "id": 986,
             "name": "\"And So Shall I Never Despair\""
         },
         "images": {
@@ -488,6 +494,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and fires Suppressing Shots in a fan pattern with her pistolet.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10981,
             "name": "Oath of Hunting Shadows"
         },
         "combat2": {
@@ -728,6 +735,7 @@
                 }
             },
             "descriptionRaw": "Preparing her pistolet, she enters the \"Night Vigil\" state, using steel and shot together. In this state, Clorinde's Normal Attacks will be transformed into \"Swift Hunt\" pistolet attacks, and the DMG dealt is converted into <color=#FFACFFFF>Electro DMG</color> that cannot be overridden by infusions, and she will be unable to use Charged Attacks. Using her Elemental Skill will transform it into \"Impale the Night\": Perform a lunging attack, dealing <color=#FFACFFFF>Electro DMG</color>. The DMG done through the aforementioned method is considered Normal Attack DMG.\n\n<color=#FFD780FF>Swift Hunt</color>\n· When her Bond of Life is equal to or greater than 100% of her max HP: Performs a pistolet shot.\n· When her Bond of Life is less than 100%, firing her pistolet will grant her Bond of Life, with the amount gained based on her max HP. The shots she fires can pierce opponents, and DMG dealt to opponents in their path is increased.\n\n<color=#FFD780FF>Impale the Night</color>\nThe current percentage value of Clorinde's Bond of Life determines its effect:\n· When the Bond of Life value is 0%, perform a normal lunging strike;\n· When the Bond of Life value is less than 100% of her max HP, Clorinde is healed based on the Bond of Life value, and the AoE of the lunging attack and the DMG dealt is increased;\n· When the value of the Bond of Life is equal to or greater than 100% of her max HP, use Impale the Night: Pact. The healing multiplier is increased, and the AoE and DMG dealt by the lunge is increased even further.\n\nIn addition, when Clorinde is in the Night Vigil state, healing effects other than Impale the Night will not take effect and will instead be converted into a Bond of Life that is a percentage of the healing that would have been received.\n\nClorinde will exit the \"Night Vigil\" state when she leaves the field.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nPeriodically, when Clorinde's Swift Hunt shots strike opponents, she will summon a Surging Blade at the position hit that deals Ousia-aligned <color=#FFACFFFF>Electro DMG</color>.\n\n<i>Though the evil that lurked in the shadows of the night had been purged across thousands of years, a shadow that the light could not reach clouded human hearts.\nEven now, the warning left by the Golden Hunter is etched into her memory: Those of the Night Vigil, carrying aloft lit candles against the blackness, have greater need still to remain vigilant. Be not corrupted by the cold dark.</i>",
+            "id": 10982,
             "name": "Hunter's Vigil"
         },
         "combat3": {
@@ -810,6 +818,7 @@
                 }
             },
             "descriptionRaw": "Grants herself a Bond of Life based upon her own max HP before swiftly evading and striking with saber and sidearm as one, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<i>It is said the legacy of the ancient art of resisting non-human beings with but a mortal body can be traced back to the Lochknights who resisted the Remurian Empire.\nBe that as it may, so long as one can find a way to control the level of force used, it's not as if it cannot be used in duels against ordinary opponents.</i>",
+            "id": 10985,
             "name": "Last Lightfall"
         },
         "costs": {
@@ -1002,14 +1011,17 @@
         },
         "passive1": {
             "descriptionRaw": "After a nearby party member triggers an <color=#FFACFFFF>Electro-related reaction</color> against an opponent, <color=#FFACFFFF>Electro DMG</color> dealt by Clorinde's Normal Attacks and <color=#FFD780FF>Last Lightfall</color> will be increased by 20% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. The Maximum DMG increase achievable this way for the above attacks is 1,800.",
+            "id": 982101,
             "name": "Dark-Shattering Flame"
         },
         "passive2": {
             "descriptionRaw": "If Clorinde's Bond of Life is equal to or greater than 100% of her Max HP, her CRIT Rate will increase by 10% for 15s whenever her Bond of Life value increases or decreases. Max 2 stacks. Each stack is counted independently.\nAdditionally, <color=#FFD780FF>Hunter's Vigil</color>'s Night Vigil state is buffed: While it is active, the percent of healing converted to Bond of Life increases to 100%.",
+            "id": 982201,
             "name": "Lawful Remuneration"
         },
         "passive3": {
             "descriptionRaw": "Displays the location of nearby <color=#FFD780FF>resources unique to Fontaine</color> on the mini-map.",
+            "id": 982301,
             "name": "Night Vigil's Harvest"
         }
     },

@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When Ineffa activates her Optical Flow Shield Barrier, all nearby party members will gain the Carrier Flow Composite effect for 20s: Increases Lunar-Charged DMG by 2.5% for every 100 ATK that Ineffa has, up to a maximum of 50%.",
+            "id": 1161,
             "name": "Rectifying Processor"
         },
         "c2": {
             "descriptionRaw": "After the Elemental Burst <color=#FFD780FF>{LINK#S11165}Supreme Instruction: Cyclonic Exterminator{/LINK}</color> hits opponents, it will inflict the Punishment Edict status on one of those hit opponents: After a brief delay, or when this opponent is defeated, nearby opponents will take <color=#FFACFFFF>AoE Electro DMG</color> equal to 300% of Ineffa's ATK. This DMG is considered Lunar-Charged DMG.\nAdditionally, when the Elemental Burst <color=#FFD780FF>Supreme Instruction: Cyclonic Exterminator</color> is unleashed, nearby party members will gain Optical Flow Shield Barriers.",
+            "id": 1162,
             "name": "Support Cleaning Module"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11162}Cleaning Mode: Carrier Frequency{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1163,
             "name": "Enhanced Emotion Emulator"
         },
         "c4": {
             "descriptionRaw": "When your own party members trigger Lunar-Charged reactions, recover 5 Elemental Energy. This effect can occur once every 4s.",
+            "id": 1164,
             "name": "The Edictless Path"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11165}Supreme Instruction: Cyclonic Exterminator{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1165,
             "name": "Mirror's Dream Transcension"
         },
         "c6": {
             "descriptionRaw": "When Ineffa is affected by the Carrier Flow Composite effect, she will deal <color=#FFACFFFF>AoE Electro DMG</color> equal to 135% of her ATK to opponents in the current active character's vicinity after nearby thunderclouds release bursts of lightning at opponents. This DMG is considered Lunar-Charged DMG. The aforementioned effect can trigger once every 3.5s.",
+            "id": 1166,
             "name": "A Dawning Morn for You"
         },
         "images": {
@@ -402,6 +408,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a spinning attack.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 11161,
             "name": "Cyclonic Duster"
         },
         "combat2": {
@@ -537,6 +544,7 @@
                 }
             },
             "descriptionRaw": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of <color=#FFACFFFF>AoE Electro DMG</color> to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK}.\nThe Optical Flow Shield Barrier absorbs DMG based on Ineffa's ATK, and it will absorb <color=#FFACFFFF>Electro DMG</color> with 250% effectiveness.",
+            "id": 11162,
             "name": "Cleaning Mode: Carrier Frequency"
         },
         "combat3": {
@@ -601,6 +609,7 @@
                 }
             },
             "descriptionRaw": "Through Multipurpose Smart Assistance Unit, {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK}, Ineffa can use Rocket Punches to quickly clean up opponents! Shoots Birgitta into the fray, dealing <color=#FFACFFFF>AoE Electro DMG</color> and allowing Birgitta to remain on the field.\n\nIf Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration.",
+            "id": 11165,
             "name": "Supreme Instruction: Cyclonic Exterminator"
         },
         "costs": {
@@ -794,18 +803,22 @@
         },
         "passive1": {
             "descriptionRaw": "If there are thunderclouds created by Lunar-Charged reactions nearby when {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK} unleashes Discharge attacks, she will initiate an additional attack, dealing <color=#FFACFFFF>AoE Electro DMG</color> equal to 65% of Ineffa's ATK. This DMG is considered Lunar-Charged DMG.",
+            "id": 1162101,
             "name": "Overclocking Circuit"
         },
         "passive2": {
             "descriptionRaw": "When using the Elemental Burst <color=#FFD780FF>{LINK#S11165}Supreme Instruction: Cyclonic Exterminator{/LINK}</color>, all your party members will gain the Parameter Permutation effect: Increases Ineffa and your own active party member's Elemental Mastery by 6% of Ineffa's ATK for 20s.",
+            "id": 1162201,
             "name": "Panoramic Permutation Protocol"
         },
         "passive3": {
             "descriptionRaw": "When a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Ineffa has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.\n\nAdditionally, when Ineffa is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+            "id": 1162301,
             "name": "Moonsign Benediction: Assemblage Hub"
         },
         "passive4": {
             "descriptionRaw": "When Ineffa uses food, there is a 30% chance of gaining a seasoning ingredient.\n\nAdditionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means...",
+            "id": 1162501,
             "name": "Flavor Synthesis Unit"
         }
     },

@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "<color=#FFD780FF>Fantastic Voyage</color>'s ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK.",
+            "id": 321,
             "name": "Grand Expectation"
         },
         "c2": {
             "descriptionRaw": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%.",
+            "id": 322,
             "name": "Impasse Conqueror"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Passion Overload</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 323,
             "name": "Unstoppable Fervor"
         },
         "c4": {
             "descriptionRaw": "Using a Normal Attack as the second attack of <color=#FFD780FF>Passion Overload</color>'s Charge Level 1 will perform a follow-up attack.\nThis additional attack does 135% of the second attack's DMG.",
+            "id": 324,
             "name": "Unexpected Odyssey"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Fantastic Voyage</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 325,
             "name": "True Explorer"
         },
         "c6": {
             "descriptionRaw": "Sword, Claymore, or Polearm-wielding characters inside <color=#FFD780FF>Fantastic Voyage</color>'s radius gain a 15% <color=#FF9999FF>Pyro DMG Bonus</color> and their weapons are infused with <color=#FF9999FF>Pyro</color>.",
+            "id": 326,
             "name": "Fire Ventures With Me"
         },
         "images": {
@@ -420,6 +426,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10321,
             "name": "Strike of Fortune"
         },
         "combat2": {
@@ -588,6 +595,7 @@
                 }
             },
             "descriptionRaw": "#Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is...\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nA single, swift flame strike that deals <color=#FF9999FF>Pyro DMG</color>.\n\n<color=#FFD780FF>Hold (Short)</color>\nCharges up, resulting in different effects when unleashed based on the Charge Level.\n·Level 1: Strikes twice, dealing <color=#FF9999FF>Pyro DMG</color> and launching opponents.\n·Level 2: Unleashes 3 consecutive attacks that deal impressive <color=#FF9999FF>Pyro DMG</color>, but the last attack triggers an explosion that launches both Bennett and the enemy.\nBennett takes no damage from being launched.\n\n<i>An attack that combines Bennett's dreams and passion with Pyro. But passion is sometimes overblown, and Pyro sometimes blows over.</i>",
+            "id": 10322,
             "name": "Passion Overload"
         },
         "combat3": {
@@ -723,6 +731,7 @@
                 }
             },
             "descriptionRaw": "Bennett performs a jumping attack that deals <color=#FF9999FF>Pyro DMG</color>, creating an Inspiration Field.\n\n<color=#FFD780FF>Inspiration Field</color>\n·If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP.\n·If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK.\n·Imbues characters within the AoE with <color=#FF9999FF>Pyro</color>.\n\n<i>Benny's Adventure Team's adventures are always fraught with unexpected danger. However, Bennett is more inclined to call them \"journeys full of wonder, excitement, and beauty.\"</i>",
+            "id": 10323,
             "name": "Fantastic Voyage"
         },
         "costs": {
@@ -915,14 +924,17 @@
         },
         "passive1": {
             "descriptionRaw": "Decreases <color=#FFD780FF>Passion Overload</color>'s CD by 20%.",
+            "id": 322101,
             "name": "Rekindle"
         },
         "passive2": {
             "descriptionRaw": "Within the area created by <color=#FFD780FF>Fantastic Voyage</color>, <color=#FFD780FF>Passion Overload</color> takes on the following effects:\n·CD is reduced by 50%.\n·Bennett will not be launched by the effects of Charge Level 2.",
+            "id": 322201,
             "name": "Fearnaught"
         },
         "passive3": {
             "descriptionRaw": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%.",
+            "id": 322301,
             "name": "It Should Be Safe..."
         }
     },

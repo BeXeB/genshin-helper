@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Fires 2 arrows per <color=#FFD780FF>Aimed Shot</color>. The second arrow deals 20% of the first arrow's DMG.",
+            "id": 211,
             "name": "One Arrow to Rule Them All"
         },
         "c2": {
             "descriptionRaw": "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\nExplosion via manual detonation deals 200% additional DMG.",
+            "id": 212,
             "name": "Bunny Triggered"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Fiery Rain</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 213,
             "name": "It Burns!"
         },
         "c4": {
             "descriptionRaw": "Decreases <color=#FFD780FF>Explosive Puppet</color>'s CD by 20%. Adds 1 additional charge.",
+            "id": 214,
             "name": "It's Not Just Any Doll..."
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Explosive Puppet</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 215,
             "name": "It's Baron Bunny!"
         },
         "c6": {
             "descriptionRaw": "<color=#FFD780FF>Fiery Rain</color> increases all party members' Movement SPD by 15% and ATK by 15% for 10s.",
+            "id": 216,
             "name": "Wildfire"
         },
         "images": {
@@ -403,6 +409,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, flames will accumulate on the arrowhead. A fully charged flaming arrow will deal <color=#FF9999FF>Pyro DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+            "id": 10041,
             "name": "Sharpshooter"
         },
         "combat2": {
@@ -484,6 +491,7 @@
                 }
             },
             "descriptionRaw": "The ever-reliable Baron Bunny takes the stage.\n\n<color=#FFD780FF>Baron Bunny</color>\n·Continuously taunts the enemy, drawing their fire.\n·Baron Bunny's HP scales with Amber's Max HP.\n·When destroyed or when its timer expires, Baron Bunny explodes, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nAdjusts the throwing direction of Baron Bunny.\nThe longer the button is held, the further the throw.\n\n<i>Baron Bunny hails from a storied lineage, but Amber has stopped keeping count since Baron Bunny the 893rd.</i>",
+            "id": 10032,
             "name": "Explosive Puppet"
         },
         "combat3": {
@@ -584,6 +592,7 @@
                 }
             },
             "descriptionRaw": "Fires off a shower of arrows, dealing continuous <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<i>Amber's passion truly burns hot.</i>",
+            "id": 10017,
             "name": "Fiery Rain"
         },
         "costs": {
@@ -776,14 +785,17 @@
         },
         "passive1": {
             "descriptionRaw": "Increases the CRIT Rate of <color=#FFD780FF>Fiery Rain</color> by 10% and widens its AoE by 30%.",
+            "id": 212101,
             "name": "Every Arrow Finds Its Target"
         },
         "passive2": {
             "descriptionRaw": "Aimed Shot hits on weak points increase ATK by 15% for 10s.",
+            "id": 212201,
             "name": "Precise Shot"
         },
         "passive3": {
             "descriptionRaw": "Decreases gliding Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+            "id": 212301,
             "name": "Gliding Champion"
         }
     },
