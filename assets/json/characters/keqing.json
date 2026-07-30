@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Recasting <color=#FFD780FF>Stellar Restoration</color> while a Lightning Stiletto is present causes Keqing to deal 50% of her ATK as <color=#FFACFFFF>AoE Electro DMG</color> at the start point and terminus of her Blink.",
+            "id": 421,
             "name": "Thundering Might"
         },
         "c2": {
             "descriptionRaw": "When Keqing's Normal and Charged Attacks hit opponents affected by <color=#FFACFFFF>Electro</color>, they have a 50% chance of producing an Elemental Particle.\nThis effect can only occur once every 5s.",
+            "id": 422,
             "name": "Keen Extraction"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Starward Sword</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 423,
             "name": "Foreseen Reformation"
         },
         "c4": {
             "descriptionRaw": "For 10s after Keqing triggers an <color=#FFACFFFF>Electro-related Elemental Reaction</color>, her ATK is increased by 25%.",
+            "id": 424,
             "name": "Attunement"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Stellar Restoration</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 425,
             "name": "Beckoning Stars"
         },
         "c6": {
             "descriptionRaw": "When initiating a Normal Attack, a Charged Attack, Elemental Skill or Elemental Burst, Keqing gains a 6% <color=#FFACFFFF>Electro DMG Bonus</color> for 8s.\nEffects triggered by Normal Attacks, Charged Attacks, Elemental Skills and Elemental Bursts are considered independent entities.",
+            "id": 426,
             "name": "Tenacious Star"
         },
         "images": {
@@ -437,6 +443,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10421,
             "name": "Yunlai Swordsmanship"
         },
         "combat2": {
@@ -519,6 +526,7 @@
                 }
             },
             "descriptionRaw": "Hurls a Lightning Stiletto that annihilates her opponents like the swift thunder.\nWhen the Stiletto hits its target, it deals <color=#FFACFFFF>Electro DMG</color> to opponents in a small AoE, and places a Stiletto Mark on the spot hit.\n\n<color=#FFD780FF>Hold</color>\nHold to adjust the direction in which the Stiletto shall be thrown.\nStilettos thrown by the Hold attack mode can be suspended in mid-air, allowing Keqing to jump to them when using Stellar Restoration a second time.\n\n<color=#FFD780FF>Lightning Stiletto</color>\n If Keqing uses Stellar Restoration again or uses a Charged Attack while its duration lasts, it will clear the Stiletto Mark and produce different effects:\n·If she uses Stellar Restoration again, she will blink to the location of the Mark and unleash one slashing attack that deals <color=#FFACFFFF>AoE Electro DMG</color>. When blinking to a Stiletto that was thrown from a Holding attack, Keqing can leap across obstructing terrain.\n·If Keqing uses a Charged Attack, she will ignite a series of thundering cuts at the Mark's location, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<i>\"Humans are like moths, endlessly chasing the flame we call gods and adepti. But this light that I have here is my own.\"</i>",
+            "id": 10422,
             "name": "Stellar Restoration"
         },
         "combat3": {
@@ -619,6 +627,7 @@
                 }
             },
             "descriptionRaw": "Keqing unleashes the power of lightning, dealing <color=#FFACFFFF>Electro DMG</color> in an AOE.\nShe then blends into the shadow of her blade, striking a series of thunderclap-blows to nearby opponents simultaneously that deal multiple instances of <color=#FFACFFFF>Electro DMG</color>. The final attack deals massive <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<i>The swiftest technique in Keqing's personal arsenal is fast enough to bring stars crashing down.</i>",
+            "id": 10425,
             "name": "Starward Sword"
         },
         "costs": {
@@ -811,14 +820,17 @@
         },
         "passive1": {
             "descriptionRaw": "After recasting <color=#FFD780FF>Stellar Restoration</color> while a Lightning Stiletto is present, Keqing's weapon gains an <color=#FFACFFFF>Electro Infusion</color> for 5s.",
+            "id": 422101,
             "name": "Thundering Penance"
         },
         "passive2": {
             "descriptionRaw": "When casting <color=#FFD780FF>Starward Sword</color>, Keqing's CRIT Rate is increased by 15%, and her Energy Recharge is increased by 15%. This effect lasts for 8s.",
+            "id": 422201,
             "name": "Aristocratic Dignity"
         },
         "passive3": {
             "descriptionRaw": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%.",
+            "id": 422301,
             "name": "Land's Overseer"
         }
     },

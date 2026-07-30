@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "The time has not yet come for this person's corner of the night sky to light up.",
+            "id": 621,
             "name": "Star of Another World"
         },
         "c2": {
             "descriptionRaw": "The time has not yet come for this person's corner of the night sky to light up.",
+            "id": 622,
             "name": "Star of Another World"
         },
         "c3": {
             "descriptionRaw": "The time has not yet come for this person's corner of the night sky to light up.",
+            "id": 623,
             "name": "Star of Another World"
         },
         "c4": {
             "descriptionRaw": "The time has not yet come for this person's corner of the night sky to light up.",
+            "id": 624,
             "name": "Star of Another World"
         },
         "c5": {
             "descriptionRaw": "The time has not yet come for this person's corner of the night sky to light up.",
+            "id": 625,
             "name": "Star of Another World"
         },
         "c6": {
             "descriptionRaw": "The time has not yet come for this person's corner of the night sky to light up.",
+            "id": 626,
             "name": "Star of Another World"
         },
         "images": {
@@ -402,6 +408,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, biting frost will accumulate on the arrowhead. A fully charged frost arrow will deal <color=#99FFFFFF>Cryo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+            "id": 10621,
             "name": "Rapid Fire"
         },
         "combat2": {
@@ -590,6 +597,7 @@
                 }
             },
             "descriptionRaw": "Aloy throws a Freeze Bomb in the targeted direction that explodes on impact, dealing <color=#99FFFFFF>Cryo DMG</color>. After it explodes, the Freeze Bomb will split up into many Chillwater Bomblets that explode on contact with opponents or after a short delay, dealing <color=#99FFFFFF>Cryo DMG</color>.\nWhen a Freeze Bomb or Chillwater Bomblet hits an opponent, the opponent's ATK is decreased and Aloy receives 1 Coil stack.\nAloy can gain up to 1 Coil stack every 0.1s.\n\n<color=#FFD780FF>Coil</color>\n·Each stack increases Aloy's Normal Attack DMG.\n·When Aloy has 4 Coil stacks, all stacks of Coil are cleared. She then enters the Rushing Ice state, which further increases the DMG dealt by her Normal Attacks and converts her Normal Attack DMG to <color=#99FFFFFF>Cryo DMG</color>.\n\nWhile in the Rushing Ice state, Aloy cannot obtain new Coil stacks.\nCoil effects will be cleared 30s after Aloy leaves combat.\n\n<i>You think that's cold? Guess you've never been to The Cut.</i>",
+            "id": 10622,
             "name": "Frozen Wilds"
         },
         "combat3": {
@@ -654,6 +662,7 @@
                 }
             },
             "descriptionRaw": "Aloy throws a Power Cell filled with Cryo in the targeted direction, then detonates it with an arrow, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<i>Whether \"Zero Dawn\" referred to hope or extinction no longer matters. Aloy has already saved her world, and the fate of this one is still being forged by its own heroes.</i>",
+            "id": 10625,
             "name": "Prophecies of Dawn"
         },
         "costs": {
@@ -846,14 +855,17 @@
         },
         "passive1": {
             "descriptionRaw": "When Aloy receives the Coil effect from <color=#FFD780FF>Frozen Wilds</color>, her ATK is increased by 16%, while nearby party members' ATK is increased by 8%. This effect lasts 10s.",
+            "id": 622101,
             "name": "Combat Override"
         },
         "passive2": {
             "descriptionRaw": "When Aloy is in the Rushing Ice state conferred by <color=#FFD780FF>Frozen Wilds</color>, her <color=#99FFFFFF>Cryo DMG Bonus</color> increases by 3.5% every 1s. A maximum <color=#99FFFFFF>Cryo DMG Bonus</color> increase of 35% can be gained in this way.",
+            "id": 622201,
             "name": "Strong Strike"
         },
         "passive3": {
             "descriptionRaw": "When Aloy is in the party, animals who produce Fowl, Raw Meat, or Chilled Meat will not be startled when party members approach them.",
+            "id": 622301,
             "name": "Easy Does It"
         }
     },

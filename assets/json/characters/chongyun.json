@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "The last attack of Chongyun's Normal Attack combo releases 3 ice blades. Each blade deals 50% of Chongyun's ATK as <color=#99FFFFFF>Cryo DMG</color> to all opponents in its path.",
+            "id": 361,
             "name": "Ice Unleashed"
         },
         "c2": {
             "descriptionRaw": "Elemental Skills and Elemental Bursts cast within the Frost Field created by <color=#FFD780FF>Spirit Blade: Chonghua's Layered Frost</color> have their CD time decreased by 15%.",
+            "id": 362,
             "name": "Atmospheric Revolution"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Spirit Blade: Cloud-Parting Star</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 363,
             "name": "Cloudburst"
         },
         "c4": {
             "descriptionRaw": "Chongyun regenerates 1 Energy every time he hits an opponent affected by <color=#99FFFFFF>Cryo</color>.\nThis effect can only occur once every 2s.",
+            "id": 364,
             "name": "Frozen Skies"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Spirit Blade: Chonghua's Layered Frost</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 365,
             "name": "The True Path"
         },
         "c6": {
             "descriptionRaw": "<color=#FFD780FF>Spirit Blade: Cloud-Parting Star</color> deals 15% more DMG to opponents with a lower percentage of their Max HP remaining than Chongyun.\nThis skill will also summon 1 additional spirit blade.",
+            "id": 366,
             "name": "Rally of Four Blades"
         },
         "images": {
@@ -421,6 +427,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10401,
             "name": "Demonbane"
         },
         "combat2": {
@@ -503,6 +510,7 @@
                 }
             },
             "descriptionRaw": "Chongyun strikes the ground with his greatsword, causing a Cryo explosion in a circular AoE in front of him that deals <color=#99FFFFFF>Cryo DMG</color>.\nAfter a short delay, the cold air created by the Cryo explosion will coalesce into a Chonghua Frost Field, within which all Sword, Claymore and Polearm-wielding characters' weapons will be infused with <color=#99FFFFFF>Cryo</color>.\n\n<i>\"A crystal-clear ring, and all is silent. The rivers move not, and the clouds are heavy with frost. The altar gates open, and evil is banished.\"</i>",
+            "id": 10402,
             "name": "Spirit Blade: Chonghua's Layered Frost"
         },
         "combat3": {
@@ -567,6 +575,7 @@
                 }
             },
             "descriptionRaw": "Performing the secret hand seals, Chongyun summons 3 giant spirit blades in mid-air that fall to the earth one by one after a short delay, exploding as they hit the ground.\nWhen the spirit blades explode, they will deal <color=#99FFFFFF>AoE Cryo DMG</color> and launch opponents.\n\n<i>\"As ice doth give the biting frost birth, My transcendent blade shakes heaven and earth. Heed my summons and come hence!\"</i>",
+            "id": 10403,
             "name": "Spirit Blade: Cloud-Parting Star"
         },
         "costs": {
@@ -759,14 +768,17 @@
         },
         "passive1": {
             "descriptionRaw": "Sword, Claymore, or Polearm-wielding characters within the field created by <color=#FFD780FF>Spirit Blade: Chonghua's Layered Frost</color> have their Normal ATK SPD increased by 8%.",
+            "id": 362101,
             "name": "Steady Breathing"
         },
         "passive2": {
             "descriptionRaw": "When the field created by <color=#FFD780FF>Spirit Blade: Chonghua's Layered Frost</color> disappears, another spirit blade will be summoned to strike nearby opponents, dealing 100% of Chonghua's Layered Frost's Skill DMG as <color=#99FFFFFF>AoE Cryo DMG</color>. Opponents hit by this blade will have their <color=#99FFFFFF>Cryo RES</color> decreased by 10% for 8s.",
+            "id": 362201,
             "name": "Rimechaser Blade"
         },
         "passive3": {
             "descriptionRaw": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%.",
+            "id": 362301,
             "name": "Gallant Journey"
         }
     },

@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When Varka switches to {LINK#N11280001}<color=#FFD780FF>Sturm und Drang</color>{/LINK}, he will obtain an additional use of the special Elemental Skill {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK}.\nAdditionally, after switching to <color=#FFD780FF>Sturm und Drang</color>, Varka will gain the <color=#FFD780FF>Lyrical Libation</color> effect: When unleashing the special Elemental Skill <color=#FFD780FF>Four Winds' Ascension</color>, or when performing the special Charged Attack <color=#FFD780FF>Azure Devour</color>, Varka will consume this effect to deal 200% of the original DMG dealt by <color=#FFD780FF>Four Winds' Ascension</color> or <color=#FFD780FF>Azure Devour</color>.",
+            "id": 1281,
             "name": "\"Come, Friend, Let Us Dance Beneath the Moon's Soft Glow\""
         },
         "c2": {
             "descriptionRaw": "When unleashing the special Elemental Skill {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK}, or when performing the special Charged Attack <color=#FFD780FF>Azure Devour</color>, Varka will perform an additional strike, dealing <color=#80FFD7FF>AoE Anemo DMG</color> equal to 800% of Varka's ATK.",
+            "id": 1282,
             "name": "\"When Dawn Breaks, Our Journey Shall Take Flight\""
         },
         "c3": {
             "descriptionRaw": "Increases Elemental Skill <color=#FFD780FF>{LINK#S11282}Windbound Execution{/LINK}</color> Level by 3.\nMaximum upgrade level is 15.",
+            "id": 1283,
             "name": "\"O Friend, Quaff Not the Bitter Wine That Brings Tears of Woe\""
         },
         "c4": {
             "descriptionRaw": "When Varka triggers a Swirl reaction, based on the Elemental Types involved in the reaction, all nearby party members gain a 20% <color=#80FFD7FF>Anemo DMG Bonus</color> and the corresponding Elemental DMG Bonus for 10s.",
+            "id": 1284,
             "name": "\"For None May Take From Us Our Freedom of Song\""
         },
         "c5": {
             "descriptionRaw": "Increases Elemental Burst <color=#FFD780FF>{LINK#S11285}Northwind Avatar{/LINK}</color> Level by 3.\n Maximum upgrade level is 15.",
+            "id": 1285,
             "name": "\"Fill High the Cup With Fine Wine, for Tyrants Come and Go\""
         },
         "c6": {
             "descriptionRaw": "{LINK#N11280001}<color=#FFD780FF>Sturm und Drang</color>{/LINK} is enhanced:\n· For a short time after unleashing the special Elemental Skill {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK}, Tapping on Varka's Elemental Skill or Holding his Normal Attack will not expend any uses of Four Winds' Ascension, and will perform one additional instance of the special Charged Attack, <color=#FFD780FF>Azure Devour</color>.\n· For a short time after performing the special Charged Attack <color=#FFD780FF>Azure Devour</color>, tap on Varka's Elemental Skill to unleash an additional instance of <color=#FFD780FF>Four Winds' Ascension</color> without expending any uses of Four Winds' Ascension.\nWhen triggering an additional special Charged Attack, Azure Devour, or unleashing an additional special Elemental Skill, Four Winds' Ascension, in this manner, the above effect cannot be triggered.\n\nAdditionally, the <color=#FFD780FF>Azure Fang's Oath</color> effect in Ascension Talent <color=#FFD780FF>{LINK#P1282201}Wind's Vanguard{/LINK}</color> is enhanced: Every stack of <color=#FFD780FF>Azure Fang's Oath</color> will increase Varka's CRIT DMG by 20%.",
+            "id": 1286,
             "name": "\"Beloved Mondstadt, Steadfast You Shall Shine\""
         },
         "images": {
@@ -488,6 +494,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nImitating an ancient knightly war-dance, Varka wields dual claymores to perform up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to charge forward and perform an especially powerful dual blade slash toward the front.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 11281,
             "name": "Favonius Bladework: Dancing Radiance"
         },
         "combat2": {
@@ -851,6 +858,7 @@
                 }
             },
             "descriptionRaw": "Manifest the true essence of Favonius Bladework with absolute power. Produces different effects depending on whether the skill is Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\nLeap forward and slash in one fluid motion, dealing <color=#80FFD7FF>AoE Anemo DMG</color> and switching to {LINK#N11280001}<color=#FFD780FF>Sturm und Drang</color>{/LINK} mode.\nWhile in <color=#FFD780FF>Sturm und Drang</color>, Varka's Normal Attack and Charged Attack DMG is increased, and he cannot perform Plunging Attacks. Also, when performing Normal or Charged Attacks, Varka's dual-wielded claymores will deal corresponding Elemental DMG based on the Elemental Types of the characters in the party, respectively. This Elemental DMG cannot be overridden by infusions.\nAdditionally, when in <color=#FFD780FF>Sturm und Drang</color>, if there are <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> characters in the party, Varka's Elemental Skill <color=#FFD780FF>Windbound Execution</color> will be converted to the special Elemental Skill, {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK}, dealing corresponding Elemental DMG and <color=#80FFD7FF>Anemo DMG</color>. Additionally, Varka can also expend uses of the special Elemental Skill <color=#FFD780FF>Four Winds' Ascension</color> to perform a special Charged Attack, <color=#FFD780FF>Azure Devour</color>, that does not consume stamina to deal corresponding Elemental DMG and <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nAfter charging for a while, leap forward. The duration of the charge will increase the distance of the leap.",
+            "id": 11282,
             "name": "Windbound Execution"
         },
         "combat3": {
@@ -933,6 +941,7 @@
                 }
             },
             "descriptionRaw": "In the name of the mightiest Knight of Boreas, unleash a powerful double slash attack toward the front, dealing 2 instances of <color=#80FFD7FF>Anemo DMG</color>.\nIf there are <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> characters in the party, the first slash will be converted to deal corresponding Elemental DMG according to the aforementioned priority order of Elemental Types.",
+            "id": 11285,
             "name": "Northwind Avatar"
         },
         "costs": {
@@ -1126,18 +1135,22 @@
         },
         "passive1": {
             "descriptionRaw": "When there are <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> characters in the party, according to the aforementioned priority order of Elemental Types, every 1,000 points of Varka's ATK will grant Varka a 10% <color=#80FFD7FF>Anemo DMG Bonus</color> and corresponding Elemental DMG Bonus (among the aforementioned Elemental Types, only one element can gain bonus DMG this way). Up to 25% bonus DMG can be gained this way. \n\nAdditionally, if there are at least 2 <color=#80FFD7FF>Anemo</color> characters, or at least 2 characters of the same Element among <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> in the party, the Normal Attacks, Charged Attacks, Special Charged Attack <color=#FFD780FF>Azure Devour</color> and the special Elemental Skill {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK} that Varka deals or unleashes while in the {LINK#N11280001}<color=#FFD780FF>Sturm und Drang</color>{/LINK} mode will deal 140% of their original DMG. If there are at least 2 <color=#80FFD7FF>Anemo</color> characters and at least 2 other characters of the same element among <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> present in the party at the same time, the aforementioned effect will be increased to 220%.",
+            "id": 1282101,
             "name": "Dawn Wind's March"
         },
         "passive2": {
             "descriptionRaw": "When nearby party members trigger Swirl reaction(s), Varka gains one stack of <color=#FFD780FF>Azure Fang's Oath</color>, increasing the DMG dealt by his Normal Attacks, Charged Attacks, special Charged Attack <color=#FFD780FF>Azure Devour</color> and special Elemental Skill {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK} by 7.5% for 8s. Max 4 stacks. Each character can grant Varka with 1 stack of <color=#FFD780FF>Azure Fang's Oath</color> every second this way.",
+            "id": 1282201,
             "name": "Wind's Vanguard"
         },
         "passive3": {
             "descriptionRaw": "For every party member from Mondstadt, the Hold version of Varka's Elemental Skill <color=#FFD780FF>Windbound Execution</color>'s CD is decreased by 5%.\nThis effect does not trigger in Domains, Trounce Domains, or the Spiral Abyss.",
+            "id": 1282301,
             "name": "Homebound Wind's Paean"
         },
         "passive4": {
             "descriptionRaw": "After completing <color=#FFD780FF>Witch's Homework: The Untitled Question</color>, Varka will become a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you will gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nEnhances the special Elemental Skill {LINK#N11280002}<color=#FFD780FF>Four Winds' Ascension</color>{/LINK}: When Varka hits an opponent with Normal Attack(s) in {LINK#N11280001}<color=#FFD780FF>Sturm und Drang</color>{/LINK}, the CD of <color=#FFD780FF>Four Winds' Ascension</color> will be reduced by 1s.",
+            "id": 1285101,
             "name": "Witch's Eve Rite: Dawn's Return"
         }
     },

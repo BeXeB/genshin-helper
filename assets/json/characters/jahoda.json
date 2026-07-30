@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When a <color=#FFD780FF>Fluffy Meowball</color> fired by the {LINK#N11240001}<color=#FFD780FF>Purr-loined Treasure Flask</color>{/LINK} from the Elemental Skill <color=#FFD780FF>Savvy Strategy: Splitting the Spoils</color> hits an enemy, there is a 50% chance for it to bounce, dealing the corresponding Elemental DMG to nearby opponents.",
+            "id": 1241,
             "name": "One More Flask!"
         },
         "c2": {
             "descriptionRaw": "<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: In the Ascension Talent {LINK#P1242101}<color=#FFD780FF>\"Plan to Get Paid,\"</color>{/LINK} Jahoda can secretly track, in addition to the element with the highest number of characters, the element with the next highest number of characters among the remaining types. This allows up to two elemental effects to be active at once. You must first unlock the Ascension Talent \"Plan to Get Paid.\"",
+            "id": 1242,
             "name": "Rogue's Quick Thinking"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11245}Hidden Aces: Seven Tools of the Hunter{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1243,
             "name": "Desperate Gamble"
         },
         "c4": {
             "descriptionRaw": "When a {LINK#N11240002}<color=#FFD780FF>Purrsonal Coordinated Assistance Robot</color>{/LINK} from the Elemental Burst <color=#FFD780FF>Hidden Aces: Seven Tools of the Hunter</color> undergoes an Elemental Conversion, Jahoda will recover 4 Elemental Energy.",
+            "id": 1244,
             "name": "Wild Berry Amid the Dust"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11242}Savvy Strategy: Splitting the Spoils{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1245,
             "name": "The Greatest Treasure"
         },
         "c6": {
             "descriptionRaw": "<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: After the {LINK#N11240001}<color=#FFD780FF>Purr-loined Treasure Flask</color>{/LINK} from the Elemental Skill <color=#FFD780FF>Savvy Strategy: Splitting the Spoils</color> is full, nearby Moonsign characters in your party have their CRIT Rate increased by 5% and CRIT DMG increased by 40% for 20s.",
+            "id": 1246,
             "name": "The Littlest Luck"
         },
         "images": {
@@ -367,6 +373,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact.",
+            "id": 11241,
             "name": "Strike While the Arrow's Hot"
         },
         "combat2": {
@@ -553,6 +560,7 @@
                 }
             },
             "descriptionRaw": "Jahoda dashes toward her opponent, entering the Shadow Pursuit state upon contact. While in this state, Jahoda moves continuously and swiftly: If nearby opponents are affected by <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, or <color=#99FFFFFF>Cryo</color>, she will quietly convert her {LINK#N11240001}<color=#FFD780FF>Purr-loined Treasure Flask</color>{/LINK} to that element, gradually filling it. When the duration ends or the skill is used again, Jahoda drains the <color=#FFD780FF>Purr-loined Treasure Flask</color> and deals a single instance of <color=#80FFD7FF>Anemo DMG</color> to nearby opponents. When the <color=#FFD780FF>Purr-loined Treasure Flask</color> is full, Jahoda immediately drains it, exiting the Shadow Pursuit state and dealing a more powerful instance of <color=#80FFD7FF>Anemo DMG</color>.\nIf her dash fails to make contact with an opponent, Jahoda instead drops a Smoke Bomb at her location, dealing a single instance of <color=#80FFD7FF>Anemo DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: When the <color=#FFD780FF>Purr-loined Treasure Flask</color> becomes full, Jahoda will not immediately discharge it. Instead, for a short duration, she steadily consumes the stored element inside and periodically fires <color=#FFD780FF>Fluffy Meowballs</color> at nearby opponents, dealing DMG of the corresponding element stored in the <color=#FFD780FF>Purr-loined Treasure Flask</color>. When a <color=#FFD780FF>Fluffy Meowball</color> hits an opponent, Jahoda regenerates 2 Elemental Energy. This effect can be triggered once every 3.5s.\n\n<i>There are many ways to divide wealth in this world — but for Nod-Krai's treasure hunters — and hoarders — only one has ever proven sufficiently effective.</i>",
+            "id": 11242,
             "name": "Savvy Strategy: Splitting the Spoils"
         },
         "combat3": {
@@ -757,6 +765,7 @@
                 }
             },
             "descriptionRaw": "Time to reveal those pocket aces! Jahoda retrieves 2 {LINK#N11240002}<color=#FFD780FF>Purrsonal Coordinated Assistance Robots</color>{/LINK} and deals a single instance of <color=#80FFD7FF>Anemo DMG</color> to nearby opponents.\n\n<i>\"Coordinated assistance? It means you 'assist' some Mora our way, and we handle the 'coordination.' Makes purrfect sense, don't you agree?\"</i>",
+            "id": 11245,
             "name": "Hidden Aces: Seven Tools of the Hunter"
         },
         "costs": {
@@ -950,18 +959,22 @@
         },
         "passive1": {
             "descriptionRaw": "When your team has at least one <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, or <color=#99FFFFFF>Cryo</color> character, the {LINK#N11240002}<color=#FFD780FF>Purrsonal Coordinated Assistance Robots</color>{/LINK} from the Elemental Burst <color=#FFD780FF>Hidden Aces: Seven Tools of the Hunter</color> will be enhanced based on the number of characters of each corresponding element.\nJahoda secretly keeps track of these characters. Among them, the element with the highest number of characters determines the enhancement effect:\n· <color=#FF9999FF>Pyro</color>: <color=#FFD780FF>Purrsonal Coordinated Assistance Robots</color> deal 130% of their original DMG.\n· <color=#80C0FFFF>Hydro</color>: <color=#FFD780FF>Purrsonal Coordinated Assistance Robots</color> heal for 120% of their original healing amount.\n· <color=#FFACFFFF>Electro</color>: The number of <color=#FFD780FF>Purrsonal Coordinated Assistance Robots</color> increases by one.\n· <color=#99FFFFFF>Cryo</color>: The attack interval of <color=#FFD780FF>Purrsonal Coordinated Assistance Robots</color> is reduced by 10%.\n\nIf there's a tie between elements, the order of priority that determines which enhancement takes effect is: <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, then <color=#99FFFFFF>Cryo</color>. Only one elemental effect can initially be triggered.",
+            "id": 1242101,
             "name": "Plan to Get Paid"
         },
         "passive2": {
             "descriptionRaw": "When a {LINK#N11240002}<color=#FFD780FF>Purrsonal Coordinated Assistance Robot</color>{/LINK} from the Elemental Burst <color=#FFD780FF>Hidden Aces: Seven Tools of the Hunter</color> triggers healing on an active team member, if that character's HP is above 70%, their Elemental Mastery will be increased by 100 for 6s.",
+            "id": 1242201,
             "name": "Sweet Berry Bounty"
         },
         "passive3": {
             "descriptionRaw": "When Jahoda is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+            "id": 1242301,
             "name": "Moonsign Benediction: Rooftop Dash"
         },
         "passive4": {
             "descriptionRaw": "When dispatched on an expedition in Nod-Krai, time consumed is reduced by 25%.",
+            "id": 1242501,
             "name": "Backstreet Guile"
         }
     },

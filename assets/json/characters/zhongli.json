@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Increases the maximum number of Stone Steles created by <color=#FFD780FF>Dominus Lapidis</color> that may exist simultaneously to 2.",
+            "id": 301,
             "name": "Rock, the Backbone of Earth"
         },
         "c2": {
             "descriptionRaw": "<color=#FFD780FF>Planet Befall</color> grants nearby characters on the field a Jade Shield when it descends.",
+            "id": 302,
             "name": "Stone, the Cradle of Jade"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Dominus Lapidis</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 303,
             "name": "Jade, Shimmering through Darkness"
         },
         "c4": {
             "descriptionRaw": "Increases <color=#FFD780FF>Planet Befall</color>'s AoE by 20% and increases the duration of Planet Befall's Petrification effect by 2s.",
+            "id": 304,
             "name": "Topaz, Unbreakable and Fearless"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Planet Befall</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 305,
             "name": "Lazuli, Herald of the Order"
         },
         "c6": {
             "descriptionRaw": "When the Jade Shield takes DMG, 40% of that incoming DMG is converted to HP for the current character.\nA single instance of regeneration cannot exceed 8% of that character's Max HP.",
+            "id": 306,
             "name": "Chrysos, Bounty of Dominator"
         },
         "images": {
@@ -421,6 +427,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, causing stone spears to fall along his path.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10301,
             "name": "Rain of Stone"
         },
         "combat2": {
@@ -574,6 +581,7 @@
                 }
             },
             "descriptionRaw": "#Every mountain, rock and inch of land is filled with the power of Geo, but those who can wield such powers freely are few and far between.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nCommands the power of earth to create a Stone Stele.\n\n<color=#FFD780FF>Hold</color>\nCauses nearby Geo energy to explode, causing the following effects:\n·If their maximum number hasn't been reached, creates a Stone Stele.\n·Creates a shield of jade. The shield's DMG Absorption scales based on Zhongli's Max HP.\n·Deals <color=#FFE699FF>AoE Geo DMG</color>.\n·If there are nearby targets with the <color=#FFE699FF>Geo element</color>, it will drain a large amount of <color=#FFE699FF>Geo element</color> from a maximum of 2 such targets. This effect does not cause DMG.\n\n<color=#FFD780FF>Stone Stele</color>\nWhen created, deals <color=#FFE699FF>AoE Geo DMG</color>.\nAdditionally, it will intermittently resonate with other nearby <color=#FFE699FF>Geo constructs</color>, dealing <color=#FFE699FF>Geo DMG</color> to nearby opponents.\nThe Stone Stele is considered a <color=#FFE699FF>Geo construct</color> that can both be climbed and used to block attacks.\nOnly one Stele created by Zhongli himself may initially exist at any one time.\n\n<color=#FFD780FF>Jade Shield</color>\nPossesses 150% DMG Absorption against all Elemental and Physical DMG.\nCharacters protected by the Jade Shield will decrease the Elemental RES and Physical RES of opponents in a small AoE by 20%. This effect cannot be stacked.\n\n<i>A true master of stone may carve jade and shape gold.</i>",
+            "id": 10302,
             "name": "Dominus Lapidis"
         },
         "combat3": {
@@ -656,6 +664,7 @@
                 }
             },
             "descriptionRaw": "Brings a falling meteor down to earth, dealing massive <color=#FFE699FF>Geo DMG</color> to opponents caught in its AoE and applying the <color=#FFE699FF>Petrification</color> status to them.\n\n<color=#FFD780FF>Petrification</color>\nOpponents affected by the <color=#FFE699FF>Petrification</color> status cannot move.\n\n<i>The falling meteor punishes the unjust.</i>",
+            "id": 10303,
             "name": "Planet Befall"
         },
         "costs": {
@@ -848,14 +857,17 @@
         },
         "passive1": {
             "descriptionRaw": "When the Jade Shield takes DMG, it will Fortify:\n·Fortified characters have 5% increased Shield Strength.\nCan stack up to 5 times, and lasts until the Jade Shield disappears.",
+            "id": 302101,
             "name": "Resonant Waves"
         },
         "passive2": {
             "descriptionRaw": "Zhongli deals bonus DMG based on his Max HP:\n·Normal Attack, Charged Attack, and Plunging Attack DMG is increased by 1.39% of Max HP.\n·<color=#FFD780FF>Dominus Lapidis'</color> Stone Stele, resonance, and hold DMG is increased by 1.9% of Max HP.\n·<color=#FFD780FF>Planet Befall's</color> DMG is increased by 33% of Max HP.",
+            "id": 302201,
             "name": "Dominance of Earth"
         },
         "passive3": {
             "descriptionRaw": "Refunds 15% of the ore used when crafting Polearm-type weapons.",
+            "id": 302301,
             "name": "Arcanum of Crystal"
         }
     },

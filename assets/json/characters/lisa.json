@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Lisa regenerates 2 Energy for every opponent hit while holding <color=#FFD780FF>Violet Arc</color>.\nA maximum of 10 Energy can be regenerated in this manner at any one time.",
+            "id": 41,
             "name": "Infinite Circuit"
         },
         "c2": {
             "descriptionRaw": "Holding <color=#FFD780FF>Violet Arc</color> has the following effects:\n·Increases DEF by 25%.\n·Increases Lisa's resistance to interruption.",
+            "id": 42,
             "name": "Electromagnetic Field"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Lightning Rose</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 43,
             "name": "Resonant Thunder"
         },
         "c4": {
             "descriptionRaw": "<color=#FFD780FF>Lightning Rose</color> now unleashes 1-3 lightning bolts when it attacks.",
+            "id": 44,
             "name": "Plasma Eruption"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Violet Arc</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 45,
             "name": "Electrocute"
         },
         "c6": {
             "descriptionRaw": "When Lisa takes the field, she applies 3 stacks of <color=#FFD780FF>Violet Arc</color>'s Conductive status onto nearby opponents.\nThis effect can only occur once every 5s.",
+            "id": 46,
             "name": "Pulsating Witch"
         },
         "images": {
@@ -385,6 +391,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 lightning attacks that deal <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#FFACFFFF>AoE Electro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Electro, Lisa plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#FFACFFFF>AoE Electro DMG</color> upon impact with the ground.",
+            "id": 10060,
             "name": "Lightning Touch"
         },
         "combat2": {
@@ -521,6 +528,7 @@
                 }
             },
             "descriptionRaw": "#Channels the power of lightning to sweep bothersome matters away.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nReleases a homing Lightning Orb.\nOn hit, it deals <color=#FFACFFFF>Electro DMG</color> and applies a stack of the Conductive status (max 3 stacks) to opponents in a small AoE.\n\n<color=#FFD780FF>Hold</color>\nAfter an extended casting time, calls down lightning from the heavens, dealing massive <color=#FFACFFFF>Electro DMG</color> to all nearby opponents.\nDeals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status.\n\n<i>Electro Purple is the raiment of the Witch of Purple Rose.</i>",
+            "id": 10061,
             "name": "Violet Arc"
         },
         "combat3": {
@@ -603,6 +611,7 @@
                 }
             },
             "descriptionRaw": "Summons a Lightning Rose that unleashes powerful lightning bolts, launching surrounding opponents and dealing <color=#FFACFFFF>Electro DMG</color>.\nThe Lightning Rose will continuously emit lightning to knock back opponents and deal <color=#FFACFFFF>Electro DMG</color> throughout the ability's duration.\n\n<i>This rose is beautiful, but beware its mortal thorns.</i>",
+            "id": 10062,
             "name": "Lightning Rose"
         },
         "costs": {
@@ -795,14 +804,17 @@
         },
         "passive1": {
             "descriptionRaw": "Hits by Charged Attacks apply <color=#FFD780FF>Violet Arc</color>'s Conductive status to opponents.",
+            "id": 42101,
             "name": "Induced Aftershock"
         },
         "passive2": {
             "descriptionRaw": "Opponents hit by <color=#FFD780FF>Lightning Rose</color> have their DEF decreased by 15% for 10s.",
+            "id": 42201,
             "name": "Static Electricity Field"
         },
         "passive3": {
             "descriptionRaw": "When Lisa crafts a potion, she has a 20% chance to refund a portion of the crafting materials used.",
+            "id": 42301,
             "name": "General Pharmaceutics"
         }
     },

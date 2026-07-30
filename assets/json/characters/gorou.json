@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When characters (other than Gorou) within the AoE of Gorou's <color=#FFD780FF>General's War Banner</color> or <color=#FFD780FF>General's Glory</color> deal Geo DMG to opponents, the CD of Gorou's <color=#FFD780FF>Inuzaka All-Round Defense</color> is decreased by 2s.\nThis effect can occur once every 10s.",
+            "id": 551,
             "name": "Rushing Hound: Swift as the Wind"
         },
         "c2": {
             "descriptionRaw": "While <color=#FFD780FF>General's Glory</color> is in effect, its duration is extended by 1s when a nearby active character obtains an Elemental Shard from a Crystallize reaction, or triggers a Lunar-Crystallize reaction. \nThis effect can occur once every 0.1s. Max extension is 3s.",
+            "id": 552,
             "name": "Sitting Hound: Steady as a Clock"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Inuzaka All-Round Defense</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 553,
             "name": "Mauling Hound: Fierce as Fire"
         },
         "c4": {
             "descriptionRaw": "When <color=#FFD780FF>General's Glory</color> is in the \"Impregnable\" or \"Crunch\" states, it will also heal active characters within its AoE by 50% of Gorou's own DEF every 1.5s.",
+            "id": 554,
             "name": "Lapping Hound: Warm as Water"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Juuga: Forward Unto Victory</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 555,
             "name": "Striking Hound: Thunderous Force"
         },
         "c6": {
             "descriptionRaw": "For 12s after using <color=#FFD780FF>Inuzaka All-Round Defense</color> or <color=#FFD780FF>Juuga: Forward Unto Victory</color>, increases the CRIT DMG of all nearby party members' <color=#FFE699FF>Geo DMG</color> based on the buff level of the skill's field at the time of use:\n· \"Standing Firm\": +10%\n· \"Impregnable\": +20%\n· \"Crunch\": +40%\n\nThis effect cannot stack and will take reference from the last instance of the effect that is triggered.",
+            "id": 556,
             "name": "Valiant Hound: Mountainous Fealty"
         },
         "images": {
@@ -385,6 +391,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, stone crystals will accumulate on the arrowhead. A fully charged crystalline arrow will deal <color=#FFE699FF>Geo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+            "id": 10551,
             "name": "Ripping Fang Fletching"
         },
         "combat2": {
@@ -485,6 +492,7 @@
                 }
             },
             "descriptionRaw": "Deals <color=#FFE699FF>AoE Geo DMG</color> and sets up a General's War Banner.\n\n<color=#FFD780FF>General's War Banner</color>\nProvides up to 3 buffs to active characters within the skill's AoE based on the number of <color=#FFE699FF>Geo</color> characters in the party at the time of casting:\n· 1 Geo character: Adds \"Standing Firm\" - DEF Bonus.\n· 2 Geo characters: Adds \"Impregnable\" - Increased resistance to interruption.\n· 3 Geo characters: Adds \"Crunch\" - <color=#FFE699FF>Geo DMG Bonus</color>.\n\nGorou can deploy only 1 General's War Banner on the field at any one time. Characters can only benefit from 1 General's War Banner at a time. When a party member leaves the field, the active buff will last for 2s.\n\n<color=#FFD780FF>Hold</color>\nAdjust the location of the skill.\n\n<i>\"Take up this formation and we'll be safe — I guarantee it!\" As a general and a leader of troops, the last thing Gorou wants is to see is those who follow him getting hurt.</i>",
+            "id": 10552,
             "name": "Inuzaka All-Round Defense"
         },
         "combat3": {
@@ -585,6 +593,7 @@
                 }
             },
             "descriptionRaw": "Displaying his valor as a general, Gorou deals <color=#FFE699FF>AoE Geo DMG</color> and creates a field known as General's Glory to embolden his comrades.\n\n<color=#FFD780FF>General's Glory</color>\nThis field has the following properties:\n· Like the General's War Banner created by Inuzaka All-Round Defense, provides buffs to active characters within the skill's AoE based on the number of <color=#FFE699FF>Geo</color> characters in the party. Also moves together with your active character.\n· Generates 1 Crystal Collapse every 1.5s that deals <color=#FFE699FF>AoE Geo DMG</color> to 1 opponent within the skill's AoE.\n· Pulls 1 elemental shard in the skill's AoE to your active character's position every 1.5s (elemental shards are created by Crystallize reactions).\n\nIf a General's War Banner created by Gorou currently exists on the field when this ability is used, it will be destroyed. In addition, for the duration of General's Glory, Gorou's Elemental Skill \"Inuzaka All-Round Defense\" will not create the General's War Banner.\n If Gorou falls, the effects of General's Glory will be cleared.\n\n<i>\"We have the high ground!\" Gorou can ever so slightly change the terrain of the battlefield to help win victory. This technique has seen him through many battles against seemingly superior opposition.</i>",
+            "id": 10555,
             "name": "Juuga: Forward Unto Victory"
         },
         "costs": {
@@ -777,14 +786,17 @@
         },
         "passive1": {
             "descriptionRaw": "After using <color=#FFD780FF>Juuga: Forward Unto Victory</color>, all nearby party members' DEF is increased by 25% for 12s.",
+            "id": 552101,
             "name": "Heedless of the Wind and Weather"
         },
         "passive2": {
             "descriptionRaw": "Gorou receives the following DMG Bonuses to his attacks based on his DEF:\n· <color=#FFD780FF>Inuzaka All-Round Defense</color>: Skill DMG increased by 156% of DEF\n· <color=#FFD780FF>Juuga: Forward Unto Victory</color>: Skill DMG and Crystal Collapse DMG increased by 15.6% of DEF",
+            "id": 552201,
             "name": "A Favor Repaid"
         },
         "passive3": {
             "descriptionRaw": "Displays the location of nearby <color=#FFD780FF>resources unique to Inazuma</color> on the mini-map.",
+            "id": 552301,
             "name": "Seeker of Shinies"
         }
     },

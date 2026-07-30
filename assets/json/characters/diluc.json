@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Diluc deals 15% more DMG to opponents whose HP is above 50%.",
+            "id": 161,
             "name": "Conviction"
         },
         "c2": {
             "descriptionRaw": "When Diluc takes DMG, his ATK increases by 10% and his ATK SPD increases by 5%. Lasts for 10s.\nThis effect can stack up to 3 times and can only occur once every 1.5s.",
+            "id": 162,
             "name": "Searing Ember"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Searing Onslaught</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 163,
             "name": "Fire and Steel"
         },
         "c4": {
             "descriptionRaw": "Casting <color=#FFD780FF>Searing Onslaught</color> in rhythm greatly increases damage dealt.\n2s after casting <color=#FFD780FF>Searing Onslaught</color>, casting the next Searing Onslaught in the combo deals 40% additional DMG. This effect lasts for 2s.",
+            "id": 164,
             "name": "Flowing Flame"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Dawn</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 165,
             "name": "Phoenix, Harbinger of Dawn"
         },
         "c6": {
             "descriptionRaw": "After casting <color=#FFD780FF>Searing Onslaught</color>, the next 2 Normal Attacks within the next 6s will have their DMG and ATK SPD increased by 30%.\nAdditionally, Searing Onslaught will not interrupt the Normal Attack combo.",
+            "id": 166,
             "name": "Flaming Sword, Nemesis of the Dark"
         },
         "images": {
@@ -421,6 +427,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10160,
             "name": "Tempered Sword"
         },
         "combat2": {
@@ -503,6 +510,7 @@
                 }
             },
             "descriptionRaw": "Performs a forward slash that deals <color=#FF9999FF>Pyro DMG</color>.\n\nThis skill can be consecutively used 3 times.\nEnters CD if not cast again within a short period.\n\n<i>The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.</i>",
+            "id": 10161,
             "name": "Searing Onslaught"
         },
         "combat3": {
@@ -621,6 +629,7 @@
                 }
             },
             "descriptionRaw": "Releases intense flames to knock back nearby opponents, dealing <color=#FF9999FF>Pyro DMG</color>. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <color=#FF9999FF>Pyro DMG</color> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of <color=#FF9999FF>AoE Pyro DMG</color>.\nThe searing flames that run down his blade cause it to be infused with <color=#FF9999FF>Pyro</color>.\n\n<i>The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.</i>",
+            "id": 10165,
             "name": "Dawn"
         },
         "costs": {
@@ -813,14 +822,17 @@
         },
         "passive1": {
             "descriptionRaw": "Diluc's Charged Attack Stamina Cost is decreased by 50%, and its duration is increased by 3s.",
+            "id": 162101,
             "name": "Relentless"
         },
         "passive2": {
             "descriptionRaw": "The <color=#FF9999FF>Pyro Infusion</color> provided by <color=#FFD780FF>Dawn</color> lasts for 4s longer. Additionally, Diluc gains 20% <color=#FF9999FF>Pyro DMG Bonus</color> during the duration of this effect.",
+            "id": 162201,
             "name": "Blessing of Phoenix"
         },
         "passive3": {
             "descriptionRaw": "Refunds 15% of the ore used when crafting Claymore-type weapons.",
+            "id": 162301,
             "name": "Tradition of the Dawn Knight"
         }
     },
