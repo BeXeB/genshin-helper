@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "After using <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color>, Arataki Itto gains 2 stacks of Superlative Superstrength. After 1s, Itto will gain 1 stack of Superlative Superstrength every 0.5s for 1.5s.",
+            "id": 571,
             "name": "Stay a While and Listen Up"
         },
         "c2": {
             "descriptionRaw": "After using <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color>, each party member whose Element is <color=#FFE699FF>Geo</color> will decrease that skill's CD by 1.5s and restore 6 Energy to Arataki Itto.\nCD can be decreased by up to 4.5s in this manner. Max 18 Energy can be restored in this manner.",
+            "id": 572,
             "name": "Gather 'Round, It's a Brawl!"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Masatsu Zetsugi: Akaushi Burst!</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 573,
             "name": "Horns Lowered, Coming Through"
         },
         "c4": {
             "descriptionRaw": "When the Raging Oni King state caused by <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color> ends, all nearby party members gain 20% DEF and 20% ATK for 10s.",
+            "id": 574,
             "name": "Jailhouse Bread and Butter"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 575,
             "name": "10 Years of Hanamizaka Fame"
         },
         "c6": {
             "descriptionRaw": "Arataki Itto's Charged Attacks deal +70% CRIT DMG. Additionally, when he uses Arataki Kesagiri, he has a 50% chance to not consume stacks of Superlative Superstrength.",
+            "id": 576,
             "name": "Arataki Itto, Present!"
         },
         "images": {
@@ -439,6 +445,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\nWhen the 2nd and 4th strikes hit opponents, Itto will gain 1 and 2 stacks of Superlative Superstrength, respectively.\nMax 5 stacks. Triggering this effect will refresh the current duration of any existing stacks.\n\nAdditionally, Itto's Normal Attack combo does not immediately reset after sprinting or using his Elemental Skill, \"Masatsu Zetsugi: Akaushi Burst!\"\n\n<color=#FFD780FF>Charged Attack</color>\nWhen holding to perform a Charged Attack, Itto unleashes a series of Arataki Kesagiri slashes without consuming Stamina. Instead, each Arataki Kesagiri slash consumes 1 stack of Superlative Superstrength. When the final stack is consumed, Itto delivers a powerful final slash.\nIf no stacks of Superlative Superstrength are available, Itto will perform a single Saichimonji Slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10571,
             "name": "Fight Club Legend"
         },
         "combat2": {
@@ -538,6 +545,7 @@
                 }
             },
             "descriptionRaw": "Hurls Ushi, the young akaushi bull and auxiliary member of the Arataki Gang, dealing <color=#FFE699FF>Geo DMG</color> to opponents on hit. When Ushi hits opponents, Arataki Itto gains 1 stack of Superlative Superstrength.\n\nUshi will remain on the field and provide support in the following ways:\n· Taunts surrounding opponents and draws their attacks.\n· Inherits HP based on a percentage of Arataki Itto's Max HP.\n· When Ushi takes DMG, Arataki Itto gains 1 stack of Superlative Superstrength. Only 1 stack can be gained in this way every 2s.\n· Ushi will flee when its HP reaches 0 or its duration ends. It will grant Arataki Itto 1 stack of Superlative Superstrength when it leaves.\n\n<color=#FFD780FF>Hold</color>\nAdjust throwing angle.\n\nUshi is considered a <color=#FFE699FF>Geo construct</color>. Arataki Itto can only deploy 1 Ushi on the field at any one time.\n\n<i>The name of this technique is derived from Onibudou (a light novel series written by Junkichi). However, calling it \"Onisatsu Zetsugi\" probably constitutes copyright infringement — not to mention how Itto himself is an oni and all...</i>",
+            "id": 10572,
             "name": "Masatsu Zetsugi: Akaushi Burst!"
         },
         "combat3": {
@@ -655,6 +663,7 @@
                 }
             },
             "descriptionRaw": "Time to show 'em the might of the Arataki Gang! For a time, Itto lets out his inner Raging Oni King, wielding his Oni King's Kanabou in battle.\nThis state has the following special properties:\n· Converts Itto's Normal, Charged, and Plunging Attacks to <color=#FFE699FF>Geo DMG</color>. This cannot be overridden.\n· Increases Itto's Normal Attack SPD. Also increases his ATK based on his DEF.\n· On hit, the 1st and 3rd strikes of his attack combo will each grant Arataki Itto 1 stack of Superlative Superstrength.\n· Decreases Itto's Elemental and Physical RES by 20%.\n\nThe Raging Oni King state will be cleared when Itto leaves the field.\n\n<i>This is the pinnacle technique of the ultimate fighting style (according to Itto). It would be pointless for Arataki Itto to reference any other fighting styles to improve his own, for he, and no other, is the strongest, most terrible oni in the land.</i>\n<i>Shouta thinks it looks really cool.</i>",
+            "id": 10575,
             "name": "Royal Descent: Behold, Itto the Evil!"
         },
         "costs": {
@@ -847,14 +856,17 @@
         },
         "passive1": {
             "descriptionRaw": "When Arataki Itto uses consecutive Arataki Kesagiri, he obtains the following effects:\n· Each slash increases the ATK SPD of the next slash by 10%. Max ATK SPD increase is 30%.\n· Increases his resistance to interruption.\n\nThese effects will be cleared once he stops performing consecutive slashes.",
+            "id": 572101,
             "name": "Arataki Ichiban"
         },
         "passive2": {
             "descriptionRaw": "Arataki Kesagiri DMG is increased by 35% of Arataki Itto's DEF.",
+            "id": 572201,
             "name": "Bloodline of the Crimson Oni"
         },
         "passive3": {
             "descriptionRaw": "When a party member uses attacks to obtain wood from a tree, they have a 25% chance to get an additional log of wood.",
+            "id": 572301,
             "name": "Woodchuck Chucked"
         }
     },

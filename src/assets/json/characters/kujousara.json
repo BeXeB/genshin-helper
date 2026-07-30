@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When Tengu Juurai grants characters ATK Bonuses or hits opponents, the CD of <color=#FFD780FF>Tengu Stormcall</color> is decreased by 1s.\nThis effect can be triggered once every 3s.",
+            "id": 561,
             "name": "Crow's Eye"
         },
         "c2": {
             "descriptionRaw": "Unleashing <color=#FFD780FF>Tengu Stormcall</color> will leave a weaker Crowfeather at Kujou Sara's original position that will deal 30% of its original DMG.",
+            "id": 562,
             "name": "Dark Wings"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Subjugation: Koukou Sendou</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 563,
             "name": "The War Within"
         },
         "c4": {
             "descriptionRaw": "The number of Tengu Juurai: Stormcluster released by <color=#FFD780FF>Subjugation: Koukou Sendou</color> is increased to 6.",
+            "id": 564,
             "name": "Conclusive Proof"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Tengu Stormcall</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 565,
             "name": "Spellsinger"
         },
         "c6": {
             "descriptionRaw": "The <color=#FFACFFFF>Electro DMG</color> of characters who have had their ATK increased by Tengu Juurai has its CRIT DMG increased by 60%.",
+            "id": 566,
             "name": "Sin of Pride"
         },
         "images": {
@@ -403,6 +409,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, crackling lightning will accumulate on the arrowhead. An arrow fully charged with the storm's might will deal <color=#FFACFFFF>Electro DMG</color>.\nWhen in the Crowfeather Cover state, a fully-charged arrow will leave a Crowfeather behind after it hits.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+            "id": 10561,
             "name": "Tengu Bowmanship"
         },
         "combat2": {
@@ -485,6 +492,7 @@
                 }
             },
             "descriptionRaw": "Retreats rapidly with the speed of a tengu, summoning the protection of the Crowfeather.\nGains Crowfeather Cover for 18s, and when Kujou Sara fires a fully-charged Aimed Shot, Crowfeather Cover will be consumed, and will leave a Crowfeather at the target location.\nCrowfeathers will trigger Tengu Juurai: Ambush after a short time, dealing <color=#FFACFFFF>Electro DMG</color> and granting the active character within its AoE an ATK Bonus based on Kujou Sara's Base ATK.\n\nThe ATK Bonuses from different Tengu Juurai will not stack, and their effects and duration will be determined by the last Tengu Juurai to take effect.\n\n<i>The tengu race have never lacked for exceptional talents who have received an Electro Vision. It's just that they often habitually chant praises to the Electro Archon while manipulating Electro. The chants go something like this</i>\n<i>\"Show forth your might, O praiseworthy Narukami, and grant this supplicant your thunderous might! Sowaka!\"</i>",
+            "id": 10562,
             "name": "Tengu Stormcall"
         },
         "combat3": {
@@ -567,6 +575,7 @@
                 }
             },
             "descriptionRaw": "Casts down Tengu Juurai: Titanbreaker, dealing <color=#FFACFFFF>AoE Electro DMG</color>. Afterwards, Tengu Juurai: Titanbreaker spreads out into 4 consecutive bouts of Tengu Juurai: Stormcluster, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\nTengu Juurai: Titanbreaker and Tengu Juurai: Stormcluster can provide the active character within their AoE with the same ATK Bonus as given by the Elemental Skill, Tengu Stormcall.\n\nThe ATK Bonus provided by various kinds of Tengu Juurai will not stack, and their effects and duration will be determined by the last Tengu Juurai to take effect.\n\n<i>Sara departed from her people, the tengu, and also temporarily lost her faith in the Tenryou Commission. But once the clouds over her heart cleared, she found her own lightning anew.</i>",
+            "id": 10565,
             "name": "Subjugation: Koukou Sendou"
         },
         "costs": {
@@ -759,14 +768,17 @@
         },
         "passive1": {
             "descriptionRaw": "While in the Crowfeather Cover state provided by <color=#FFD780FF>Tengu Stormcall</color>, Aimed Shot charge times are decreased by 60%.",
+            "id": 562101,
             "name": "Immovable Will"
         },
         "passive2": {
             "descriptionRaw": "When Tengu Juurai: Ambush hits opponents, Kujou Sara will restore 1.2 Energy to all party members for every 100% Energy Recharge she has. This effect can be triggered once every 3s.",
+            "id": 562201,
             "name": "Decorum"
         },
         "passive3": {
             "descriptionRaw": "When dispatched on an expedition in Inazuma, time consumed is reduced by 25%.",
+            "id": 562301,
             "name": "Land Survey"
         }
     },

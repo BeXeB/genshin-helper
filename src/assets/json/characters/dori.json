@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "The number of After-Sales Service Rounds created by <color=#FFD780FF>Troubleshooter Shots</color> is increased by 1.",
+            "id": 681,
             "name": "Additional Investment"
         },
         "c2": {
             "descriptionRaw": "When you are in combat and the <color=#FFD780FF>Jinni</color> heals the character it is connected to, it will fire a Jinni Toop from that character's position that deals 50% of Dori's ATK DMG.",
+            "id": 682,
             "name": "Special Franchise"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Alcazarzaray's Exactitude</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 683,
             "name": "Wonders Never Cease"
         },
         "c4": {
             "descriptionRaw": "The character connected to the <color=#FFD780FF>Jinni</color> will obtain the following buffs based on their current HP and Energy:\n·When their HP is lower than 50%, they gain 50% Incoming Healing Bonus.\n·When their Energy is less than 50%, they gain 30% Energy Recharge.",
+            "id": 684,
             "name": "Discretionary Supplement"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 685,
             "name": "Value for Mora"
         },
         "c6": {
             "descriptionRaw": "Dori gains the following effects for 3s after using <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color>:\n·<color=#FFACFFFF>Electro Infusion</color>.\n·When Normal Attacks hit opponents, all nearby party members will heal HP equivalent to 4% of Dori's Max HP. This type of healing can occur once every 0.1s.",
+            "id": 686,
             "name": "Sprinkling Weight"
         },
         "images": {
@@ -420,6 +426,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10681,
             "name": "Marvelous Sword-Dance (Modified)"
         },
         "combat2": {
@@ -484,6 +491,7 @@
                 }
             },
             "descriptionRaw": "Directs a Spirit-Warding Lamp to fire off a Troubleshooter Shot at opponents, dealing <color=#FFACFFFF>Electro DMG</color>.\nAfter the Troubleshooter Shot hits, it will create 2 After-Sales Service Rounds that will automatically track nearby opponents and deal <color=#FFACFFFF>Electro DMG</color>.\n\n<i>It is said that Dori can fix any problem for you... for the right price.</i>",
+            "id": 10682,
             "name": "Spirit-Warding Lamp: Troubleshooter Cannon"
         },
         "combat3": {
@@ -619,6 +627,7 @@
                 }
             },
             "descriptionRaw": "Summons forth the Jinni within the lamp to give the client various kinds of aid.\n\n<color=#FFD780FF>Jinni</color>\nConnects to a nearby character. The connected character will:\n· Continuously restore HP based on Dori's Max HP.\n· Continuously regenerate Energy.\n· Be affected by <color=#FFACFFFF>Electro</color>.\nWhen the connector between the Jinni and the character touches opponents, it will deal one instance of <color=#FFACFFFF>Electro DMG</color> to them every 0.4s.\n\nOnly one Jinni can exist at one time.\n\n<i>\"Hmm? You'll pick this lamp, will you? Oh my, you've got good taste! Unfortunately, there's no price on this treasure — comparable, I'd say, to how you will not sell that mascot by your side for any price in the world.\"</i>",
+            "id": 10685,
             "name": "Alcazarzaray's Exactitude"
         },
         "costs": {
@@ -811,14 +820,17 @@
         },
         "passive1": {
             "descriptionRaw": "After a character connected to the <color=#FFD780FF>Jinni</color> triggers an Electro-Charged, Lunar-Charged, Superconduct, Stellar-Conduct, Overloaded, Quicken, Aggravate, Hyperbloom, Electro Swirl, or Electro Crystallize reaction, the CD of <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color> is decreased by 1s.\nThis effect can be triggered once every 3s.",
+            "id": 682101,
             "name": "An Eye for Gold"
         },
         "passive2": {
             "descriptionRaw": "When the Troubleshooter Shots or After-Sales Service Rounds from <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color> hit opponents, Dori will restore 5 Elemental Energy for every 100% Energy Recharge possessed.\nPer Spirit-Warding Lamp: Troubleshooter Cannon, only one instance of Energy restoration can be triggered and a maximum of 15 Energy can be restored this way.",
+            "id": 682201,
             "name": "Compound Interest"
         },
         "passive3": {
             "descriptionRaw": "Has a 25% chance to recover some of the materials used when crafting Character and Weapon Materials.",
+            "id": 682301,
             "name": "Unexpected Order"
         }
     },

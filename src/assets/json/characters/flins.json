@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "The basic cooldown of the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color> is reduced to 4s.\nAdditionally, when party members trigger Lunar-Charged reactions, Flins will recover 8 Elemental Energy. This effect can occur once every 5.5s.",
+            "id": 1201,
             "name": "Part the Veil of Snow"
         },
         "c2": {
             "descriptionRaw": "For the next 6s after using the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color>, when Flins's next Normal Attack hits an opponent, it will deal an additional 50% of Flins's ATK as <color=#FFACFFFF>AoE Electro DMG</color>. This DMG is considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: While Flins is on the field, after his <color=#FFACFFFF>Electro</color> attacks hit an opponent, that opponent's <color=#FFACFFFF>Electro RES</color> will be decreased by 25% for 7s.",
+            "id": 1202,
             "name": "The Devil's Wall"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of {LINK#S11205}<color=#FFD780FF>Ancient Ritual: Cometh the Night</color>{/LINK} by 3.\nMaximum upgrade level is 15.",
+            "id": 1203,
             "name": "Stranger in the Night"
         },
         "c4": {
             "descriptionRaw": "Flins's ATK is increased by 20%.\nAdditionally, his Ascension Talent {LINK#P1202201}<color=#FFD780FF>Whispering Flame</color>{/LINK} is enhanced: Flins's Elemental Mastery is increased by 10% of his ATK. The maximum increase obtainable this way is 220.",
+            "id": 1204,
             "name": "Night on Bald Mountain"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of {LINK#S11202}<color=#FFD780FF>Ancient Rite: Arcane Light</color>{/LINK} by 3.\nMaximum upgrade level is 15.",
+            "id": 1205,
             "name": "Exile's Shadow"
         },
         "c6": {
             "descriptionRaw": "The DMG dealt to opponents by Flins's Lunar-Charged reactions is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 35%.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: All nearby party members' Lunar-Charged DMG is <color=#FFD780FF>elevated</color> by 10%.",
+            "id": 1206,
             "name": "Songs and Dances of Death"
         },
         "images": {
@@ -403,6 +409,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a forward spear throw.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 11201,
             "name": "Pocztowy Demonspear"
         },
         "combat2": {
@@ -593,6 +600,7 @@
                 }
             },
             "descriptionRaw": "Flins summons forth the ancient power concealed within his lamp and switches to his <color=#FFD780FF>Manifest Flame</color> form. This form has the following characteristics:\n· Flins's Normal and Charged Attacks deal <color=#FFACFFFF>Electro DMG</color> that cannot be overridden by other Elemental infusions, and he is unable to perform Plunging Attacks.\n· His interruption resistance is increased.\n· His Elemental Skill <color=#FFD780FF>Ancient Rite: Arcane Light</color> is replaced with the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color>.\n\n<color=#FFD780FF>Northland Spearstorm</color>\nFlins summons a flurry of spears in front, dealing <color=#FFACFFFF>AoE Electro DMG</color> and causing his Elemental Burst <color=#FFD780FF>Ancient Ritual: Cometh the Night</color> to be replaced with the special Elemental Burst {LINK#N11200001}<color=#FFD780FF>Thunderous Symphony</color>{/LINK} for the next 6s.\nThe base CD of <color=#FFD780FF>Northland Spearstorm</color> is 6s and will not be affected by other effects.",
+            "id": 11202,
             "name": "Ancient Rite: Arcane Light"
         },
         "combat3": {
@@ -747,6 +755,7 @@
                 }
             },
             "descriptionRaw": "Flins unleashes the true power of his lamp, dealing <color=#FFACFFFF>AoE Electro DMG</color> and, after a short delay, dealing 2 instances of middle-phase and 1 instance of final-phase <color=#FFACFFFF>AoE Electro DMG</color>, all of which are considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional 2 instances of middle-phase Lunar-Charged <color=#FFACFFFF>AoE Electro DMG</color>.\n\nAfter using the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color>, Flins's Elemental Burst <color=#FFD780FF>Ancient Ritual: Cometh the Night</color> will be replaced with the special Elemental Burst <color=#FFD780FF>Thunderous Symphony</color> for the next 6s.\n\n<color=#FFD780FF>Thunderous Symphony</color>\nConsume less Elemental Energy to unleash a special Elemental Burst. Flins deals a single instance of <color=#FFACFFFF>AoE Electro DMG</color> that is considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional instance of Lunar-Charged <color=#FFACFFFF>AoE Electro DMG</color>.",
+            "id": 11205,
             "name": "Ancient Ritual: Cometh the Night"
         },
         "costs": {
@@ -940,18 +949,22 @@
         },
         "passive1": {
             "descriptionRaw": "Flins will gain a corresponding buff effect based on the party's <color=#FFD780FF>Moonsign</color>.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Lunar-Charged reactions triggered by Flins will deal an additional 20% DMG.",
+            "id": 1202101,
             "name": "Symphony of Winter"
         },
         "passive2": {
             "descriptionRaw": "Flins's Elemental Mastery is increased by 8% of his ATK. The maximum increase obtainable this way is 160.",
+            "id": 1202201,
             "name": "Whispering Flame"
         },
         "passive3": {
             "descriptionRaw": "When a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Flins has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.\n\nAdditionally, when Flins is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+            "id": 1202301,
             "name": "Moonsign Benediction: Old World Secrets"
         },
         "passive4": {
             "descriptionRaw": "Displays the location of nearby <color=#FFD780FF>resources unique to Nod-Krai</color> on the mini-map.\nAdditionally, Flins appears to be able to decipher the whispers of the Wild Hunt...",
+            "id": 1202501,
             "name": "A Light in the Dark"
         }
     },

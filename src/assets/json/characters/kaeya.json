@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "The CRIT Rate of Kaeya's Normal and Charge Attacks against opponents affected by <color=#99FFFFFF>Cryo</color> is increased by 15%.",
+            "id": 151,
             "name": "Excellent Blood"
         },
         "c2": {
             "descriptionRaw": "While <color=#FFD780FF>Glacial Waltz</color> is in effect, for each opponent defeated, its duration is increased by 2.5s, up to a maximum of 15s.",
+            "id": 152,
             "name": "Never-Ending Performance"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Frostgnaw</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 153,
             "name": "Dance of Frost"
         },
         "c4": {
             "descriptionRaw": "Triggers automatically when Kaeya's HP falls below 20%:\nCreates a shield that absorbs damage equal to 30% of Kaeya's Max HP. Lasts for 20s.\nThis shield absorbs <color=#99FFFFFF>Cryo DMG</color> with 250% efficiency.\nCan only occur once every 60s.",
+            "id": 154,
             "name": "Frozen Kiss"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Glacial Waltz</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 155,
             "name": "Frostbiting Embrace"
         },
         "c6": {
             "descriptionRaw": "<color=#FFD780FF>Glacial Waltz</color> will generate 1 additional icicle, and will regenerate 15 Energy when cast.",
+            "id": 156,
             "name": "Glacial Whirlwind"
         },
         "images": {
@@ -420,6 +426,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10073,
             "name": "Ceremonial Bladework"
         },
         "combat2": {
@@ -466,6 +473,7 @@
                 }
             },
             "descriptionRaw": "Unleashes a frigid blast, dealing <color=#99FFFFFF>Cryo DMG</color> to opponents in front of Kaeya.\n\n<i>Kaeya seems affable, but his nature is that of unyielding ice.</i>",
+            "id": 10074,
             "name": "Frostgnaw"
         },
         "combat3": {
@@ -548,6 +556,7 @@
                 }
             },
             "descriptionRaw": "Coalescing the frost in the air, Kaeya summons 3 icicles that revolve around him.\nThese icicles will follow the character around and deal <color=#99FFFFFF>Cryo DMG</color> to opponents in their path for the ability's duration.\n\n<i>A winsome smile, genial words, and the merciless hoarfrost that lies beneath... These are all Kaeya's weapons.</i>",
+            "id": 10075,
             "name": "Glacial Waltz"
         },
         "costs": {
@@ -740,14 +749,17 @@
         },
         "passive1": {
             "descriptionRaw": "Every hit with <color=#FFD780FF>Frostgnaw</color> regenerates HP for Kaeya equal to 15% of his ATK.",
+            "id": 152101,
             "name": "Cold-Blooded Strike"
         },
         "passive2": {
             "descriptionRaw": "Opponents <color=#99FFFFFF>Frozen</color> by <color=#FFD780FF>Frostgnaw</color> will drop additional Elemental Particles.\nFrostgnaw may only produce a maximum of 2 additional Elemental Particles per use.",
+            "id": 152201,
             "name": "Glacial Heart"
         },
         "passive3": {
             "descriptionRaw": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+            "id": 152301,
             "name": "Hidden Strength"
         }
     },

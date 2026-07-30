@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When the Suanni Man Chai from <color=#FFD780FF>Suanni's Gilded Dance</color> meets back up with Gaming, it will heal 15% of Gaming's HP.",
+            "id": 921,
             "name": "Bringer of Blessing"
         },
         "c2": {
             "descriptionRaw": "When Gaming receives healing and this instance of healing overflows, his ATK will be increased by 20% for 5s.",
+            "id": 922,
             "name": "Plum Blossoms Underfoot"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Bestial Ascent</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 923,
             "name": "Awakening Spirit"
         },
         "c4": {
             "descriptionRaw": "When <color=#FFD780FF>Bestial Ascent</color>'s Plunging Attack: Charmed Cloudstrider hits an opponent, it will restore 2 Energy to Gaming. This effect can be triggered once every 0.2s.",
+            "id": 924,
             "name": "Soar Across Mountains"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Suanni's Gilded Dance</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 925,
             "name": "Evil-Daunting Roar"
         },
         "c6": {
             "descriptionRaw": "<color=#FFD780FF>Bestial Ascent</color>'s Plunging Attack: Charmed Cloudstrider CRIT Rate increased by 20% and CRIT DMG increased by 40%, and its attack radius will be increased.",
+            "id": 926,
             "name": "To Tame All Beasts"
         },
         "images": {
@@ -421,6 +427,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10921,
             "name": "Stellar Rend"
         },
         "combat2": {
@@ -485,6 +492,7 @@
                 }
             },
             "descriptionRaw": "Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface.\nAfter Gaming has used Bestial Ascent to rise into the air, if he immediately uses a Plunging Attack, he will use the especially powerful Plunging Attack: Charmed Cloudstrider instead.\n\n<color=#FFD780FF>Plunging Attack: Charmed Cloudstrider</color>\nThe DMG from Plunging Attacks caused by Bestial Ascent is converted to <color=#FF9999FF>Pyro DMG</color> that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below 10% by this method.\nCharmed Cloudstrider DMG is considered Plunging Attack DMG.\n\n<i>\"Auspicious beasts leap high to pluck the greens — that symbolizes good fortune and knowing how to make some serious green, y'know — so may we all rise to new heights, one step at a time!\"</i>",
+            "id": 10922,
             "name": "Bestial Ascent"
         },
         "combat3": {
@@ -585,6 +593,7 @@
                 }
             },
             "descriptionRaw": "Gaming enters Wushou Stance, briefly applying <color=#FF9999FF>Pyro</color> to him, recovering a fixed amount of HP, and summons his companion, the Suanni Man Chai, to smash into his target, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nAfter bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent.\nWhile Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over 50% HP, he will summon Man Chai again.\nEach Gaming can only have 1 Man Chai on the field simultaneously.\nThis effect will be canceled once Gaming leaves the field.\n\n<i>\"The gilded Suanni spits out fortune like a fireworks show! Hey, now that's what's called prosperity, when business is really 'booming'!\"</i>",
+            "id": 10925,
             "name": "Suanni's Gilded Dance"
         },
         "costs": {
@@ -777,14 +786,17 @@
         },
         "passive1": {
             "descriptionRaw": "After <color=#FFD780FF>Bestial Ascent</color>'s Plunging Attack: Charmed Cloudstrider hits an opponent, Gaming will regain 1.5% of his Max HP once every 0.2s for 0.8s.",
+            "id": 922101,
             "name": "Dance of Amity"
         },
         "passive2": {
             "descriptionRaw": "When Gaming has less than 50% HP, he will receive a 20% Incoming Healing Bonus. When Gaming has 50% HP or more, Plunging Attack: Charmed Cloudstrider will deal 20% more DMG.",
+            "id": 922201,
             "name": "Air of Prosperity"
         },
         "passive3": {
             "descriptionRaw": "During the day (06:00 – 18:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Swift Stride does not stack.",
+            "id": 922301,
             "name": "The Striding Beast"
         }
     },

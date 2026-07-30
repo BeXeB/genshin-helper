@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When she uses the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color>, Citlali gains the \"Opalstar Vestments\" effect until Itzpapa leaves the field. During this time, she will obtain 10 stacks of Stellar Blade. When a nearby active character other than Citlali deals DMG using Normal, Charged, or Plunging Attacks, or Elemental Skills and Bursts, 1 stack of Stellar Blade will be consumed to increase the DMG dealt by 200% of Citlali's Elemental Mastery.\nAfter nearby party members trigger Frozen or Melt, Citlali will gain another 3 stacks of Stellar Blade. This effect can trigger once every 8s.\n\nUsing the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color> will reset Stellar Blade stacks.\nAdditionally, when Citlali is using her leap, or is Aiming or using her Charged Attack in mid-air, her Phlogiston consumption is decreased by 45%.",
+            "id": 1071,
             "name": "Radiant Blades of Centzon Mimixcoah"
         },
         "c2": {
             "descriptionRaw": "Citlali gains 125 Elemental Mastery, and other characters shielded by her Opal Shield, or who have Itzpapa following them, gain 250 Elemental Mastery.\nAdditionally, when the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color> is used, nearby active characters will also be granted an Opal Shield.\n\nAlso, the Ascension Talent \"Mamaloaco's Frigid Rain\" has its effects enhanced:\nWhile Itzpapa is on the field, after nearby party members trigger Frozen or Melt, the opponent(s) affected by this reaction will have their <color=#FF9999FF>Pyro</color> and <color=#80C0FFFF>Hydro</color> RES additionally decreased by 20% for 12s. You must first unlock the Ascension Talent \"Mamaloaco's Frigid Rain\" to gain access to the above effect.",
+            "id": 1072,
             "name": "Heart Devourer's Travail"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Dawnfrost Darkstar</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1073,
             "name": "Cloud Serpent's Feathered Crown"
         },
         "c4": {
             "descriptionRaw": "While the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color> is active, when Itzpapa's Frostfall Storm hits opponents, an additional <color=#FFD780FF>Obsidian Spiritvessel Skull</color> will be summoned. When a Spiritvessel Skull summoned this way explodes, it deals 1800% of Citlali's Elemental Mastery as Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color> and restores 16 Nightsoul points and 8 Energy for Citlali. This effect can trigger once every 8s. This DMG is not considered Elemental Burst DMG.",
+            "id": 1074,
             "name": "Death Defier's Spirit Skull"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Edict of Entwined Splendor</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1075,
             "name": "Nemontemi's Hex"
         },
         "c6": {
             "descriptionRaw": "After being summoned with the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color>, Itzpapa will always be in the Opal Fire state, and when Nightsoul points are exhausted, this state will not end.\nAdditionally, when <color=#FFD780FF>Dawnfrost Darkstar</color> is used, Itzpapa will consume all Nightsoul points, and while it is on the field, it will continuously consume Nightsoul points. Each Nightsoul point consumed in this way will grant Citlali 1 \"Cifra of the Secret Law\" point.\nA maximum of 40 such points can be gained, and each point Citlali possesses will grant all nearby party members a 1.5% <color=#FF9999FF>Pyro</color> and <color=#80C0FFFF>Hydro</color> DMG Bonus, and increase the DMG Citlali deals by 2.5%.\nWhen Itzpapa leaves the field, or upon using Citlali's Elemental Skill again, all \"Cifra of the Secret Law\" points she has will be removed.",
+            "id": 1076,
             "name": "Teoiztac's Secret Pact"
         },
         "images": {
@@ -367,6 +373,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nCalls upon secret arts passed down through the Masters of the Night-Wind from generation to generation, performing up to three strikes that deal <color=#99FFFFFF>Cryo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nEnters Aiming Mode, and after Holding, consumes a certain amount of Stamina to call forth a Frost Star that deals <color=#99FFFFFF>Cryo DMG</color> to opponents in its path.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathers the power of Cryo and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#99FFFFFF>Aoe Cryo DMG</color> upon impact with the ground.",
+            "id": 11071,
             "name": "Shadow-Stealing Spirit Vessel"
         },
         "combat2": {
@@ -538,6 +545,7 @@
                 }
             },
             "descriptionRaw": "Invoking secret pacts passed down by her tribe over the millennia, Citlali deploys an Opal Shield and calls forth \"Obsidian Tzitzimitl: Itzpapa,\" a creature that is (reputedly) terrifying beyond compare, dealing Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color>.\nThe Opal Shield's DMG absorption scales based on Citlali's Elemental Mastery, and absorbs <color=#99FFFFFF>Cryo DMG</color> with 250% efficiency. When it is deployed, it will cause Citlali to briefly be <color=#99FFFFFF>affected by Cryo</color>.\nAfter using this skill, Citlali gains 24 Nightsoul points and enters the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Nightsoul's Blessing: Citlali</color>\nWhen Itzpapa leaves the field, Citlali exits the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Itzpapa</color>\n·Itzpapa will follow the character.\n·If Citlali has at least 50 Nightsoul points, Itzpapa enters the Opal Fire state and continuously consumes Nightsoul points to whip up a Frostfall Storm that follows the character and attacks opponents within its AoE, dealing Nightsoul-aligned <color=#99FFFFFF>Cryo DMG</color>.\n·When Citlali's Nightsoul points are fully depleted, Itzpapa's Opal Fire state also ends.\n\n<i>Usually, the wills that symbolize different stars cannot coexist, for how can purest black be reflected in purest white?\nBe that as it may, Citlali has never harbored a particular preference for colors themselves, and that is just how things played out.</i>",
+            "id": 11072,
             "name": "Dawnfrost Darkstar"
         },
         "combat3": {
@@ -656,6 +664,7 @@
                 }
             },
             "descriptionRaw": "Summons \"allies\" from the starry skies and the vast earth, hurling forth an ice storm to bombard the area in front and deal Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color>. This restores a set amount of Nightsoul points for Citlali, and also summons a <color=#FFD780FF>Spiritvessel Skull</color> near a maximum of 3 opponents within the AoE, with 1 Skull for each opponent. Spiritvessel Skulls explode after some time, dealing Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color> and restoring a set amount of Nightsoul points for Citlali.\n\n<i>\"Ugh, enough of this 'dark star, opal star' stuff! Citlalin, Itzpapa, get 'em!\"</i>",
+            "id": 11075,
             "name": "Edict of Entwined Splendor"
         },
         "costs": {
@@ -849,18 +858,22 @@
         },
         "passive1": {
             "descriptionRaw": "While Itzpapa is on the field, after nearby party members trigger the Frozen or Melt reactions, the <color=#FF9999FF>Pyro</color> and <color=#80C0FFFF>Hydro</color> RES of opponents affected by that reaction decreases by 20% for 12s. Additionally, Citlali will regain 16 Nightsoul points. Nightsoul points can be restored this way once every 8s.",
+            "id": 1072101,
             "name": "Mamaloaco's Frigid Rain"
         },
         "passive2": {
             "descriptionRaw": "During the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color>, Itzpapa's Frostfall Storm DMG is increased by 90% of Citlali's Elemental Mastery. During the Elemental Burst <color=#FFD780FF>Edict of Entwined Splendor</color>, Ice Storm DMG is increased by 1200% of Citlali's Elemental Mastery.\nIn addition, when nearby party members trigger Nightsoul Bursts, Citlali regains 4 Nightsoul points.",
+            "id": 1072201,
             "name": "Itzpapalotl's Star Garments"
         },
         "passive3": {
             "descriptionRaw": "While in an area with Phlogiston Mechanics within Natlan, can use Nightsoul Transmission: Citlali. When the active character is currently high enough in the air, the following will trigger when switching to Citlali: Citlali will leap up high, and will deploy \"White Obsidian Tzitzimitl: Citlalin\" to float in the air. Nightsoul Transmission can be triggered once every 10s by your party.\n\nHolding Aiming Mode will cause Citlali to enter the \"Spiritspeaker\" state, which will allow her to interact with \"Nightspirit Graffiti\" and \"Nightspirit Sigils,\" extracting information and power from them. The rules for interacting with these objects follow the same rules as those governing Iktomisaurus interactions.\n\nAdditionally, holding the jump button will cause Citlali to consume 75 Stamina and leap. In areas within Natlan where Phlogiston mechanics are present, Citlali will prioritize consuming 5 Phlogiston to leap to a height higher still.\nWhen in the air, Citlali can Hold her Normal Attack to consume Phlogiston or Stamina and enter Aiming Mode and trigger Charged Attacks. When initiating Charged Attacks in mid-air, Citlali will prioritize consuming 20 Phlogiston.",
+            "id": 1072301,
             "name": "Night Realm's Gift: Smoke, Mirrors, and the Flowing Winds"
         },
         "passive4": {
             "descriptionRaw": "While in an area with Phlogiston Mechanics within Natlan, triggering \"Nightsoul Burst\" restores 20 Phlogiston.\nThis cannot take effect in Domains, Trounce Domains, or the Spiral Abyss.",
+            "id": 1072501,
             "name": "Songs of Profound Mystery"
         }
     },

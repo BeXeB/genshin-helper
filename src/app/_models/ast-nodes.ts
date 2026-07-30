@@ -6,6 +6,8 @@ export type AstNode =
   | BoldNode
   | LineBreakNode;
 
+export type LinkType = 'N' | 'S' | 'P' | 'T';
+
 export interface TextNode {
   type: 'text';
   text: string;
@@ -20,6 +22,7 @@ export interface ColorNode {
 export interface LinkNode {
   type: 'link';
   id: number;
+  linkType: LinkType;
   children: AstNode[];
 }
 

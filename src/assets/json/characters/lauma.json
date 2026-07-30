@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "After Lauma uses her Elemental Skill <color=#FFD780FF>{LINK#S11192}Runo: Dawnless Rest of Karsikko{/LINK}</color> or her Elemental Burst <color=#FFD780FF>{LINK#S11195}Runo: All Hearts Become the Beating Moon{/LINK}</color>, she will gain Threads of Life for 20s.\nDuring this time, when nearby party members trigger Lunar-Bloom reactions, nearby active characters will recover HP equal to 500% of Lauma's Elemental Mastery. This effect can be triggered once every 1.9s.\nAdditionally, the Stamina cost for Lauma's Spirit Envoy Form will be reduced by 40%, and its Max Duration will be extended by 5s.",
+            "id": 1191,
             "name": "\"O Lips, Weave Me Songs and Psalms\""
         },
         "c2": {
             "descriptionRaw": "The Elemental Burst <color=#FFD780FF>{LINK#S11195}Runo: All Hearts Become the Beating Moon{/LINK}</color> is enhanced:\n· {LINK#N11190003}<color=#FFD780FF>Pale Hymn</color>{/LINK} effects are increased: All nearby party members' Bloom, Hyperbloom, and Burgeon DMG is further increased by 500% of Lauma's Elemental Mastery, and their Lunar-Bloom DMG is further increased by 400% of Lauma's Elemental Mastery.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: All nearby party members' Lunar-Bloom DMG is increased by 40%.",
+            "id": 1192,
             "name": "\"Twine Warnings and Tales From the North\""
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11195}Runo: All Hearts Become the Beating Moon{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1193,
             "name": "\"Seek Not to Tread the Sly Fox's Path\""
         },
         "c4": {
             "descriptionRaw": "When attacks from the {LINK#N11190001}<color=#FFD780FF>Frostgrove Sanctuary</color>{/LINK} summoned by her Elemental Skill <color=#FFD780FF>{LINK#S11192}Runo: Dawnless Rest of Karsikko{/LINK}</color> hit opponents, Lauma will regain 4 Elemental Energy. This effect can be triggered once every 5s.",
+            "id": 1194,
             "name": "\"Nor Yearn for the Great Bear's Might\""
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11192}Runo: Dawnless Rest of Karsikko{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1195,
             "name": "\"If Truth May Be Subject to Witness\""
         },
         "c6": {
             "descriptionRaw": "When the {LINK#N11190001}<color=#FFD780FF>Frostgrove Sanctuary</color>{/LINK} attacks opponents, it will deal 1 additional instance of <color=#99FF88FF>AoE Dendro DMG</color> equal to 185% of Lauma's Elemental Mastery. This DMG is considered Lunar-Bloom DMG. This instance of DMG will not consume any {LINK#N11190003}<color=#FFD780FF>Pale Hymn</color>{/LINK} stacks and will provide Lauma with 2 stacks of Pale Hymn, as well as refreshing the duration of Pale Hymn stacks gained in this manner.\nThis effect can occur up to 8 times during each Frostgrove Sanctuary. When using the Elemental Skill <color=#FFD780FF>{LINK#S11192}Runo: Dawnless Rest of Karsikko{/LINK}</color>, all Pale Hymn stacks gained in this manner will be removed.\n\nAdditionally, when Lauma uses a Normal Attack while she has Pale Hymn stacks, she will consume 1 stack to convert this to deal <color=#99FF88FF>Dendro DMG</color> equal to 150% of her Elemental Mastery. This DMG is considered Lunar-Bloom DMG.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: All nearby party members' Lunar-Bloom DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 25%.",
+            "id": 1196,
             "name": "\"I Offer Blood and Tears to the Moonlight\""
         },
         "images": {
@@ -439,6 +445,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks that deal <color=#99FF88FF>Dendro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nLauma undergoes Spirit Envoy Metamorphosis, transforming into an envoy of the tranquil forest and consuming Stamina to charge forward for up to 10s. While in this state, Lauma's interruption resistance is increased, and she can consume additional Stamina to perform up to two consecutive jumps.\nWhen exiting the Spirit Envoy state, Spirit Envoy Metamorphosis will enter cooldown, during which time, Lauma's Charged Attack will be transformed into Spiritcall Prayer: Consumes a certain amount of Stamina to deal <color=#99FF88FF>AoE Dendro DMG</color> to opponents in front of her after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the might of Dendro, Lauma plunges towards the ground from mid-air, damaging all opponents in her path and dealing <color=#99FF88FF>AoE Dendro DMG</color> upon impact with the ground.",
+            "id": 11191,
             "name": "Peregrination of Linnunrata"
         },
         "combat2": {
@@ -628,6 +635,7 @@
                 }
             },
             "descriptionRaw": "Silently incants an ancient hymn, summoning a {LINK#N11190001}<color=#FFD780FF>Frostgrove Sanctuary</color>{/LINK} with different effects depending on whether you Tap or Hold.\n\n<color=#FFD780FF>Tap</color>\nIntone a Hymn of Hunting, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nCan be unleashed when you have at least 1 {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}. Lauma consumes all Verdant Dew and intones a Hymn of Eternal Rest, dealing one regular instance of <color=#99FF88FF>AoE Dendro DMG</color> and another instance of <color=#99FF88FF>AoE Dendro DMG</color> that is considered Lunar-Bloom DMG. Each Verdant Dew consumed will give Lauma one stack of {LINK#N11190002}<color=#FFD780FF>Moon Song</color>{/LINK}. Each time you Hold to cast an Elemental Skill, a maximum of 3 Verdant Dew can be consumed in this way.\n\nAdditionally, when Lauma's Elemental Skill or attacks from Frostgrove Sanctuary hit an opponent, that opponent's <color=#99FF88FF>Dendro RES</color> and <color=#80C0FFFF>Hydro RES</color> will be decreased for 10s.",
+            "id": 11192,
             "name": "Runo: Dawnless Rest of Karsikko"
         },
         "combat3": {
@@ -764,6 +772,7 @@
                 }
             },
             "descriptionRaw": "Let the wishes of all beings become as moonlight that bathes the earth. Lauma incants a sacred song of the far north, gaining 18 stacks of {LINK#N11190003}<color=#FFD780FF>Pale Hymn</color>{/LINK}.\nAdditionally, if Lauma uses her Elemental Burst while she has {LINK#N11190002}<color=#FFD780FF>Moon Song</color>{/LINK}, or she gains Moon Song within 15s of using her Elemental Burst, she will consume all Moon Song stacks and gain 6 stacks of Pale Hymn for every Moon Song stack consumed. This effect can only be triggered once for each Elemental Burst used, including the 15 seconds following its use.\n\n<color=#FFD780FF>Pale Hymn</color>\nWhen nearby party members deal Bloom, Hyperbloom, Burgeon, or Lunar-Bloom DMG, 1 stack of Pale Hymn will be consumed and the DMG dealt will be increased based on Lauma's Elemental Mastery. If this DMG hits multiple opponents at once, then multiple stacks of Pale Hymn will be consumed, depending on how many opponents are hit.\nThe duration for each stack of Pale Hymn is counted independently.",
+            "id": 11195,
             "name": "Runo: All Hearts Become the Beating Moon"
         },
         "costs": {
@@ -957,18 +966,22 @@
         },
         "passive1": {
             "descriptionRaw": "For the next 20s after Lauma uses her Elemental Skill <color=#FFD780FF>{LINK#S11192}Runo: Dawnless Rest of Karsikko{/LINK}</color>, corresponding differing buff effects will be granted depending on the party's <color=#FFD780FF>Moonsign</color>. The buffs provided by different Moonsign levels cannot stack.\n\n<color=#FFD780FF>Moonsign: Nascent Gleam</color>\nBloom, Hyperbloom, and Burgeon DMG dealt by all nearby party members can score CRIT Hits, with CRIT Rate fixed at 15%, and CRIT DMG fixed at 100%. CRIT Rate from this effect stacks with CRIT Rate from similar effects that allow these Elemental Reactions to CRIT.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>\nAll nearby party members' Lunar-Bloom DMG CRIT Rate +10%, CRIT DMG +20%.",
+            "id": 1192101,
             "name": "Light for the Frosty Night"
         },
         "passive2": {
             "descriptionRaw": "Each point of Elemental Mastery Lauma has will give her the following bonuses:\n· DMG dealt by her Elemental Skill is increased by 0.04%. The maximum increase obtainable this way is 32%.\n· The cooldown of her Charged Attack <color=#FFD780FF>Spirit Envoy Metamorphosis</color> is reduced by 0.02%. The maximum reduction obtainable this way is 20%.",
+            "id": 1192201,
             "name": "Cleansing for the Spring"
         },
         "passive3": {
             "descriptionRaw": "When a Bloom reaction is triggered by a party member, it will be converted into the Lunar-Bloom reaction, with every point of Elemental Mastery that Lauma has increasing Lunar-Bloom's Base DMG by 0.0175%, up to a maximum of 14%.\n\nAdditionally, when Lauma is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+            "id": 1192301,
             "name": "Moonsign Benediction: Nature's Chorus"
         },
         "passive4": {
             "descriptionRaw": "Displays the location of nearby <color=#FFD780FF>resources unique to Nod-Krai</color> on the mini-map.\nAdditionally, Lauma appears to have a special affinity with some small animals affected by kuuvahki...",
+            "id": 1192501,
             "name": "Prayers for the Forest"
         }
     },

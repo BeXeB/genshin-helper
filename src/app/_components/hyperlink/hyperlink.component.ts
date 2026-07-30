@@ -7,11 +7,17 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
+import { map, Observable } from 'rxjs';
 import { HyperlinkService } from '../../_services/hyperlink.service';
+import { CharacterService } from '../../_services/character.service';
 import { FormatterService } from '../../_services/formatter.service';
-import { Hyperlink } from '../../_models/hyperlinks';
-import { AstNode } from '../../_models/ast-nodes';
+import { AstNode, LinkType } from '../../_models/ast-nodes';
 import { AstRendererComponent } from '../ast-renderer/ast-renderer.component';
+
+interface LinkTarget {
+  name: string;
+  description: string;
+}
 
 @Component({
   selector: 'app-hyperlink',
@@ -21,10 +27,11 @@ import { AstRendererComponent } from '../ast-renderer/ast-renderer.component';
 })
 export class HyperlinkComponent implements OnInit {
   @Input({ required: true }) id!: number;
+  @Input() linkType: LinkType = 'N';
   @Input() elementColor: string = 'var(--light-gray)';
   @ViewChild('tooltip') tooltip?: ElementRef<HTMLElement>;
 
-  hyperlink?: Hyperlink;
+  title?: string;
 
   descriptionNodes: AstNode[] = [];
   tooltipPosition: 'top' | 'bottom' = 'bottom';
@@ -34,21 +41,66 @@ export class HyperlinkComponent implements OnInit {
 
   constructor(
     private hyperlinkService: HyperlinkService,
+    private characterService: CharacterService,
     private formatter: FormatterService,
     private elementRef: ElementRef,
   ) {}
 
   ngOnInit(): void {
-    this.hyperlinkService.getHyperlink(this.id).subscribe((hyperlink) => {
-      this.hyperlink = hyperlink;
+    this.resolveTarget().subscribe((target) => {
+      this.title = target?.name;
 
-      if (!hyperlink) {
+      if (!target) {
         return;
       }
 
-      this.descriptionNodes = this.formatter.parse(hyperlink.description);
+      this.descriptionNodes = this.formatter.parse(target.description);
       this.updateTooltipPosition();
     });
+  }
+
+  private resolveTarget(): Observable<LinkTarget | undefined> {
+    switch (this.linkType) {
+      case 'S':
+        return this.characterService
+          .getSkill(this.id)
+          .pipe(
+            map((skill) => skill && { name: skill.name, description: skill.descriptionRaw }),
+          );
+      case 'P':
+        return this.characterService
+          .getPassiveTalent(this.id)
+          .pipe(
+            map(
+              (passive) =>
+                passive && { name: passive.name, description: passive.descriptionRaw },
+            ),
+          );
+      case 'T':
+        return this.characterService
+          .getConstellation(this.id)
+          .pipe(
+            map(
+              (constellation) =>
+                constellation && {
+                  name: constellation.name,
+                  description: constellation.descriptionRaw,
+                },
+            ),
+          );
+      default:
+        return this.hyperlinkService
+          .getHyperlink(this.id)
+          .pipe(
+            map(
+              (hyperlink) =>
+                hyperlink && {
+                  name: hyperlink.name,
+                  description: hyperlink.description,
+                },
+            ),
+          );
+    }
   }
 
   @HostListener('mouseenter')
@@ -62,7 +114,7 @@ export class HyperlinkComponent implements OnInit {
   }
 
   private updateTooltipPosition(): void {
-    if (!this.hyperlink || !this.tooltip) {
+    if (!this.title || !this.tooltip) {
       return;
     }
 

@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When Kamisato Ayaka's Normal or Charged Attacks deal <color=#99FFFFFF>Cryo DMG</color> to opponents, it has a 50% chance of decreasing the CD of <color=#FFD780FF>Kamisato Art: Hyouka</color> by 0.3s. This effect can occur once every 0.1s.",
+            "id": 21,
             "name": "Snowswept Sakura"
         },
         "c2": {
             "descriptionRaw": "When casting <color=#FFD780FF>Kamisato Art: Soumetsu</color>, unleashes 2 smaller additional Frostflake Seki no To, each dealing 20% of the original storm's DMG.",
+            "id": 22,
             "name": "Blizzard Blade Seki no To"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Kamisato Art: Soumetsu</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 23,
             "name": "Frostbloom Kamifubuki"
         },
         "c4": {
             "descriptionRaw": "Opponents damaged by <color=#FFD780FF>Kamisato Art: Soumetsu</color>'s Frostflake Seki no To will have their DEF decreased by 30% for 6s.",
+            "id": 24,
             "name": "Ebb and Flow"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Kamisato Art: Hyouka</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 25,
             "name": "Blossom Cloud Irutsuki"
         },
         "c6": {
             "descriptionRaw": "Kamisato Ayaka gains Usurahi Butou every 10s, increasing her Charged Attack DMG by 298%. This buff will be cleared 0.5s after Ayaka's Charged ATK hits an opponent, after which the timer for this ability will restart.",
+            "id": 26,
             "name": "Dance of Suigetsu"
         },
         "images": {
@@ -437,6 +443,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash a flurry of sword ki.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.",
+            "id": 10024,
             "name": "Kamisato Art: Kabuki"
         },
         "combat2": {
@@ -483,6 +490,7 @@
                 }
             },
             "descriptionRaw": "Summons blooming ice to launch nearby opponents, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<i>\"Clouds shroud the moonlit night. Longing descends like a fog, filling the one detained with wanderlust.\"</i>",
+            "id": 10018,
             "name": "Kamisato Art: Hyouka"
         },
         "combat3": {
@@ -583,6 +591,7 @@
                 }
             },
             "descriptionRaw": "Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously.\n\n<color=#FFD780FF>Frostflake Seki no To</color>\n·A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing <color=#99FFFFFF>Cryo DMG</color>.\n·The snowstorm explodes after its duration ends, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<i>\"The blizzard veils the heron's thoughts, pity heavy in its heart.\"</i>",
+            "id": 10019,
             "name": "Kamisato Art: Soumetsu"
         },
         "costs": {
@@ -775,14 +784,17 @@
         },
         "passive1": {
             "descriptionRaw": "After using <color=#FFD780FF>Kamisato Art: Hyouka</color>, Kamisato Ayaka's Normal and Charged Attacks deal 30% increased DMG for 6s.",
+            "id": 22101,
             "name": "Amatsumi Kunitsumi Sanctification"
         },
         "passive2": {
             "descriptionRaw": "When the Cryo application at the end of <color=#FFD780FF>Kamisato Art: Senho</color> hits an opponent, Kamisato Ayaka gains the following effects:\n·Restores 10 Stamina\n·Gains 18% <color=#99FFFFFF>Cryo DMG Bonus</color> for 10s.",
+            "id": 22201,
             "name": "Kanten Senmyou Blessing"
         },
         "passive3": {
             "descriptionRaw": "When Ayaka crafts Weapon Ascension Materials, she has a 10% chance to receive double the product.",
+            "id": 22301,
             "name": "Fruits of Shinsa"
         }
     },

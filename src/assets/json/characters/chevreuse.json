@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "When the active character with the \"Coordinated Tactics\" status (not including Chevreuse herself) triggers the Overloaded reaction, they will recover 6 Energy. This effect can be triggered once every 10s.\nYou must first unlock the Ascension Talent \"Vanguard's Coordinated Tactics.\"",
+            "id": 901,
             "name": "Stable Front Line's Resolve"
         },
         "c2": {
             "descriptionRaw": "After Holding <color=#FFD780FF>Short-Range Rapid Interdiction Fire</color> and hitting a target, 2 chain explosions will be triggered near the location where said target is hit. Each explosion deals <color=#FF9999FF>Pyro DMG</color> equal to 120% of Chevreuse's ATK. This effect can be triggered up to once every 10s, and DMG dealt this way is considered Elemental Skill DMG.",
+            "id": 902,
             "name": "Sniper Induced Explosion"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Short-Range Rapid Interdiction Fire</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 903,
             "name": "Practiced Field Stripping Technique"
         },
         "c4": {
             "descriptionRaw": "After using <color=#FFD780FF>Ring of Bursting Grenades</color>, the Hold mode of <color=#FFD780FF>Short-Range Rapid Interdiction Fire</color> will not go on cooldown when Chevreuse uses it. This effect is removed after Short-Range Rapid Interdiction Fire has been fired twice using Hold or after 6s.",
+            "id": 904,
             "name": "The Secret to Rapid-Fire Multishots"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Ring of Bursting Grenades</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 905,
             "name": "Enhanced Incendiary Firepower"
         },
         "c6": {
             "descriptionRaw": "After 12s of the healing effect from <color=#FFD780FF>Short-Range Rapid Interdiction Fire</color>, all nearby party members recover HP equivalent to 10% of Chevreuse's Max HP once.\nAfter a party member is healed by Short-Range Rapid Interdiction Fire, they gain a 20% <color=#FF9999FF>Pyro DMG Bonus</color> and <color=#FFACFFFF>Electro DMG Bonus</color> for 8s. Max 3 stacks. Each stack's duration is counted independently.",
+            "id": 906,
             "name": "In Pursuit of Ending Evil"
         },
         "images": {
@@ -402,6 +408,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10901,
             "name": "Line Bayonet Thrust EX"
         },
         "combat2": {
@@ -573,6 +580,7 @@
                 }
             },
             "descriptionRaw": "Chevreuse quickly shoulders her musket and fires at her opponent(s), dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nFor a short duration after Chevreuse fires a shot, she will continuously restore HP to your active character on the field. The amount healed is based on her Max HP.\nHold to fire in a different fashion.\n\n<color=#FFD780FF>Hold</color>\nEnter Aiming Mode, locking a target in her sights to fire a precise interdiction shot. If Chevreuse has an Overcharged Ball, then she will fire the Overcharged Ball instead, dealing greater <color=#FF9999FF>Pyro DMG</color> in a larger area.\nChevreuse gains 1 Overcharged Ball every time a nearby character in the party triggers an Overloaded reaction, and can have up to 1 Overcharged Ball at a time.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nPeriodically, after Chevreuse's Short-Range Rapid Interdiction Fire hits, a Surging Blade will be called forth that deals Ousia-aligned <color=#FF9999FF>Pyro DMG</color>.\n\n<i>\"Actually, training regulations only had the phrase \"interdiction fire,\" but the protagonist of this novel believes that even how stylish your terminology is can affect how motivated your troops are, which can put your opponents on the back foot right from the get-go... I think that's a good point, so I changed the regulations!\"</i>",
+            "id": 10902,
             "name": "Short-Range Rapid Interdiction Fire"
         },
         "combat3": {
@@ -655,6 +663,7 @@
                 }
             },
             "descriptionRaw": "Chevreuse fires an explosive grenade at opponents with her musket, dealing <color=#FF9999FF>AoE Pyro DMG.</color> After the projectile hits, it will split into many secondary explosive shells.\nThe secondary explosive shells will burst after a short interval, dealing <color=#FF9999FF>Pyro DMG</color> to nearby opponents.\n\n<i>\"Theoretically, a rectangular blast would be most efficient at destroying enemy formations. Unfortunately, the cross-section of an explosive shock wave is round, like most cakes. So, the secondary explosive shells can only be arranged like the fruit on a cake, forming a ring around the edge.\"</i>",
+            "id": 10905,
             "name": "Ring of Bursting Grenades"
         },
         "costs": {
@@ -847,14 +856,17 @@
         },
         "passive1": {
             "descriptionRaw": "When all party members are <color=#FF9999FF>Pyro</color> and <color=#FFACFFFF>Electro</color> characters and there is at least one Pyro and one Electro character each in the party:\nChevreuse grants \"Coordinated Tactics\" to nearby party members: After a character triggers the Overloaded reaction, the <color=#FF9999FF>Pyro</color> and <color=#FFACFFFF>Electro</color> RES of the opponent(s) affected by this Overloaded reaction will be decreased by 40% for 6s.\nThe \"Coordinated Tactics\" effect will be removed when the Elemental Types of the characters in the party do not meet the basic requirements for the Ascension Talent.",
+            "id": 902101,
             "name": "Vanguard's Coordinated Tactics"
         },
         "passive2": {
             "descriptionRaw": "After Chevreuse fires an Overcharged Ball using <color=#FFD780FF>Short-Range Rapid Interdiction Fire</color>, nearby <color=#FF9999FF>Pyro</color> and <color=#FFACFFFF>Electro</color> characters in the party gain 1% increased ATK for every 1,000 Max HP Chevreuse has for 30s. ATK can be increased by up to 40% in this way.",
+            "id": 902201,
             "name": "Vertical Force Coordination"
         },
         "passive3": {
             "descriptionRaw": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+            "id": 902301,
             "name": "Double Time March"
         }
     },

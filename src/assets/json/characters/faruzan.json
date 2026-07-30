@@ -2,26 +2,32 @@
     "constellation": {
         "c1": {
             "descriptionRaw": "Faruzan can fire off a maximum of 2 Hurricane Arrows using fully charged Aimed Shots while under the effect of a single Manifest Gale created by <color=#FFD780FF>Wind Realm of Nasamjnin</color>.",
+            "id": 761,
             "name": "Truth by Any Means"
         },
         "c2": {
             "descriptionRaw": "The duration of the Dazzling Polyhedron created by <color=#FFD780FF>The Wind's Secret Ways</color> is increased by 6s.",
+            "id": 762,
             "name": "Overzealous Intellect"
         },
         "c3": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>Wind Realm of Nasamjnin</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 763,
             "name": "Spirit-Orchard Stroll"
         },
         "c4": {
             "descriptionRaw": "The vortex created by <color=#FFD780FF>Pressurized Collapses</color> will restore Energy to Faruzan based on the number of opponents hit: If it hits 1 opponent, it will restore 2 Energy for Faruzan. Each additional opponent hit will restore 0.5 more Energy for Faruzan.\nA maximum of 4 Energy can be restored to her per vortex.",
+            "id": 764,
             "name": "Divine Comprehension"
         },
         "c5": {
             "descriptionRaw": "Increases the Level of <color=#FFD780FF>The Wind's Secret Ways</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 765,
             "name": "Wonderland of Rumination"
         },
         "c6": {
             "descriptionRaw": "Characters affected by <color=#FFD780FF>The Wind's Secret Ways</color>' Prayerful Wind's Benefit have 40% increased CRIT DMG when they deal <color=#80FFD7FF>Anemo DMG</color>. When the active character deals DMG while affected by Prayerful Wind's Benefit, they will apply Pressurized Collapse to the opponent damaged. This effect can be triggered once every 3s. This CD is shared between all party members.",
+            "id": 766,
             "name": "The Wondrous Path of Truth"
         },
         "images": {
@@ -385,6 +391,7 @@
                 }
             },
             "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact.",
+            "id": 10761,
             "name": "Parthian Shot"
         },
         "combat2": {
@@ -501,6 +508,7 @@
                 }
             },
             "descriptionRaw": "Faruzan deploys a polyhedron that deals <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents. She will also enter the Manifest Gale state.\nWhile in the Manifest Gale state, Faruzan's next fully charged shot will consume this state and will become a Hurricane Arrow that contains high-pressure currents. This arrow deals <color=#80FFD7FF>Anemo DMG</color> based on the DMG of a fully charged Aimed Shot from \"Normal Attack: Parthian Shot.\"\n\n<color=#FFD780FF>Pressurized Collapse</color>\nThe Hurricane Arrow will apply a Pressurized Collapse effect to the opponent or character hit. This effect will be removed after a short delay, creating a vortex that deals <color=#80FFD7FF>AoE Anemo DMG</color> and pulls nearby objects and opponents in. If the Hurricane Arrow does not hit any opponent or character, it will create a Pressurized Collapse effect at its point of impact.\nThe vortex DMG is considered Elemental Skill DMG.\n\n<i>The winds of truth buffet the spirits of those who seek truth, dispersing the miasma of preconception.</i>",
+            "id": 10762,
             "name": "Wind Realm of Nasamjnin"
         },
         "combat3": {
@@ -655,6 +663,7 @@
                 }
             },
             "descriptionRaw": "Faruzan deploys a Dazzling Polyhedron that unleashes a Whirlwind Pulse and deals <color=#80FFD7FF>AoE Anemo DMG</color>.\nWhile the Dazzling Polyhedron persists, it will continuously move along a triangular path. Once it reaches each corner of that triangular path, it will unleash 1 more Whirlwind Pulse.\n\n<color=#FFD780FF>Whirlwind Pulse</color>\n·When the Whirlwind Pulse is unleashed, it will apply Perfidious Wind's Bale to nearby opponents, decreasing their <color=#80FFD7FF>Anemo RES</color>.\n·The Whirlwind Pulse will also apply Prayerful Wind's Benefit to all nearby party members when it is unleashed, granting them an <color=#80FFD7FF>Anemo DMG Bonus</color>.\n\n<i>One must have respect for the unknown wisdom that one might find hidden in ancient ruins.</i>",
+            "id": 10765,
             "name": "The Wind's Secret Ways"
         },
         "costs": {
@@ -847,14 +856,17 @@
         },
         "passive1": {
             "descriptionRaw": "When Faruzan is in the Manifest Gale state created by <color=#FFD780FF>Wind Realm of Nasamjnin</color>, the amount of time taken to charge a shot is decreased by 60%, and she can apply <color=#FFD780FF>The Wind's Secret Ways</color>' Perfidious Wind's Bale to opponents who are hit by the vortex created by Pressurized Collapse.",
+            "id": 762101,
             "name": "Impetuous Flow"
         },
         "passive2": {
             "descriptionRaw": "When characters affected by <color=#FFD780FF>The Wind's Secret Ways</color>' Prayerful Wind's Benefit deal <color=#80FFD7FF>Anemo DMG</color> using Normal, Charged, Plunging Attacks, Elemental Skills, or Elemental Bursts to opponents, they will gain the Hurricane Guard effect: This DMG will be increased based on 32% of Faruzan's Base ATK. 1 instance of Hurricane Guard can occur once every 0.8s. This DMG Bonus will be cleared after Prayerful Wind's Benefit expires or after the effect is triggered once.",
+            "id": 762201,
             "name": "Lost Wisdom of the Seven Caverns"
         },
         "passive3": {
             "descriptionRaw": "Gains 25% more rewards when dispatched on a Sumeru Expedition for 20 hours.",
+            "id": 762301,
             "name": "Tomes Light the Path"
         }
     },

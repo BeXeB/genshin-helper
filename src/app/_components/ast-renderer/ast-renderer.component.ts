@@ -11,4 +11,6 @@ import { HyperlinkComponent } from '../hyperlink/hyperlink.component';
 export class AstRendererComponent {
   @Input({ required: true }) nodes: AstNode[] = [];
   @Input() elementColor: string = 'var(--light-gray)';
+  // True when rendering a link's own visible text, so nested color overrides can re-apply the underline.
+  @Input() underline = false;
 }
