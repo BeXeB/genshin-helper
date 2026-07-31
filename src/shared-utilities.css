@@ -44,6 +44,12 @@
   padding-bottom: 20px;
 }
 
+@media (max-width: 600px) {
+  .flex-wrap-center {
+    gap: 8px;
+  }
+}
+
 .flex-1 {
   flex: 1;
 }

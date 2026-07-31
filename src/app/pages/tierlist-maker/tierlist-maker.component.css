@@ -27,6 +27,13 @@
   user-select: none;
 }
 
+.tier-name-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex: 0 0 150px;
+}
+
 .tier .tier-name {
   border-radius: 0;
   border: none;
@@ -46,6 +53,10 @@
   border-top: solid 1px var(--dark-gray);
 }
 
+.tier-remove-mobile {
+  display: none;
+}
+
 .tier button:hover {
   box-shadow: none;
 }
@@ -55,7 +66,8 @@
 }
 
 .tier-name {
-  flex: 0 0 150px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .tier-name:hover,
@@ -295,4 +307,54 @@
   padding: 10px;
   border: 1px solid;
   border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .main-section {
+    flex-direction: column;
+  }
+
+  /* flex-basis controls height once the parent is a column, so pin width explicitly */
+  .tagside {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .tier {
+    flex-wrap: wrap;
+  }
+
+  .tier-name-row {
+    order: 1;
+    flex: 1 1 100%;
+  }
+
+  .tier-remove-desktop {
+    display: none;
+  }
+
+  .tier-remove-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tier-zone {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  .character-icon {
+    max-width: 60px;
+  }
+
+  .first-col .flex-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .character-icon {
+    max-width: 50px;
+  }
 }

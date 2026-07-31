@@ -77,3 +77,50 @@
 .piece-subtext {
   font-style: italic;
 }
+
+@media (max-width: 1024px) {
+  .artifact-container {
+    flex-direction: column;
+  }
+
+  .artifact-piece {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  /* unwrap so name/subtext/story can be individually placed in the grid */
+  .piece-desc {
+    display: contents;
+  }
+
+  .artifact-piece img {
+    order: 1;
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .piece-name {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .piece-subtext {
+    order: 3;
+    grid-column: 1 / -1;
+  }
+
+  .piece-story {
+    order: 4;
+    grid-column: 1 / -1;
+  }
+
+  app-formatted-text {
+    order: 5;
+    grid-column: 1 / -1;
+  }
+}

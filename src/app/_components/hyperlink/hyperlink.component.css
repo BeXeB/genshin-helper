@@ -47,3 +47,12 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .tooltip {
+    max-width: calc(100vw - 46px);
+    min-width: 0;
+    padding: 10px 14px;
+    font-size: 0.85em;
+  }
+}

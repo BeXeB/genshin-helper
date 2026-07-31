@@ -48,9 +48,10 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  box-sizing: border-box;
 
   width: 100%;
-  padding: 5px 0;
+  padding: 5px 10px;
 
   background-color: var(--darker-gray);
   border-top: 1px solid var(--dark-gray);
@@ -71,7 +72,9 @@
 
   border: 1px solid var(--gray);
   background-color: var(--dark-gray);
-  width: 200px;
+  flex: 1 1 200px;
+  min-width: 0;
+  max-width: 200px;
 
   margin: 5px 0px;
 }
@@ -89,6 +92,11 @@
   font-size: 0.75rem;
   opacity: 0.75;
   letter-spacing: 0.3px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .footer-item:hover {
@@ -104,5 +112,25 @@
 
   .logo img {
     width: 80px;
+  }
+
+  .footer {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .footer-item {
+    flex: 1 1 0;
+    max-width: none;
+    min-width: 0;
+    padding: 4px 2px;
+  }
+
+  .footer-icon {
+    height: 18px;
+  }
+
+  .footer-item span {
+    font-size: 0.65rem;
   }
 }

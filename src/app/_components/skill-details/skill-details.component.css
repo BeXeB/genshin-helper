@@ -73,6 +73,7 @@
 @media (max-width: 1024px) {
   .skill {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .skill-info {
@@ -81,5 +82,10 @@
 
   .talent-details {
     flex: none;
+  }
+
+  .talent-stat-name,
+  .talent-stat-value {
+    max-width: none;
   }
 }
