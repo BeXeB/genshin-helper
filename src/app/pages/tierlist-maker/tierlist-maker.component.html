@@ -2,152 +2,259 @@
   <app-page-title title="Tier List Készítő" backLink="/tools" />
   <div class="main-section">
     <div class="first-col">
-      <div cdkDropList id="tiersList" [cdkDropListData]="tierlist.tiers" (cdkDropListDropped)="dropTier($event)"
-        class="tierlist">
+      <div
+        cdkDropList
+        id="tiersList"
+        [cdkDropListData]="tierlist.tiers"
+        (cdkDropListDropped)="dropTier($event)"
+        class="tierlist"
+      >
         @for (tier of tierlist.tiers; track $index) {
-        <div cdkDrag class="tier">
-          <input class="tier-name" type="text" [(ngModel)]="tier.tier" placeholder="Tier neve" />
+          <div cdkDrag class="tier">
+<div class="tier-name-row">
+              <input
+                class="tier-name"
+                type="text"
+                [(ngModel)]="tier.tier"
+                placeholder="Tier neve"
+              />
+              <button
+                class="tier-remove-mobile"
+                type="button"
+                (click)="removeTier(tier)"
+              >
+                X
+              </button>
+            </div>
 
-          <div cdkDropList [id]="'tier-' + $index" [cdkDropListData]="tier.characters"
-            [cdkDropListConnectedTo]="allDropLists" cdkDropListOrientation="mixed" (cdkDropListDropped)="drop($event)"
-            class="tier-dropzone tier-zone">
-            @for (char of tier.characters; track char.instanceId) {
-            <div cdkDrag class="draggable-item" [class.selected]="selectedCharacter === char"
-              (click)="selectCharacter(char)">
-              <img class="character-icon" [src]="getCharacterIcon(char.apiKey)"
-                [alt]="getCharacterProfile(char.apiKey)?.name" />
-              @if (char.tags.length) {
-              <div class="char-tags">
-                @for (tag of char.tags; track tag.id) {
-                <span class="tag" [style.background]="getTagDefinition(tag.id).backgroundcolor"
-                  [style.color]="getTagDefinition(tag.id).color">
-                  {{ getTagDefinition(tag.id).label }}
-                  @if (tag.extra?.length) {
-                  <span class="tooltip">
-                    {{ getExtraNames(tag.extra || []) }}
-                  </span>
+            <div
+              cdkDropList
+              [id]="'tier-' + $index"
+              [cdkDropListData]="tier.characters"
+              [cdkDropListConnectedTo]="allDropLists"
+              cdkDropListOrientation="mixed"
+              (cdkDropListDropped)="drop($event)"
+              class="tier-dropzone tier-zone"
+            >
+              @for (char of tier.characters; track char.instanceId) {
+                <div
+                  cdkDrag
+                  class="draggable-item"
+                  [class.selected]="selectedCharacter === char"
+                  (click)="selectCharacter(char)"
+                >
+                  <img
+                    class="character-icon"
+                    [src]="getCharacterIcon(char.apiKey)"
+                    [alt]="getCharacterProfile(char.apiKey)?.name"
+                  />
+                  @if (char.tags.length) {
+                    <div class="char-tags">
+                      @for (tag of char.tags; track tag.id) {
+                        <span
+                          class="tag"
+                          [style.background]="
+                            getTagDefinition(tag.id).backgroundcolor
+                          "
+                          [style.color]="getTagDefinition(tag.id).color"
+                        >
+                          {{ getTagDefinition(tag.id).label }}
+                          @if (tag.extra?.length) {
+                            <span class="tooltip">
+                              {{ getExtraNames(tag.extra || []) }}
+                            </span>
+                          }
+                        </span>
+                      }
+                    </div>
                   }
-                </span>
-                }
-              </div>
+                </div>
               }
             </div>
-            }
-          </div>
 
-          <button (click)="removeTier(tier)">X</button>
-        </div>
+            <button class="tier-remove-desktop" (click)="removeTier(tier)">
+              X
+            </button>
+          </div>
         }
       </div>
       <button class="add-button" (click)="addTier()">Tier Hozzáadása</button>
       <div class="flex-row align-center justify-space-between">
         <h3 class="characters-header">Elérhető Karakterek</h3>
-        <input class="search-input" type="text" placeholder="Karakter keresése..." [(ngModel)]="poolSearch" />
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Karakter keresése..."
+          [(ngModel)]="poolSearch"
+        />
       </div>
-      <div cdkDropList #charactersList="cdkDropList" id="charactersList" [cdkDropListData]="characters"
-        [cdkDropListConnectedTo]="allDropLists" cdkDropListOrientation="mixed" cdkDropListHasAnchor
-        cdkDropListSortingDisabled="true" (cdkDropListDropped)="drop($event)" class="item-pool">
+      <div
+        cdkDropList
+        #charactersList="cdkDropList"
+        id="charactersList"
+        [cdkDropListData]="characters"
+        [cdkDropListConnectedTo]="allDropLists"
+        cdkDropListOrientation="mixed"
+        cdkDropListHasAnchor
+        cdkDropListSortingDisabled="true"
+        (cdkDropListDropped)="drop($event)"
+        class="item-pool"
+      >
         @for (char of filteredCharacters; track char.apiKey) {
-        <div cdkDrag class="draggable-item" [class.selected]="selectedCharacter === char"
-          (click)="selectCharacter(char)">
-          <img class="character-icon" [src]="getCharacterIcon(char.apiKey)"
-            [alt]="getCharacterProfile(char.apiKey)?.name" />
-        </div>
+          <div
+            cdkDrag
+            class="draggable-item"
+            [class.selected]="selectedCharacter === char"
+            (click)="selectCharacter(char)"
+          >
+            <img
+              class="character-icon"
+              [src]="getCharacterIcon(char.apiKey)"
+              [alt]="getCharacterProfile(char.apiKey)?.name"
+            />
+          </div>
         }
       </div>
     </div>
     <div class="tagside">
       @if (selectedCharacter != null) {
-      <div class="character-sidebar">
-        <h3>
-          {{
-          getCharacterProfile(selectedCharacter.apiKey)?.name || "Karakter"
-          }}
-        </h3>
+        <div class="character-sidebar">
+          <h3>
+            {{
+              getCharacterProfile(selectedCharacter.apiKey)?.name || "Karakter"
+            }}
+          </h3>
 
-        <h4>Tag-ek</h4>
-        <div class="tag-list">
-          @for (tag of selectedCharacter.tags; track tag.id) {
-          <div class="tag" [style.background]="getTagDefinition(tag.id).backgroundcolor"
-            [style.color]="getTagDefinition(tag.id).color" (click)="selectTagForEditing(getTagDefinition(tag.id))">
-            {{ tag.id }}
+          <h4>Tag-ek</h4>
+          <div class="tag-list">
+            @for (tag of selectedCharacter.tags; track tag.id) {
+              <div
+                class="tag"
+                [style.background]="getTagDefinition(tag.id).backgroundcolor"
+                [style.color]="getTagDefinition(tag.id).color"
+                (click)="selectTagForEditing(getTagDefinition(tag.id))"
+              >
+                {{ tag.id }}
 
-            @if (tag.extra && tag.extra.length) {
-            <span>({{ tag.extra.join(", ") }})</span>
-            }
-            <button type="button" (click)="removeTagFromCharacter(tag.id)">
-              X
-            </button>
-          </div>
-          }
-        </div>
-
-        <h4>Tag Hozzáadása</h4>
-        <div class="add-tag-options">
-          <div class="tag-autocomplete">
-            <input type="text" placeholder="Tag keresése..." [(ngModel)]="selectedTagId"
-              (focus)="showTagDropdown = true" (blur)="hideDropdown()" />
-
-            @if (showTagDropdown) {
-            <div class="dropdown">
-              @for (tag of filteredTags; track tag.id) {
-              <div class="option" (mousedown)="selectTag(tag)">
-                {{ tag.label }}
+                @if (tag.extra && tag.extra.length) {
+                  <span>({{ tag.extra.join(", ") }})</span>
+                }
+                <button type="button" (click)="removeTagFromCharacter(tag.id)">
+                  X
+                </button>
               </div>
+            }
+          </div>
+
+          <h4>Tag Hozzáadása</h4>
+          <div class="add-tag-options">
+            <div class="tag-autocomplete">
+              <input
+                type="text"
+                placeholder="Tag keresése..."
+                [(ngModel)]="selectedTagId"
+                (focus)="showTagDropdown = true"
+                (blur)="hideDropdown()"
+              />
+
+              @if (showTagDropdown) {
+                <div class="dropdown">
+                  @for (tag of filteredTags; track tag.id) {
+                    <div class="option" (mousedown)="selectTag(tag)">
+                      {{ tag.label }}
+                    </div>
+                  }
+                </div>
               }
             </div>
-            }
-          </div>
-          <input type="text" placeholder="Extra infó (Pl. 'DPS, Support')" [(ngModel)]="selectedTagExtras" />
+            <input
+              type="text"
+              placeholder="Extra infó (Pl. 'DPS, Support')"
+              [(ngModel)]="selectedTagExtras"
+            />
 
-          <button (click)="onAddTag()">Tag Hozzáadása</button>
+            <button (click)="onAddTag()">Tag Hozzáadása</button>
+          </div>
         </div>
-      </div>
       }
       <div class="tag-editor">
         <h3>Tag-ek</h3>
-        <div cdkDropList id="tagsList" [cdkDropListData]="tierlist.tags" (cdkDropListDropped)="dropTag($event)"
-          cdkDropListOrientation="mixed" class="tag-list">
+        <div
+          cdkDropList
+          id="tagsList"
+          [cdkDropListData]="tierlist.tags"
+          (cdkDropListDropped)="dropTag($event)"
+          cdkDropListOrientation="mixed"
+          class="tag-list"
+        >
           @for (tag of tierlist.tags; track tag.id) {
-          <span cdkDrag class="tag" [style.background]="tag.backgroundcolor" [style.color]="tag.color"
-            (click)="selectTagForEditing(tag)">
-            {{ tag.label }}
+            <span
+              cdkDrag
+              class="tag"
+              [style.background]="tag.backgroundcolor"
+              [style.color]="tag.color"
+              (click)="selectTagForEditing(tag)"
+            >
+              {{ tag.label }}
 
-            <button type="button" (click)="removeTag(tag.id); $event.stopPropagation()">
-              X
-            </button>
-          </span>
+              <button
+                type="button"
+                (click)="removeTag(tag.id); $event.stopPropagation()"
+              >
+                X
+              </button>
+            </span>
           }
         </div>
         @if (editingTag) {
-        <div class="tag-editor-panel" [style.border-color]="editingTag.backgroundcolor">
-          <div class="flex-row justyfy-space-between align-center">
-            <h4 class="flex-1">Tag szerkesztése</h4>
-            <button class="close-button" (click)="editingTag = null">
-              X
-            </button>
+          <div
+            class="tag-editor-panel"
+            [style.border-color]="editingTag.backgroundcolor"
+          >
+            <div class="flex-row justyfy-space-between align-center">
+              <h4 class="flex-1">Tag szerkesztése</h4>
+              <button class="close-button" (click)="editingTag = null">
+                X
+              </button>
+            </div>
+
+            <label>
+              Név
+              <input
+                type="text"
+                [(ngModel)]="editingTag.label"
+                (ngModelChange)="onTagChanged()"
+              />
+            </label>
+
+            <label>
+              Háttérszín
+              <input
+                type="color"
+                [(ngModel)]="editingTag.backgroundcolor"
+                (ngModelChange)="onTagChanged()"
+              />
+            </label>
+
+            <label>
+              Szövegszín
+              <input
+                type="color"
+                [(ngModel)]="editingTag.color"
+                (ngModelChange)="onTagChanged()"
+              />
+            </label>
           </div>
-
-          <label>
-            Név
-            <input type="text" [(ngModel)]="editingTag.label" (ngModelChange)="onTagChanged()" />
-          </label>
-
-          <label>
-            Háttérszín
-            <input type="color" [(ngModel)]="editingTag.backgroundcolor" (ngModelChange)="onTagChanged()" />
-          </label>
-
-          <label>
-            Szövegszín
-            <input type="color" [(ngModel)]="editingTag.color" (ngModelChange)="onTagChanged()" />
-          </label>
-        </div>
         }
         <div class="new-tag-inputs">
           <input type="text" [(ngModel)]="newTagLabel" placeholder="Tag neve" />
           <input class="color" type="color" [(ngModel)]="newTagColor" />
-          <input class="color" type="color" [(ngModel)]="newTagTextColor" title="Text color" />
+          <input
+            class="color"
+            type="color"
+            [(ngModel)]="newTagTextColor"
+            title="Text color"
+          />
         </div>
         <button class="add-button" (click)="addTag()">Tag Hozzáadása</button>
       </div>
@@ -164,22 +271,31 @@
             Kép exportálása
           </button>
         </div>
-        <input #fileInput type="file" accept=".json" style="display: none" (change)="onFileSelected($event)" />
+        <input
+          #fileInput
+          type="file"
+          accept=".json"
+          style="display: none"
+          (change)="onFileSelected($event)"
+        />
       </div>
 
       @if (importError) {
-      <div class="import-message error">
-        {{ importError }}
-      </div>
+        <div class="import-message error">
+          {{ importError }}
+        </div>
       }
       @if (importMessage) {
-      <div class="import-message success">
-        {{ importMessage }}
-      </div>
+        <div class="import-message success">
+          {{ importMessage }}
+        </div>
       }
     </div>
-    <div style="position: absolute; left: -9999px;">
-      <app-tierlist-display [tierlist]="tierlist" [characterMap]="characterMap"></app-tierlist-display>
+    <div style="position: absolute; left: -9999px">
+      <app-tierlist-display
+        [tierlist]="tierlist"
+        [characterMap]="characterMap"
+      ></app-tierlist-display>
     </div>
   </div>
 </div>
