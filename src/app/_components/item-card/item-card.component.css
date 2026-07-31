@@ -89,3 +89,35 @@
   z-index: 2;
   pointer-events: none;
 }
+
+@media (max-width: 600px) {
+  .item-card {
+    box-sizing: border-box;
+    width: 72px;
+    max-width: 72px;
+  }
+
+  .item-icon {
+    margin: 6px 0 14px;
+  }
+
+  .no-icons {
+    margin: 0 0 10px;
+  }
+
+  ::ng-deep .icons .icon {
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+  }
+
+  .item-card p {
+    font-size: 0.6em;
+    min-height: 18px;
+    padding: 4px 0;
+  }
+
+  .item-card::after {
+    height: 92px;
+  }
+}
