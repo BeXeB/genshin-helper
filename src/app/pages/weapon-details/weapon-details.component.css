@@ -129,3 +129,53 @@
   border-radius: 8px;
   outline-color: var(--blue);
 }
+
+@media (max-width: 1024px) {
+  .weapon-container {
+    flex-direction: column;
+  }
+
+  .weapon-card,
+  .weapon-story {
+    padding: 10px;
+  }
+
+  .card-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .card-bottom {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  /* unwrap so name/stat-rows can be individually placed in the grid */
+  .weapon-stats {
+    display: contents;
+  }
+
+  .weapon-name {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .image {
+    order: 2;
+  }
+
+  .stat-row {
+    order: 3;
+    grid-column: 1 / -1;
+  }
+
+  .weapon-card img {
+    width: 80px;
+    height: 80px;
+  }
+}

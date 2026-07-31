@@ -69,3 +69,47 @@
   border-radius: 8px;
   padding: 0;
 }
+
+@media (max-width: 1024px) {
+  .material-container {
+    flex-direction: column;
+  }
+
+  .material-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  /* unwrap so name/description/farm can be individually placed in the grid */
+  .details {
+    display: contents;
+  }
+
+  .material-card img {
+    order: 1;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .material-card .name {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .description {
+    order: 3;
+    grid-column: 1 / -1;
+  }
+
+  .farm {
+    order: 4;
+    grid-column: 1 / -1;
+  }
+
+  .material-craft {
+    flex-wrap: wrap;
+  }
+}
