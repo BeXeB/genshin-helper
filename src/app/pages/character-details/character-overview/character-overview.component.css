@@ -109,6 +109,10 @@
     width: 100%;
   }
 
+  .char-info {
+    text-align: center;
+  }
+
   .menus {
     flex-direction: row;
     justify-content: space-around;
@@ -117,6 +121,8 @@
   .menus button {
     padding: 10px;
     font-size: 0.9em;
+    justify-content: center;
+    text-align: center;
   }
 
   .background {
