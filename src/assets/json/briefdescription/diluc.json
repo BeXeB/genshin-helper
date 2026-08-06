@@ -1,0 +1,15 @@
+{
+    "combat1": "Normal Attack\nStandard normal attack.\n\nCharged Attack\nStaminát felhasználva folyamatos támadásokat hajt végre, melyet egy erősebb támadással zár.\n\nPlunging Attack\nStandard plunging attack.",
+    "combat2": "Egy előre irányuló csapást hajt végre, mely <color=#FF9999FF>Pyro DMG</color>-et okoz. Ez a képesség 3-szor aktiválható egymás után adott időn belül. Ha rövid időn belül nem aktiválják, cooldown fázisba lép át.",
+    "combat3": "Lángtengert szabadít fel, mellyel hátralöki az ellenfeleket és <color=#FF9999FF>Pyro DMG</color>-et okoz. A lángokat ezután a fegyverébe fókuszálja, melyből egy Főnix tör elő, letarolva és <color=#FF9999FF>Pyro DMG</color>-gel sújtva mindenkit az útjában. A Főnix az útja végén felrobban, ezzel <color=#FF9999FF>AoE Pyro DMG</color>-et okozva. A fegyvere ezután <color=#FF9999FF>Pyro infúziót</color> kap.",
+    "passive1": "Diluc <color=#FFD780FF>Charged Attack</color> stamina szükséglete 50%-kal csökken és időtartama 3 másodperccel nő.",
+    "passive2": "A <color=#FFD780FF>Dawn</color>-ból kapott <color=#FF9999FF>Pyro infúzió</color> 4 másodperccel tovább tart. Továbbá Diluc 20% <color=#FF9999FF>Pyro DMG</color> bónuszt kap az effekt időtartamára.",
+    "passive3": "<color=#FFD780FF>Claymore</color> típusú fegyverek készítésekor visszatéríti a felhasznált ércek 15%-át.",
+    "passive4": "",
+    "c1": "Diluc 15%-kal többet sebez olyan ellenfelekre, akiknek a HP-ja 50% fölött van.",
+    "c2": "Amikor Dilucot sebzés éri, az ATK-ja 10%-kal, az ATK SPD-je pedig 5%-kal megnő 10 másodpercre. Ez a hatás 3-szor stackelhető és csak 1.5 másodpercenként aktiválódhat.",
+    "c3": "Növeli az <color=#FFD780FF>Elemental Skill</color> szintjét 3-mal.\n\nA maximális szint 15.",
+    "c4": "A <color=#FFD780FF>Searing Onslaught</color> ritmusra történő használata jelentősen növeli az okozott sebzést. A <color=#FFD780FF>Searing Onslaught</color> használata után 2 másodperccel, a kombó következő <color=#FFD780FF>Searing Onslaught</color> csapása 40%-kal több DMG-et okoz. Ez a hatás 2 másodpercig tart.",
+    "c5": "Növeli az <color=#FFD780FF>Elemental Burst</color> szintjét 3-mal.\n\nA maximális szint 15.",
+    "c6": "A <color=#FFD780FF>Searing Onslaught</color> használata utáni 6 másodpercben a következő 2 <color=#FFD780FF>Normal Attack</color> DMG-e és ATK SPD-je 30%-kal megnő. Emellett a <color=#FFD780FF>Searing Onslaught</color> nem szakítja félbe a <color=#FFD780FF>Normal Attack</color> szekvenciát."
+}
