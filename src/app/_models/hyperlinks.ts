@@ -1,5 +1,5 @@
 export interface Hyperlink {
-  id: number;
+  id: string | number;
   name: string;
   description: string;
 }
