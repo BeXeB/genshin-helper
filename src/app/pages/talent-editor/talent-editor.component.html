@@ -101,57 +101,17 @@
           <app-formatted-text [text]="selectedRow.talent.descriptionRaw"></app-formatted-text>
         </div>
         <div class="talent-cell right-cell card card-no-hover">
-          <div class="mini-toolbar">
-            <button class="toolbar-btn undo-btn" type="button" [disabled]="!canUndo(selectedRow.key)" (mousedown)="$event.preventDefault()" (click)="undo(selectedRow.key, ta)" title="Undo (Ctrl+Z)">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-            <button class="toolbar-btn redo-btn" type="button" [disabled]="!canRedo(selectedRow.key)" (mousedown)="$event.preventDefault()" (click)="redo(selectedRow.key, ta)" title="Redo (Ctrl+Y)">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(selectedRow.key, ta, 'bold')">
-              <b>B</b>
-            </button>
-            <button class="toolbar-btn" type="button" (mousedown)="$event.preventDefault()" (click)="wrapSelection(selectedRow.key, ta, 'italic')">
-              <i>I</i>
-            </button>
-            @for (preset of colorPresets; track preset.label) {
-              <button
-                class="toolbar-btn preset-btn"
-                [ngClass]="{ 'highlight-btn': !preset.element }"
-                type="button"
-                [title]="preset.label"
-                (mousedown)="$event.preventDefault()"
-                (click)="wrapSelection(selectedRow.key, ta, 'color', preset.color)"
-              >
-                @if (preset.element) {
-                  <span class="icon-mask" [style]="getPresetIconStyle(preset)"></span>
-                } @else {
-                  <i class="fa-solid fa-highlighter"></i>
-                }
-              </button>
-            }
-            <button class="toolbar-btn clear-btn" type="button" (mousedown)="$event.preventDefault()" (click)="clearFormatting(selectedRow.key, ta)" title="Clear formatting">
-              <i class="fa-solid fa-eraser"></i>
-            </button>
-            <button class="toolbar-btn link-btn" type="button" (mousedown)="$event.preventDefault()" (click)="openHyperlinkModal(selectedRow.key, ta)" title="Insert hyperlink">
-              <i class="fa-solid fa-link"></i>
-            </button>
-          </div>
-          <textarea
-            #ta
-            [(ngModel)]="briefDrafts[selectedRow.key]"
-            (input)="onTextareaInput(selectedRow.key, ta)"
-            (blur)="flushPendingCapture(selectedRow.key, ta)"
-            (keydown)="handleTextareaKeydown($event, selectedRow.key, ta)"
-            rows="4"
+          <app-formatted-text-editor
+            [text]="briefDrafts[selectedRow.key] ?? ''"
+            [fieldKey]="selectedRow.key"
+            [colorPresets]="colorPresets"
+            [showToolbar]="true"
+            [showPreview]="true"
             placeholder="Rövid leírás..."
-          ></textarea>
-          @if (briefDrafts[selectedRow.key]) {
-            <div class="preview-label">Preview</div>
-            <div class="formatted-preview">
-              <app-formatted-text [text]="briefDrafts[selectedRow.key]"></app-formatted-text>
-            </div>
-          }
+            [rows]="4"
+            (textChange)="onEditorTextChange(selectedRow.key, $event)"
+            (hyperlinkRequested)="onEditorHyperlinkRequested(selectedRow.key, $event)"
+          ></app-formatted-text-editor>
         </div>
       </div>
     }

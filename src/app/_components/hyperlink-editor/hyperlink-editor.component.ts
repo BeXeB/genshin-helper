@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HyperlinkService } from '../../_services/hyperlink.service';
 import { HyperlinkInsertionService } from '../../_services/hyperlink-insertion.service';
 import { ModalService } from '../../_services/modal.service';
+import { FormattedTextComponent } from '../formatted-text-component/formatted-text.component';
+import { FormattedTextEditorComponent, HyperlinkRequest } from '../formatted-text-editor/formatted-text-editor.component';
 import { Hyperlink } from '../../_models/hyperlinks';
 
 interface HyperlinkWithType extends Hyperlink {
@@ -13,26 +15,23 @@ interface HyperlinkWithType extends Hyperlink {
 @Component({
   selector: 'app-hyperlink-editor',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, FormattedTextComponent, FormattedTextEditorComponent],
   templateUrl: './hyperlink-editor.component.html',
   styleUrl: './hyperlink-editor.component.css',
 })
 export class HyperlinkEditorComponent implements OnInit {
-  activeTab: 'browse' | 'create' = 'browse';
-
-  // Browse tab
+  // Browse
   searchQuery: string = '';
   hyperlinks: HyperlinkWithType[] = [];
   filteredHyperlinks: HyperlinkWithType[] = [];
   selectedHyperlink: HyperlinkWithType | null = null;
 
-  // Create tab
+  // Create
+  showCreateForm: boolean = false;
   newHyperlinkId: string = '';
   newHyperlinkName: string = '';
   newHyperlinkDescription: string = '';
   createError: string = '';
-
-  selectedForInsert: HyperlinkWithType | null = null;
 
   constructor(
     private hyperlinkService: HyperlinkService,
@@ -82,8 +81,14 @@ export class HyperlinkEditorComponent implements OnInit {
     this.selectedHyperlink = hyperlink;
   }
 
-  onCreateTabClick(): void {
-    this.activeTab = 'create';
+  toggleCreateForm(): void {
+    this.showCreateForm = !this.showCreateForm;
+    if (!this.showCreateForm) {
+      this.resetForm();
+    }
+  }
+
+  resetForm(): void {
     this.newHyperlinkId = '';
     this.newHyperlinkName = '';
     this.newHyperlinkDescription = '';
@@ -113,7 +118,6 @@ export class HyperlinkEditorComponent implements OnInit {
       return false;
     }
 
-    // Check if ID already exists
     if (this.hyperlinks.some((h) => h.id === this.newHyperlinkId)) {
       this.createError = 'This ID already exists';
       return false;
@@ -135,36 +139,25 @@ export class HyperlinkEditorComponent implements OnInit {
       type: 'custom',
     };
 
-    // Add to service (makes it available for search and export)
     this.hyperlinkService.addCustomHyperlink(newHyperlink);
 
-    // Add to local list and reload
     this.hyperlinks.push(newHyperlink);
     this.hyperlinks.sort((a, b) => {
-      if (a.type !== b.type) return a.type === 'custom' ? -1 : 1;
       return (a.name || '').localeCompare(b.name || '');
     });
 
     this.filterHyperlinks();
-
-    this.selectedForInsert = newHyperlink;
     this.insertionService.insertHyperlink(newHyperlink.id, undefined, 'C');
 
-    // Clear form for next entry
-    this.newHyperlinkId = '';
-    this.newHyperlinkName = '';
-    this.newHyperlinkDescription = '';
-    this.createError = '';
+    this.resetForm();
+    this.showCreateForm = false;
   }
 
   insertLink(hyperlink: HyperlinkWithType): void {
-    this.selectedForInsert = hyperlink;
     this.insertionService.insertHyperlink(hyperlink.id, undefined, 'C');
   }
 
   insertQuickLink(talentKey: string): void {
-    // Insert type 'Z' link for talent field with character name
-    // Format: character-field (e.g., 'mavuika-combat1')
     const characterName = this.insertionService.currentCharacterName;
     if (!characterName) {
       console.warn('No character context for quick link');
@@ -181,7 +174,5 @@ export class HyperlinkEditorComponent implements OnInit {
     return hyperlink.id as string;
   }
 
-  getTypeLabel(type: 'game' | 'custom'): string {
-    return type === 'game' ? 'Game' : 'Custom';
-  }
 }
+

@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.toolbar-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preset-btn {
+  font-size: 0;
+}
+
+.icon-mask {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.highlight-btn i {
+  color: var(--highlight);
+  font-size: 16px;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.toolbar-btn:disabled:hover {
+  background-color: transparent;
+}
