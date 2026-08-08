@@ -463,6 +463,9 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
     const newValue = value.slice(0, start) + linkMarkup + value.slice(end);
     this.briefDrafts[key] = newValue;
 
+    // Capture the state change in history
+    this.historyService.captureSnapshot(key, newValue, start, start + linkMarkup.length);
+
     this.modalService.close();
   }
 }

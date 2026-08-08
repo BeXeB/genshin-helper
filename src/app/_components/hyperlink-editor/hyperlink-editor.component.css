@@ -1,7 +1,7 @@
 /* Main Container - override flex-col defaults for full height */
 .editor-container {
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Section Headers */
@@ -44,8 +44,14 @@
   gap: 5px;
 }
 
-/* Search Input */
+/* Search Input and Dropdown */
+.hyperlink-search {
+  position: relative;
+  width: 100%;
+}
+
 input[type="text"] {
+  width: 100%;
   padding: 8px 12px;
   border: 1px solid var(--gray);
   border-radius: 6px;
@@ -53,41 +59,43 @@ input[type="text"] {
   color: inherit;
 }
 
-/* Hyperlink List */
-.hyperlink-list {
-  flex: 1;
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 300px;
   overflow-y: auto;
+  border: 1px solid var(--gray);
+  background: var(--darker-gray);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+/* Dropdown Options */
+.option {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-/* Hyperlink List Items */
-.hyperlink-item {
+  gap: 4px;
   padding: 10px;
-  border: 1px solid var(--gray);
-  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s;
 }
 
-.hyperlink-item:hover {
-  border-color: var(--light-gray);
-}
-
-.hyperlink-item.selected {
-  border-color: var(--blue);
+.option:hover {
   background-color: var(--dark-gray);
 }
 
-.hyperlink-item-name {
+.option-name {
   font-weight: 500;
 }
 
-.hyperlink-item-id {
+.option-id {
   font-size: 0.85rem;
   color: var(--light-gray);
-  margin-top: 5px;
 }
 
 /* Empty State */

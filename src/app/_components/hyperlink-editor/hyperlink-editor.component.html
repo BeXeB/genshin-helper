@@ -25,33 +25,37 @@
     </div>
   </div>
 
-  <!-- Search Section -->
-  <input
-    type="text"
-    placeholder="Search hyperlinks..."
-    [(ngModel)]="searchQuery"
-    (input)="onSearchChange()"
-  />
+  <!-- Search Section with Dropdown -->
+  <div class="hyperlink-search">
+    <input
+      type="text"
+      placeholder="Search hyperlinks..."
+      [(ngModel)]="searchQuery"
+      (input)="onSearchChange()"
+      (focus)="showSearchDropdown()"
+      (blur)="hideDropdown()"
+    />
 
-  <!-- Hyperlink List -->
-  <div class="hyperlink-list">
-    @if (filteredHyperlinks.length > 0) {
-      @for (hyperlink of filteredHyperlinks; track hyperlink.id) {
-        <div
-          class="hyperlink-item"
-          [class.selected]="selectedHyperlink?.id === hyperlink.id"
-          (click)="selectHyperlink(hyperlink)"
-        >
-          <div class="hyperlink-item-name">{{ hyperlink.name }}</div>
-          <div class="hyperlink-item-id">{{ getDisplayId(hyperlink) }}</div>
-        </div>
-      }
-    } @else {
-      <div class="empty-state">
-        @if (searchQuery.length > 0) {
-          No hyperlinks found
+    @if (showDropdown) {
+      <div class="dropdown">
+        @if (filteredHyperlinks.length > 0) {
+          @for (hyperlink of filteredHyperlinks; track hyperlink.id) {
+            <div
+              class="option"
+              (mousedown)="selectHyperlink(hyperlink)"
+            >
+              <div class="option-name">{{ hyperlink.name }}</div>
+              <div class="option-id">{{ getDisplayId(hyperlink) }}</div>
+            </div>
+          }
         } @else {
-          No custom hyperlinks yet
+          <div class="empty-state">
+            @if (searchQuery.length > 0) {
+              No hyperlinks found
+            } @else {
+              No custom hyperlinks yet
+            }
+          </div>
         }
       </div>
     }

@@ -25,6 +25,7 @@ export class HyperlinkEditorComponent implements OnInit {
   hyperlinks: HyperlinkWithType[] = [];
   filteredHyperlinks: HyperlinkWithType[] = [];
   selectedHyperlink: HyperlinkWithType | null = null;
+  showDropdown: boolean = false;
 
   // Create
   showCreateForm: boolean = false;
@@ -79,6 +80,17 @@ export class HyperlinkEditorComponent implements OnInit {
 
   selectHyperlink(hyperlink: HyperlinkWithType): void {
     this.selectedHyperlink = hyperlink;
+    this.showDropdown = false;
+  }
+
+  showSearchDropdown(): void {
+    this.showDropdown = true;
+  }
+
+  hideDropdown(): void {
+    setTimeout(() => {
+      this.showDropdown = false;
+    }, 200);
   }
 
   toggleCreateForm(): void {
@@ -140,13 +152,8 @@ export class HyperlinkEditorComponent implements OnInit {
     };
 
     this.hyperlinkService.addCustomHyperlink(newHyperlink);
+    this.loadHyperlinks();
 
-    this.hyperlinks.push(newHyperlink);
-    this.hyperlinks.sort((a, b) => {
-      return (a.name || '').localeCompare(b.name || '');
-    });
-
-    this.filterHyperlinks();
     this.insertionService.insertHyperlink(newHyperlink.id, undefined, 'C');
 
     this.resetForm();
