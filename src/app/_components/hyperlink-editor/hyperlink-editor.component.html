@@ -1,0 +1,139 @@
+<div class="hyperlink-editor">
+  <div class="quick-links-section">
+    <div class="quick-links-label">Quick Talent Links</div>
+    <div class="quick-links-group">
+      <div class="talent-section">
+        <div class="section-name">Skills</div>
+        <div class="buttons-row">
+          <button class="quick-link-btn" (click)="insertQuickLink('combat1')" title="Link to Combat 1">S1</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('combat2')" title="Link to Combat 2">S2</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('combat3')" title="Link to Combat 3">S3</button>
+        </div>
+      </div>
+      <div class="talent-section">
+        <div class="section-name">Passives</div>
+        <div class="buttons-row">
+          <button class="quick-link-btn" (click)="insertQuickLink('passive1')" title="Link to Passive 1">P1</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('passive2')" title="Link to Passive 2">P2</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('passive3')" title="Link to Passive 3">P3</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('passive4')" title="Link to Passive 4">P4</button>
+        </div>
+      </div>
+      <div class="talent-section">
+        <div class="section-name">Constellations</div>
+        <div class="buttons-row">
+          <button class="quick-link-btn" (click)="insertQuickLink('c1')" title="Link to C1">C1</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c2')" title="Link to C2">C2</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c3')" title="Link to C3">C3</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c4')" title="Link to C4">C4</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c5')" title="Link to C5">C5</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c6')" title="Link to C6">C6</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'browse'"
+      (click)="activeTab = 'browse'"
+    >
+      Browse Hyperlinks
+    </button>
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'create'"
+      (click)="onCreateTabClick()"
+    >
+      Create New
+    </button>
+  </div>
+
+  @if (activeTab === 'browse') {
+    <div class="browse-tab">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search by name or ID..."
+        [(ngModel)]="searchQuery"
+        (input)="onSearchChange()"
+      />
+
+      <div class="hyperlink-list">
+        @if (filteredHyperlinks.length > 0) {
+          @for (hyperlink of filteredHyperlinks; track hyperlink.id) {
+            <div
+              class="hyperlink-item"
+              [class.active]="selectedHyperlink?.id === hyperlink.id"
+              (click)="selectHyperlink(hyperlink)"
+            >
+              <div class="hyperlink-header">
+                <span class="hyperlink-name">{{ hyperlink.name }}</span>
+              </div>
+              <div class="hyperlink-id">{{ getDisplayId(hyperlink) }}</div>
+            </div>
+          }
+        } @else {
+          <div class="empty-state">No hyperlinks found</div>
+        }
+      </div>
+
+      @if (selectedHyperlink) {
+        <div class="selected-preview card">
+          <div class="preview-name">{{ selectedHyperlink.name }}</div>
+          <div class="preview-id">ID: {{ getDisplayId(selectedHyperlink) }}</div>
+          <div class="preview-description">{{ selectedHyperlink.description }}</div>
+          <button
+            class="insert-btn"
+            (click)="insertLink(selectedHyperlink)"
+          >
+            Insert Link
+          </button>
+        </div>
+      }
+    </div>
+  }
+
+  @if (activeTab === 'create') {
+    <div class="create-tab">
+      <div class="form-group">
+        <label for="newId">ID (lowercase, hyphens only)</label>
+        <input
+          id="newId"
+          type="text"
+          [(ngModel)]="newHyperlinkId"
+          placeholder="e.g., elemental-mastery"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="newName">Name</label>
+        <input
+          id="newName"
+          type="text"
+          [(ngModel)]="newHyperlinkName"
+          placeholder="e.g., Elemental Mastery"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="newDesc">Description</label>
+        <textarea
+          id="newDesc"
+          [(ngModel)]="newHyperlinkDescription"
+          placeholder="Detailed explanation..."
+          rows="4"
+        ></textarea>
+      </div>
+
+      @if (createError) {
+        <div class="error-message">{{ createError }}</div>
+      }
+
+      <button class="create-btn" (click)="createNewHyperlink()">
+        Create Hyperlink
+      </button>
+    </div>
+  }
+</div>

@@ -133,6 +133,9 @@
             <button class="toolbar-btn clear-btn" type="button" (mousedown)="$event.preventDefault()" (click)="clearFormatting(selectedRow.key, ta)" title="Clear formatting">
               <i class="fa-solid fa-eraser"></i>
             </button>
+            <button class="toolbar-btn link-btn" type="button" (mousedown)="$event.preventDefault()" (click)="openHyperlinkModal(selectedRow.key, ta)" title="Insert hyperlink">
+              <i class="fa-solid fa-link"></i>
+            </button>
           </div>
           <textarea
             #ta

@@ -3,13 +3,19 @@ import {
   Component,
   ElementRef,
   OnInit,
+  OnDestroy,
   QueryList,
+  ViewChild,
   ViewChildren,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Subscription } from 'rxjs';
 import { CharacterService } from '../../_services/character.service';
 import { ImageService } from '../../_services/image.service';
+import { ModalService } from '../../_services/modal.service';
+import { HyperlinkInsertionService } from '../../_services/hyperlink-insertion.service';
+import { HyperlinkService } from '../../_services/hyperlink.service';
 import { ElementType, ElementTypeLabel } from '../../_models/enum';
 import {
   Character,
@@ -21,6 +27,7 @@ import {
 } from '../../_models/character';
 import { PageTitleComponent } from '../../_components/page-title/page-title.component';
 import { FormattedTextComponent } from '../../_components/formatted-text-component/formatted-text.component';
+import { HyperlinkEditorComponent } from '../../_components/hyperlink-editor/hyperlink-editor.component';
 
 type TalentRow = {
   key: keyof CharacterBriefDescriptions;
@@ -46,14 +53,18 @@ type HistoryEntry = {
   templateUrl: './talent-editor.component.html',
   styleUrl: './talent-editor.component.css',
 })
-export class TalentEditorComponent implements OnInit, AfterViewInit {
+export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private characterSerivce: CharacterService,
     private imageService: ImageService,
+    private modalService: ModalService,
+    private insertionService: HyperlinkInsertionService,
+    private hyperlinkService: HyperlinkService,
   ) {}
 
   @ViewChildren('sectionBtnEl') sectionBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
   @ViewChildren('talentBtnEl') talentBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
+  @ViewChild('hyperlink-editor') hyperlinkEditor?: HyperlinkEditorComponent;
 
   characters: CharacterProfile[] = [];
 
@@ -88,17 +99,31 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     { label: 'Pyro', color: '#FF9999FF', element: ElementType.PYRO },
   ];
 
+  // Hyperlink insertion tracking
+  private currentTextarea: HTMLTextAreaElement | null = null;
+  private currentTalentKey: keyof CharacterBriefDescriptions | null = null;
+  private insertionSubscription?: Subscription;
+
   ngOnInit(): void {
     this.characterSerivce
       .getCharacters()
       .subscribe((data: CharacterProfile[]) => {
         this.characters = data.sort((b, a) => a.sortId - b.sortId);
       });
+
+    // Subscribe to hyperlink insertions
+    this.insertionSubscription = this.insertionService.insertion$.subscribe((event) => {
+      this.insertHyperlink(event.id, event.displayText, event.type);
+    });
   }
 
   ngAfterViewInit(): void {
     this.sectionBtnEls.changes.subscribe(() => this.equalizeButtonWidths(this.sectionBtnEls));
     this.talentBtnEls.changes.subscribe(() => this.equalizeButtonWidths(this.talentBtnEls));
+  }
+
+  ngOnDestroy(): void {
+    this.insertionSubscription?.unsubscribe();
   }
 
   // Makes every button in the given group as wide as the widest one, so the
@@ -513,6 +538,7 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
       }
     }
 
+    // Download brief descriptions
     const json = JSON.stringify(result, null, 2);
     const blob = new Blob([json], { type: 'application/json' });
     const url = window.URL.createObjectURL(blob);
@@ -524,6 +550,28 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     a.click();
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
+
+    // Download custom hyperlinks
+    this.hyperlinkService.getHyperlinksMap().subscribe((map) => {
+      const hyperlinks: any[] = [];
+      map.forEach((link) => {
+        if (link.isCustom) {
+          hyperlinks.push(link);
+        }
+      });
+
+      const json = JSON.stringify(hyperlinks, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = window.URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `custom-hyperlinks.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    });
   }
 
   getPresetIconStyle(preset: ColorPreset): Record<string, string> {
@@ -620,6 +668,56 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       textarea.focus();
       textarea.setSelectionRange(start, newEnd);
+    });
+  }
+
+  openHyperlinkModal(
+    key: keyof CharacterBriefDescriptions,
+    textarea: HTMLTextAreaElement,
+  ) {
+    this.currentTalentKey = key;
+    this.currentTextarea = textarea;
+    // Set the current character in the insertion service for quick links
+    if (this.selectedCharacter) {
+      this.insertionService.setCurrentCharacter(this.selectedCharacter.normalizedName);
+    }
+    this.modalService.open('hyperlink-editor');
+  }
+
+  insertHyperlink(hyperlinkId: string | number, displayText?: string, linkType?: 'C' | 'Z') {
+    if (!this.currentTextarea || !this.currentTalentKey) return;
+
+    const textarea = this.currentTextarea;
+    const key = this.currentTalentKey;
+
+    this.flushPendingCapture(key, textarea);
+
+    const value = this.briefDrafts[key] ?? '';
+    const start = textarea.selectionStart ?? 0;
+    const end = textarea.selectionEnd ?? 0;
+    const selected = value.substring(start, end) || 'Link';
+
+    // Determine link type based on explicit type parameter or ID format
+    let linkMarkup: string;
+    if (linkType === 'Z') {
+      // Type Z link (brief field reference)
+      linkMarkup = `{LINK#Z${hyperlinkId}}${selected}{/LINK}`;
+    } else {
+      // Type C or N link (custom concept or game hyperlink)
+      linkMarkup = `{LINK#${hyperlinkId}}${selected}{/LINK}`;
+    }
+
+    const newValue = value.slice(0, start) + linkMarkup + value.slice(end);
+    this.briefDrafts[key] = newValue;
+
+    const newStart = start + linkMarkup.length;
+    this.captureSnapshot(key, newStart, newStart);
+
+    this.modalService.close();
+
+    setTimeout(() => {
+      textarea.focus();
+      textarea.setSelectionRange(newStart, newStart);
     });
   }
 }
