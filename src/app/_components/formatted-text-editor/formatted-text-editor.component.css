@@ -35,3 +35,7 @@
 .toolbar-btn:disabled:hover {
   background-color: transparent;
 }
+
+#textarea {
+  resize: vertical; font-family: inherit;
+}

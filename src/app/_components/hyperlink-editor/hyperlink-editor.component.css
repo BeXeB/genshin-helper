@@ -1,2 +1,159 @@
-/* No custom styles needed - using predefined utility classes */
+/* Main Container - override flex-col defaults for full height */
+.editor-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Section Headers */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Grid Containers Container */
+.button-grid-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Grid Containers */
+.button-grid {
+  background-color: var(--dark-gray);
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* Quick Link Buttons */
+.quick-link-btn {
+  width: auto;
+  padding: 8px 12px;
+  min-width: 40px;
+}
+
+/* Compact gap modifier - for sections with smaller gap */
+.flex-col-compact {
+  gap: 10px;
+}
+
+/* Tight gap modifier - for form groups with minimal gap */
+.flex-col-tight {
+  gap: 5px;
+}
+
+/* Search Input */
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--darker-gray);
+  color: inherit;
+}
+
+/* Hyperlink List */
+.hyperlink-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Hyperlink List Items */
+.hyperlink-item {
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hyperlink-item:hover {
+  border-color: var(--light-gray);
+}
+
+.hyperlink-item.selected {
+  border-color: var(--blue);
+  background-color: var(--dark-gray);
+}
+
+.hyperlink-item-name {
+  font-weight: 500;
+}
+
+.hyperlink-item-id {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  margin-top: 5px;
+}
+
+/* Empty State */
+.empty-state {
+  padding: 20px;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+/* Preview Card specific overrides */
+.preview-card {
+  gap: 10px;
+}
+
+.preview-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.preview-id {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.preview-description {
+  margin-bottom: 15px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Create Form specific styling */
+.create-form {
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--dark-gray);
+  gap: 10px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 8px 12px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--darker-gray);
+  color: inherit;
+}
+
+/* Error Message */
+.error-message {
+  padding: 10px;
+  background-color: var(--darker-gray);
+  border: 1px solid var(--red);
+  border-radius: 6px;
+  color: var(--red);
+}
+
+/* Full Width Button */
+.full-width-btn {
+  width: 100%;
+}
 
