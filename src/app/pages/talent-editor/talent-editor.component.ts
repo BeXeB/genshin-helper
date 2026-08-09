@@ -10,6 +10,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CharacterService } from '../../_services/character.service';
 import { ImageService } from '../../_services/image.service';
@@ -17,6 +18,7 @@ import { ModalService } from '../../_services/modal.service';
 import { HyperlinkInsertionService } from '../../_services/hyperlink-insertion.service';
 import { HyperlinkService } from '../../_services/hyperlink.service';
 import { EditorHistoryService } from '../../_services/editor-history.service';
+import { TalentEditorStateService } from '../../_services/talent-editor-state.service';
 import { ElementType, ElementTypeLabel } from '../../_models/enum';
 import {
   Character,
@@ -57,6 +59,8 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
     private insertionService: HyperlinkInsertionService,
     private hyperlinkService: HyperlinkService,
     private historyService: EditorHistoryService,
+    private stateService: TalentEditorStateService,
+    private router: Router,
   ) {}
 
   @ViewChildren('sectionBtnEl') sectionBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
@@ -76,6 +80,9 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
 
   briefDrafts: Partial<CharacterBriefDescriptions> = {};
 
+  // Debounce timer for editor changes
+  private editorChangeDebounceTimer: any = null;
+
   colorPresets: ColorPreset[] = [
     { label: 'Kiemelés', color: '#FFD780FF' },
     { label: 'Anemo', color: '#80FFD7FF', element: ElementType.ANEMO },
@@ -93,16 +100,112 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
   private insertionSubscription?: Subscription;
 
   ngOnInit(): void {
-    this.characterSerivce
-      .getCharacters()
-      .subscribe((data: CharacterProfile[]) => {
-        this.characters = data.sort((b, a) => a.sortId - b.sortId);
-      });
+    try {
+      this.characterSerivce
+        .getCharacters()
+        .subscribe((data: CharacterProfile[]) => {
+          this.characters = data.sort((b, a) => a.sortId - b.sortId);
 
-    // Subscribe to hyperlink insertions
-    this.insertionSubscription = this.insertionService.insertion$.subscribe((event) => {
-      this.insertHyperlink(event.id, event.displayText, event.type);
-    });
+          // Try to restore state after characters are loaded
+          this.restoreState();
+        });
+
+      // Subscribe to hyperlink insertions
+      this.insertionSubscription = this.insertionService.insertion$.subscribe((event) => {
+        this.insertHyperlink(event.id, event.displayText, event.type);
+      });
+    } catch (error) {
+      console.error('Error in talent editor ngOnInit:', error);
+      this.handleError();
+    }
+  }
+
+  private restoreState(): void {
+    const state = this.stateService.getState();
+
+    // Validate the stored character still exists
+    if (!this.stateService.validateState(this.characters.map(c => c.normalizedName))) {
+      // Invalid state, clear and proceed with defaults
+      this.stateService.clearAll();
+      return;
+    }
+
+    // Restore character selection
+    if (state.selectedCharacterId) {
+      const character = this.characters.find(c => c.normalizedName === state.selectedCharacterId);
+      if (character) {
+        // Load character details
+        this.selectedCharacter = character;
+        this.search = character.name;
+
+        this.characterSerivce
+          .getCharacterDetails(character.normalizedName)
+          .subscribe((details: Character) => {
+            this.selectedCharacterDetails = details;
+
+            // Restore element selection if available
+            if (state.selectedElement) {
+              const variantElements = this.getVariantElements();
+              if (variantElements.includes(state.selectedElement)) {
+                this.selectedElement = state.selectedElement;
+              }
+            } else {
+              const variantElements = this.getVariantElements();
+              if (variantElements.length > 0) {
+                this.selectedElement = variantElements[0];
+              }
+            }
+          });
+
+        // Restore draft descriptions
+        this.characterSerivce
+          .getBriefDescriptions(character.normalizedName)
+          .subscribe((data) => {
+            this.briefDrafts = { ...data };
+
+            // Overlay edited descriptions from storage
+            if (state.selectedCharacterId) {
+              const allKeys: (keyof CharacterBriefDescriptions)[] = [
+                'combat1', 'combat2', 'combat3',
+                'passive1', 'passive2', 'passive3', 'passive4',
+                'c1', 'c2', 'c3', 'c4', 'c5', 'c6'
+              ];
+              for (const key of allKeys) {
+                const edited = this.stateService.getEditedDescription(key);
+                if (edited !== undefined) {
+                  this.briefDrafts[key] = edited;
+                }
+              }
+            }
+
+            this.historyService.clearAll();
+          });
+
+        // Restore section and talent selection
+        if (state.selectedSection) {
+          this.selectedSection = state.selectedSection;
+          if (state.selectedTalentKey) {
+            this.selectedTalentKey = state.selectedTalentKey;
+          }
+        } else {
+          // Set defaults
+          const firstSection = this.talentSections[0];
+          if (firstSection) {
+            this.selectedSection = firstSection.label;
+            const firstRow = firstSection.rows[0];
+            if (firstRow) {
+              this.selectedTalentKey = firstRow.key;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  private handleError(): void {
+    console.error('Talent editor encountered an error, clearing state and redirecting');
+    this.stateService.clearAll();
+    this.router.navigate(['/']);
   }
 
   ngAfterViewInit(): void {
@@ -146,43 +249,70 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   selectCharacter(profile: CharacterProfile) {
-    this.selectedCharacter = profile;
-    this.search = profile.name;
-    this.showDropdown = false;
-    this.briefDrafts = {};
-    this.selectedTalentKey = null;
-    this.selectedSection = null;
-    this.selectedElement = null;
+    try {
+      this.selectedCharacter = profile;
+      this.search = profile.name;
+      this.showDropdown = false;
+      this.briefDrafts = {};
+      this.selectedTalentKey = null;
+      this.selectedSection = null;
+      this.selectedElement = null;
 
-    this.characterSerivce
-      .getCharacterDetails(profile.normalizedName)
-      .subscribe((details: Character) => {
-        this.selectedCharacterDetails = details;
+      // Clear any debounce timer
+      if (this.editorChangeDebounceTimer) {
+        clearTimeout(this.editorChangeDebounceTimer);
+      }
 
-        // Initialize element selection for characters with variants
-        const variantElements = this.getVariantElements();
-        if (variantElements.length > 0) {
-          this.selectedElement = variantElements[0];
-        }
+      // Clear previous character's state and start fresh
+      this.stateService.clearAll();
 
-        // Set first section and talent as selected
-        const firstSection = this.talentSections[0];
-        if (firstSection) {
-          this.selectedSection = firstSection.label;
-          const firstRow = firstSection.rows[0];
-          if (firstRow) {
-            this.selectedTalentKey = firstRow.key;
+      this.characterSerivce
+        .getCharacterDetails(profile.normalizedName)
+        .subscribe((details: Character) => {
+          this.selectedCharacterDetails = details;
+
+          // Initialize element selection for characters with variants
+          const variantElements = this.getVariantElements();
+          if (variantElements.length > 0) {
+            this.selectedElement = variantElements[0];
           }
-        }
-      });
 
-    this.characterSerivce
-      .getBriefDescriptions(profile.normalizedName)
-      .subscribe((data) => {
-        this.briefDrafts = { ...data };
-        // Clear history for all fields when loading new character
-        this.historyService.clearAll();
-      });
+          // Set first section and talent as selected
+          const firstSection = this.talentSections[0];
+          if (firstSection) {
+            this.selectedSection = firstSection.label;
+            const firstRow = firstSection.rows[0];
+            if (firstRow) {
+              this.selectedTalentKey = firstRow.key;
+            }
+          }
+
+          // Save state
+          this.saveState();
+        });
+
+      this.characterSerivce
+        .getBriefDescriptions(profile.normalizedName)
+        .subscribe((data) => {
+          this.briefDrafts = { ...data };
+          // Clear history for all fields when loading new character
+          this.historyService.clearAll();
+        });
+    } catch (error) {
+      console.error('Error selecting character:', error);
+      this.handleError();
+    }
+  }
+
+  private saveState(): void {
+    if (this.selectedCharacter) {
+      this.stateService.saveCharacterSelection(
+        this.selectedCharacter.normalizedName,
+        this.selectedSection,
+        this.selectedTalentKey,
+        this.selectedElement,
+      );
+    }
   }
 
   hideDropdown() {
@@ -237,6 +367,9 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
         this.selectedTalentKey = firstRow.key;
       }
     }
+
+    // Save state
+    this.saveState();
   }
 
   get talentSections(): { label: string; rows: TalentRow[] }[] {
@@ -334,6 +467,8 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
         break;
       }
     }
+    // Save state
+    this.saveState();
   }
 
   selectSection(sectionLabel: string) {
@@ -343,6 +478,8 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
     if (section && section.rows.length > 0) {
       this.selectedTalentKey = section.rows[0].key;
     }
+    // Save state
+    this.saveState();
   }
 
   getCurrentSection(): { label: string; rows: TalentRow[] } | null {
@@ -350,53 +487,61 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   exportBriefDescriptionJson() {
-    if (!this.selectedCharacter) return;
+    try {
+      if (!this.selectedCharacter) return;
 
-    const result: Partial<CharacterBriefDescriptions> = {};
+      const result: Partial<CharacterBriefDescriptions> = {};
 
-    for (const section of this.talentSections) {
-      for (const row of section.rows) {
-        const value = this.briefDrafts[row.key]?.trim();
-        if (value) {
-          result[row.key] = value;
+      for (const section of this.talentSections) {
+        for (const row of section.rows) {
+          const value = this.briefDrafts[row.key]?.trim();
+          if (value) {
+            result[row.key] = value;
+          }
         }
       }
-    }
 
-    // Download brief descriptions
-    const json = JSON.stringify(result, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
-    const url = window.URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${this.selectedCharacter.normalizedName}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
-
-    // Download custom hyperlinks
-    this.hyperlinkService.getHyperlinksMap().subscribe((map) => {
-      const hyperlinks: any[] = [];
-      map.forEach((link) => {
-        if (link.isCustom) {
-          hyperlinks.push(link);
-        }
-      });
-
-      const json = JSON.stringify(hyperlinks, null, 2);
+      // Download brief descriptions
+      const json = JSON.stringify(result, null, 2);
       const blob = new Blob([json], { type: 'application/json' });
       const url = window.URL.createObjectURL(blob);
 
       const a = document.createElement('a');
       a.href = url;
-      a.download = `custom-hyperlinks.json`;
+      a.download = `${this.selectedCharacter.normalizedName}.json`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
-    });
+
+      // Download custom hyperlinks
+      this.hyperlinkService.getHyperlinksMap().subscribe((map) => {
+        const hyperlinks: any[] = [];
+        map.forEach((link) => {
+          if (link.isCustom) {
+            hyperlinks.push(link);
+          }
+        });
+
+        const json = JSON.stringify(hyperlinks, null, 2);
+        const blob = new Blob([json], { type: 'application/json' });
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `custom-hyperlinks.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      });
+
+      // Clear state after successful download (signal: done with this character)
+      this.stateService.clearAll();
+    } catch (error) {
+      console.error('Error exporting brief descriptions:', error);
+      this.handleError();
+    }
   }
 
   getPresetIconStyle(preset: ColorPreset): Record<string, string> {
@@ -428,6 +573,22 @@ export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
 
   onEditorTextChange(key: keyof CharacterBriefDescriptions, newText: string): void {
     this.briefDrafts[key] = newText;
+
+    // Debounce saving edited description to state service (300ms)
+    if (this.editorChangeDebounceTimer) {
+      clearTimeout(this.editorChangeDebounceTimer);
+    }
+
+    this.editorChangeDebounceTimer = setTimeout(() => {
+      // Only save if this is actually edited (not using original from JSON)
+      // Delta approach: only store if edited
+      if (newText && newText.trim().length > 0) {
+        this.stateService.saveEditedDescription(key, newText);
+      } else {
+        // If empty, remove from storage (use original from JSON)
+        this.stateService.saveEditedDescription(key, '');
+      }
+    }, 300);
   }
 
   onEditorHyperlinkRequested(key: keyof CharacterBriefDescriptions, request: HyperlinkRequest): void {

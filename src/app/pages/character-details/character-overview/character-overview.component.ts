@@ -1,10 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { CharacterResolved } from '../../../_models/character';
 import { FormsModule } from '@angular/forms';
 import { OverviewProfileComponent } from './profile/profile.component';
 import { OverviewConstellationsComponent } from './constellations/constellations.component';
 import { OverviewTalentsComponent } from './talents/talents.component';
 import { ElementType, ElementTypeLabel } from '../../../_models/enum';
+import { CharacterTabStateService } from '../../../_services/character-tab-state.service';
 
 @Component({
   selector: 'app-character-overview',
@@ -17,7 +18,7 @@ import { ElementType, ElementTypeLabel } from '../../../_models/enum';
   templateUrl: './character-overview.component.html',
   styleUrl: './character-overview.component.css',
 })
-export class CharacterOverviewComponent {
+export class CharacterOverviewComponent implements OnInit, OnChanges {
   @Input() char: CharacterResolved | null = null;
   @Input() apikey: string | null = null;
   @Input() elementColor: string | null = null;
@@ -25,6 +26,32 @@ export class CharacterOverviewComponent {
   @Output() elementChange = new EventEmitter<ElementType>();
 
   selectedMenu: 'profile' | 'talents' | 'constellations' = 'profile';
+
+  constructor(private tabStateService: CharacterTabStateService) {}
+
+  ngOnInit(): void {
+    this.restoreTabState();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // When character changes, restore its tab preference
+    if (changes['char'] && !changes['char'].firstChange) {
+      this.restoreTabState();
+    }
+  }
+
+  private restoreTabState(): void {
+    if (this.char?.profile?.id) {
+      this.selectedMenu = this.tabStateService.getTabForCharacter(String(this.char.profile.id));
+    }
+  }
+
+  selectMenu(menu: 'profile' | 'talents' | 'constellations'): void {
+    this.selectedMenu = menu;
+    if (this.char?.profile?.id) {
+      this.tabStateService.setTabForCharacter(String(this.char.profile.id), menu);
+    }
+  }
 
   get imageUrls() {
     return {

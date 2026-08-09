@@ -9,7 +9,7 @@
         <div class="menus">
           <button
             [class.active]="selectedMenu === 'profile'"
-            (click)="selectedMenu = 'profile'"
+            (click)="selectMenu('profile')"
             [style.border-color]="
               selectedMenu === 'profile' ? elementColor : 'transparent'
             "
@@ -18,7 +18,7 @@
           </button>
           <button
             [class.active]="selectedMenu === 'talents'"
-            (click)="selectedMenu = 'talents'"
+            (click)="selectMenu('talents')"
             [style.border-color]="
               selectedMenu === 'talents' ? elementColor : 'transparent'
             "
@@ -27,7 +27,7 @@
           </button>
           <button
             [class.active]="selectedMenu === 'constellations'"
-            (click)="selectedMenu = 'constellations'"
+            (click)="selectMenu('constellations')"
             [style.border-color]="
               selectedMenu === 'constellations' ? elementColor : 'transparent'
             "

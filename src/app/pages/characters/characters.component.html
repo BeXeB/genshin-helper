@@ -10,6 +10,7 @@
       type="text"
       placeholder="Karakterek keresése..."
       [(ngModel)]="searchTerm"
+      (focus)="$event.target.select()"
       (ngModelChange)="applyFilters()"
     />
   </div>

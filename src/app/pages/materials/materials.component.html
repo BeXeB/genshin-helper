@@ -5,6 +5,7 @@
       type="text"
       placeholder="Materialok keresése..."
       [(ngModel)]="searchTerm"
+      (focus)="$event.target.select()"
       (ngModelChange)="applyFilters()"
     />
   </div>
