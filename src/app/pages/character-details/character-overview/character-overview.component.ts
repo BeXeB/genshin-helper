@@ -25,7 +25,7 @@ export class CharacterOverviewComponent implements OnInit, OnChanges {
   @Input() selectedElement: ElementType = ElementType.ANEMO;
   @Output() elementChange = new EventEmitter<ElementType>();
 
-  selectedMenu: 'profile' | 'talents' | 'constellations' = 'profile';
+  selectedMenu: 'profile' | 'talents' | 'constellations' | null = null;
 
   constructor(private tabStateService: CharacterTabStateService) {}
 

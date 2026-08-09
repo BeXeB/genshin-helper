@@ -75,16 +75,14 @@
             [elementColor]="elementColor"
             [char]="char"
           ></app-overview-profile>
-        }
-        @if (selectedMenu === "talents") {
+        } @else if (selectedMenu === "talents") {
           <app-overview-talents
             [elementColor]="elementColor"
             [apiKey]="apikey"
             [char]="char"
             [element]="selectedElement"
           ></app-overview-talents>
-        }
-        @if (selectedMenu === "constellations") {
+        } @else if (selectedMenu === "constellations") {
           <app-overview-constellations
             [elementColor]="elementColor"
             [apiKey]="apikey"
