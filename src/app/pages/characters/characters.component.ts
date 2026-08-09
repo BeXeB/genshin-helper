@@ -8,7 +8,6 @@ import { PageFilters, FilterGroup } from '../../_models/filters';
 import { FilterService } from '../../_services/filter.service';
 import { FiltersComponent } from '../../_components/filters/filters.component';
 import { ItemCardComponent } from '../../_components/item-card/item-card.component';
-import { RouterLink } from '@angular/router';
 import { BaseListComponent } from '../../_components/base-list.component';
 import { Observable } from 'rxjs';
 import { ElementType, ElementTypeLabel, WeaponTypeLabel } from '../../_models/enum';
@@ -21,7 +20,6 @@ import { ElementType, ElementTypeLabel, WeaponTypeLabel } from '../../_models/en
     PageTitleComponent,
     FiltersComponent,
     ItemCardComponent,
-    RouterLink,
   ],
   templateUrl: './characters.component.html',
   styleUrl: './characters.component.css',

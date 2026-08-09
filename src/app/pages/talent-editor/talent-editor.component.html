@@ -7,7 +7,7 @@
         type="text"
         placeholder="Karakter neve..."
         [(ngModel)]="search"
-        (focus)="showDropdown = true"
+        (focus)="showDropdown = true; $event.target.select()"
         (blur)="hideDropdown()"
       />
 

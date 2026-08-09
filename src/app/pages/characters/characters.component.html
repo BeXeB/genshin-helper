@@ -10,6 +10,7 @@
       type="text"
       placeholder="Karakterek keresése..."
       [(ngModel)]="searchTerm"
+      (focus)="$event.target.select()"
       (ngModelChange)="applyFilters()"
     />
   </div>
@@ -17,7 +18,7 @@
   <div class="flex-wrap-center">
     @for (char of data; track $index) {
       <app-item-card
-        [routerLink]="`/characters/${char.normalizedName}`"
+        [routeUrl]="`/characters/${char.normalizedName}`"
         [style.display]="filtered.includes(char) ? 'block' : 'none'"
         [imageUrl]="getIcons(char).iconUrl"
         [itemName]="char.name"

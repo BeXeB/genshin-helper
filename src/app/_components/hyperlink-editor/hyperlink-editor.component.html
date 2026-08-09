@@ -32,7 +32,7 @@
       placeholder="Search hyperlinks..."
       [(ngModel)]="searchQuery"
       (input)="onSearchChange()"
-      (focus)="showSearchDropdown()"
+      (focus)="showSearchDropdown(); $event.target.select()"
       (blur)="hideDropdown()"
     />
 

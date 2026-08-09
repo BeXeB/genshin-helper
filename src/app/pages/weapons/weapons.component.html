@@ -10,13 +10,14 @@
       type="text"
       placeholder="Fegyverek keresése..."
       [(ngModel)]="searchTerm"
+      (focus)="$event.target.select()"
       (ngModelChange)="applyFilters()"
     />
   </div>
   <div class="flex-wrap-center">
     @for (weapon of data; track $index) {
       <app-item-card
-        [routerLink]="`/weapons/${weapon.normalizedName}`"
+        [routeUrl]="`/weapons/${weapon.normalizedName}`"
         [style.display]="filtered.includes(weapon) ? 'block' : 'none'"
         [imageUrl]="getIconUrls(weapon).iconUrl"
         [itemName]="weapon.name"
