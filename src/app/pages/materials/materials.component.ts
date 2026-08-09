@@ -5,7 +5,6 @@ import { MaterialService } from '../../_services/material.service';
 import { ImageService } from '../../_services/image.service';
 import { MaterialResolved } from '../../_models/materials';
 import { ResolverService } from '../../_services/resolver.service';
-import { RouterLink } from '@angular/router';
 import { map, switchMap, Observable } from 'rxjs';
 import { StorageService } from '../../_services/storage.service';
 import { ItemCardComponent } from '../../_components/item-card/item-card.component';
@@ -15,7 +14,7 @@ import { PageFilters, FilterGroup } from '../../_models/filters';
 
 @Component({
   selector: 'app-materials',
-  imports: [PageTitleComponent, FormsModule, RouterLink, ItemCardComponent],
+  imports: [PageTitleComponent, FormsModule, ItemCardComponent],
   templateUrl: './materials.component.html',
   styleUrl: './materials.component.css',
 })

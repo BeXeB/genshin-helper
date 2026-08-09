@@ -6,10 +6,11 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-item-card',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './item-card.component.html',
   styleUrl: './item-card.component.css',
 })
@@ -17,6 +18,7 @@ export class ItemCardComponent implements AfterViewInit {
   @Input() imageUrl!: string;
   @Input() itemName!: string;
   @Input() rarity!: number;
+  @Input() routeUrl?: string | string[];
   @ViewChild('iconsContainer') iconsContainer!: ElementRef;
   @ViewChild('itemNameElement') itemNameElement!: ElementRef;
 

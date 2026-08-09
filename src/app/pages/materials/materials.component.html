@@ -11,7 +11,7 @@
   <div class="flex-wrap-center">
     @for (material of data; track $index) {
       <app-item-card
-        [routerLink]="`/materials/${material.normalizedName}`"
+        [routeUrl]="`/materials/${material.normalizedName}`"
         [style.display]="
           filtered.includes(material) ? 'block' : 'none'
         "

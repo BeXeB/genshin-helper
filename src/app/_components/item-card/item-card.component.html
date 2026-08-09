@@ -1,9 +1,11 @@
-<div [style.border-color]="getColor()" class="item-card card">
-  <div #iconsContainer class="icons">
-    <ng-content select="[icon-slot]"></ng-content>
+<a [routerLink]="routeUrl" [style]="{ textDecoration: 'none', color: 'inherit', display: 'block' }">
+  <div [style.border-color]="getColor()" class="item-card card">
+    <div #iconsContainer class="icons">
+      <ng-content select="[icon-slot]"></ng-content>
+    </div>
+    <div [class.no-icons]="!hasIcons" class="item-icon">
+      <img [src]="imageUrl" [alt]="itemName" [title]="itemName" />
+    </div>
+    <p>{{ itemName }}</p>
   </div>
-  <div [class.no-icons]="!hasIcons" class="item-icon">
-    <img [src]="imageUrl" [alt]="itemName" [title]="itemName" />
-  </div>
-  <p>{{ itemName }}</p>
-</div>
+</a>

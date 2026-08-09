@@ -17,7 +17,7 @@
   <div class="flex-wrap-center">
     @for (char of data; track $index) {
       <app-item-card
-        [routerLink]="`/characters/${char.normalizedName}`"
+        [routeUrl]="`/characters/${char.normalizedName}`"
         [style.display]="filtered.includes(char) ? 'block' : 'none'"
         [imageUrl]="getIcons(char).iconUrl"
         [itemName]="char.name"

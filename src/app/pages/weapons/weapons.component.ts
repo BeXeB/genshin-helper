@@ -4,7 +4,6 @@ import { WeaponService } from '../../_services/weapon.service';
 import { ImageService } from '../../_services/image.service';
 import { WeaponResolved } from '../../_models/weapons';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 import { ResolverService } from '../../_services/resolver.service';
 import { map, switchMap, Observable } from 'rxjs';
 import { FiltersComponent } from '../../_components/filters/filters.component';
@@ -20,7 +19,6 @@ import { QualityTypeLabel, WeaponTypeLabel } from '../../_models/enum';
   imports: [
     PageTitleComponent,
     FormsModule,
-    RouterLink,
     FiltersComponent,
     ItemCardComponent,
   ],
