@@ -4,7 +4,7 @@
       <ng-content select="[icon-slot]"></ng-content>
     </div>
     <div [class.no-icons]="!hasIcons" class="item-icon">
-      <img [src]="imageUrl" [alt]="itemName" [title]="itemName" />
+      <img [src]="imageUrl" [title]="itemName" loading="lazy" />
     </div>
     <p>{{ itemName }}</p>
   </div>
