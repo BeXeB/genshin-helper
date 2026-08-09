@@ -25,6 +25,7 @@ app-modal {
   background: var(--black);
   border: 1px var(--dark-gray) solid;
 
+  min-width: 900px;
   max-width: 90vw;
   max-height: 90vh;
 }

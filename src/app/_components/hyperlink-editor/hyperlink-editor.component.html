@@ -1,0 +1,128 @@
+<div class="flex-col editor-container">
+  <!-- Quick Talent Links Section -->
+  <div class="card">
+    <div class="section-title">Quick Talent Links</div>
+    <div class="button-grid-container">
+        <div class="button-grid">
+          <button class="quick-link-btn" (click)="insertQuickLink('combat1')" title="Link to Combat 1">S1</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('combat2')" title="Link to Combat 2">S2</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('combat3')" title="Link to Combat 3">S3</button>
+        </div>
+        <div class="button-grid">
+          <button class="quick-link-btn" (click)="insertQuickLink('passive1')" title="Link to Passive 1">P1</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('passive2')" title="Link to Passive 2">P2</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('passive3')" title="Link to Passive 3">P3</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('passive4')" title="Link to Passive 4">P4</button>
+        </div>
+        <div class="button-grid">
+          <button class="quick-link-btn" (click)="insertQuickLink('c1')" title="Link to C1">C1</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c2')" title="Link to C2">C2</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c3')" title="Link to C3">C3</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c4')" title="Link to C4">C4</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c5')" title="Link to C5">C5</button>
+          <button class="quick-link-btn" (click)="insertQuickLink('c6')" title="Link to C6">C6</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Search Section with Dropdown -->
+  <div class="hyperlink-search">
+    <input
+      type="text"
+      placeholder="Search hyperlinks..."
+      [(ngModel)]="searchQuery"
+      (input)="onSearchChange()"
+      (focus)="showSearchDropdown()"
+      (blur)="hideDropdown()"
+    />
+
+    @if (showDropdown) {
+      <div class="dropdown">
+        @if (filteredHyperlinks.length > 0) {
+          @for (hyperlink of filteredHyperlinks; track hyperlink.id) {
+            <div
+              class="option"
+              (mousedown)="selectHyperlink(hyperlink)"
+            >
+              <div class="option-name">{{ hyperlink.name }}</div>
+              <div class="option-id">{{ getDisplayId(hyperlink) }}</div>
+            </div>
+          }
+        } @else {
+          <div class="empty-state">
+            @if (searchQuery.length > 0) {
+              No hyperlinks found
+            } @else {
+              No custom hyperlinks yet
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <!-- Selected Preview -->
+  @if (selectedHyperlink) {
+    <div class="card preview-card">
+      <div class="preview-title">{{ selectedHyperlink.name }}</div>
+      <div class="preview-id">ID: {{ getDisplayId(selectedHyperlink) }}</div>
+      <div class="preview-description">
+        <app-formatted-text [text]="selectedHyperlink.description"></app-formatted-text>
+      </div>
+      <button (click)="insertLink(selectedHyperlink)">Insert Link</button>
+    </div>
+  }
+
+  <!-- Create New Section -->
+  <button
+    class="full-width-btn"
+    (click)="toggleCreateForm()"
+  >
+    {{ showCreateForm ? 'Cancel' : 'Create New Hyperlink' }}
+  </button>
+
+  @if (showCreateForm) {
+    <div class="flex-col create-form">
+      <div class="flex-col flex-col-tight">
+        <label class="form-label" for="newId">ID (lowercase, hyphens only)</label>
+        <input
+          class="form-input"
+          id="newId"
+          type="text"
+          [(ngModel)]="newHyperlinkId"
+          placeholder="e.g., elemental-mastery"
+        />
+      </div>
+
+      <div class="flex-col flex-col-tight">
+        <label class="form-label" for="newName">Name</label>
+        <input
+          class="form-input"
+          id="newName"
+          type="text"
+          [(ngModel)]="newHyperlinkName"
+          placeholder="e.g., Elemental Mastery"
+        />
+      </div>
+
+      <div class="flex-col flex-col-tight">
+        <label class="form-label">Description</label>
+        <app-formatted-text-editor
+          [text]="newHyperlinkDescription"
+          fieldKey="new-hyperlink-description"
+          [showToolbar]="true"
+          [showPreview]="true"
+          placeholder="Detailed explanation (supports formatting)..."
+          [rows]="4"
+          (textChange)="newHyperlinkDescription = $event"
+        ></app-formatted-text-editor>
+      </div>
+
+      @if (createError) {
+        <div class="error-message">{{ createError }}</div>
+      }
+
+      <button (click)="createNewHyperlink()">Create</button>
+    </div>
+  }
+</div>

@@ -44,12 +44,16 @@
                 <span class="label">{{
                   StatTypeLabel[weapon.mainStatType]
                 }}</span>
-                <span class="value"
-                  >{{
-                    (weapon.stats[level].specialized ?? 0) * 100
-                      | number: "1.2-2"
-                  }}%</span
-                >
+                <span class="value">
+                  @if (isPercentageSubstat(weapon.mainStatType)) {
+                    {{
+                      (weapon.stats[level].specialized ?? 0) * 100
+                        | number: "1.2-2"
+                    }}%
+                  } @else {
+                    {{ weapon.stats[level].specialized ?? 0 | number: "1.0-0" }}
+                  }
+                </span>
               </div>
             }
           </div>

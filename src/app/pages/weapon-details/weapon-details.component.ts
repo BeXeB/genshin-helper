@@ -10,13 +10,12 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ResolverService } from '../../_services/resolver.service';
 import { WeaponService } from '../../_services/weapon.service';
 import { map, switchMap, takeUntil } from 'rxjs';
-import { SafeHtml } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { DecimalPipe } from '@angular/common';
 import { FormatterService } from '../../_services/formatter.service';
 import { BaseDetailComponent } from '../../_components/base-detail.component';
 import { ImageService } from '../../_services/image.service';
-import { StatTypeLabel } from '../../_models/enum';
+import { StatType, StatTypeLabel } from '../../_models/enum';
 import { AstNode } from '../../_models/ast-nodes';
 import { FormattedTextComponent } from "../../_components/formatted-text-component/formatted-text.component";
 
@@ -199,4 +198,14 @@ export class WeaponDetailsComponent extends BaseDetailComponent<WeaponResolved> 
       material.type,
     );
   }
+
+    isPercentageSubstat(statType?: StatType | null): boolean {
+      if (!statType) {
+        return true;
+      }
+
+      const flatSubstats = [StatType.HP, StatType.ATK, StatType.DEF, StatType.EM];
+      return !flatSubstats.includes(statType);
+    }
+
 }

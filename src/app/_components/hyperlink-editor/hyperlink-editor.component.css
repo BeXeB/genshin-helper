@@ -1,0 +1,167 @@
+/* Main Container - override flex-col defaults for full height */
+.editor-container {
+  height: 100%;
+  overflow: visible;
+}
+
+/* Section Headers */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Grid Containers Container */
+.button-grid-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Grid Containers */
+.button-grid {
+  background-color: var(--dark-gray);
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* Quick Link Buttons */
+.quick-link-btn {
+  width: auto;
+  padding: 8px 12px;
+  min-width: 40px;
+}
+
+/* Compact gap modifier - for sections with smaller gap */
+.flex-col-compact {
+  gap: 10px;
+}
+
+/* Tight gap modifier - for form groups with minimal gap */
+.flex-col-tight {
+  gap: 5px;
+}
+
+/* Search Input and Dropdown */
+.hyperlink-search {
+  position: relative;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--darker-gray);
+  color: inherit;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--gray);
+  background: var(--darker-gray);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+/* Dropdown Options */
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.option:hover {
+  background-color: var(--dark-gray);
+}
+
+.option-name {
+  font-weight: 500;
+}
+
+.option-id {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+}
+
+/* Empty State */
+.empty-state {
+  padding: 20px;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+/* Preview Card specific overrides */
+.preview-card {
+  gap: 10px;
+}
+
+.preview-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.preview-id {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.preview-description {
+  margin-bottom: 15px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Create Form specific styling */
+.create-form {
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--dark-gray);
+  gap: 10px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 8px 12px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--darker-gray);
+  color: inherit;
+}
+
+/* Error Message */
+.error-message {
+  padding: 10px;
+  background-color: var(--darker-gray);
+  border: 1px solid var(--red);
+  border-radius: 6px;
+  color: var(--red);
+}
+
+/* Full Width Button */
+.full-width-btn {
+  width: 100%;
+}
+

@@ -3,13 +3,20 @@ import {
   Component,
   ElementRef,
   OnInit,
+  OnDestroy,
   QueryList,
+  ViewChild,
   ViewChildren,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Subscription } from 'rxjs';
 import { CharacterService } from '../../_services/character.service';
 import { ImageService } from '../../_services/image.service';
+import { ModalService } from '../../_services/modal.service';
+import { HyperlinkInsertionService } from '../../_services/hyperlink-insertion.service';
+import { HyperlinkService } from '../../_services/hyperlink.service';
+import { EditorHistoryService } from '../../_services/editor-history.service';
 import { ElementType, ElementTypeLabel } from '../../_models/enum';
 import {
   Character,
@@ -21,6 +28,8 @@ import {
 } from '../../_models/character';
 import { PageTitleComponent } from '../../_components/page-title/page-title.component';
 import { FormattedTextComponent } from '../../_components/formatted-text-component/formatted-text.component';
+import { FormattedTextEditorComponent, HyperlinkRequest } from '../../_components/formatted-text-editor/formatted-text-editor.component';
+import { HyperlinkEditorComponent } from '../../_components/hyperlink-editor/hyperlink-editor.component';
 
 type TalentRow = {
   key: keyof CharacterBriefDescriptions;
@@ -34,26 +43,25 @@ type ColorPreset = {
   element?: ElementType;
 };
 
-type HistoryEntry = {
-  value: string;
-  selectionStart: number;
-  selectionEnd: number;
-};
-
 @Component({
   selector: 'app-talent-editor',
-  imports: [CommonModule, FormsModule, PageTitleComponent, FormattedTextComponent],
+  imports: [CommonModule, FormsModule, PageTitleComponent, FormattedTextComponent, FormattedTextEditorComponent],
   templateUrl: './talent-editor.component.html',
   styleUrl: './talent-editor.component.css',
 })
-export class TalentEditorComponent implements OnInit, AfterViewInit {
+export class TalentEditorComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private characterSerivce: CharacterService,
     private imageService: ImageService,
+    private modalService: ModalService,
+    private insertionService: HyperlinkInsertionService,
+    private hyperlinkService: HyperlinkService,
+    private historyService: EditorHistoryService,
   ) {}
 
   @ViewChildren('sectionBtnEl') sectionBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
   @ViewChildren('talentBtnEl') talentBtnEls!: QueryList<ElementRef<HTMLButtonElement>>;
+  @ViewChild('hyperlink-editor') hyperlinkEditor?: HyperlinkEditorComponent;
 
   characters: CharacterProfile[] = [];
 
@@ -68,15 +76,6 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
 
   briefDrafts: Partial<CharacterBriefDescriptions> = {};
 
-  // History tracking - per talent key
-  private history: Map<keyof CharacterBriefDescriptions, HistoryEntry[]> = new Map();
-  private historyIndex: Map<keyof CharacterBriefDescriptions, number> = new Map();
-  private readonly MAX_HISTORY = 50; // Prevent memory bloat
-
-  // Debounce timers for capturing snapshots while the user is actively typing
-  private inputTimers: Map<keyof CharacterBriefDescriptions, ReturnType<typeof setTimeout>> = new Map();
-  private readonly INPUT_DEBOUNCE_MS = 500;
-
   colorPresets: ColorPreset[] = [
     { label: 'Kiemelés', color: '#FFD780FF' },
     { label: 'Anemo', color: '#80FFD7FF', element: ElementType.ANEMO },
@@ -88,17 +87,31 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     { label: 'Pyro', color: '#FF9999FF', element: ElementType.PYRO },
   ];
 
+  // Hyperlink insertion tracking
+  private currentTalentKey: keyof CharacterBriefDescriptions | null = null;
+  private currentHyperlinkRequest: HyperlinkRequest | null = null;
+  private insertionSubscription?: Subscription;
+
   ngOnInit(): void {
     this.characterSerivce
       .getCharacters()
       .subscribe((data: CharacterProfile[]) => {
         this.characters = data.sort((b, a) => a.sortId - b.sortId);
       });
+
+    // Subscribe to hyperlink insertions
+    this.insertionSubscription = this.insertionService.insertion$.subscribe((event) => {
+      this.insertHyperlink(event.id, event.displayText, event.type);
+    });
   }
 
   ngAfterViewInit(): void {
     this.sectionBtnEls.changes.subscribe(() => this.equalizeButtonWidths(this.sectionBtnEls));
     this.talentBtnEls.changes.subscribe(() => this.equalizeButtonWidths(this.talentBtnEls));
+  }
+
+  ngOnDestroy(): void {
+    this.insertionSubscription?.unsubscribe();
   }
 
   // Makes every button in the given group as wide as the widest one, so the
@@ -159,7 +172,6 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
           const firstRow = firstSection.rows[0];
           if (firstRow) {
             this.selectedTalentKey = firstRow.key;
-            this.ensureHistoryInitialized(firstRow.key);
           }
         }
       });
@@ -168,168 +180,9 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
       .getBriefDescriptions(profile.normalizedName)
       .subscribe((data) => {
         this.briefDrafts = { ...data };
-        for (const timer of this.inputTimers.values()) {
-          clearTimeout(timer);
-        }
-        this.inputTimers.clear();
-        this.history.clear();
-        this.historyIndex.clear();
-        for (const key of Object.keys(this.briefDrafts) as (keyof CharacterBriefDescriptions)[]) {
-          this.initializeHistory(key);
-        }
+        // Clear history for all fields when loading new character
+        this.historyService.clearAll();
       });
-  }
-
-  onTextareaInput(key: keyof CharacterBriefDescriptions, textarea: HTMLTextAreaElement) {
-    const existing = this.inputTimers.get(key);
-    if (existing) clearTimeout(existing);
-
-    const timer = setTimeout(() => {
-      this.inputTimers.delete(key);
-      this.captureSnapshot(key, textarea.selectionStart, textarea.selectionEnd);
-    }, this.INPUT_DEBOUNCE_MS);
-
-    this.inputTimers.set(key, timer);
-  }
-
-  flushPendingCapture(key: keyof CharacterBriefDescriptions, textarea?: HTMLTextAreaElement) {
-    const timer = this.inputTimers.get(key);
-    if (timer) {
-      clearTimeout(timer);
-      this.inputTimers.delete(key);
-    }
-    this.captureSnapshot(key, textarea?.selectionStart, textarea?.selectionEnd);
-  }
-
-  initializeHistory(key: keyof CharacterBriefDescriptions) {
-    const initialValue = this.briefDrafts[key] ?? '';
-    this.history.set(key, [
-      {
-        value: initialValue,
-        selectionStart: initialValue.length,
-        selectionEnd: initialValue.length,
-      },
-    ]);
-    this.historyIndex.set(key, 0);
-  }
-
-  // Initialize history only if it doesn't exist yet, so the true original
-  // value is captured before any edits happen (avoids lazily reading an
-  // already-mutated draft as the "initial" state).
-  ensureHistoryInitialized(key: keyof CharacterBriefDescriptions) {
-    if (!this.history.has(key)) {
-      this.initializeHistory(key);
-    }
-  }
-
-  captureSnapshot(
-    key: keyof CharacterBriefDescriptions,
-    selectionStart?: number,
-    selectionEnd?: number,
-  ) {
-    const value = this.briefDrafts[key] ?? '';
-    let stack = this.history.get(key);
-    let index = this.historyIndex.get(key);
-
-    if (!stack || index === undefined) {
-      this.initializeHistory(key);
-      stack = this.history.get(key)!;
-      index = this.historyIndex.get(key)!;
-    }
-
-    // Avoid pushing duplicate consecutive snapshots
-    if (stack[index].value === value) return;
-
-    const entry: HistoryEntry = {
-      value,
-      selectionStart: selectionStart ?? value.length,
-      selectionEnd: selectionEnd ?? value.length,
-    };
-
-    // Trim future history if user was in middle of undo chain and made new change
-    stack = stack.slice(0, index + 1);
-    stack.push(entry);
-
-    // Enforce MAX_HISTORY limit
-    if (stack.length > this.MAX_HISTORY) {
-      stack = stack.slice(stack.length - this.MAX_HISTORY);
-    }
-
-    this.history.set(key, stack);
-    this.historyIndex.set(key, stack.length - 1);
-  }
-
-  undo(key: keyof CharacterBriefDescriptions, textarea?: HTMLTextAreaElement): boolean {
-    this.flushPendingCapture(key, textarea);
-
-    const stack = this.history.get(key);
-    const index = this.historyIndex.get(key);
-    if (!stack || index === undefined || index <= 0) return false;
-
-    const newIndex = index - 1;
-    const entry = stack[newIndex];
-    this.historyIndex.set(key, newIndex);
-    this.briefDrafts[key] = entry.value;
-
-    if (textarea) {
-      setTimeout(() => {
-        textarea.focus();
-        textarea.setSelectionRange(entry.selectionStart, entry.selectionEnd);
-      });
-    }
-
-    return true;
-  }
-
-  redo(key: keyof CharacterBriefDescriptions, textarea?: HTMLTextAreaElement): boolean {
-    this.flushPendingCapture(key, textarea);
-
-    const stack = this.history.get(key);
-    const index = this.historyIndex.get(key);
-    if (!stack || index === undefined || index >= stack.length - 1) return false;
-
-    const newIndex = index + 1;
-    const entry = stack[newIndex];
-    this.historyIndex.set(key, newIndex);
-    this.briefDrafts[key] = entry.value;
-
-    if (textarea) {
-      setTimeout(() => {
-        textarea.focus();
-        textarea.setSelectionRange(entry.selectionStart, entry.selectionEnd);
-      });
-    }
-
-    return true;
-  }
-
-  canUndo(key: keyof CharacterBriefDescriptions): boolean {
-    const index = this.historyIndex.get(key);
-    return index !== undefined && index > 0;
-  }
-
-  canRedo(key: keyof CharacterBriefDescriptions): boolean {
-    const stack = this.history.get(key);
-    const index = this.historyIndex.get(key);
-    return !!stack && index !== undefined && index < stack.length - 1;
-  }
-
-  handleTextareaKeydown(
-    event: KeyboardEvent,
-    key: keyof CharacterBriefDescriptions,
-    textarea: HTMLTextAreaElement,
-  ) {
-    const isMod = event.ctrlKey || event.metaKey;
-    if (!isMod) return;
-
-    const k = event.key.toLowerCase();
-    if (k === 'z' && !event.shiftKey) {
-      event.preventDefault();
-      this.undo(key, textarea);
-    } else if (k === 'y' || (k === 'z' && event.shiftKey)) {
-      event.preventDefault();
-      this.redo(key, textarea);
-    }
   }
 
   hideDropdown() {
@@ -382,7 +235,6 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
       const firstRow = firstSection.rows[0];
       if (firstRow) {
         this.selectedTalentKey = firstRow.key;
-        this.ensureHistoryInitialized(firstRow.key);
       }
     }
   }
@@ -475,7 +327,6 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
 
   selectTalent(key: keyof CharacterBriefDescriptions) {
     this.selectedTalentKey = key;
-    this.ensureHistoryInitialized(key);
     // Update selected section based on talent
     for (const section of this.talentSections) {
       if (section.rows.some(row => row.key === key)) {
@@ -491,7 +342,6 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     const section = this.talentSections.find(s => s.label === sectionLabel);
     if (section && section.rows.length > 0) {
       this.selectedTalentKey = section.rows[0].key;
-      this.ensureHistoryInitialized(section.rows[0].key);
     }
   }
 
@@ -513,6 +363,7 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
       }
     }
 
+    // Download brief descriptions
     const json = JSON.stringify(result, null, 2);
     const blob = new Blob([json], { type: 'application/json' });
     const url = window.URL.createObjectURL(blob);
@@ -524,6 +375,28 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     a.click();
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
+
+    // Download custom hyperlinks
+    this.hyperlinkService.getHyperlinksMap().subscribe((map) => {
+      const hyperlinks: any[] = [];
+      map.forEach((link) => {
+        if (link.isCustom) {
+          hyperlinks.push(link);
+        }
+      });
+
+      const json = JSON.stringify(hyperlinks, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = window.URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `custom-hyperlinks.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    });
   }
 
   getPresetIconStyle(preset: ColorPreset): Record<string, string> {
@@ -546,80 +419,53 @@ export class TalentEditorComponent implements OnInit, AfterViewInit {
     };
   }
 
-  wrapSelection(
+  openHyperlinkModal(
     key: keyof CharacterBriefDescriptions,
-    textarea: HTMLTextAreaElement,
-    tag: 'bold' | 'italic' | 'color',
-    color?: string,
   ) {
-    this.flushPendingCapture(key, textarea);
-
-    const value = this.briefDrafts[key] ?? '';
-    const start = textarea.selectionStart ?? 0;
-    const end = textarea.selectionEnd ?? 0;
-    const selected = value.substring(start, end);
-
-    let openTag: string;
-    let closeTag: string;
-    switch (tag) {
-      case 'bold':
-        openTag = '<b>';
-        closeTag = '</b>';
-        break;
-      case 'italic':
-        openTag = '<i>';
-        closeTag = '</i>';
-        break;
-      case 'color':
-        openTag = `<color=${color}>`;
-        closeTag = '</color>';
-        break;
-    }
-
-    const newValue =
-      value.slice(0, start) + openTag + selected + closeTag + value.slice(end);
-    this.briefDrafts[key] = newValue;
-
-    const newStart = start + openTag.length;
-    const newEnd = newStart + selected.length;
-    this.captureSnapshot(key, newStart, newEnd);
-
-    setTimeout(() => {
-      textarea.focus();
-      textarea.setSelectionRange(newStart, newEnd);
-    });
+    this.currentTalentKey = key;
+    this.modalService.open('hyperlink-editor');
   }
 
-  clearFormatting(
-    key: keyof CharacterBriefDescriptions,
-    textarea: HTMLTextAreaElement,
-  ) {
-    this.flushPendingCapture(key, textarea);
+  onEditorTextChange(key: keyof CharacterBriefDescriptions, newText: string): void {
+    this.briefDrafts[key] = newText;
+  }
 
+  onEditorHyperlinkRequested(key: keyof CharacterBriefDescriptions, request: HyperlinkRequest): void {
+    this.currentTalentKey = key;
+    this.currentHyperlinkRequest = request;
+    // Set the current character in the insertion service for quick links
+    if (this.selectedCharacter) {
+      this.insertionService.setCurrentCharacter(this.selectedCharacter.normalizedName);
+    }
+    this.modalService.open('hyperlink-editor');
+  }
+
+  insertHyperlink(hyperlinkId: string | number, displayText?: string, linkType?: 'C' | 'Z') {
+    if (!this.currentTalentKey || !this.currentHyperlinkRequest) return;
+
+    const key = this.currentTalentKey;
+    const selection = this.currentHyperlinkRequest;
     const value = this.briefDrafts[key] ?? '';
-    const start = textarea.selectionStart ?? 0;
-    const end = textarea.selectionEnd ?? 0;
-    const selected = value.substring(start, end);
+    const start = selection.selectionStart;
+    const end = selection.selectionEnd;
+    const selected = selection.selectedText || 'Link';
 
-    // Remove all formatting tags
-    const cleared = selected
-      .replace(/<b>/g, '')
-      .replace(/<\/b>/g, '')
-      .replace(/<i>/g, '')
-      .replace(/<\/i>/g, '')
-      .replace(/<color=[^>]*>/g, '')
-      .replace(/<\/color>/g, '');
+    // Determine link type based on explicit type parameter or ID format
+    let linkMarkup: string;
+    if (linkType === 'Z') {
+      // Type Z link (brief field reference)
+      linkMarkup = `{LINK#Z${hyperlinkId}}${selected}{/LINK}`;
+    } else {
+      // Type C or N link (custom concept or game hyperlink)
+      linkMarkup = `{LINK#${hyperlinkId}}${selected}{/LINK}`;
+    }
 
-    const newValue =
-      value.slice(0, start) + cleared + value.slice(end);
+    const newValue = value.slice(0, start) + linkMarkup + value.slice(end);
     this.briefDrafts[key] = newValue;
 
-    const newEnd = start + cleared.length;
-    this.captureSnapshot(key, start, newEnd);
+    // Capture the state change in history
+    this.historyService.captureSnapshot(key, newValue, start, start + linkMarkup.length);
 
-    setTimeout(() => {
-      textarea.focus();
-      textarea.setSelectionRange(start, newEnd);
-    });
+    this.modalService.close();
   }
 }

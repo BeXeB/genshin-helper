@@ -132,14 +132,30 @@ export class FormatterService {
 
     const tag = text.substring(state.index, end + 1);
 
-    const match = tag.match(/\{LINK#([NSPT])(\d+)\}/);
+    // Match patterns: {LINK#N123}, {LINK#Zcharacter-field}, {LINK#elemental-mastery}
+    const match = tag.match(/\{LINK#(?:([NSPT])(\d+)|Z([a-z0-9\-]+)|([a-z0-9\-]+))\}/);
 
     if (!match) {
       throw new Error(`Invalid link tag: ${tag}`);
     }
 
-    const type = match[1] as LinkType;
-    const id = Number(match[2]);
+    let type: LinkType;
+    let id: string | number;
+
+    // Match groups: [1]=type letter, [2]=numeric id, [3]=Z id, [4]=custom string id
+    if (match[1]) {
+      // Type N/S/P/T with numeric ID
+      type = match[1] as LinkType;
+      id = Number(match[2]);
+    } else if (match[3]) {
+      // Type Z with string ID
+      type = 'Z';
+      id = match[3];
+    } else {
+      // Custom string ID (default type C)
+      type = 'C';
+      id = match[4];
+    }
 
     state.index = end + 1;
 

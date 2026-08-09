@@ -1,0 +1,111 @@
+<div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+  <!-- Toolbar (conditionally shown) -->
+  @if (showToolbar) {
+    <div style="display: flex; gap: 5px; flex-wrap: wrap; align-items: center;">
+      <!-- Undo -->
+      <button
+        class="toolbar-btn"
+        type="button"
+        [disabled]="!canUndo()"
+        (mousedown)="$event.preventDefault()"
+        (click)="undo()"
+        title="Undo (Ctrl+Z)"
+      >
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+
+      <!-- Redo -->
+      <button
+        class="toolbar-btn"
+        type="button"
+        [disabled]="!canRedo()"
+        (mousedown)="$event.preventDefault()"
+        (click)="redo()"
+        title="Redo (Ctrl+Y)"
+      >
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+
+      <!-- Bold -->
+      <button
+        class="toolbar-btn"
+        type="button"
+        (mousedown)="$event.preventDefault()"
+        (click)="wrapSelection('bold')"
+        title="Bold"
+      >
+        <b>B</b>
+      </button>
+
+      <!-- Italic -->
+      <button
+        class="toolbar-btn"
+        type="button"
+        (mousedown)="$event.preventDefault()"
+        (click)="wrapSelection('italic')"
+        title="Italic"
+      >
+        <i>I</i>
+      </button>
+
+      <!-- Color presets -->
+      @for (preset of colorPresets; track preset.label) {
+        <button
+          class="toolbar-btn preset-btn"
+          [ngClass]="{ 'highlight-btn': !preset.element }"
+          type="button"
+          [title]="preset.label"
+          (mousedown)="$event.preventDefault()"
+          (click)="wrapSelection('color', preset.color)"
+        >
+          @if (preset.element) {
+            <span class="icon-mask" [style]="getPresetIconStyle(preset)"></span>
+          } @else {
+            <i class="fa-solid fa-highlighter"></i>
+          }
+        </button>
+      }
+
+      <!-- Clear formatting -->
+      <button
+        class="toolbar-btn"
+        type="button"
+        (mousedown)="$event.preventDefault()"
+        (click)="clearFormatting()"
+        title="Clear formatting"
+      >
+        <i class="fa-solid fa-eraser"></i>
+      </button>
+
+      <!-- Insert link -->
+      <button
+        class="toolbar-btn"
+        type="button"
+        (mousedown)="$event.preventDefault()"
+        (click)="requestHyperlink()"
+        title="Insert hyperlink"
+      >
+        <i class="fa-solid fa-link"></i>
+      </button>
+    </div>
+  }
+
+  <!-- Textarea -->
+  <textarea
+    #textarea
+    [(ngModel)]="text"
+    (input)="onTextareaInput()"
+    (blur)="onTextareaBlur()"
+    (keydown)="onTextareaKeydown($event)"
+    [attr.rows]="rows"
+    [attr.placeholder]="placeholder"
+  ></textarea>
+
+  <!-- Preview (conditionally shown) -->
+  @if (showPreview && text) {
+    <div style="padding: 10px; border: 1px solid var(--gray); border-radius: 6px; background-color: var(--darker-gray);">
+      <div style="font-size: 0.9rem; color: var(--light-gray); margin-bottom: 5px;">Preview:</div>
+      <app-formatted-text [text]="text"></app-formatted-text>
+    </div>
+  }
+</div>

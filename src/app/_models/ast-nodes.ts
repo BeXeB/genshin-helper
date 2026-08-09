@@ -7,7 +7,7 @@ export type AstNode =
   | LineBreakNode
   | ParamNode;
 
-export type LinkType = 'N' | 'S' | 'P' | 'T';
+export type LinkType = 'N' | 'S' | 'P' | 'T' | 'Z' | 'C';
 
 export interface TextNode {
   type: 'text';
@@ -22,7 +22,7 @@ export interface ColorNode {
 
 export interface LinkNode {
   type: 'link';
-  id: number;
+  id: string | number;
   linkType: LinkType;
   children: AstNode[];
 }
