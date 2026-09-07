@@ -60,6 +60,18 @@
         "type": "boss"
     },
     {
+        "description": "A handful of tail scales from the Great Wolf King of the North.\nEven without his physical body and beyond death, Boreas still possesses extraordinary powers. He took a form comprised of ice and wind to embrace a new challenge, but even such a form could not house all of his power. The ice scales that fell during the battle still retain some of their spiritual energy.",
+        "id": 113006,
+        "images": {
+            "filename_icon": "UI_ItemIcon_113006"
+        },
+        "name": "Tail of Boreas",
+        "normalizedName": "tailofboreas",
+        "rarity": 5,
+        "sortRank": 11101,
+        "type": "boss"
+    },
+    {
         "description": "A feather from the tail of the Dragon of the East.\nAs a dragon's feather it has experienced more than a thousand years' worth of winds. One senses within it a yearning for freedom so strong that it could whip up a light breeze to rescue it from its current confines. Its former owner's recognition of you is what makes it content to stay in your hands.",
         "id": 113003,
         "images": {
@@ -264,6 +276,30 @@
         "type": "boss"
     },
     {
+        "description": "The tail feather of a powerful chimeric monster.\nPerhaps even a created monster ought to seek out its own destiny, lest it be cast into suffering by another's hand. With such thoughts in mind, the one who made these monsters was fond of giving his creations wings. Yet there are many winged creatures in this world, and only a small few ever truly learn to fly. Perhaps that, too, is what they call providence.",
+        "id": 113091,
+        "images": {
+            "filename_icon": "UI_ItemIcon_113091"
+        },
+        "name": "Severed Tail of the Sky-Roamer",
+        "normalizedName": "severedtailoftheskyroamer",
+        "rarity": 4,
+        "sortRank": 11101,
+        "type": "boss"
+    },
+    {
+        "description": "A crystal that you picked up in the ruins after completing the duel against The Knave.\nThe already-cooled blood and fire still maintain the shape of a feather, that is framed with solidified sleek black threads.\nBefore their thoughts have matured, young children are reliant on the meticulous care of their parents, just as fledglings need the aegis of an adult wing.\nIt is to fulfill such wishes that \"Father\" wove dangerous spider-silk into a facsimile of feathers, that she might grant her family some warmth.",
+        "id": 113061,
+        "images": {
+            "filename_icon": "UI_ItemIcon_113061"
+        },
+        "name": "Silken Feather",
+        "normalizedName": "silkenfeather",
+        "rarity": 5,
+        "sortRank": 11101,
+        "type": "boss"
+    },
+    {
         "description": "The scaly wings shed by a defeated Radiant Moonfly.\nIn many local folk tales, those who enter the forbidden ground are frequently bewitched by these wings and never seen again. Some say this is because the moon, whose illusory magic these butterfly-shaped monsters have harnessed, is prone to inducing madness, while others take it as a warning of the inconstancy and danger of ancient power...",
         "id": 113078,
         "images": {
@@ -271,6 +307,18 @@
         },
         "name": "Lightbearing Scale-Feather",
         "normalizedName": "lightbearingscalefeather",
+        "rarity": 4,
+        "sortRank": 11101,
+        "type": "boss"
+    },
+    {
+        "description": "A broken horn that you obtained from defeating the Wolflord. That said, it should not have left anything behind after your hunt.\nEven a lord among the Riftwolves is nothing before monsters of a higher pedigree.\n\"Gold\" mass-produced these malformed wolf packs almost as if by accident, like shrunken drawings on discarded sheets of paper, and the horns on this one represent its authority to command its dark brood to dissolve space itself.",
+        "id": 113030,
+        "images": {
+            "filename_icon": "UI_ItemIcon_113030"
+        },
+        "name": "Riftborn Regalia",
+        "normalizedName": "riftbornregalia",
         "rarity": 4,
         "sortRank": 11101,
         "type": "boss"
@@ -296,18 +344,6 @@
         "name": "Lightning Prism",
         "normalizedName": "lightningprism",
         "rarity": 4,
-        "sortRank": 11101,
-        "type": "boss"
-    },
-    {
-        "description": "A handful of tail scales from the Great Wolf King of the North.\nEven without his physical body and beyond death, Boreas still possesses extraordinary powers. He took a form comprised of ice and wind to embrace a new challenge, but even such a form could not house all of his power. The ice scales that fell during the battle still retain some of their spiritual energy.",
-        "id": 113006,
-        "images": {
-            "filename_icon": "UI_ItemIcon_113006"
-        },
-        "name": "Tail of Boreas",
-        "normalizedName": "tailofboreas",
-        "rarity": 5,
         "sortRank": 11101,
         "type": "boss"
     },
@@ -477,7 +513,7 @@
         "normalizedName": "dreamsolvent",
         "rarity": 4,
         "sortRank": 410011,
-        "type": "boss"
+        "type": "generic"
     },
     {
         "description": "A certain deformed fragment containing great might. You obtained this from defeating La Signora, who unleashed her original power.\n\"I had a long, long dream.\"\n\"I dreamed that you and I met again in the pure white world that we created.\"\n\"But I woke up at last, having long been consumed by the raging flames, while you had long returned to the earth along with that poisoned blood.\"\n\"But none of it matters anymore. I must continue forging ahead. I must incinerate everything behind me. I must believe in that pure, spotless, everlasting realm that he spoke of — that I saw in the 'delusion' he let me see, at the end of the horizon of Her Majesty's dreams.\"",
@@ -523,18 +559,6 @@
         },
         "name": "Dew of Repudiation",
         "normalizedName": "dewofrepudiation",
-        "rarity": 4,
-        "sortRank": 11101,
-        "type": "boss"
-    },
-    {
-        "description": "A broken horn that you obtained from defeating the Wolflord. That said, it should not have left anything behind after your hunt.\nEven a lord among the Riftwolves is nothing before monsters of a higher pedigree.\n\"Gold\" mass-produced these malformed wolf packs almost as if by accident, like shrunken drawings on discarded sheets of paper, and the horns on this one represent its authority to command its dark brood to dissolve space itself.",
-        "id": 113030,
-        "images": {
-            "filename_icon": "UI_ItemIcon_113030"
-        },
-        "name": "Riftborn Regalia",
-        "normalizedName": "riftbornregalia",
         "rarity": 4,
         "sortRank": 11101,
         "type": "boss"
@@ -840,18 +864,6 @@
         "type": "boss"
     },
     {
-        "description": "A crystal that you picked up in the ruins after completing the duel against The Knave.\nThe already-cooled blood and fire still maintain the shape of a feather, that is framed with solidified sleek black threads.\nBefore their thoughts have matured, young children are reliant on the meticulous care of their parents, just as fledglings need the aegis of an adult wing.\nIt is to fulfill such wishes that \"Father\" wove dangerous spider-silk into a facsimile of feathers, that she might grant her family some warmth.",
-        "id": 113061,
-        "images": {
-            "filename_icon": "UI_ItemIcon_113061"
-        },
-        "name": "Silken Feather",
-        "normalizedName": "silkenfeather",
-        "rarity": 5,
-        "sortRank": 11101,
-        "type": "boss"
-    },
-    {
         "description": "An earring that you picked up in the ruins after completing the duel against The Knave.\nThe red symbol upon it resembles the image in her eyes, a declaration and a rejection alike.\nThe orphaned live lives filled with suffering from childhood — this she sees and keeps in her heart.\nAs fate casts an examining eye on humanity, so too will humans cast judgment upon fate.",
         "id": 113062,
         "images": {
@@ -1064,6 +1076,18 @@
         "name": "Profaned Sprout",
         "normalizedName": "profanedsprout",
         "rarity": 5,
+        "sortRank": 11101,
+        "type": "boss"
+    },
+    {
+        "description": "A blossom branch taken from a monster created by someone to serve their selfish desires. It won't wither or burn in flame.\nBefore the gloomy alchemist found a way to grant life eternity and put it into practice, he once ran his hand gently over the body of his creation — a monster whose leaves resembled crimson feathers. He imagined the day the undying creature greeting the friend he had awaited for so long from within the flames. And by then... perhaps he should pluck a flower from his creation's body as a gift to mark that friend's escape from the realm of shadows.",
+        "id": 113090,
+        "images": {
+            "filename_icon": "UI_ItemIcon_113090"
+        },
+        "name": "Unscorched Blossom Branch",
+        "normalizedName": "unscorchedblossombranch",
+        "rarity": 4,
         "sortRank": 11101,
         "type": "boss"
     }

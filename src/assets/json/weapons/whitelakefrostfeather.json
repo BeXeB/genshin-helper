@@ -8,18 +8,18 @@
             },
             {
                 "count": 5,
-                "id": 114081,
-                "name": "Sundered Glory of the Far-North Scions"
+                "id": 114089,
+                "name": "Measured Pour of the Cellared Spiritual Nectar"
             },
             {
                 "count": 5,
-                "id": 112143,
-                "name": "Fractured Lunar Iron"
+                "id": 112155,
+                "name": "Hollow Root of Life"
             },
             {
                 "count": 3,
-                "id": 112125,
-                "name": "Tattered Warrant"
+                "id": 112149,
+                "name": "Chimeric Core"
             }
         ],
         "ascend2": [
@@ -30,18 +30,18 @@
             },
             {
                 "count": 5,
-                "id": 114082,
-                "name": "Unyielding Delusion of the Far-North Scions"
+                "id": 114090,
+                "name": "Intoxication of the Cellared Spiritual Nectar"
             },
             {
                 "count": 18,
-                "id": 112143,
-                "name": "Fractured Lunar Iron"
+                "id": 112155,
+                "name": "Hollow Root of Life"
             },
             {
                 "count": 12,
-                "id": 112125,
-                "name": "Tattered Warrant"
+                "id": 112149,
+                "name": "Chimeric Core"
             }
         ],
         "ascend3": [
@@ -52,18 +52,18 @@
             },
             {
                 "count": 9,
-                "id": 114082,
-                "name": "Unyielding Delusion of the Far-North Scions"
+                "id": 114090,
+                "name": "Intoxication of the Cellared Spiritual Nectar"
             },
             {
                 "count": 9,
-                "id": 112144,
-                "name": "Depleted Lunar Iron"
+                "id": 112156,
+                "name": "Sprout Node of Life"
             },
             {
                 "count": 9,
-                "id": 112126,
-                "name": "Immaculate Warrant"
+                "id": 112150,
+                "name": "Symbiotic Chimeric Nucleus"
             }
         ],
         "ascend4": [
@@ -74,18 +74,18 @@
             },
             {
                 "count": 5,
-                "id": 114083,
-                "name": "Oblation of the Far-North Scions"
+                "id": 114091,
+                "name": "Exhilaration of the Cellared Spiritual Nectar"
             },
             {
                 "count": 18,
-                "id": 112144,
-                "name": "Depleted Lunar Iron"
+                "id": 112156,
+                "name": "Sprout Node of Life"
             },
             {
                 "count": 14,
-                "id": 112126,
-                "name": "Immaculate Warrant"
+                "id": 112150,
+                "name": "Symbiotic Chimeric Nucleus"
             }
         ],
         "ascend5": [
@@ -96,18 +96,18 @@
             },
             {
                 "count": 9,
-                "id": 114083,
-                "name": "Oblation of the Far-North Scions"
+                "id": 114091,
+                "name": "Exhilaration of the Cellared Spiritual Nectar"
             },
             {
                 "count": 14,
-                "id": 112145,
-                "name": "Unblemished Lunar Iron"
+                "id": 112157,
+                "name": "Coiled Core of Life"
             },
             {
                 "count": 9,
-                "id": 112127,
-                "name": "Frost-Etched Warrant"
+                "id": 112151,
+                "name": "Prime Chimeric Nexus"
             }
         ],
         "ascend6": [
@@ -118,628 +118,628 @@
             },
             {
                 "count": 6,
-                "id": 114084,
-                "name": "Aureate Radiance of the Far-North Scions"
+                "id": 114092,
+                "name": "Revelry of the Cellared Spiritual Nectar"
             },
             {
                 "count": 27,
-                "id": 112145,
-                "name": "Unblemished Lunar Iron"
+                "id": 112157,
+                "name": "Coiled Core of Life"
             },
             {
                 "count": 18,
-                "id": 112127,
-                "name": "Frost-Etched Warrant"
+                "id": 112151,
+                "name": "Prime Chimeric Nexus"
             }
         ]
     },
-    "description": "An object of fantasy with countless definitions amidst an endless sea of stories. On the grand scale of the universe or the realm of dreams, there is no real difference between the holy sword of the brave warrior and the princess's teaspoon, or between the ice-cold clockspring and the key that will unlock the gates of transcendence...",
-    "effectName": "White Fairy's Queening",
-    "id": 12516,
+    "description": "A longsword light as the feathers of a snow swan, and which stays pure and untainted at all times.",
+    "effectName": "Snow Swan's Finale",
+    "id": 11520,
     "images": {
-        "filename_awakenIcon": "UI_EquipIcon_Claymore_CrystallineSword_Awaken",
-        "filename_gacha": "UI_Gacha_EquipIcon_Claymore_CrystallineSword",
-        "filename_icon": "UI_EquipIcon_Claymore_CrystallineSword"
+        "filename_awakenIcon": "UI_EquipIcon_Sword_Swanlake_Awaken",
+        "filename_gacha": "UI_Gacha_EquipIcon_Sword_Swanlake",
+        "filename_icon": "UI_EquipIcon_Sword_Swanlake"
     },
-    "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
-    "name": "A Teaspoon of Transcendence",
-    "normalizedName": "ateaspoonoftranscendence",
+    "mainStatType": "FIGHT_PROP_CRITICAL",
+    "name": "Whitelake Frostfeather",
+    "normalizedName": "whitelakefrostfeather",
     "qualityType": "QUALITY_ORANGE",
     "r1": {
-        "description": "ATK is increased by <color=#99FFFFFF>28%</color>.\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>16%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks."
+        "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>8%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>50%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>4</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field."
     },
     "r2": {
-        "description": "ATK is increased by <color=#99FFFFFF>35%</color>.\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>20%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks."
+        "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>10%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>65%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>4.5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field."
     },
     "r3": {
-        "description": "ATK is increased by <color=#99FFFFFF>42%</color>.\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>24%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks."
+        "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>12%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>80%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field."
     },
     "r4": {
-        "description": "ATK is increased by <color=#99FFFFFF>49%</color>.\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>28%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks."
+        "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>14%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>95%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>5.5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field."
     },
     "r5": {
-        "description": "ATK is increased by <color=#99FFFFFF>56%</color>.\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>32%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks."
+        "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>16%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>110%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>6</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field."
     },
     "rarity": 5,
-    "sortOrder": 5212,
+    "sortOrder": 5117,
     "stats": {
         "1": {
             "ascension": 0,
             "attack": 47.537,
             "level": 1,
-            "specialized": 0.096
+            "specialized": 0.048
         },
         "10": {
             "ascension": 0,
             "attack": 87.325469,
             "level": 10,
-            "specialized": 0.130848
+            "specialized": 0.065424
         },
         "11": {
             "ascension": 0,
             "attack": 91.889021,
             "level": 11,
-            "specialized": 0.130848
+            "specialized": 0.065424
         },
         "12": {
             "ascension": 0,
             "attack": 96.405036,
             "level": 12,
-            "specialized": 0.130848
+            "specialized": 0.065424
         },
         "13": {
             "ascension": 0,
             "attack": 100.968588,
             "level": 13,
-            "specialized": 0.130848
+            "specialized": 0.065424
         },
         "14": {
             "ascension": 0,
             "attack": 105.53214000000001,
             "level": 14,
-            "specialized": 0.130848
+            "specialized": 0.065424
         },
         "15": {
             "ascension": 0,
             "attack": 110.143229,
             "level": 15,
-            "specialized": 0.15023999999999998
+            "specialized": 0.07511999999999999
         },
         "16": {
             "ascension": 0,
             "attack": 114.754318,
             "level": 16,
-            "specialized": 0.15023999999999998
+            "specialized": 0.07511999999999999
         },
         "17": {
             "ascension": 0,
             "attack": 119.365407,
             "level": 17,
-            "specialized": 0.15023999999999998
+            "specialized": 0.07511999999999999
         },
         "18": {
             "ascension": 0,
             "attack": 123.976496,
             "level": 18,
-            "specialized": 0.15023999999999998
+            "specialized": 0.07511999999999999
         },
         "19": {
             "ascension": 0,
             "attack": 128.635122,
             "level": 19,
-            "specialized": 0.15023999999999998
+            "specialized": 0.07511999999999999
         },
         "2": {
             "ascension": 0,
             "attack": 51.862866999999994,
             "level": 2,
-            "specialized": 0.096
+            "specialized": 0.048
         },
         "20": {
             "ascension": 0,
             "attack": 133.293748,
             "level": 20,
-            "specialized": 0.169632
+            "specialized": 0.084816
         },
         "20+": {
             "ascension": 1,
             "attack": 164.393748,
             "level": 20,
-            "specialized": 0.169632
+            "specialized": 0.084816
         },
         "21": {
             "ascension": 1,
             "attack": 169.099911,
             "level": 21,
-            "specialized": 0.169632
+            "specialized": 0.084816
         },
         "22": {
             "ascension": 1,
             "attack": 173.80607399999997,
             "level": 22,
-            "specialized": 0.169632
+            "specialized": 0.084816
         },
         "23": {
             "ascension": 1,
             "attack": 178.512237,
             "level": 23,
-            "specialized": 0.169632
+            "specialized": 0.084816
         },
         "24": {
             "ascension": 1,
             "attack": 183.2184,
             "level": 24,
-            "specialized": 0.169632
+            "specialized": 0.084816
         },
         "25": {
             "ascension": 1,
             "attack": 187.97209999999998,
             "level": 25,
-            "specialized": 0.18902400000000003
+            "specialized": 0.09451200000000001
         },
         "26": {
             "ascension": 1,
             "attack": 192.7258,
             "level": 26,
-            "specialized": 0.18902400000000003
+            "specialized": 0.09451200000000001
         },
         "27": {
             "ascension": 1,
             "attack": 197.4795,
             "level": 27,
-            "specialized": 0.18902400000000003
+            "specialized": 0.09451200000000001
         },
         "28": {
             "ascension": 1,
             "attack": 202.280737,
             "level": 28,
-            "specialized": 0.18902400000000003
+            "specialized": 0.09451200000000001
         },
         "29": {
             "ascension": 1,
             "attack": 207.034437,
             "level": 29,
-            "specialized": 0.18902400000000003
+            "specialized": 0.09451200000000001
         },
         "3": {
             "ascension": 0,
             "attack": 56.236271,
             "level": 3,
-            "specialized": 0.096
+            "specialized": 0.048
         },
         "30": {
             "ascension": 1,
             "attack": 211.883211,
             "level": 30,
-            "specialized": 0.208416
+            "specialized": 0.104208
         },
         "31": {
             "ascension": 1,
             "attack": 216.68444799999997,
             "level": 31,
-            "specialized": 0.208416
+            "specialized": 0.104208
         },
         "32": {
             "ascension": 1,
             "attack": 221.485685,
             "level": 32,
-            "specialized": 0.208416
+            "specialized": 0.104208
         },
         "33": {
             "ascension": 1,
             "attack": 226.334459,
             "level": 33,
-            "specialized": 0.208416
+            "specialized": 0.104208
         },
         "34": {
             "ascension": 1,
             "attack": 231.18323299999997,
             "level": 34,
-            "specialized": 0.208416
+            "specialized": 0.104208
         },
         "35": {
             "ascension": 1,
             "attack": 236.079544,
             "level": 35,
-            "specialized": 0.22780800000000004
+            "specialized": 0.11390400000000002
         },
         "36": {
             "ascension": 1,
             "attack": 240.92831799999996,
             "level": 36,
-            "specialized": 0.22780800000000004
+            "specialized": 0.11390400000000002
         },
         "37": {
             "ascension": 1,
             "attack": 245.82462900000002,
             "level": 37,
-            "specialized": 0.22780800000000004
+            "specialized": 0.11390400000000002
         },
         "38": {
             "ascension": 1,
             "attack": 250.72093999999998,
             "level": 38,
-            "specialized": 0.22780800000000004
+            "specialized": 0.11390400000000002
         },
         "39": {
             "ascension": 1,
             "attack": 255.61725099999998,
             "level": 39,
-            "specialized": 0.22780800000000004
+            "specialized": 0.11390400000000002
         },
         "4": {
             "ascension": 0,
             "attack": 60.609674999999996,
             "level": 4,
-            "specialized": 0.096
+            "specialized": 0.048
         },
         "40": {
             "ascension": 1,
             "attack": 260.561099,
             "level": 40,
-            "specialized": 0.24720000000000003
+            "specialized": 0.12360000000000002
         },
         "40+": {
             "ascension": 2,
             "attack": 291.661099,
             "level": 40,
-            "specialized": 0.24720000000000003
+            "specialized": 0.12360000000000002
         },
         "41": {
             "ascension": 2,
             "attack": 296.604947,
             "level": 41,
-            "specialized": 0.24720000000000003
+            "specialized": 0.12360000000000002
         },
         "42": {
             "ascension": 2,
             "attack": 301.548795,
             "level": 42,
-            "specialized": 0.24720000000000003
+            "specialized": 0.12360000000000002
         },
         "43": {
             "ascension": 2,
             "attack": 306.492643,
             "level": 43,
-            "specialized": 0.24720000000000003
+            "specialized": 0.12360000000000002
         },
         "44": {
             "ascension": 2,
             "attack": 311.436491,
             "level": 44,
-            "specialized": 0.24720000000000003
+            "specialized": 0.12360000000000002
         },
         "45": {
             "ascension": 2,
             "attack": 316.42787599999997,
             "level": 45,
-            "specialized": 0.266592
+            "specialized": 0.133296
         },
         "46": {
             "ascension": 2,
             "attack": 321.419261,
             "level": 46,
-            "specialized": 0.266592
+            "specialized": 0.133296
         },
         "47": {
             "ascension": 2,
             "attack": 326.410646,
             "level": 47,
-            "specialized": 0.266592
+            "specialized": 0.133296
         },
         "48": {
             "ascension": 2,
             "attack": 331.402031,
             "level": 48,
-            "specialized": 0.266592
+            "specialized": 0.133296
         },
         "49": {
             "ascension": 2,
             "attack": 336.39341599999995,
             "level": 49,
-            "specialized": 0.266592
+            "specialized": 0.133296
         },
         "5": {
             "ascension": 0,
             "attack": 65.03061600000001,
             "level": 5,
-            "specialized": 0.111552
+            "specialized": 0.055776
         },
         "50": {
             "ascension": 2,
             "attack": 341.43233799999996,
             "level": 50,
-            "specialized": 0.285984
+            "specialized": 0.142992
         },
         "50+": {
             "ascension": 3,
             "attack": 372.632338,
             "level": 50,
-            "specialized": 0.285984
+            "specialized": 0.142992
         },
         "51": {
             "ascension": 3,
             "attack": 377.6712600000001,
             "level": 51,
-            "specialized": 0.285984
+            "specialized": 0.142992
         },
         "52": {
             "ascension": 3,
             "attack": 382.71018200000003,
             "level": 52,
-            "specialized": 0.285984
+            "specialized": 0.142992
         },
         "53": {
             "ascension": 3,
             "attack": 387.749104,
             "level": 53,
-            "specialized": 0.285984
+            "specialized": 0.142992
         },
         "54": {
             "ascension": 3,
             "attack": 392.835563,
             "level": 54,
-            "specialized": 0.285984
+            "specialized": 0.142992
         },
         "55": {
             "ascension": 3,
             "attack": 397.92202199999997,
             "level": 55,
-            "specialized": 0.30537600000000004
+            "specialized": 0.15268800000000002
         },
         "56": {
             "ascension": 3,
             "attack": 403.00848099999996,
             "level": 56,
-            "specialized": 0.30537600000000004
+            "specialized": 0.15268800000000002
         },
         "57": {
             "ascension": 3,
             "attack": 408.09493999999995,
             "level": 57,
-            "specialized": 0.30537600000000004
+            "specialized": 0.15268800000000002
         },
         "58": {
             "ascension": 3,
             "attack": 413.18139900000006,
             "level": 58,
-            "specialized": 0.30537600000000004
+            "specialized": 0.15268800000000002
         },
         "59": {
             "ascension": 3,
             "attack": 418.31539499999997,
             "level": 59,
-            "specialized": 0.30537600000000004
+            "specialized": 0.15268800000000002
         },
         "6": {
             "ascension": 0,
             "attack": 69.45155700000001,
             "level": 6,
-            "specialized": 0.111552
+            "specialized": 0.055776
         },
         "60": {
             "ascension": 3,
             "attack": 423.40185399999996,
             "level": 60,
-            "specialized": 0.324768
+            "specialized": 0.162384
         },
         "60+": {
             "ascension": 4,
             "attack": 454.501854,
             "level": 60,
-            "specialized": 0.324768
+            "specialized": 0.162384
         },
         "61": {
             "ascension": 4,
             "attack": 459.63585,
             "level": 61,
-            "specialized": 0.324768
+            "specialized": 0.162384
         },
         "62": {
             "ascension": 4,
             "attack": 464.76984600000003,
             "level": 62,
-            "specialized": 0.324768
+            "specialized": 0.162384
         },
         "63": {
             "ascension": 4,
             "attack": 469.95137900000003,
             "level": 63,
-            "specialized": 0.324768
+            "specialized": 0.162384
         },
         "64": {
             "ascension": 4,
             "attack": 475.085375,
             "level": 64,
-            "specialized": 0.324768
+            "specialized": 0.162384
         },
         "65": {
             "ascension": 4,
             "attack": 480.266908,
             "level": 65,
-            "specialized": 0.34416
+            "specialized": 0.17208
         },
         "66": {
             "ascension": 4,
             "attack": 485.40090399999997,
             "level": 66,
-            "specialized": 0.34416
+            "specialized": 0.17208
         },
         "67": {
             "ascension": 4,
             "attack": 490.58243699999997,
             "level": 67,
-            "specialized": 0.34416
+            "specialized": 0.17208
         },
         "68": {
             "ascension": 4,
             "attack": 495.811507,
             "level": 68,
-            "specialized": 0.34416
+            "specialized": 0.17208
         },
         "69": {
             "ascension": 4,
             "attack": 500.99304,
             "level": 69,
-            "specialized": 0.34416
+            "specialized": 0.17208
         },
         "7": {
             "ascension": 0,
             "attack": 73.87249800000001,
             "level": 7,
-            "specialized": 0.111552
+            "specialized": 0.055776
         },
         "70": {
             "ascension": 4,
             "attack": 506.22211,
             "level": 70,
-            "specialized": 0.363456
+            "specialized": 0.181728
         },
         "70+": {
             "ascension": 5,
             "attack": 537.32211,
             "level": 70,
-            "specialized": 0.363456
+            "specialized": 0.181728
         },
         "71": {
             "ascension": 5,
             "attack": 542.503643,
             "level": 71,
-            "specialized": 0.363456
+            "specialized": 0.181728
         },
         "72": {
             "ascension": 5,
             "attack": 547.732713,
             "level": 72,
-            "specialized": 0.363456
+            "specialized": 0.181728
         },
         "73": {
             "ascension": 5,
             "attack": 552.961783,
             "level": 73,
-            "specialized": 0.363456
+            "specialized": 0.181728
         },
         "74": {
             "ascension": 5,
             "attack": 558.23839,
             "level": 74,
-            "specialized": 0.363456
+            "specialized": 0.181728
         },
         "75": {
             "ascension": 5,
             "attack": 563.46746,
             "level": 75,
-            "specialized": 0.382848
+            "specialized": 0.191424
         },
         "76": {
             "ascension": 5,
             "attack": 568.744067,
             "level": 76,
-            "specialized": 0.382848
+            "specialized": 0.191424
         },
         "77": {
             "ascension": 5,
             "attack": 574.020674,
             "level": 77,
-            "specialized": 0.382848
+            "specialized": 0.191424
         },
         "78": {
             "ascension": 5,
             "attack": 579.297281,
             "level": 78,
-            "specialized": 0.382848
+            "specialized": 0.191424
         },
         "79": {
             "ascension": 5,
             "attack": 584.5738879999999,
             "level": 79,
-            "specialized": 0.382848
+            "specialized": 0.191424
         },
         "8": {
             "ascension": 0,
             "attack": 78.340976,
             "level": 8,
-            "specialized": 0.111552
+            "specialized": 0.055776
         },
         "80": {
             "ascension": 5,
             "attack": 589.850495,
             "level": 80,
-            "specialized": 0.40224000000000004
+            "specialized": 0.20112000000000002
         },
         "80+": {
             "ascension": 6,
             "attack": 620.950495,
             "level": 80,
-            "specialized": 0.40224000000000004
+            "specialized": 0.20112000000000002
         },
         "81": {
             "ascension": 6,
             "attack": 626.274639,
             "level": 81,
-            "specialized": 0.40224000000000004
+            "specialized": 0.20112000000000002
         },
         "82": {
             "ascension": 6,
             "attack": 631.551246,
             "level": 82,
-            "specialized": 0.40224000000000004
+            "specialized": 0.20112000000000002
         },
         "83": {
             "ascension": 6,
             "attack": 636.8753899999999,
             "level": 83,
-            "specialized": 0.40224000000000004
+            "specialized": 0.20112000000000002
         },
         "84": {
             "ascension": 6,
             "attack": 642.1995340000001,
             "level": 84,
-            "specialized": 0.40224000000000004
+            "specialized": 0.20112000000000002
         },
         "85": {
             "ascension": 6,
             "attack": 647.523678,
             "level": 85,
-            "specialized": 0.42163200000000006
+            "specialized": 0.21081600000000003
         },
         "86": {
             "ascension": 6,
             "attack": 652.895359,
             "level": 86,
-            "specialized": 0.42163200000000006
+            "specialized": 0.21081600000000003
         },
         "87": {
             "ascension": 6,
             "attack": 658.219503,
             "level": 87,
-            "specialized": 0.42163200000000006
+            "specialized": 0.21081600000000003
         },
         "88": {
             "ascension": 6,
             "attack": 663.591184,
             "level": 88,
-            "specialized": 0.42163200000000006
+            "specialized": 0.21081600000000003
         },
         "89": {
             "ascension": 6,
             "attack": 668.962865,
             "level": 89,
-            "specialized": 0.42163200000000006
+            "specialized": 0.21081600000000003
         },
         "9": {
             "ascension": 0,
             "attack": 82.85699100000001,
             "level": 9,
-            "specialized": 0.111552
+            "specialized": 0.055776
         },
         "90": {
             "ascension": 6,
             "attack": 674.3345459999999,
             "level": 90,
-            "specialized": 0.441024
+            "specialized": 0.220512
         }
     },
-    "story": "\nThe heroes of different stories will naturally find different holy swords, and they must also face different nemeses.\nAnd for all their strength and schemes, the villains will ultimately be defeated by the heroes wielding their swords.\n\n\"So it ends the same way again? The hero defeats his evil foe, and then he and the princess live happily ever after...\"\nThe clever, elegant young lady closed the book. The clockwork key on her back gave a faint, confused whirr.\n\"I don't understand, Alain. Why do all these stories end the same way? Why does the hero always win?\"\n\n\"Hmm... I suppose people prefer stories that are easy to follow and end happily.\"\n\"I once had a friend who loved chess. Looking back, I think it may not have been the game itself he loved, but what the game stood for.\"\n\"He used to say that chess pieces have no choice but to follow the moves set for them, just as those too weak to resist have no choice but to give in to fate.\"\n\"Stories are no different. If a hero is given a holy sword, then the story must also give him a dragon to defeat.\"\n\nThe clever, elegant young lady thought it over with great seriousness for several seconds, then quickly arrived at the perfect conclusion: \n\"I have no idea what that means.\"\n\n\"Then let me tell you a different kind of story. In this one, the hero with the holy sword does not win.\"\n\"Long, long ago, in a land far, far away...\"\n\"There was a kingdom ruled by a white dragon...\"\n\n...\n\nThe prophecy foretold that the kingdom was destined to dry up and perish, and that even the beautiful princess would wither along with it.\nTo save the dying world inside the eggshell, the hero Narzissenkreuz went in search of the greatest holy sword ever spoken of in legend.\nHe believed salvation could only be reached by severing ordinary bonds, uniting the wishes of all, and crossing beyond the bounds of good and evil.\n\nUnstinting in sacrifice, unflinching in farewell, undaunted by pain.\nThe hero Narzissenkreuz always dreamed on a scale so vast and noble,\nThat no mortal vessel could withstand its weight.\nAnd so the hero longed to transcend the weakness of flesh and blood.\nHe dreamed of shouldering all sin and suffering by himself,\nOf wiping every tear from the world through the mysteries of a tearless magick,\nAnd of attaining what some called transcendence — a transformation like the leap from ape to man.\n\nBut what is a kingdom without its people?\nSo the white dragon, stubbornly clinging to the old ways, tried to stop the righteous hero.\nHe built countless wicked mechanisms and scattered them across the land,\nUntil even the hero Narzissenkreuz, though he carried the holy sword, was forced into a desperate corner.\n\nAnd before the hero fell into the chasm that dissolves all things, he seemed to think of the times he had once spent with the dragon. Then he said:\n\"Yes, hatred shall not fill me. I know that you have not seen the sights I have, and that is why you wish to stop me.\"\n\"I will surely return to save all souls. Ten years, even a hundred years may pass, but I shall be reborn as a new universe.\"\n\nHis dream was always so sincere, the dragon thought. Perhaps, for a moment, the dragon even wished the hero could win.\nYet a dragon is a dragon in the end. A dragon is not so easily moved by a hero's heart.\nAnd so the dragon only watched as the hero fell into the rift, and he and his dream dissolved together, all in vain.\n\n...\n\n\"The dragon was awful.\"\n\n\"Yes. That's why he was the dragon. Even though he defeated the hero, he lost everything he treasured most.\"\n\"Perhaps the dragon simply could not understand the hero's choice. The hero wanted to save the human world, but he couldn't accept human weakness.\"\n\"And if not everyone could become a hero strong enough to rise above fate, then there was no meaning in transcendence for one person alone.\"\n\n\"Hah... I don't like this story. The hero was too arrogant, and the dragon was too stubborn. They were both idiots who couldn't find another way.\"\n\"They claimed they wanted to save the world, but they couldn't even understand what the other was thinking. If it were me, I'd never do it like that.\"\n\n\"That's good to hear. After all, this idea of sacrificing yourself to save the world is little more than an unrealistic obsession.\"\n\"That is why stories where the righteous, kind-hearted hero wins are often more popular.\"\n\"The heroes of different stories will naturally find different holy swords, and they must also face different nemeses.\"\n\"And for all their strength and schemes, the villains will ultimately be defeated by the heroes wielding their swords...\"",
-    "weaponType": "WEAPON_CLAYMORE"
+    "story": "",
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
 }

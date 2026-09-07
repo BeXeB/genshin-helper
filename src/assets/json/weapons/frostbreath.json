@@ -1,0 +1,745 @@
+{
+    "costs": {
+        "ascend1": [
+            {
+                "count": 5000,
+                "id": 202,
+                "name": "Mora"
+            },
+            {
+                "count": 3,
+                "id": 114089,
+                "name": "Measured Pour of the Cellared Spiritual Nectar"
+            },
+            {
+                "count": 3,
+                "id": 112152,
+                "name": "Accreted Fragment"
+            },
+            {
+                "count": 2,
+                "id": 112149,
+                "name": "Chimeric Core"
+            }
+        ],
+        "ascend2": [
+            {
+                "count": 15000,
+                "id": 202,
+                "name": "Mora"
+            },
+            {
+                "count": 3,
+                "id": 114090,
+                "name": "Intoxication of the Cellared Spiritual Nectar"
+            },
+            {
+                "count": 12,
+                "id": 112152,
+                "name": "Accreted Fragment"
+            },
+            {
+                "count": 8,
+                "id": 112149,
+                "name": "Chimeric Core"
+            }
+        ],
+        "ascend3": [
+            {
+                "count": 20000,
+                "id": 202,
+                "name": "Mora"
+            },
+            {
+                "count": 6,
+                "id": 114090,
+                "name": "Intoxication of the Cellared Spiritual Nectar"
+            },
+            {
+                "count": 6,
+                "id": 112153,
+                "name": "Accreted Mass"
+            },
+            {
+                "count": 6,
+                "id": 112150,
+                "name": "Symbiotic Chimeric Nucleus"
+            }
+        ],
+        "ascend4": [
+            {
+                "count": 30000,
+                "id": 202,
+                "name": "Mora"
+            },
+            {
+                "count": 3,
+                "id": 114091,
+                "name": "Exhilaration of the Cellared Spiritual Nectar"
+            },
+            {
+                "count": 12,
+                "id": 112153,
+                "name": "Accreted Mass"
+            },
+            {
+                "count": 9,
+                "id": 112150,
+                "name": "Symbiotic Chimeric Nucleus"
+            }
+        ],
+        "ascend5": [
+            {
+                "count": 35000,
+                "id": 202,
+                "name": "Mora"
+            },
+            {
+                "count": 6,
+                "id": 114091,
+                "name": "Exhilaration of the Cellared Spiritual Nectar"
+            },
+            {
+                "count": 9,
+                "id": 112154,
+                "name": "Accreted Growth"
+            },
+            {
+                "count": 6,
+                "id": 112151,
+                "name": "Prime Chimeric Nexus"
+            }
+        ],
+        "ascend6": [
+            {
+                "count": 45000,
+                "id": 202,
+                "name": "Mora"
+            },
+            {
+                "count": 4,
+                "id": 114092,
+                "name": "Revelry of the Cellared Spiritual Nectar"
+            },
+            {
+                "count": 18,
+                "id": 112154,
+                "name": "Accreted Growth"
+            },
+            {
+                "count": 12,
+                "id": 112151,
+                "name": "Prime Chimeric Nexus"
+            }
+        ]
+    },
+    "description": "A spear of solid ice imbued with an icy chill. It is said that it once belonged to the Belyi Tsar who ruled Snezhnaya in the distant past.",
+    "effectName": "A Cast Real Far",
+    "id": 13435,
+    "images": {
+        "filename_awakenIcon": "UI_EquipIcon_Pole_FaesCrystalle_Awaken",
+        "filename_gacha": "UI_Gacha_EquipIcon_Polearm_FaesCrystalle",
+        "filename_icon": "UI_EquipIcon_Pole_FaesCrystalle"
+    },
+    "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+    "name": "Frostbreath",
+    "normalizedName": "frostbreath",
+    "qualityType": "QUALITY_PURPLE",
+    "r1": {
+        "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>20%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>6</color> Elemental Energy for other members of their party. This effect can trigger once every 16s."
+    },
+    "r2": {
+        "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>25%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>7.5</color> Elemental Energy for other members of their party. This effect can trigger once every 16s."
+    },
+    "r3": {
+        "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>30%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>9</color> Elemental Energy for other members of their party. This effect can trigger once every 16s."
+    },
+    "r4": {
+        "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>35%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>10.5</color> Elemental Energy for other members of their party. This effect can trigger once every 16s."
+    },
+    "r5": {
+        "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>40%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>12</color> Elemental Energy for other members of their party. This effect can trigger once every 16s."
+    },
+    "rarity": 4,
+    "sortOrder": 4324,
+    "stats": {
+        "1": {
+            "ascension": 0,
+            "attack": 42.401,
+            "level": 1,
+            "specialized": 0.1
+        },
+        "10": {
+            "ascension": 0,
+            "attack": 73.90494300000002,
+            "level": 10,
+            "specialized": 0.1363
+        },
+        "11": {
+            "ascension": 0,
+            "attack": 77.424226,
+            "level": 11,
+            "specialized": 0.1363
+        },
+        "12": {
+            "ascension": 0,
+            "attack": 80.90110800000001,
+            "level": 12,
+            "specialized": 0.1363
+        },
+        "13": {
+            "ascension": 0,
+            "attack": 84.42039100000001,
+            "level": 13,
+            "specialized": 0.1363
+        },
+        "14": {
+            "ascension": 0,
+            "attack": 87.897273,
+            "level": 14,
+            "specialized": 0.1363
+        },
+        "15": {
+            "ascension": 0,
+            "attack": 91.41655600000001,
+            "level": 15,
+            "specialized": 0.1565
+        },
+        "16": {
+            "ascension": 0,
+            "attack": 94.935839,
+            "level": 16,
+            "specialized": 0.1565
+        },
+        "17": {
+            "ascension": 0,
+            "attack": 98.41272100000002,
+            "level": 17,
+            "specialized": 0.1565
+        },
+        "18": {
+            "ascension": 0,
+            "attack": 101.932004,
+            "level": 18,
+            "specialized": 0.1565
+        },
+        "19": {
+            "ascension": 0,
+            "attack": 105.40888600000002,
+            "level": 19,
+            "specialized": 0.1565
+        },
+        "2": {
+            "ascension": 0,
+            "attack": 45.920283000000005,
+            "level": 2,
+            "specialized": 0.1
+        },
+        "20": {
+            "ascension": 0,
+            "attack": 108.92816900000001,
+            "level": 20,
+            "specialized": 0.1767
+        },
+        "20+": {
+            "ascension": 1,
+            "attack": 134.828169,
+            "level": 20,
+            "specialized": 0.1767
+        },
+        "21": {
+            "ascension": 1,
+            "attack": 138.305051,
+            "level": 21,
+            "specialized": 0.1767
+        },
+        "22": {
+            "ascension": 1,
+            "attack": 141.824334,
+            "level": 22,
+            "specialized": 0.1767
+        },
+        "23": {
+            "ascension": 1,
+            "attack": 145.34361700000002,
+            "level": 23,
+            "specialized": 0.1767
+        },
+        "24": {
+            "ascension": 1,
+            "attack": 148.820499,
+            "level": 24,
+            "specialized": 0.1767
+        },
+        "25": {
+            "ascension": 1,
+            "attack": 152.339782,
+            "level": 25,
+            "specialized": 0.19690000000000002
+        },
+        "26": {
+            "ascension": 1,
+            "attack": 155.81666400000003,
+            "level": 26,
+            "specialized": 0.19690000000000002
+        },
+        "27": {
+            "ascension": 1,
+            "attack": 159.335947,
+            "level": 27,
+            "specialized": 0.19690000000000002
+        },
+        "28": {
+            "ascension": 1,
+            "attack": 162.81282900000002,
+            "level": 28,
+            "specialized": 0.19690000000000002
+        },
+        "29": {
+            "ascension": 1,
+            "attack": 166.33211200000002,
+            "level": 29,
+            "specialized": 0.19690000000000002
+        },
+        "3": {
+            "ascension": 0,
+            "attack": 49.39716500000001,
+            "level": 3,
+            "specialized": 0.1
+        },
+        "30": {
+            "ascension": 1,
+            "attack": 169.808994,
+            "level": 30,
+            "specialized": 0.2171
+        },
+        "31": {
+            "ascension": 1,
+            "attack": 173.328277,
+            "level": 31,
+            "specialized": 0.2171
+        },
+        "32": {
+            "ascension": 1,
+            "attack": 176.84756000000002,
+            "level": 32,
+            "specialized": 0.2171
+        },
+        "33": {
+            "ascension": 1,
+            "attack": 180.324442,
+            "level": 33,
+            "specialized": 0.2171
+        },
+        "34": {
+            "ascension": 1,
+            "attack": 183.84372500000003,
+            "level": 34,
+            "specialized": 0.2171
+        },
+        "35": {
+            "ascension": 1,
+            "attack": 187.32060700000002,
+            "level": 35,
+            "specialized": 0.23730000000000004
+        },
+        "36": {
+            "ascension": 1,
+            "attack": 190.83989000000003,
+            "level": 36,
+            "specialized": 0.23730000000000004
+        },
+        "37": {
+            "ascension": 1,
+            "attack": 194.31677200000001,
+            "level": 37,
+            "specialized": 0.23730000000000004
+        },
+        "38": {
+            "ascension": 1,
+            "attack": 197.83605500000002,
+            "level": 38,
+            "specialized": 0.23730000000000004
+        },
+        "39": {
+            "ascension": 1,
+            "attack": 201.35533800000002,
+            "level": 39,
+            "specialized": 0.23730000000000004
+        },
+        "4": {
+            "ascension": 0,
+            "attack": 52.916448,
+            "level": 4,
+            "specialized": 0.1
+        },
+        "40": {
+            "ascension": 1,
+            "attack": 204.83222,
+            "level": 40,
+            "specialized": 0.2575
+        },
+        "40+": {
+            "ascension": 2,
+            "attack": 230.83222,
+            "level": 40,
+            "specialized": 0.2575
+        },
+        "41": {
+            "ascension": 2,
+            "attack": 234.351503,
+            "level": 41,
+            "specialized": 0.2575
+        },
+        "42": {
+            "ascension": 2,
+            "attack": 237.828385,
+            "level": 42,
+            "specialized": 0.2575
+        },
+        "43": {
+            "ascension": 2,
+            "attack": 241.34766800000003,
+            "level": 43,
+            "specialized": 0.2575
+        },
+        "44": {
+            "ascension": 2,
+            "attack": 244.82455000000002,
+            "level": 44,
+            "specialized": 0.2575
+        },
+        "45": {
+            "ascension": 2,
+            "attack": 248.34383300000002,
+            "level": 45,
+            "specialized": 0.2777
+        },
+        "46": {
+            "ascension": 2,
+            "attack": 251.86311600000002,
+            "level": 46,
+            "specialized": 0.2777
+        },
+        "47": {
+            "ascension": 2,
+            "attack": 255.33999800000004,
+            "level": 47,
+            "specialized": 0.2777
+        },
+        "48": {
+            "ascension": 2,
+            "attack": 258.859281,
+            "level": 48,
+            "specialized": 0.2777
+        },
+        "49": {
+            "ascension": 2,
+            "attack": 262.336163,
+            "level": 49,
+            "specialized": 0.2777
+        },
+        "5": {
+            "ascension": 0,
+            "attack": 56.393330000000006,
+            "level": 5,
+            "specialized": 0.1162
+        },
+        "50": {
+            "ascension": 2,
+            "attack": 265.85544600000003,
+            "level": 50,
+            "specialized": 0.2979
+        },
+        "50+": {
+            "ascension": 3,
+            "attack": 291.755446,
+            "level": 50,
+            "specialized": 0.2979
+        },
+        "51": {
+            "ascension": 3,
+            "attack": 295.232328,
+            "level": 51,
+            "specialized": 0.2979
+        },
+        "52": {
+            "ascension": 3,
+            "attack": 298.751611,
+            "level": 52,
+            "specialized": 0.2979
+        },
+        "53": {
+            "ascension": 3,
+            "attack": 302.270894,
+            "level": 53,
+            "specialized": 0.2979
+        },
+        "54": {
+            "ascension": 3,
+            "attack": 305.74777600000004,
+            "level": 54,
+            "specialized": 0.2979
+        },
+        "55": {
+            "ascension": 3,
+            "attack": 309.267059,
+            "level": 55,
+            "specialized": 0.31810000000000005
+        },
+        "56": {
+            "ascension": 3,
+            "attack": 312.743941,
+            "level": 56,
+            "specialized": 0.31810000000000005
+        },
+        "57": {
+            "ascension": 3,
+            "attack": 316.263224,
+            "level": 57,
+            "specialized": 0.31810000000000005
+        },
+        "58": {
+            "ascension": 3,
+            "attack": 319.740106,
+            "level": 58,
+            "specialized": 0.31810000000000005
+        },
+        "59": {
+            "ascension": 3,
+            "attack": 323.259389,
+            "level": 59,
+            "specialized": 0.31810000000000005
+        },
+        "6": {
+            "ascension": 0,
+            "attack": 59.91261300000001,
+            "level": 6,
+            "specialized": 0.1162
+        },
+        "60": {
+            "ascension": 3,
+            "attack": 326.77867200000003,
+            "level": 60,
+            "specialized": 0.33830000000000005
+        },
+        "60+": {
+            "ascension": 4,
+            "attack": 352.678672,
+            "level": 60,
+            "specialized": 0.33830000000000005
+        },
+        "61": {
+            "ascension": 4,
+            "attack": 356.155554,
+            "level": 61,
+            "specialized": 0.33830000000000005
+        },
+        "62": {
+            "ascension": 4,
+            "attack": 359.674837,
+            "level": 62,
+            "specialized": 0.33830000000000005
+        },
+        "63": {
+            "ascension": 4,
+            "attack": 363.151719,
+            "level": 63,
+            "specialized": 0.33830000000000005
+        },
+        "64": {
+            "ascension": 4,
+            "attack": 366.671002,
+            "level": 64,
+            "specialized": 0.33830000000000005
+        },
+        "65": {
+            "ascension": 4,
+            "attack": 370.147884,
+            "level": 65,
+            "specialized": 0.35850000000000004
+        },
+        "66": {
+            "ascension": 4,
+            "attack": 373.667167,
+            "level": 66,
+            "specialized": 0.35850000000000004
+        },
+        "67": {
+            "ascension": 4,
+            "attack": 377.18645000000004,
+            "level": 67,
+            "specialized": 0.35850000000000004
+        },
+        "68": {
+            "ascension": 4,
+            "attack": 380.663332,
+            "level": 68,
+            "specialized": 0.35850000000000004
+        },
+        "69": {
+            "ascension": 4,
+            "attack": 384.182615,
+            "level": 69,
+            "specialized": 0.35850000000000004
+        },
+        "7": {
+            "ascension": 0,
+            "attack": 63.38949500000001,
+            "level": 7,
+            "specialized": 0.1162
+        },
+        "70": {
+            "ascension": 4,
+            "attack": 387.659497,
+            "level": 70,
+            "specialized": 0.37860000000000005
+        },
+        "70+": {
+            "ascension": 5,
+            "attack": 413.659497,
+            "level": 70,
+            "specialized": 0.37860000000000005
+        },
+        "71": {
+            "ascension": 5,
+            "attack": 417.17878,
+            "level": 71,
+            "specialized": 0.37860000000000005
+        },
+        "72": {
+            "ascension": 5,
+            "attack": 420.655662,
+            "level": 72,
+            "specialized": 0.37860000000000005
+        },
+        "73": {
+            "ascension": 5,
+            "attack": 424.17494500000004,
+            "level": 73,
+            "specialized": 0.37860000000000005
+        },
+        "74": {
+            "ascension": 5,
+            "attack": 427.694228,
+            "level": 74,
+            "specialized": 0.37860000000000005
+        },
+        "75": {
+            "ascension": 5,
+            "attack": 431.17111,
+            "level": 75,
+            "specialized": 0.39880000000000004
+        },
+        "76": {
+            "ascension": 5,
+            "attack": 434.690393,
+            "level": 76,
+            "specialized": 0.39880000000000004
+        },
+        "77": {
+            "ascension": 5,
+            "attack": 438.167275,
+            "level": 77,
+            "specialized": 0.39880000000000004
+        },
+        "78": {
+            "ascension": 5,
+            "attack": 441.686558,
+            "level": 78,
+            "specialized": 0.39880000000000004
+        },
+        "79": {
+            "ascension": 5,
+            "attack": 445.16344000000004,
+            "level": 79,
+            "specialized": 0.39880000000000004
+        },
+        "8": {
+            "ascension": 0,
+            "attack": 66.90877800000001,
+            "level": 8,
+            "specialized": 0.1162
+        },
+        "80": {
+            "ascension": 5,
+            "attack": 448.682723,
+            "level": 80,
+            "specialized": 0.41900000000000004
+        },
+        "80+": {
+            "ascension": 6,
+            "attack": 474.582723,
+            "level": 80,
+            "specialized": 0.41900000000000004
+        },
+        "81": {
+            "ascension": 6,
+            "attack": 478.10200599999996,
+            "level": 81,
+            "specialized": 0.41900000000000004
+        },
+        "82": {
+            "ascension": 6,
+            "attack": 481.578888,
+            "level": 82,
+            "specialized": 0.41900000000000004
+        },
+        "83": {
+            "ascension": 6,
+            "attack": 485.098171,
+            "level": 83,
+            "specialized": 0.41900000000000004
+        },
+        "84": {
+            "ascension": 6,
+            "attack": 488.575053,
+            "level": 84,
+            "specialized": 0.41900000000000004
+        },
+        "85": {
+            "ascension": 6,
+            "attack": 492.094336,
+            "level": 85,
+            "specialized": 0.43920000000000003
+        },
+        "86": {
+            "ascension": 6,
+            "attack": 495.57121800000004,
+            "level": 86,
+            "specialized": 0.43920000000000003
+        },
+        "87": {
+            "ascension": 6,
+            "attack": 499.090501,
+            "level": 87,
+            "specialized": 0.43920000000000003
+        },
+        "88": {
+            "ascension": 6,
+            "attack": 502.56738300000006,
+            "level": 88,
+            "specialized": 0.43920000000000003
+        },
+        "89": {
+            "ascension": 6,
+            "attack": 506.08666600000004,
+            "level": 89,
+            "specialized": 0.43920000000000003
+        },
+        "9": {
+            "ascension": 0,
+            "attack": 70.42806100000001,
+            "level": 9,
+            "specialized": 0.1162
+        },
+        "90": {
+            "ascension": 6,
+            "attack": 509.605949,
+            "level": 90,
+            "specialized": 0.45940000000000003
+        }
+    },
+    "story": "\n\"If you're asking about stronger spears... They exist, of course.\"\n\nMonomakh once asked his master about this matter in a break between bouts of training so harsh that even a fae could scarcely imagine them.\nThen, the young man was lean as a white-barked birch, and also akin to the dim ashes of a stove that had lost the last of its lingering warmth.\nHe gasped for air on the ice, but his clear eyes gleamed coldly with a yearning to attain the highest levels of martial prowess.\nLooking upon his young, frail yet stubborn form, the crimson princess of the snow bent down in silence,\nAnd strangely, there was a trace of nostalgia in those frigid eyes, which had survived the ruins of the golden city.\n\n\"Once, in the lost golden city, I beheld a spear that could even shoot Lord of the Sky down...\"\n\n\"I... don't think I can do that?\" The innocent and earnest youth asked tentatively, his voice low.\n\n\"Of course you can't. You can't even defeat me,\" the princess replied.\n\"You asked if there were stronger spears in this world, not whether you could or could not learn them.\"\n\"I, too, once saw a spear strike a blow that could pierce the boundless frosty plains and smash tidal waves of demons into dust.\"\n\"Like a arrow shot from a bow, it transfixed countless rivers and mountains in but an instant.\"\n\n\"I'd like to learn that!\" The guileless, honest youth stood up excitedly despite his exhaustion.\n\"That way, I can protect more— Gwahck!\"\n\n\"Start by firming up your stance, kid.\"\nThe crimson princess of snow sighed, and spoke no more about a past now rendered futile.\n\nThe years would pass, freezing the warmth of the teachings of yesteryear, and the fires of war would set the far northern wilds ablaze.\nAmidst a bloody sea of strife, Monomakh, who had sworn to become king, would continue to hone his skills with the spear.\nFurther, further, furtheer still—\nUntil his thrown spear would fall like a silver star,\nObliterating all foes who would stand in compassion's way.\nLet it pierce the Water Imp hidden deep in the frozen lake!\nLet it pierce the bull stalking the thick forest glades!\nLet it pierce even the giant beast, mighty as a mountain!\nThis then was the supreme art of the spear, taught to him by the Knyazhna of Blood who had slaughtered countless fae in a previous age.\nThere were some divergences between this and the art she had personally mentored him in, yes, but that was unimportant.\n\nHoly, holy, holy! Holy is our Emperor Monomakh, unconquered conqueror of countless winters, most majestic and merciful father!\nFae and mortal humans alike yielded prostrate before the Pale Star's throne, and together they sang praises to the king who had unified the vast northern realms,\nYet the heart of the god who ruled them all in the name of love grew ever more perplexed.\nHis martial prowess was unequaled, and he had strength enough to tear through glaciers and raging seas,\nBut he could never recreate what his master had spoken of, the spear that had transfixed vast snowfields beyond count in an instant.\nEven with all his might, hurling his polearm as a bow fires an arrow, he could only traverse half of Snezhnaya...\nSurely, Monomakh thought, this is because I am not yet strong enough. Master would never lie.\n\nThousands of winters passed, and the snow-blanketed realm had welcomed in roaring gears and molten steel.\nThe valiant and sagacious old emperor paid a personal visit to a blazing-hot workshop, observing the newly-minted mass production of armaments most wondrous.\nLooking upon the creations forged of steel and Prime Ice which the artisans had named \"muskets,\"\nHis Majesty, the Emperor Monomakh, most severe, most merciful, most wise, fell into a long silence...\n\nAh. That's true.\nMaster never said that the \"spears\" of the golden city were thrown, did she?\n",
+    "weaponType": "WEAPON_POLE"
+}

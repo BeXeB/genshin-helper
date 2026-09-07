@@ -1,0 +1,1810 @@
+{
+    "constellation": {
+        "c1": {
+            "descriptionRaw": "After unleashing the special Elemental Skill {LINK#N11500002}<color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>{/LINK}, at the dance duet's end Odette will deal an additional instance of <color=#99FFFFFF>Cryo AoE DMG</color> to nearby opponents that is considered:\n<color=#FFD780FF>Radiance: Stellar-Conduct</color> or when not in a Radiance state: Stellar-Conduct reaction DMG at 300% of Odette's ATK;\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: Stellar Swirl reaction DMG at 450% of Odette's ATK.\n\nAdditionally, the Ascension Talent \"Spring Rite of the Chosen One\" is also enhanced: now, when the {LINK#N11500001}<color=#FFD780FF>Solo Dance Double</color>{/LINK} is summoned, Odette also gains 2 stacks of {LINK#N11500003}<color=#FFD780FF>Marvelous Splendor</color>{/LINK}. When Odette is off-field, the rate at which <color=#FFD780FF>Marvelous Splendor</color> is removed is sped up to 2 stacks per second.",
+            "id": 1501,
+            "name": "\"On This Danceless Morn, She Gazes at Her Reflection\""
+        },
+        "c2": {
+            "descriptionRaw": "The Ascension Talent \"Spring Rite of the Chosen One\" is enhanced as follows: every stack of {LINK#N11500003}<color=#FFD780FF>Marvelous Splendor</color>{/LINK} active also increases the character's ATK by 7%.\nAdditionally, if Odette is in the {LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK} state when there is a {LINK#N11500001}<color=#FFD780FF>Solo Dance Double</color>{/LINK} on the field, opponents near the <color=#FFD780FF>Dance Double</color> will also have their corresponding Elemental RES lowered by 20%.\n·<color=#FFD780FF>Radiance: Stellar-Conduct</color>: <color=#99FFFFFF>Cryo</color> and <color=#FFACFFFF>Electro</color>.\n·<color=#FFD780FF>Radiance: Stellar Swirl</color>: <color=#99FFFFFF>Cryo</color> and <color=#80FFD7FF>Anemo</color>.",
+            "id": 1502,
+            "name": "\"I Must See the Snow Swan's Unseen Dream for Myself, She Thought\""
+        },
+        "c3": {
+            "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11502}Adagio: Phantom Night Dancers{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1503,
+            "name": "\"I'll Chase the Shouting Wind Along, Climbing Alone As I Go\""
+        },
+        "c4": {
+            "descriptionRaw": "The Elemental Burst <color=#FFD780FF>Presto: Bluebird Finale</color> is enhanced as follows: when Odette obtains <color=#FFD780FF>Snow Swan's Dream</color>, Stellar Glimmer reaction DMG dealt by other nearby party members is increased by 50% of <color=#FFD780FF>Snow Swan Dream</color>'s effects.\n\nAdditionally, when a party member deals Stellar Glimmer reaction DMG to an opponent, Odette will also join in with a coordinated attack, dealing an instance of <color=#99FFFFFF>AoE Cryo DMG</color>. This effect, which can trigger once every 3.5s, will be considered:\n·<color=#FFD780FF>Radiance: Stellar-Conduct</color> or when not in a Radiance state: Stellar-Conduct reaction DMG at 66% of Odette's ATK.\n·<color=#FFD780FF>Radiance: Stellar Swirl</color>: Stellar Swirl reaction DMG at 99% of Odette's ATK.",
+            "id": 1504,
+            "name": "\"Up, Up the Long, Delirious, Burning Blue\""
+        },
+        "c5": {
+            "descriptionRaw": "Increases the Level of <color=#FFD780FF>{LINK#S11505}Presto: Bluebird Finale{/LINK} </color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1505,
+            "name": "\"Oh! I Have Slipped the Surly Bonds of Earth\""
+        },
+        "c6": {
+            "descriptionRaw": "The Ascension Talent \"Spring Rite of the Chosen One\" is enhanced as follows: When Odette grants {LINK#N11500003}<color=#FFD780FF>Marvelous Splendor</color>{/LINK} to all nearby party members, her own Marvelous Splendor stacks will no longer decrease.\nAdditionally, characters affected by <color=#FFD780FF>Marvelous Splendor</color> have their Stellar Glimmer reaction DMG dealt to opponents {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 25%, and Stellar Glimmer reaction DMG dealt by Odette is elevated by an additional 20%.",
+            "id": 1506,
+            "name": "\"Put Out My Hand, and Touched the Face of the Divine\""
+        },
+        "images": {
+            "filename_c1": "UI_Talent_S_Odette_01",
+            "filename_c2": "UI_Talent_S_Odette_02",
+            "filename_c3": "UI_Talent_U_Odette_01",
+            "filename_c4": "UI_Talent_S_Odette_03",
+            "filename_c5": "UI_Talent_U_Odette_02",
+            "filename_c6": "UI_Talent_S_Odette_04"
+        }
+    },
+    "profile": {
+        "affiliation": "Korolevskiy Troupe",
+        "birthdaymmdd": "2/20",
+        "constellation": "Cygnus Olor",
+        "costs": {
+            "ascend1": [
+                {
+                    "count": 20000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 1,
+                    "id": 104161,
+                    "name": "Shivada Jade Sliver"
+                },
+                {
+                    "count": 3,
+                    "id": 101275,
+                    "name": "Frostfairy Flower"
+                },
+                {
+                    "count": 3,
+                    "id": 112146,
+                    "name": "Ethereal Glimmershard"
+                }
+            ],
+            "ascend2": [
+                {
+                    "count": 40000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 3,
+                    "id": 104162,
+                    "name": "Shivada Jade Fragment"
+                },
+                {
+                    "count": 2,
+                    "id": 113090,
+                    "name": "Unscorched Blossom Branch"
+                },
+                {
+                    "count": 10,
+                    "id": 101275,
+                    "name": "Frostfairy Flower"
+                },
+                {
+                    "count": 15,
+                    "id": 112146,
+                    "name": "Ethereal Glimmershard"
+                }
+            ],
+            "ascend3": [
+                {
+                    "count": 60000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104162,
+                    "name": "Shivada Jade Fragment"
+                },
+                {
+                    "count": 4,
+                    "id": 113090,
+                    "name": "Unscorched Blossom Branch"
+                },
+                {
+                    "count": 20,
+                    "id": 101275,
+                    "name": "Frostfairy Flower"
+                },
+                {
+                    "count": 12,
+                    "id": 112147,
+                    "name": "Ethereal Crystal"
+                }
+            ],
+            "ascend4": [
+                {
+                    "count": 80000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 3,
+                    "id": 104163,
+                    "name": "Shivada Jade Chunk"
+                },
+                {
+                    "count": 8,
+                    "id": 113090,
+                    "name": "Unscorched Blossom Branch"
+                },
+                {
+                    "count": 30,
+                    "id": 101275,
+                    "name": "Frostfairy Flower"
+                },
+                {
+                    "count": 18,
+                    "id": 112147,
+                    "name": "Ethereal Crystal"
+                }
+            ],
+            "ascend5": [
+                {
+                    "count": 100000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104163,
+                    "name": "Shivada Jade Chunk"
+                },
+                {
+                    "count": 12,
+                    "id": 113090,
+                    "name": "Unscorched Blossom Branch"
+                },
+                {
+                    "count": 45,
+                    "id": 101275,
+                    "name": "Frostfairy Flower"
+                },
+                {
+                    "count": 12,
+                    "id": 112148,
+                    "name": "Ethereal Crystalscale Stone"
+                }
+            ],
+            "ascend6": [
+                {
+                    "count": 120000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104164,
+                    "name": "Shivada Jade Gemstone"
+                },
+                {
+                    "count": 20,
+                    "id": 113090,
+                    "name": "Unscorched Blossom Branch"
+                },
+                {
+                    "count": 60,
+                    "id": 101275,
+                    "name": "Frostfairy Flower"
+                },
+                {
+                    "count": 24,
+                    "id": 112148,
+                    "name": "Ethereal Crystalscale Stone"
+                }
+            ]
+        },
+        "description": "A famed Snezhnayan ballerina who blossoms against the frozen landscape with a beauty as sharp as frost.",
+        "elementType": "ELEMENT_CRYO",
+        "id": 10000150,
+        "images": {
+            "filename_gachaSlice": "UI_Gacha_AvatarIcon_Odette",
+            "filename_gachaSplash": "UI_Gacha_AvatarImg_Odette",
+            "filename_icon": "UI_AvatarIcon_Odette",
+            "filename_iconCard": "UI_AvatarIcon_Odette_Card",
+            "filename_sideIcon": "UI_AvatarIcon_Side_Odette"
+        },
+        "name": "Odette",
+        "normalizedName": "odette",
+        "qualityType": "QUALITY_ORANGE",
+        "rarity": 5,
+        "sortId": 120,
+        "substatType": "FIGHT_PROP_CRITICAL_HURT",
+        "title": "Swirling Snow",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "skills": {
+        "combat1": {
+            "attributes": {
+                "labels": [
+                    "1-Hit DMG|{param1:F1P}",
+                    "2-Hit DMG|{param2:F1P}",
+                    "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+                    "4-Hit DMG|{param5:F1P}",
+                    "5-Hit DMG|{param6:F1P}",
+                    "Charged Attack DMG|{param7:F1P}",
+                    "Charged Attack Stamina Cost|{param8:F1}",
+                    "Plunge DMG|{param9:F1P}",
+                    "Low/High Plunge DMG|{param10:P}/{param11:P}"
+                ],
+                "parameters": {
+                    "param1": [
+                        0.518571,
+                        0.560781,
+                        0.60299,
+                        0.663289,
+                        0.705498,
+                        0.753738,
+                        0.820066,
+                        0.886395,
+                        0.952724,
+                        1.025083,
+                        1.097442,
+                        1.169801,
+                        1.242159,
+                        1.314518,
+                        1.386877
+                    ],
+                    "param10": [
+                        1.278377,
+                        1.382431,
+                        1.486485,
+                        1.635134,
+                        1.739187,
+                        1.858106,
+                        2.02162,
+                        2.185133,
+                        2.348646,
+                        2.527025,
+                        2.705403,
+                        2.883781,
+                        3.062159,
+                        3.240537,
+                        3.418915
+                    ],
+                    "param11": [
+                        1.596762,
+                        1.726731,
+                        1.8567,
+                        2.04237,
+                        2.172339,
+                        2.320875,
+                        2.525112,
+                        2.729349,
+                        2.933586,
+                        3.15639,
+                        3.379194,
+                        3.601998,
+                        3.824802,
+                        4.047606,
+                        4.27041
+                    ],
+                    "param2": [
+                        0.515106,
+                        0.557033,
+                        0.59896,
+                        0.658856,
+                        0.700783,
+                        0.7487,
+                        0.814586,
+                        0.880471,
+                        0.946357,
+                        1.018232,
+                        1.090107,
+                        1.161982,
+                        1.233858,
+                        1.305733,
+                        1.377608
+                    ],
+                    "param3": [
+                        0.326112,
+                        0.352656,
+                        0.3792,
+                        0.41712,
+                        0.443664,
+                        0.474,
+                        0.515712,
+                        0.557424,
+                        0.599136,
+                        0.64464,
+                        0.690144,
+                        0.735648,
+                        0.781152,
+                        0.826656,
+                        0.87216
+                    ],
+                    "param4": [
+                        0.382786,
+                        0.413943,
+                        0.4451,
+                        0.48961,
+                        0.520767,
+                        0.556375,
+                        0.605336,
+                        0.654297,
+                        0.703258,
+                        0.75667,
+                        0.810082,
+                        0.863494,
+                        0.916906,
+                        0.970318,
+                        1.02373
+                    ],
+                    "param5": [
+                        0.745732,
+                        0.806431,
+                        0.86713,
+                        0.953843,
+                        1.014542,
+                        1.083912,
+                        1.179297,
+                        1.274681,
+                        1.370065,
+                        1.474121,
+                        1.578177,
+                        1.682232,
+                        1.786288,
+                        1.890343,
+                        1.994399
+                    ],
+                    "param6": [
+                        0.902123,
+                        0.975551,
+                        1.04898,
+                        1.153878,
+                        1.227307,
+                        1.311225,
+                        1.426613,
+                        1.542001,
+                        1.657388,
+                        1.783266,
+                        1.909144,
+                        2.035021,
+                        2.160899,
+                        2.286776,
+                        2.412654
+                    ],
+                    "param7": [
+                        1.07414,
+                        1.16157,
+                        1.249,
+                        1.3739,
+                        1.46133,
+                        1.56125,
+                        1.69864,
+                        1.83603,
+                        1.97342,
+                        2.1233,
+                        2.27318,
+                        2.42306,
+                        2.57294,
+                        2.72282,
+                        2.8727
+                    ],
+                    "param8": [
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0
+                    ],
+                    "param9": [
+                        0.639324,
+                        0.691362,
+                        0.7434,
+                        0.81774,
+                        0.869778,
+                        0.92925,
+                        1.011024,
+                        1.092798,
+                        1.174572,
+                        1.26378,
+                        1.352988,
+                        1.442196,
+                        1.531404,
+                        1.620612,
+                        1.70982
+                    ]
+                }
+            },
+            "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nUnleashes a sword attack of up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash a dazzling slash on opponents in front of her.\n\n<color=#FFD780FF>Plunging Attack</color>\nAttacks opponents in her path while plunging from mid-air, then deals AoE DMG upon landing.",
+            "id": 11501,
+            "name": "Snow Swan Variation",
+            "proudSkillGroupId": 15031
+        },
+        "combat2": {
+            "attributes": {
+                "labels": [
+                    "Skill DMG|{param1:F1P}",
+                    "Coda at Dawn's Tolling DoT|{param2:F1P}",
+                    "Coda at Dawn's Tolling Stellar-Conduct/Stellar Swirl DMG|{param3:P}/{param4:P}",
+                    "\"Plume\" Dance Move DMG|{param5:F1P}",
+                    "\"Plume\" Dance Move Stellar-Conduct/Stellar Swirl DMG|{param6:P}/{param7:P}",
+                    "\"Wing\" Dance Move DMG|{param8:F1P}",
+                    "\"Wing\" Dance Move Stellar-Conduct/Stellar Swirl DMG|{param9:P}/{param10:P}",
+                    "Coda at Dawn's Tolling CD|{param13:F1}s",
+                    "Solo Dance Double Duration|{param11:F1}s",
+                    "CD|{param12:F1}s"
+                ],
+                "parameters": {
+                    "param1": [
+                        1.0808,
+                        1.16186,
+                        1.24292,
+                        1.351,
+                        1.43206,
+                        1.51312,
+                        1.6212,
+                        1.72928,
+                        1.83736,
+                        1.94544,
+                        2.05352,
+                        2.1616,
+                        2.2967,
+                        2.4318,
+                        2.5669
+                    ],
+                    "param10": [
+                        0.48464,
+                        0.520988,
+                        0.557336,
+                        0.6058,
+                        0.642148,
+                        0.678496,
+                        0.72696,
+                        0.775424,
+                        0.823888,
+                        0.872352,
+                        0.920816,
+                        0.96928,
+                        1.02986,
+                        1.09044,
+                        1.15102
+                    ],
+                    "param11": [
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0
+                    ],
+                    "param12": [
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0
+                    ],
+                    "param13": [
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0
+                    ],
+                    "param2": [
+                        0.9584,
+                        1.03028,
+                        1.10216,
+                        1.198,
+                        1.26988,
+                        1.34176,
+                        1.4376,
+                        1.53344,
+                        1.62928,
+                        1.72512,
+                        1.82096,
+                        1.9168,
+                        2.0366,
+                        2.1564,
+                        2.2762
+                    ],
+                    "param3": [
+                        3.0576,
+                        3.28692,
+                        3.51624,
+                        3.822,
+                        4.05132,
+                        4.28064,
+                        4.5864,
+                        4.89216,
+                        5.19792,
+                        5.50368,
+                        5.80944,
+                        6.1152,
+                        6.4974,
+                        6.8796,
+                        7.2618
+                    ],
+                    "param4": [
+                        4.5864,
+                        4.93038,
+                        5.27436,
+                        5.733,
+                        6.07698,
+                        6.42096,
+                        6.8796,
+                        7.33824,
+                        7.79688,
+                        8.25552,
+                        8.71416,
+                        9.1728,
+                        9.7461,
+                        10.3194,
+                        10.8927
+                    ],
+                    "param5": [
+                        0.4304,
+                        0.46268,
+                        0.49496,
+                        0.538,
+                        0.57028,
+                        0.60256,
+                        0.6456,
+                        0.68864,
+                        0.73168,
+                        0.77472,
+                        0.81776,
+                        0.8608,
+                        0.9146,
+                        0.9684,
+                        1.0222
+                    ],
+                    "param6": [
+                        0.27024,
+                        0.290508,
+                        0.310776,
+                        0.3378,
+                        0.358068,
+                        0.378336,
+                        0.40536,
+                        0.432384,
+                        0.459408,
+                        0.486432,
+                        0.513456,
+                        0.54048,
+                        0.57426,
+                        0.60804,
+                        0.64182
+                    ],
+                    "param7": [
+                        0.40528,
+                        0.435676,
+                        0.466072,
+                        0.5066,
+                        0.536996,
+                        0.567392,
+                        0.60792,
+                        0.648448,
+                        0.688976,
+                        0.729504,
+                        0.770032,
+                        0.81056,
+                        0.86122,
+                        0.91188,
+                        0.96254
+                    ],
+                    "param8": [
+                        0.51464,
+                        0.553238,
+                        0.591836,
+                        0.6433,
+                        0.681898,
+                        0.720496,
+                        0.77196,
+                        0.823424,
+                        0.874888,
+                        0.926352,
+                        0.977816,
+                        1.02928,
+                        1.09361,
+                        1.15794,
+                        1.22227
+                    ],
+                    "param9": [
+                        0.32312,
+                        0.347354,
+                        0.371588,
+                        0.4039,
+                        0.428134,
+                        0.452368,
+                        0.48468,
+                        0.516992,
+                        0.549304,
+                        0.581616,
+                        0.613928,
+                        0.64624,
+                        0.68663,
+                        0.72702,
+                        0.76741
+                    ]
+                }
+            },
+            "descriptionRaw": "With slow, graceful dance steps, Odette deals <color=#99FFFFFF>AoE Cryo DMG</color> to the opponent, and also summons her {LINK#N11500001}<color=#FFD780FF>Solo Dance Double</color>{/LINK} to the field.\nIf a <color=#FFD780FF>Dance Double</color> summoned by Odette is already on the field, this will re-summon the Dance Double and reset its duration.\n\n<color=#FFD780FF>Solo Dance Double</color>\nAlternates between the <color=#FFD780FF>Plume</color> and <color=#FFD780FF>Wing</color> dance moves, periodically attacking nearby opponents and dealing to them <color=#99FFFFFF>AoE Cryo DMG</color>.\nAdditionally, for 6s after unleashing the Elemental Skill <color=#FFD780FF>Adagio: Phantom Night Dancers</color>, Odette's Elemental Skill <color=#FFD780FF>Adagio: Phantom Night Dancers</color> will become the special Elemental Skill {LINK#N11500002}<color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>{/LINK}{LINK#N11500004}{/LINK} instead, where a dance duet deals <color=#99FFFFFF>AoE Cryo DMG</color> to nearby opponents over time. Then, when the duet ends, she deals another instance of <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct or Stellar Swirl DMG.",
+            "id": 11502,
+            "name": "Adagio: Phantom Night Dancers",
+            "proudSkillGroupId": 15032
+        },
+        "combat3": {
+            "attributes": {
+                "labels": [
+                    "Slash DMG|{param1:F1P} ×3",
+                    "Final Slash DMG|{param2:F1P}",
+                    "Snow Swan's Dream Stellar Glimmer Reaction DMG Bonus|{param3:F1P}",
+                    "Snow Swan's Dream Duration|{param4:F1}s",
+                    "Solo Dance Double Duration|{param5:F1}s",
+                    "CD|{param6:F1}s",
+                    "Energy Cost|{param7:I}"
+                ],
+                "parameters": {
+                    "param1": [
+                        1.10176,
+                        1.184392,
+                        1.267024,
+                        1.3772,
+                        1.459832,
+                        1.542464,
+                        1.65264,
+                        1.762816,
+                        1.872992,
+                        1.983168,
+                        2.093344,
+                        2.20352,
+                        2.34124,
+                        2.47896,
+                        2.61668
+                    ],
+                    "param2": [
+                        1.70272,
+                        1.830424,
+                        1.958128,
+                        2.1284,
+                        2.256104,
+                        2.383808,
+                        2.55408,
+                        2.724352,
+                        2.894624,
+                        3.064896,
+                        3.235168,
+                        3.40544,
+                        3.61828,
+                        3.83112,
+                        4.04396
+                    ],
+                    "param3": [
+                        0.14,
+                        0.18,
+                        0.22,
+                        0.26,
+                        0.3,
+                        0.34,
+                        0.38,
+                        0.42,
+                        0.46,
+                        0.5,
+                        0.54,
+                        0.58,
+                        0.62,
+                        0.66,
+                        0.7
+                    ],
+                    "param4": [
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0
+                    ],
+                    "param5": [
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0,
+                        20.0
+                    ],
+                    "param6": [
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0
+                    ],
+                    "param7": [
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0
+                    ]
+                }
+            },
+            "descriptionRaw": "With quick, lively dance steps, Odette deals multiple instances of <color=#99FFFFFF>AoE Cryo DMG</color>, and summons her <color=#FFD780FF>{LINK#N11500001}Solo Dance Double</color>{/LINK}. She also gains <color=#FFD780FF>Snow Swan's Dream</color>, which increases the Stellar Glimmer reaction DMG Odette deals.\nAdditionally, for 6s after unleashing the Elemental Burst <color=#FFD780FF>Presto: Bluebird Finale</color>, Odette's Elemental Skill <color=#FFD780FF>Adagio: Phantom Night Dancers</color> will be replaced with the special Elemental Skill {LINK#N11500002}<color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>{/LINK}{LINK#N11500004}{/LINK} instead.\n\nIf there is a Solo Dance Double summoned by Odette on the field, it will be summoned to her side with its duration refreshed.",
+            "id": 11505,
+            "name": "Presto: Bluebird Finale",
+            "proudSkillGroupId": 15039
+        },
+        "costs": {
+            "lvl10": [
+                {
+                    "count": 700000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 16,
+                    "id": 104367,
+                    "name": "Philosophies of Charity"
+                },
+                {
+                    "count": 12,
+                    "id": 112148,
+                    "name": "Ethereal Crystalscale Stone"
+                },
+                {
+                    "count": 2,
+                    "id": 113088,
+                    "name": "Twisted Withered Branch"
+                },
+                {
+                    "count": 1,
+                    "id": 104319,
+                    "name": "Crown of Insight"
+                }
+            ],
+            "lvl2": [
+                {
+                    "count": 12500,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 3,
+                    "id": 104365,
+                    "name": "Teachings of Charity"
+                },
+                {
+                    "count": 6,
+                    "id": 112146,
+                    "name": "Ethereal Glimmershard"
+                }
+            ],
+            "lvl3": [
+                {
+                    "count": 17500,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 2,
+                    "id": 104366,
+                    "name": "Guide to Charity"
+                },
+                {
+                    "count": 3,
+                    "id": 112147,
+                    "name": "Ethereal Crystal"
+                }
+            ],
+            "lvl4": [
+                {
+                    "count": 25000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 4,
+                    "id": 104366,
+                    "name": "Guide to Charity"
+                },
+                {
+                    "count": 4,
+                    "id": 112147,
+                    "name": "Ethereal Crystal"
+                }
+            ],
+            "lvl5": [
+                {
+                    "count": 30000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104366,
+                    "name": "Guide to Charity"
+                },
+                {
+                    "count": 6,
+                    "id": 112147,
+                    "name": "Ethereal Crystal"
+                }
+            ],
+            "lvl6": [
+                {
+                    "count": 37500,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 9,
+                    "id": 104366,
+                    "name": "Guide to Charity"
+                },
+                {
+                    "count": 9,
+                    "id": 112147,
+                    "name": "Ethereal Crystal"
+                }
+            ],
+            "lvl7": [
+                {
+                    "count": 120000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 4,
+                    "id": 104367,
+                    "name": "Philosophies of Charity"
+                },
+                {
+                    "count": 4,
+                    "id": 112148,
+                    "name": "Ethereal Crystalscale Stone"
+                },
+                {
+                    "count": 1,
+                    "id": 113088,
+                    "name": "Twisted Withered Branch"
+                }
+            ],
+            "lvl8": [
+                {
+                    "count": 260000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104367,
+                    "name": "Philosophies of Charity"
+                },
+                {
+                    "count": 6,
+                    "id": 112148,
+                    "name": "Ethereal Crystalscale Stone"
+                },
+                {
+                    "count": 1,
+                    "id": 113088,
+                    "name": "Twisted Withered Branch"
+                }
+            ],
+            "lvl9": [
+                {
+                    "count": 450000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 12,
+                    "id": 104367,
+                    "name": "Philosophies of Charity"
+                },
+                {
+                    "count": 9,
+                    "id": 112148,
+                    "name": "Ethereal Crystalscale Stone"
+                },
+                {
+                    "count": 2,
+                    "id": 113088,
+                    "name": "Twisted Withered Branch"
+                }
+            ]
+        },
+        "images": {
+            "filename_combat1": "Skill_A_01",
+            "filename_combat2": "Skill_S_Odette_01",
+            "filename_combat3": "Skill_E_Odette_01",
+            "filename_passive1": "UI_Talent_S_Odette_05",
+            "filename_passive2": "UI_Talent_S_Odette_06",
+            "filename_passive3": "UI_Talent_S_Odette_07",
+            "filename_passive4": "UI_Talent_S_Odette_08"
+        },
+        "passive1": {
+            "descriptionRaw": "When Odette summons her {LINK#N11500001}<color=#FFD780FF>Solo Dance Double</color>{/LINK}, she also obtains 4 stacks of {LINK#N11500003}<color=#FFD780FF>Marvelous Splendor</color>{/LINK}.",
+            "id": 1502101,
+            "name": "Spring Rite of the Chosen One"
+        },
+        "passive2": {
+            "descriptionRaw": "For every 100 ATK Odette has over 1,000, her Stellar Glimmer DMG is additionally increased by 1.5% of the original DMG. She can deal up to 30% more additional DMG in this way.",
+            "id": 1502201,
+            "name": "Pathetique of Pateticheskaya"
+        },
+        "passive3": {
+            "descriptionRaw": "Odette will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state when she is inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, or the <color=#FFD780FF>Radiance: Stellar Swirl</color> state for 8s after a nearby party member triggers a Stellar Swirl reaction.\nWhen a party member triggers a Superconduct or Cryo Swirl reaction, it becomes a Stellar-Conduct or Stellar Swirl reaction instead, and the Base DMG of said reaction is also increased by 0.7% for every 100 points of Odette's ATK. A maximum increase of 14% can be obtained in this way.",
+            "id": 1502301,
+            "name": "Stellar Jubilee: Dance of Aurore"
+        },
+        "passive4": {
+            "descriptionRaw": "Shows the locations of <color=#FFD780FF>Snezhnaya's Local Specialties</color> on the mini-map.\nPracticing dance in one's spare time might even trigger other effects...",
+            "id": 1502501,
+            "name": "Echo of Winter Daydreams"
+        }
+    },
+    "stats": {
+        "1": {
+            "ascension": 0,
+            "attack": 26.068,
+            "defense": 61.26592,
+            "hp": 1010.5192,
+            "level": 1,
+            "specialized": 0.5
+        },
+        "10": {
+            "ascension": 0,
+            "attack": 45.645068,
+            "defense": 107.27662592,
+            "hp": 1769.4191191999998,
+            "level": 10,
+            "specialized": 0.5
+        },
+        "100": {
+            "ascension": 6,
+            "attack": 410.18625199999997,
+            "defense": 842.93545984,
+            "hp": 13903.269618399998,
+            "level": 100,
+            "specialized": 0.884
+        },
+        "11": {
+            "ascension": 0,
+            "attack": 47.83478,
+            "defense": 112.4229632,
+            "hp": 1854.3027319999999,
+            "level": 11,
+            "specialized": 0.5
+        },
+        "12": {
+            "ascension": 0,
+            "attack": 50.024492,
+            "defense": 117.56930048000001,
+            "hp": 1939.1863448,
+            "level": 12,
+            "specialized": 0.5
+        },
+        "13": {
+            "ascension": 0,
+            "attack": 52.214204,
+            "defense": 122.71563776,
+            "hp": 2024.0699576,
+            "level": 13,
+            "specialized": 0.5
+        },
+        "14": {
+            "ascension": 0,
+            "attack": 54.429984000000005,
+            "defense": 127.92324096,
+            "hp": 2109.9640896,
+            "level": 14,
+            "specialized": 0.5
+        },
+        "15": {
+            "ascension": 0,
+            "attack": 56.619696000000005,
+            "defense": 133.06957824,
+            "hp": 2194.8477024,
+            "level": 15,
+            "specialized": 0.5
+        },
+        "16": {
+            "ascension": 0,
+            "attack": 58.809408,
+            "defense": 138.21591551999998,
+            "hp": 2279.7313151999997,
+            "level": 16,
+            "specialized": 0.5
+        },
+        "17": {
+            "ascension": 0,
+            "attack": 61.02518800000001,
+            "defense": 143.42351872,
+            "hp": 2365.6254472,
+            "level": 17,
+            "specialized": 0.5
+        },
+        "18": {
+            "ascension": 0,
+            "attack": 63.2149,
+            "defense": 148.569856,
+            "hp": 2450.50906,
+            "level": 18,
+            "specialized": 0.5
+        },
+        "19": {
+            "ascension": 0,
+            "attack": 65.43068,
+            "defense": 153.77745919999998,
+            "hp": 2536.4031919999998,
+            "level": 19,
+            "specialized": 0.5
+        },
+        "2": {
+            "ascension": 0,
+            "attack": 28.231644,
+            "defense": 66.35099136,
+            "hp": 1094.3922936,
+            "level": 2,
+            "specialized": 0.5
+        },
+        "20": {
+            "ascension": 0,
+            "attack": 67.620392,
+            "defense": 158.92379648,
+            "hp": 2621.2868047999996,
+            "level": 20,
+            "specialized": 0.5
+        },
+        "20+": {
+            "ascension": 1,
+            "attack": 89.96971199999999,
+            "defense": 211.45499647999998,
+            "hp": 3487.7156347999994,
+            "level": 20,
+            "specialized": 0.5
+        },
+        "21": {
+            "ascension": 1,
+            "attack": 92.18549200000001,
+            "defense": 216.66259967999997,
+            "hp": 3573.6097667999998,
+            "level": 21,
+            "specialized": 0.5
+        },
+        "22": {
+            "ascension": 1,
+            "attack": 94.401272,
+            "defense": 221.87020287999997,
+            "hp": 3659.5038987999997,
+            "level": 22,
+            "specialized": 0.5
+        },
+        "23": {
+            "ascension": 1,
+            "attack": 96.617052,
+            "defense": 227.07780608000002,
+            "hp": 3745.3980308,
+            "level": 23,
+            "specialized": 0.5
+        },
+        "24": {
+            "ascension": 1,
+            "attack": 98.832832,
+            "defense": 232.28540928,
+            "hp": 3831.2921628,
+            "level": 24,
+            "specialized": 0.5
+        },
+        "25": {
+            "ascension": 1,
+            "attack": 101.04861200000002,
+            "defense": 237.49301248,
+            "hp": 3917.1862948,
+            "level": 25,
+            "specialized": 0.5
+        },
+        "26": {
+            "ascension": 1,
+            "attack": 103.29046,
+            "defense": 242.76188159999998,
+            "hp": 4004.090946,
+            "level": 26,
+            "specialized": 0.5
+        },
+        "27": {
+            "ascension": 1,
+            "attack": 105.50623999999999,
+            "defense": 247.96948479999998,
+            "hp": 4089.9850779999997,
+            "level": 27,
+            "specialized": 0.5
+        },
+        "28": {
+            "ascension": 1,
+            "attack": 107.72202000000001,
+            "defense": 253.17708799999997,
+            "hp": 4175.87921,
+            "level": 28,
+            "specialized": 0.5
+        },
+        "29": {
+            "ascension": 1,
+            "attack": 109.96386800000002,
+            "defense": 258.44595712,
+            "hp": 4262.7838612000005,
+            "level": 29,
+            "specialized": 0.5
+        },
+        "3": {
+            "ascension": 0,
+            "attack": 30.395288,
+            "defense": 71.43606272,
+            "hp": 1178.2653871999999,
+            "level": 3,
+            "specialized": 0.5
+        },
+        "30": {
+            "ascension": 1,
+            "attack": 112.17964800000001,
+            "defense": 263.65356032,
+            "hp": 4348.6779932,
+            "level": 30,
+            "specialized": 0.5
+        },
+        "31": {
+            "ascension": 1,
+            "attack": 114.42149599999999,
+            "defense": 268.92242944000003,
+            "hp": 4435.5826443999995,
+            "level": 31,
+            "specialized": 0.5
+        },
+        "32": {
+            "ascension": 1,
+            "attack": 116.663344,
+            "defense": 274.19129856,
+            "hp": 4522.4872956,
+            "level": 32,
+            "specialized": 0.5
+        },
+        "33": {
+            "ascension": 1,
+            "attack": 118.905192,
+            "defense": 279.46016768000004,
+            "hp": 4609.3919468,
+            "level": 33,
+            "specialized": 0.5
+        },
+        "34": {
+            "ascension": 1,
+            "attack": 121.120972,
+            "defense": 284.66777088000003,
+            "hp": 4695.2860788,
+            "level": 34,
+            "specialized": 0.5
+        },
+        "35": {
+            "ascension": 1,
+            "attack": 123.36282,
+            "defense": 289.93664,
+            "hp": 4782.19073,
+            "level": 35,
+            "specialized": 0.5
+        },
+        "36": {
+            "ascension": 1,
+            "attack": 125.63073600000001,
+            "defense": 295.26677504,
+            "hp": 4870.1059004,
+            "level": 36,
+            "specialized": 0.5
+        },
+        "37": {
+            "ascension": 1,
+            "attack": 127.87258400000002,
+            "defense": 300.53564416,
+            "hp": 4957.0105516,
+            "level": 37,
+            "specialized": 0.5
+        },
+        "38": {
+            "ascension": 1,
+            "attack": 130.11443200000002,
+            "defense": 305.80451328000004,
+            "hp": 5043.9152028,
+            "level": 38,
+            "specialized": 0.5
+        },
+        "39": {
+            "ascension": 1,
+            "attack": 132.35628,
+            "defense": 311.0733824,
+            "hp": 5130.819853999999,
+            "level": 39,
+            "specialized": 0.5
+        },
+        "4": {
+            "ascension": 0,
+            "attack": 32.585,
+            "defense": 76.5824,
+            "hp": 1263.149,
+            "level": 4,
+            "specialized": 0.5
+        },
+        "40": {
+            "ascension": 1,
+            "attack": 134.624196,
+            "defense": 316.40351744000003,
+            "hp": 5218.7350244,
+            "level": 40,
+            "specialized": 0.5
+        },
+        "40+": {
+            "ascension": 2,
+            "attack": 150.50397600000002,
+            "defense": 353.72831744,
+            "hp": 5834.3554944,
+            "level": 40,
+            "specialized": 0.596
+        },
+        "41": {
+            "ascension": 2,
+            "attack": 152.745824,
+            "defense": 358.99718656,
+            "hp": 5921.260145599999,
+            "level": 41,
+            "specialized": 0.596
+        },
+        "42": {
+            "ascension": 2,
+            "attack": 155.01374000000004,
+            "defense": 364.3273216,
+            "hp": 6009.175316,
+            "level": 42,
+            "specialized": 0.596
+        },
+        "43": {
+            "ascension": 2,
+            "attack": 157.281656,
+            "defense": 369.65745664,
+            "hp": 6097.0904863999995,
+            "level": 43,
+            "specialized": 0.596
+        },
+        "44": {
+            "ascension": 2,
+            "attack": 159.523504,
+            "defense": 374.92632576,
+            "hp": 6183.995137599999,
+            "level": 44,
+            "specialized": 0.596
+        },
+        "45": {
+            "ascension": 2,
+            "attack": 161.79142000000002,
+            "defense": 380.2564608,
+            "hp": 6271.9103079999995,
+            "level": 45,
+            "specialized": 0.596
+        },
+        "46": {
+            "ascension": 2,
+            "attack": 164.059336,
+            "defense": 385.58659584,
+            "hp": 6359.825478399999,
+            "level": 46,
+            "specialized": 0.596
+        },
+        "47": {
+            "ascension": 2,
+            "attack": 166.327252,
+            "defense": 390.91673088,
+            "hp": 6447.740648799999,
+            "level": 47,
+            "specialized": 0.596
+        },
+        "48": {
+            "ascension": 2,
+            "attack": 168.595168,
+            "defense": 396.24686592,
+            "hp": 6535.6558192,
+            "level": 48,
+            "specialized": 0.596
+        },
+        "49": {
+            "ascension": 2,
+            "attack": 170.88915200000002,
+            "defense": 401.63826688,
+            "hp": 6624.5815088,
+            "level": 49,
+            "specialized": 0.596
+        },
+        "5": {
+            "ascension": 0,
+            "attack": 34.748644,
+            "defense": 81.66747136,
+            "hp": 1347.0220935999998,
+            "level": 5,
+            "specialized": 0.5
+        },
+        "50": {
+            "ascension": 2,
+            "attack": 173.15706800000004,
+            "defense": 406.96840192,
+            "hp": 6712.4966792,
+            "level": 50,
+            "specialized": 0.596
+        },
+        "50+": {
+            "ascension": 3,
+            "attack": 194.33010800000002,
+            "defense": 456.73480192,
+            "hp": 7533.3240792,
+            "level": 50,
+            "specialized": 0.692
+        },
+        "51": {
+            "ascension": 3,
+            "attack": 196.598024,
+            "defense": 462.06493695999995,
+            "hp": 7621.239249599999,
+            "level": 51,
+            "specialized": 0.692
+        },
+        "52": {
+            "ascension": 3,
+            "attack": 198.892008,
+            "defense": 467.45633792,
+            "hp": 7710.1649392,
+            "level": 52,
+            "specialized": 0.692
+        },
+        "53": {
+            "ascension": 3,
+            "attack": 201.159924,
+            "defense": 472.78647295999997,
+            "hp": 7798.0801096,
+            "level": 53,
+            "specialized": 0.692
+        },
+        "54": {
+            "ascension": 3,
+            "attack": 203.453908,
+            "defense": 478.17787392,
+            "hp": 7887.005799199999,
+            "level": 54,
+            "specialized": 0.692
+        },
+        "55": {
+            "ascension": 3,
+            "attack": 205.747892,
+            "defense": 483.56927487999997,
+            "hp": 7975.931488799999,
+            "level": 55,
+            "specialized": 0.692
+        },
+        "56": {
+            "ascension": 3,
+            "attack": 208.041876,
+            "defense": 488.96067584,
+            "hp": 8064.8571784,
+            "level": 56,
+            "specialized": 0.692
+        },
+        "57": {
+            "ascension": 3,
+            "attack": 210.33586000000003,
+            "defense": 494.35207679999996,
+            "hp": 8153.782867999999,
+            "level": 57,
+            "specialized": 0.692
+        },
+        "58": {
+            "ascension": 3,
+            "attack": 212.62984400000002,
+            "defense": 499.74347776,
+            "hp": 8242.708557599999,
+            "level": 58,
+            "specialized": 0.692
+        },
+        "59": {
+            "ascension": 3,
+            "attack": 214.92382800000001,
+            "defense": 505.1348787200001,
+            "hp": 8331.6342472,
+            "level": 59,
+            "specialized": 0.692
+        },
+        "6": {
+            "ascension": 0,
+            "attack": 36.938356000000006,
+            "defense": 86.81380864,
+            "hp": 1431.9057063999999,
+            "level": 6,
+            "specialized": 0.5
+        },
+        "60": {
+            "ascension": 3,
+            "attack": 217.217812,
+            "defense": 510.52627968,
+            "hp": 8420.5599368,
+            "level": 60,
+            "specialized": 0.692
+        },
+        "60+": {
+            "ascension": 4,
+            "attack": 233.09759200000002,
+            "defense": 547.8510796800001,
+            "hp": 9036.180236799999,
+            "level": 60,
+            "specialized": 0.692
+        },
+        "61": {
+            "ascension": 4,
+            "attack": 235.39157600000004,
+            "defense": 553.24248064,
+            "hp": 9125.1059264,
+            "level": 61,
+            "specialized": 0.692
+        },
+        "62": {
+            "ascension": 4,
+            "attack": 237.68556,
+            "defense": 558.6338816,
+            "hp": 9214.031616,
+            "level": 62,
+            "specialized": 0.692
+        },
+        "63": {
+            "ascension": 4,
+            "attack": 240.00561199999999,
+            "defense": 564.08654848,
+            "hp": 9303.9678248,
+            "level": 63,
+            "specialized": 0.692
+        },
+        "64": {
+            "ascension": 4,
+            "attack": 242.299596,
+            "defense": 569.47794944,
+            "hp": 9392.893514399999,
+            "level": 64,
+            "specialized": 0.692
+        },
+        "65": {
+            "ascension": 4,
+            "attack": 244.61964800000004,
+            "defense": 574.9306163200001,
+            "hp": 9482.8297232,
+            "level": 65,
+            "specialized": 0.692
+        },
+        "66": {
+            "ascension": 4,
+            "attack": 246.93970000000002,
+            "defense": 580.3832832,
+            "hp": 9572.765932,
+            "level": 66,
+            "specialized": 0.692
+        },
+        "67": {
+            "ascension": 4,
+            "attack": 249.23368399999998,
+            "defense": 585.77468416,
+            "hp": 9661.691621599999,
+            "level": 67,
+            "specialized": 0.692
+        },
+        "68": {
+            "ascension": 4,
+            "attack": 251.55373600000001,
+            "defense": 591.22735104,
+            "hp": 9751.627830399999,
+            "level": 68,
+            "specialized": 0.692
+        },
+        "69": {
+            "ascension": 4,
+            "attack": 253.873788,
+            "defense": 596.68001792,
+            "hp": 9841.564039199999,
+            "level": 69,
+            "specialized": 0.692
+        },
+        "7": {
+            "ascension": 0,
+            "attack": 39.102000000000004,
+            "defense": 91.89888,
+            "hp": 1515.7788,
+            "level": 7,
+            "specialized": 0.5
+        },
+        "70": {
+            "ascension": 4,
+            "attack": 256.19384,
+            "defense": 602.1326848000001,
+            "hp": 9931.500248,
+            "level": 70,
+            "specialized": 0.692
+        },
+        "70+": {
+            "ascension": 5,
+            "attack": 272.07362,
+            "defense": 639.4574848,
+            "hp": 10547.120948,
+            "level": 70,
+            "specialized": 0.788
+        },
+        "71": {
+            "ascension": 5,
+            "attack": 274.39367200000004,
+            "defense": 644.91015168,
+            "hp": 10637.0571568,
+            "level": 71,
+            "specialized": 0.788
+        },
+        "72": {
+            "ascension": 5,
+            "attack": 276.73979199999997,
+            "defense": 650.4240844799999,
+            "hp": 10728.0038848,
+            "level": 72,
+            "specialized": 0.788
+        },
+        "73": {
+            "ascension": 5,
+            "attack": 279.059844,
+            "defense": 655.8767513600001,
+            "hp": 10817.940093599998,
+            "level": 73,
+            "specialized": 0.788
+        },
+        "74": {
+            "ascension": 5,
+            "attack": 281.37989600000003,
+            "defense": 661.32941824,
+            "hp": 10907.8763024,
+            "level": 74,
+            "specialized": 0.788
+        },
+        "75": {
+            "ascension": 5,
+            "attack": 283.72601599999996,
+            "defense": 666.84335104,
+            "hp": 10998.823030399999,
+            "level": 75,
+            "specialized": 0.788
+        },
+        "76": {
+            "ascension": 5,
+            "attack": 286.046068,
+            "defense": 672.2960179199999,
+            "hp": 11088.7592392,
+            "level": 76,
+            "specialized": 0.788
+        },
+        "77": {
+            "ascension": 5,
+            "attack": 288.39218800000003,
+            "defense": 677.80995072,
+            "hp": 11179.7059672,
+            "level": 77,
+            "specialized": 0.788
+        },
+        "78": {
+            "ascension": 5,
+            "attack": 290.73830799999996,
+            "defense": 683.32388352,
+            "hp": 11270.652695199999,
+            "level": 78,
+            "specialized": 0.788
+        },
+        "79": {
+            "ascension": 5,
+            "attack": 293.084428,
+            "defense": 688.83781632,
+            "hp": 11361.599423200001,
+            "level": 79,
+            "specialized": 0.788
+        },
+        "8": {
+            "ascension": 0,
+            "attack": 41.291712000000004,
+            "defense": 97.04521728,
+            "hp": 1600.6624128,
+            "level": 8,
+            "specialized": 0.5
+        },
+        "80": {
+            "ascension": 5,
+            "attack": 295.43054800000004,
+            "defense": 694.35174912,
+            "hp": 11452.5461512,
+            "level": 80,
+            "specialized": 0.788
+        },
+        "80+": {
+            "ascension": 6,
+            "attack": 311.310328,
+            "defense": 731.67654912,
+            "hp": 12068.1667512,
+            "level": 80,
+            "specialized": 0.884
+        },
+        "81": {
+            "ascension": 6,
+            "attack": 313.656448,
+            "defense": 737.19048192,
+            "hp": 12159.1134792,
+            "level": 81,
+            "specialized": 0.884
+        },
+        "82": {
+            "ascension": 6,
+            "attack": 316.002568,
+            "defense": 742.70441472,
+            "hp": 12250.0602072,
+            "level": 82,
+            "specialized": 0.884
+        },
+        "83": {
+            "ascension": 6,
+            "attack": 318.34868800000004,
+            "defense": 748.21834752,
+            "hp": 12341.0069352,
+            "level": 83,
+            "specialized": 0.884
+        },
+        "84": {
+            "ascension": 6,
+            "attack": 320.694808,
+            "defense": 753.73228032,
+            "hp": 12431.953663199998,
+            "level": 84,
+            "specialized": 0.884
+        },
+        "85": {
+            "ascension": 6,
+            "attack": 323.040928,
+            "defense": 759.24621312,
+            "hp": 12522.9003912,
+            "level": 85,
+            "specialized": 0.884
+        },
+        "86": {
+            "ascension": 6,
+            "attack": 325.41311600000006,
+            "defense": 764.8214118400001,
+            "hp": 12614.8576384,
+            "level": 86,
+            "specialized": 0.884
+        },
+        "87": {
+            "ascension": 6,
+            "attack": 327.75923600000004,
+            "defense": 770.33534464,
+            "hp": 12705.8043664,
+            "level": 87,
+            "specialized": 0.884
+        },
+        "88": {
+            "ascension": 6,
+            "attack": 330.13142400000004,
+            "defense": 775.91054336,
+            "hp": 12797.7616136,
+            "level": 88,
+            "specialized": 0.884
+        },
+        "89": {
+            "ascension": 6,
+            "attack": 332.503612,
+            "defense": 781.48574208,
+            "hp": 12889.7188608,
+            "level": 89,
+            "specialized": 0.884
+        },
+        "9": {
+            "ascension": 0,
+            "attack": 43.481424,
+            "defense": 102.19155456,
+            "hp": 1685.5460256,
+            "level": 9,
+            "specialized": 0.5
+        },
+        "90": {
+            "ascension": 6,
+            "attack": 334.849732,
+            "defense": 786.99967488,
+            "hp": 12980.665588799999,
+            "level": 90,
+            "specialized": 0.884
+        },
+        "95": {
+            "ascension": 6,
+            "attack": 372.51799200000005,
+            "defense": 814.9369344,
+            "hp": 13441.462344,
+            "level": 95,
+            "specialized": 0.884
+        }
+    }
+}

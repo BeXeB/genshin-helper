@@ -66,6 +66,17 @@
         "type": "local-specialty"
     },
     {
+        "description": "A fern whose edges radiate a faint golden shimmer. It is said to take on a remarkably unique flavor when stewed.",
+        "id": 101277,
+        "images": {
+            "filename_icon": "UI_ItemIcon_101277"
+        },
+        "name": "Golden Fern",
+        "normalizedName": "goldenfern",
+        "sortRank": 318,
+        "type": "local-specialty"
+    },
+    {
         "description": "Empty seashells brought ashore by the tides. Hold one close to your ear, and hear the longing calls of the sea.",
         "id": 100033,
         "images": {
@@ -635,6 +646,28 @@
         "name": "Etherwing Moth",
         "normalizedName": "etherwingmoth",
         "sortRank": 311,
+        "type": "local-specialty"
+    },
+    {
+        "description": "A sacred flower that blooms no matter how harsh the wind and snow. It always radiates a faint, mesmerizing glow that draws the hearts of all who see it.",
+        "id": 101275,
+        "images": {
+            "filename_icon": "UI_ItemIcon_101275"
+        },
+        "name": "Frostfairy Flower",
+        "normalizedName": "frostfairyflower",
+        "sortRank": 318,
+        "type": "local-specialty"
+    },
+    {
+        "description": "A peculiar plant once suspected to be a hybrid of plant and animal, though it was later proven to be nothing more than an ordinary plant covered in a coat of animal-like fuzz.",
+        "id": 101276,
+        "images": {
+            "filename_icon": "UI_ItemIcon_101276"
+        },
+        "name": "Flockingweed",
+        "normalizedName": "flockingweed",
+        "sortRank": 318,
         "type": "local-specialty"
     }
 ]

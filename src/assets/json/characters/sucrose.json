@@ -735,7 +735,7 @@
             "filename_passive4": "UI_Talent_S_Sucrose_07"
         },
         "passive1": {
-            "descriptionRaw": "When Sucrose triggers a Swirl reaction, all characters in the party with the matching element (excluding Sucrose) have their Elemental Mastery increased by 50 for 8s.",
+            "descriptionRaw": "When Sucrose triggers a Swirl or Stellar Swirl reaction, all characters in the party with the matching element (excluding Sucrose) have their Elemental Mastery increased by 50 for 8s.",
             "id": 432101,
             "name": "Catalyst Conversion"
         },

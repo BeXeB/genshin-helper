@@ -146,19 +146,19 @@
     "normalizedName": "sunnymorningsleepin",
     "qualityType": "QUALITY_ORANGE",
     "r1": {
-        "description": "Elemental Mastery increases by <color=#99FFFFFF>120</color> for 6s after triggering Swirl. Elemental Mastery increases by <color=#99FFFFFF>96</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>32</color> for 30s after the wielder's Elemental Burst hits an opponent."
+        "description": "Elemental Mastery increases by <color=#99FFFFFF>120</color> for 6s after triggering Swirl or Stellar Swirl. Elemental Mastery increases by <color=#99FFFFFF>96</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>32</color> for 30s after the wielder's Elemental Burst hits an opponent."
     },
     "r2": {
-        "description": "Elemental Mastery increases by <color=#99FFFFFF>150</color> for 6s after triggering Swirl. Elemental Mastery increases by <color=#99FFFFFF>120</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>40</color> for 30s after the wielder's Elemental Burst hits an opponent."
+        "description": "Elemental Mastery increases by <color=#99FFFFFF>150</color> for 6s after triggering Swirl or Stellar Swirl. Elemental Mastery increases by <color=#99FFFFFF>120</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>40</color> for 30s after the wielder's Elemental Burst hits an opponent."
     },
     "r3": {
-        "description": "Elemental Mastery increases by <color=#99FFFFFF>180</color> for 6s after triggering Swirl. Elemental Mastery increases by <color=#99FFFFFF>144</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>48</color> for 30s after the wielder's Elemental Burst hits an opponent."
+        "description": "Elemental Mastery increases by <color=#99FFFFFF>180</color> for 6s after triggering Swirl or Stellar Swirl. Elemental Mastery increases by <color=#99FFFFFF>144</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>48</color> for 30s after the wielder's Elemental Burst hits an opponent."
     },
     "r4": {
-        "description": "Elemental Mastery increases by <color=#99FFFFFF>210</color> for 6s after triggering Swirl. Elemental Mastery increases by <color=#99FFFFFF>168</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>56</color> for 30s after the wielder's Elemental Burst hits an opponent."
+        "description": "Elemental Mastery increases by <color=#99FFFFFF>210</color> for 6s after triggering Swirl or Stellar Swirl. Elemental Mastery increases by <color=#99FFFFFF>168</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>56</color> for 30s after the wielder's Elemental Burst hits an opponent."
     },
     "r5": {
-        "description": "Elemental Mastery increases by <color=#99FFFFFF>240</color> for 6s after triggering Swirl. Elemental Mastery increases by <color=#99FFFFFF>192</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>64</color> for 30s after the wielder's Elemental Burst hits an opponent."
+        "description": "Elemental Mastery increases by <color=#99FFFFFF>240</color> for 6s after triggering Swirl or Stellar Swirl. Elemental Mastery increases by <color=#99FFFFFF>192</color> for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by <color=#99FFFFFF>64</color> for 30s after the wielder's Elemental Burst hits an opponent."
     },
     "rarity": 5,
     "sortOrder": 5415,

@@ -822,7 +822,7 @@
             "filename_passive3": "UI_Talent_Explosion_Sprint"
         },
         "passive1": {
-            "descriptionRaw": "When Shikanoin Heizou activates a Swirl reaction while on the field, he will gain 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 0.1s.",
+            "descriptionRaw": "When Shikanoin Heizou activates a Swirl or Stellar Swirl reaction while on the field, he will gain 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 0.1s.",
             "id": 592101,
             "name": "Paradoxical Practice"
         },

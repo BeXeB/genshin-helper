@@ -12,6 +12,18 @@
         "type": "generic"
     },
     {
+        "description": "A stone hilt obtained from an ancient statue.\nIts luster has long been lost to the depredations of seawater.",
+        "id": 112098,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112098"
+        },
+        "name": "Ruined Hilt",
+        "normalizedName": "ruinedhilt",
+        "rarity": 2,
+        "sortRank": 10134,
+        "type": "generic"
+    },
+    {
         "description": "The remains of a fisher from beyond this world, left after its body dissolved.\nA core whose functions have fully shut down, and its structure resembles no organ of any creature found on this earth.",
         "id": 112138,
         "images": {
@@ -57,6 +69,18 @@
         "normalizedName": "famedhandguard",
         "rarity": 3,
         "sortRank": 10615,
+        "type": "generic"
+    },
+    {
+        "description": "The remains of a Snezhnayan fae left behind after battle.\nThese shards once coated the creature's body like crystalline scales. Upon falling away, they stripped themselves of all colors, shifting into something akin to the dusty dross of a moth's wings.",
+        "id": 112146,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112146"
+        },
+        "name": "Ethereal Glimmershard",
+        "normalizedName": "etherealglimmershard",
+        "rarity": 1,
+        "sortRank": 10639,
         "type": "generic"
     },
     {
@@ -192,18 +216,6 @@
         "type": "generic"
     },
     {
-        "description": "An insignia to identify the recruits. Makes one wonder about what the ones joining the Fatui's war machine were thinking.",
-        "id": 112032,
-        "images": {
-            "filename_icon": "UI_ItemIcon_112032"
-        },
-        "name": "Recruit's Insignia",
-        "normalizedName": "recruitsinsignia",
-        "rarity": 1,
-        "sortRank": 10611,
-        "type": "generic"
-    },
-    {
         "description": "A new life form that arose from the dispersed Tainted Hydro Phantasm. It is trapped inside a bottle.\nThe life contained within the waters is formless, and formless life is born of water and gains water's shape.",
         "id": 112088,
         "images": {
@@ -213,6 +225,18 @@
         "normalizedName": "newborntaintedhydrophantasm",
         "rarity": 4,
         "sortRank": 10130,
+        "type": "generic"
+    },
+    {
+        "description": "An insignia to identify the recruits. Makes one wonder about what the ones joining the Fatui's war machine were thinking.",
+        "id": 112032,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112032"
+        },
+        "name": "Recruit's Insignia",
+        "normalizedName": "recruitsinsignia",
+        "rarity": 1,
+        "sortRank": 10611,
         "type": "generic"
     },
     {
@@ -276,6 +300,18 @@
         "type": "generic"
     },
     {
+        "description": "A stone hilt obtained from an ancient statue.\nThe chips and grooves speak to the brutal battles its owner once weathered.",
+        "id": 112099,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112099"
+        },
+        "name": "Splintered Hilt",
+        "normalizedName": "splinteredhilt",
+        "rarity": 3,
+        "sortRank": 10134,
+        "type": "generic"
+    },
+    {
         "description": "A broken bone mask that once belonged to some hilichurl.\nNow more broken than complete, it can no longer perform its primary function.",
         "id": 112005,
         "images": {
@@ -300,6 +336,18 @@
         "type": "generic"
     },
     {
+        "description": "An accretion formed by powerful Volkodlak.\nAn accretion that has fully fused with an organ or bone. One could even say it's a newly grown bone or organ at the nodes of the Volkodlak's power circulation. Only long-lived Volkodlaks who have ceaselessly honed their strength can form such growths within their bodies.",
+        "id": 112154,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112154"
+        },
+        "name": "Accreted Growth",
+        "normalizedName": "accretedgrowth",
+        "rarity": 4,
+        "sortRank": 10148,
+        "type": "generic"
+    },
+    {
         "description": "Strange spores created by Mist Grass in enclosed spaces. They are the Cicins' favorite food.",
         "id": 112026,
         "images": {
@@ -309,18 +357,6 @@
         "normalizedName": "mistgrasspollen",
         "rarity": 2,
         "sortRank": 10109,
-        "type": "generic"
-    },
-    {
-        "description": "A stone hilt obtained from an ancient statue.\nThe chips and grooves speak to the brutal battles its owner once weathered.",
-        "id": 112099,
-        "images": {
-            "filename_icon": "UI_ItemIcon_112099"
-        },
-        "name": "Splintered Hilt",
-        "normalizedName": "splinteredhilt",
-        "rarity": 3,
-        "sortRank": 10134,
         "type": "generic"
     },
     {
@@ -588,6 +624,18 @@
         "type": "generic"
     },
     {
+        "description": "The internal core harvested from aberrant man-made monsters.\nThis is the most fundamental core grown within a man-made monster. Yet, simple as it may be, it contains the primordial design for the growth of all man-made creations.",
+        "id": 112149,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112149"
+        },
+        "name": "Chimeric Core",
+        "normalizedName": "chimericcore",
+        "rarity": 1,
+        "sortRank": 10640,
+        "type": "generic"
+    },
+    {
         "description": "Concentrated slime essence. When left alone, it will begin to move on its own.",
         "id": 112004,
         "images": {
@@ -624,6 +672,18 @@
         "type": "generic"
     },
     {
+        "description": "An accretion formed by powerful Volkodlak.\nAn accretion that has clung to an internal organ or bone for a long time. Once removed, such accretions are regarded as symbols of power and carefully preserved by the creature's descendants.",
+        "id": 112153,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112153"
+        },
+        "name": "Accreted Mass",
+        "normalizedName": "accretedmass",
+        "rarity": 3,
+        "sortRank": 10148,
+        "type": "generic"
+    },
+    {
         "description": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
         "id": 112008,
         "images": {
@@ -657,6 +717,18 @@
         "normalizedName": "firmarrowhead",
         "rarity": 1,
         "sortRank": 10604,
+        "type": "generic"
+    },
+    {
+        "description": "A branch dropped by a Leshy before it returned to silence.\nA branch with a fully formed crystal core. It contains vitality that will not easily fade. If buried in the soil, it would likely grow into a new Leshy before long.",
+        "id": 112157,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112157"
+        },
+        "name": "Coiled Core of Life",
+        "normalizedName": "coiledcoreoflife",
+        "rarity": 4,
+        "sortRank": 10149,
         "type": "generic"
     },
     {
@@ -1404,18 +1476,6 @@
         "type": "generic"
     },
     {
-        "description": "A stone hilt obtained from an ancient statue.\nIts luster has long been lost to the depredations of seawater.",
-        "id": 112098,
-        "images": {
-            "filename_icon": "UI_ItemIcon_112098"
-        },
-        "name": "Ruined Hilt",
-        "normalizedName": "ruinedhilt",
-        "rarity": 2,
-        "sortRank": 10134,
-        "type": "generic"
-    },
-    {
         "description": "A tooth that fell from a Natlan Saurian.\nIt looks like it belonged to a juvenile creature. If there was a way to determine the age of its previous owner, perhaps it would show that they had not yet roamed the world for long.",
         "id": 112101,
         "images": {
@@ -1737,6 +1797,90 @@
         "normalizedName": "unblemishedlunariron",
         "rarity": 4,
         "sortRank": 10147,
+        "type": "generic"
+    },
+    {
+        "description": "The remains of a Snezhnayan fae left behind after battle.\nA shattered fragment of the crystalline scales that once grew upon the fae's body. Though it is now a mere empty shell, one can still sense the echo of the unique power that once dwelt within.",
+        "id": 112147,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112147"
+        },
+        "name": "Ethereal Crystal",
+        "normalizedName": "etherealcrystal",
+        "rarity": 2,
+        "sortRank": 10639,
+        "type": "generic"
+    },
+    {
+        "description": "The remains of a Snezhnayan fae left behind after battle.\nA crystalline scale that once grew upon the fae's body. It is said that fae possessing a greater abundance of these scales command far greater power. Yet, none can say whether this magic truly originates from within their forms — merely channeled outward through the crystal chunks — or if the chunks themselves are the very vessels of their power.",
+        "id": 112148,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112148"
+        },
+        "name": "Ethereal Crystalscale Stone",
+        "normalizedName": "etherealcrystalscalestone",
+        "rarity": 3,
+        "sortRank": 10639,
+        "type": "generic"
+    },
+    {
+        "description": "The internal core harvested from aberrant man-made monsters.\nA relatively complex core harvested from a man-made monster. This symbiotic nucleus is engineered to sustain the biological cycles of two distinct life-forms, seamlessly weaving them into a single organism.",
+        "id": 112150,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112150"
+        },
+        "name": "Symbiotic Chimeric Nucleus",
+        "normalizedName": "symbioticchimericnucleus",
+        "rarity": 2,
+        "sortRank": 10640,
+        "type": "generic"
+    },
+    {
+        "description": "The internal core harvested from aberrant man-made monsters.\nThe most complex core a man-made monster can possibly sustain, serving as an artificially engineered yet flawless seed of life. Whoever brought this creation into life has surely unlocked the very secrets of how life itself is shaped.",
+        "id": 112151,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112151"
+        },
+        "name": "Prime Chimeric Nexus",
+        "normalizedName": "primechimericnexus",
+        "rarity": 3,
+        "sortRank": 10640,
+        "type": "generic"
+    },
+    {
+        "description": "An accretion formed by powerful Volkodlak.\nAn accretion that has only just begun to attach to an internal organ or bone. As the Volkodlak's power grows, it may eventually cover an entire region of the body, or a whole organ.",
+        "id": 112152,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112152"
+        },
+        "name": "Accreted Fragment",
+        "normalizedName": "accretedfragment",
+        "rarity": 2,
+        "sortRank": 10148,
+        "type": "generic"
+    },
+    {
+        "description": "A branch dropped by a Leshy before it returned to silence.\nWith only a few crystals grown upon it, this branch holds little power and gives off a faint glow.",
+        "id": 112155,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112155"
+        },
+        "name": "Hollow Root of Life",
+        "normalizedName": "hollowrootoflife",
+        "rarity": 2,
+        "sortRank": 10149,
+        "type": "generic"
+    },
+    {
+        "description": "A branch dropped by a Leshy before it returned to silence.\nA branch bearing a fair number of crystals. It feels heavy in the hand, and traces of vitality can still be felt within it even after it has broken away from the Leshy's body.",
+        "id": 112156,
+        "images": {
+            "filename_icon": "UI_ItemIcon_112156"
+        },
+        "name": "Sprout Node of Life",
+        "normalizedName": "sproutnodeoflife",
+        "rarity": 3,
+        "sortRank": 10149,
         "type": "generic"
     }
 ]

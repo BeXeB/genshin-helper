@@ -8,18 +8,18 @@
             },
             {
                 "count": 5,
-                "id": 114069,
-                "name": "Night-Wind's Mystic Consideration"
+                "id": 114093,
+                "name": "The Frost Emperor's Revival"
             },
             {
                 "count": 5,
-                "id": 112116,
-                "name": "Refractive Bud"
+                "id": 112152,
+                "name": "Accreted Fragment"
             },
             {
                 "count": 3,
-                "id": 112104,
-                "name": "Sentry's Wooden Whistle"
+                "id": 112146,
+                "name": "Ethereal Glimmershard"
             }
         ],
         "ascend2": [
@@ -30,18 +30,18 @@
             },
             {
                 "count": 5,
-                "id": 114070,
-                "name": "Night-Wind's Mystic Premonition"
+                "id": 114094,
+                "name": "The Frost Emperor's Ceremony"
             },
             {
                 "count": 18,
-                "id": 112116,
-                "name": "Refractive Bud"
+                "id": 112152,
+                "name": "Accreted Fragment"
             },
             {
                 "count": 12,
-                "id": 112104,
-                "name": "Sentry's Wooden Whistle"
+                "id": 112146,
+                "name": "Ethereal Glimmershard"
             }
         ],
         "ascend3": [
@@ -52,18 +52,18 @@
             },
             {
                 "count": 9,
-                "id": 114070,
-                "name": "Night-Wind's Mystic Premonition"
+                "id": 114094,
+                "name": "The Frost Emperor's Ceremony"
             },
             {
                 "count": 9,
-                "id": 112117,
-                "name": "Bewildering Broadleaf"
+                "id": 112153,
+                "name": "Accreted Mass"
             },
             {
                 "count": 9,
-                "id": 112105,
-                "name": "Warrior's Metal Whistle"
+                "id": 112147,
+                "name": "Ethereal Crystal"
             }
         ],
         "ascend4": [
@@ -74,18 +74,18 @@
             },
             {
                 "count": 5,
-                "id": 114071,
-                "name": "Night-Wind's Mystic Augury"
+                "id": 114095,
+                "name": "The Frost Emperor's Lament"
             },
             {
                 "count": 18,
-                "id": 112117,
-                "name": "Bewildering Broadleaf"
+                "id": 112153,
+                "name": "Accreted Mass"
             },
             {
                 "count": 14,
-                "id": 112105,
-                "name": "Warrior's Metal Whistle"
+                "id": 112147,
+                "name": "Ethereal Crystal"
             }
         ],
         "ascend5": [
@@ -96,18 +96,18 @@
             },
             {
                 "count": 9,
-                "id": 114071,
-                "name": "Night-Wind's Mystic Augury"
+                "id": 114095,
+                "name": "The Frost Emperor's Lament"
             },
             {
                 "count": 14,
-                "id": 112118,
-                "name": "Illusory Leafcoil"
+                "id": 112154,
+                "name": "Accreted Growth"
             },
             {
                 "count": 9,
-                "id": 112106,
-                "name": "Saurian-Crowned Warrior's Golden Whistle"
+                "id": 112148,
+                "name": "Ethereal Crystalscale Stone"
             }
         ],
         "ascend6": [
@@ -118,628 +118,628 @@
             },
             {
                 "count": 6,
-                "id": 114072,
-                "name": "Night-Wind's Mystic Revelation"
+                "id": 114096,
+                "name": "The Frost Emperor's Farewell"
             },
             {
                 "count": 27,
-                "id": 112118,
-                "name": "Illusory Leafcoil"
+                "id": 112154,
+                "name": "Accreted Growth"
             },
             {
                 "count": 18,
-                "id": 112106,
-                "name": "Saurian-Crowned Warrior's Golden Whistle"
+                "id": 112148,
+                "name": "Ethereal Crystalscale Stone"
             }
         ]
     },
-    "description": "An ancient longbow crested with red feathers, a sacred relic of the Flower-Feather Clan that has been passed down from generation to generation.",
-    "effectName": "The Moonring Sighted",
-    "id": 15514,
+    "description": "A longsword that once shone with the Pale Star's light. In the voyager's hand, it becomes a brand-new light that has nothing to do with any past era.",
+    "effectName": "Traveler's Path",
+    "id": 11521,
     "images": {
-        "filename_awakenIcon": "UI_EquipIcon_Bow_Qoyllorsnova_Awaken",
-        "filename_gacha": "UI_Gacha_EquipIcon_Bow_Qoyllorsnova",
-        "filename_icon": "UI_EquipIcon_Bow_Qoyllorsnova"
+        "filename_awakenIcon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+        "filename_gacha": "UI_Gacha_EquipIcon_Sword_WeaponQuestSnezhnaya",
+        "filename_icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya"
     },
-    "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
-    "name": "Astral Vulture's Crimson Plumage",
-    "normalizedName": "astralvulturescrimsonplumage",
+    "mainStatType": "FIGHT_PROP_CRITICAL",
+    "name": "Exaiphanes Blade",
+    "normalizedName": "exaiphanesblade",
     "qualityType": "QUALITY_ORANGE",
     "r1": {
-        "description": "For 12s after triggering a Swirl or Stellar Swirl reaction, ATK increases by <color=#99FFFFFF>24%</color>. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by <color=#99FFFFFF>20%/48%</color>, and Elemental Burst DMG dealt is increased by <color=#99FFFFFF>10%/24%</color>."
+        "description": "When the Traveler equips this, their ATK will increase by <color=#99FFFFFF>16%</color> for <color=#99FFFFFF>8</color>s after they hit an opponent. At the same time, they will also regenerate <color=#99FFFFFF>3</color> Elemental Energy. This effect can trigger once every <color=#99FFFFFF>5</color>s. This can be triggered even when the character is not on the field."
     },
     "r2": {
-        "description": "For 12s after triggering a Swirl or Stellar Swirl reaction, ATK increases by <color=#99FFFFFF>30%</color>. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by <color=#99FFFFFF>25%/60%</color>, and Elemental Burst DMG dealt is increased by <color=#99FFFFFF>12.5%/30%</color>."
+        "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>20%</color> for 8s, and regenerate <color=#99FFFFFF>3</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field."
     },
     "r3": {
-        "description": "For 12s after triggering a Swirl or Stellar Swirl reaction, ATK increases by <color=#99FFFFFF>36%</color>. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by <color=#99FFFFFF>30%/72%</color>, and Elemental Burst DMG dealt is increased by <color=#99FFFFFF>15%/36%</color>."
+        "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>24%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field."
     },
     "r4": {
-        "description": "For 12s after triggering a Swirl or Stellar Swirl reaction, ATK increases by <color=#99FFFFFF>42%</color>. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by <color=#99FFFFFF>35%/84%</color>, and Elemental Burst DMG dealt is increased by <color=#99FFFFFF>17.5%/42%</color>."
+        "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>32%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field."
     },
     "r5": {
-        "description": "For 12s after triggering a Swirl or Stellar Swirl reaction, ATK increases by <color=#99FFFFFF>48%</color>. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by <color=#99FFFFFF>40%/96%</color>, and Elemental Burst DMG dealt is increased by <color=#99FFFFFF>20%/48%</color>."
+        "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>40%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field."
     },
     "rarity": 5,
-    "sortOrder": 5512,
+    "sortOrder": 5118,
     "stats": {
         "1": {
             "ascension": 0,
             "attack": 45.9364,
             "level": 1,
-            "specialized": 0.144
+            "specialized": 0.072
         },
         "10": {
             "ascension": 0,
             "attack": 81.53711,
             "level": 10,
-            "specialized": 0.19627199999999997
+            "specialized": 0.09813599999999999
         },
         "11": {
             "ascension": 0,
             "attack": 85.5335768,
             "level": 11,
-            "specialized": 0.19627199999999997
+            "specialized": 0.09813599999999999
         },
         "12": {
             "ascension": 0,
             "attack": 89.5300436,
             "level": 12,
-            "specialized": 0.19627199999999997
+            "specialized": 0.09813599999999999
         },
         "13": {
             "ascension": 0,
             "attack": 93.5265104,
             "level": 13,
-            "specialized": 0.19627199999999997
+            "specialized": 0.09813599999999999
         },
         "14": {
             "ascension": 0,
             "attack": 97.5689136,
             "level": 14,
-            "specialized": 0.19627199999999997
+            "specialized": 0.09813599999999999
         },
         "15": {
             "ascension": 0,
             "attack": 101.5653804,
             "level": 15,
-            "specialized": 0.22535999999999998
+            "specialized": 0.11267999999999999
         },
         "16": {
             "ascension": 0,
             "attack": 105.60778359999999,
             "level": 16,
-            "specialized": 0.22535999999999998
+            "specialized": 0.11267999999999999
         },
         "17": {
             "ascension": 0,
             "attack": 109.6042504,
             "level": 17,
-            "specialized": 0.22535999999999998
+            "specialized": 0.11267999999999999
         },
         "18": {
             "ascension": 0,
             "attack": 113.64665360000001,
             "level": 18,
-            "specialized": 0.22535999999999998
+            "specialized": 0.11267999999999999
         },
         "19": {
             "ascension": 0,
             "attack": 117.68905679999999,
             "level": 19,
-            "specialized": 0.22535999999999998
+            "specialized": 0.11267999999999999
         },
         "2": {
             "ascension": 0,
             "attack": 49.886930400000004,
             "level": 2,
-            "specialized": 0.144
+            "specialized": 0.072
         },
         "20": {
             "ascension": 0,
             "attack": 121.73146,
             "level": 20,
-            "specialized": 0.25444799999999995
+            "specialized": 0.12722399999999998
         },
         "20+": {
             "ascension": 1,
             "attack": 152.83146,
             "level": 20,
-            "specialized": 0.25444799999999995
+            "specialized": 0.12722399999999998
         },
         "21": {
             "ascension": 1,
             "attack": 156.8738632,
             "level": 21,
-            "specialized": 0.25444799999999995
+            "specialized": 0.12722399999999998
         },
         "22": {
             "ascension": 1,
             "attack": 160.9622028,
             "level": 22,
-            "specialized": 0.25444799999999995
+            "specialized": 0.12722399999999998
         },
         "23": {
             "ascension": 1,
             "attack": 165.004606,
             "level": 23,
-            "specialized": 0.25444799999999995
+            "specialized": 0.12722399999999998
         },
         "24": {
             "ascension": 1,
             "attack": 169.09294559999998,
             "level": 24,
-            "specialized": 0.25444799999999995
+            "specialized": 0.12722399999999998
         },
         "25": {
             "ascension": 1,
             "attack": 173.1812852,
             "level": 25,
-            "specialized": 0.283536
+            "specialized": 0.141768
         },
         "26": {
             "ascension": 1,
             "attack": 177.2696248,
             "level": 26,
-            "specialized": 0.283536
+            "specialized": 0.141768
         },
         "27": {
             "ascension": 1,
             "attack": 181.3579644,
             "level": 27,
-            "specialized": 0.283536
+            "specialized": 0.141768
         },
         "28": {
             "ascension": 1,
             "attack": 185.446304,
             "level": 28,
-            "specialized": 0.283536
+            "specialized": 0.141768
         },
         "29": {
             "ascension": 1,
             "attack": 189.58058,
             "level": 29,
-            "specialized": 0.283536
+            "specialized": 0.141768
         },
         "3": {
             "ascension": 0,
             "attack": 53.7915244,
             "level": 3,
-            "specialized": 0.144
+            "specialized": 0.072
         },
         "30": {
             "ascension": 1,
             "attack": 193.6689196,
             "level": 30,
-            "specialized": 0.31262399999999996
+            "specialized": 0.15631199999999998
         },
         "31": {
             "ascension": 1,
             "attack": 197.80319559999998,
             "level": 31,
-            "specialized": 0.31262399999999996
+            "specialized": 0.15631199999999998
         },
         "32": {
             "ascension": 1,
             "attack": 201.93747159999998,
             "level": 32,
-            "specialized": 0.31262399999999996
+            "specialized": 0.15631199999999998
         },
         "33": {
             "ascension": 1,
             "attack": 206.0717476,
             "level": 33,
-            "specialized": 0.31262399999999996
+            "specialized": 0.15631199999999998
         },
         "34": {
             "ascension": 1,
             "attack": 210.20602359999998,
             "level": 34,
-            "specialized": 0.31262399999999996
+            "specialized": 0.15631199999999998
         },
         "35": {
             "ascension": 1,
             "attack": 214.34029959999998,
             "level": 35,
-            "specialized": 0.341712
+            "specialized": 0.170856
         },
         "36": {
             "ascension": 1,
             "attack": 218.520512,
             "level": 36,
-            "specialized": 0.341712
+            "specialized": 0.170856
         },
         "37": {
             "ascension": 1,
             "attack": 222.654788,
             "level": 37,
-            "specialized": 0.341712
+            "specialized": 0.170856
         },
         "38": {
             "ascension": 1,
             "attack": 226.83500039999998,
             "level": 38,
-            "specialized": 0.341712
+            "specialized": 0.170856
         },
         "39": {
             "ascension": 1,
             "attack": 231.0152128,
             "level": 39,
-            "specialized": 0.341712
+            "specialized": 0.170856
         },
         "4": {
             "ascension": 0,
             "attack": 57.74205479999999,
             "level": 4,
-            "specialized": 0.144
+            "specialized": 0.072
         },
         "40": {
             "ascension": 1,
             "attack": 235.19542519999996,
             "level": 40,
-            "specialized": 0.3708
+            "specialized": 0.1854
         },
         "40+": {
             "ascension": 2,
             "attack": 266.29542519999995,
             "level": 40,
-            "specialized": 0.3708
+            "specialized": 0.1854
         },
         "41": {
             "ascension": 2,
             "attack": 270.47563759999997,
             "level": 41,
-            "specialized": 0.3708
+            "specialized": 0.1854
         },
         "42": {
             "ascension": 2,
             "attack": 274.65585,
             "level": 42,
-            "specialized": 0.3708
+            "specialized": 0.1854
         },
         "43": {
             "ascension": 2,
             "attack": 278.88199879999996,
             "level": 43,
-            "specialized": 0.3708
+            "specialized": 0.1854
         },
         "44": {
             "ascension": 2,
             "attack": 283.0622112,
             "level": 44,
-            "specialized": 0.3708
+            "specialized": 0.1854
         },
         "45": {
             "ascension": 2,
             "attack": 287.28836,
             "level": 45,
-            "specialized": 0.39988799999999997
+            "specialized": 0.19994399999999998
         },
         "46": {
             "ascension": 2,
             "attack": 291.5145088,
             "level": 46,
-            "specialized": 0.39988799999999997
+            "specialized": 0.19994399999999998
         },
         "47": {
             "ascension": 2,
             "attack": 295.74065759999996,
             "level": 47,
-            "specialized": 0.39988799999999997
+            "specialized": 0.19994399999999998
         },
         "48": {
             "ascension": 2,
             "attack": 299.9668064,
             "level": 48,
-            "specialized": 0.39988799999999997
+            "specialized": 0.19994399999999998
         },
         "49": {
             "ascension": 2,
             "attack": 304.1929552,
             "level": 49,
-            "specialized": 0.39988799999999997
+            "specialized": 0.19994399999999998
         },
         "5": {
             "ascension": 0,
             "attack": 61.692585199999996,
             "level": 5,
-            "specialized": 0.16732799999999998
+            "specialized": 0.08366399999999999
         },
         "50": {
             "ascension": 2,
             "attack": 308.419104,
             "level": 50,
-            "specialized": 0.42897599999999997
+            "specialized": 0.21448799999999998
         },
         "50+": {
             "ascension": 3,
             "attack": 339.619104,
             "level": 50,
-            "specialized": 0.42897599999999997
+            "specialized": 0.21448799999999998
         },
         "51": {
             "ascension": 3,
             "attack": 343.8911892,
             "level": 51,
-            "specialized": 0.42897599999999997
+            "specialized": 0.21448799999999998
         },
         "52": {
             "ascension": 3,
             "attack": 348.1632744,
             "level": 52,
-            "specialized": 0.42897599999999997
+            "specialized": 0.21448799999999998
         },
         "53": {
             "ascension": 3,
             "attack": 352.3894232,
             "level": 53,
-            "specialized": 0.42897599999999997
+            "specialized": 0.21448799999999998
         },
         "54": {
             "ascension": 3,
             "attack": 356.6615084,
             "level": 54,
-            "specialized": 0.42897599999999997
+            "specialized": 0.21448799999999998
         },
         "55": {
             "ascension": 3,
             "attack": 360.97952999999995,
             "level": 55,
-            "specialized": 0.45806399999999997
+            "specialized": 0.22903199999999999
         },
         "56": {
             "ascension": 3,
             "attack": 365.25161520000006,
             "level": 56,
-            "specialized": 0.45806399999999997
+            "specialized": 0.22903199999999999
         },
         "57": {
             "ascension": 3,
             "attack": 369.52370040000005,
             "level": 57,
-            "specialized": 0.45806399999999997
+            "specialized": 0.22903199999999999
         },
         "58": {
             "ascension": 3,
             "attack": 373.841722,
             "level": 58,
-            "specialized": 0.45806399999999997
+            "specialized": 0.22903199999999999
         },
         "59": {
             "ascension": 3,
             "attack": 378.1138072,
             "level": 59,
-            "specialized": 0.45806399999999997
+            "specialized": 0.22903199999999999
         },
         "6": {
             "ascension": 0,
             "attack": 65.6431156,
             "level": 6,
-            "specialized": 0.16732799999999998
+            "specialized": 0.08366399999999999
         },
         "60": {
             "ascension": 3,
             "attack": 382.43182879999995,
             "level": 60,
-            "specialized": 0.487152
+            "specialized": 0.243576
         },
         "60+": {
             "ascension": 4,
             "attack": 413.53182879999997,
             "level": 60,
-            "specialized": 0.487152
+            "specialized": 0.243576
         },
         "61": {
             "ascension": 4,
             "attack": 417.8498504,
             "level": 61,
-            "specialized": 0.487152
+            "specialized": 0.243576
         },
         "62": {
             "ascension": 4,
             "attack": 422.167872,
             "level": 62,
-            "specialized": 0.487152
+            "specialized": 0.243576
         },
         "63": {
             "ascension": 4,
             "attack": 426.53183,
             "level": 63,
-            "specialized": 0.487152
+            "specialized": 0.243576
         },
         "64": {
             "ascension": 4,
             "attack": 430.84985159999997,
             "level": 64,
-            "specialized": 0.487152
+            "specialized": 0.243576
         },
         "65": {
             "ascension": 4,
             "attack": 435.1678732,
             "level": 65,
-            "specialized": 0.5162399999999999
+            "specialized": 0.25811999999999996
         },
         "66": {
             "ascension": 4,
             "attack": 439.5318312,
             "level": 66,
-            "specialized": 0.5162399999999999
+            "specialized": 0.25811999999999996
         },
         "67": {
             "ascension": 4,
             "attack": 443.8957892,
             "level": 67,
-            "specialized": 0.5162399999999999
+            "specialized": 0.25811999999999996
         },
         "68": {
             "ascension": 4,
             "attack": 448.2597472,
             "level": 68,
-            "specialized": 0.5162399999999999
+            "specialized": 0.25811999999999996
         },
         "69": {
             "ascension": 4,
             "attack": 452.62370519999996,
             "level": 69,
-            "specialized": 0.5162399999999999
+            "specialized": 0.25811999999999996
         },
         "7": {
             "ascension": 0,
             "attack": 69.6395824,
             "level": 7,
-            "specialized": 0.16732799999999998
+            "specialized": 0.08366399999999999
         },
         "70": {
             "ascension": 4,
             "attack": 456.9876632,
             "level": 70,
-            "specialized": 0.545184
+            "specialized": 0.272592
         },
         "70+": {
             "ascension": 5,
             "attack": 488.08766319999995,
             "level": 70,
-            "specialized": 0.545184
+            "specialized": 0.272592
         },
         "71": {
             "ascension": 5,
             "attack": 492.49755759999994,
             "level": 71,
-            "specialized": 0.545184
+            "specialized": 0.272592
         },
         "72": {
             "ascension": 5,
             "attack": 496.86151559999996,
             "level": 72,
-            "specialized": 0.545184
+            "specialized": 0.272592
         },
         "73": {
             "ascension": 5,
             "attack": 501.27141000000006,
             "level": 73,
-            "specialized": 0.545184
+            "specialized": 0.272592
         },
         "74": {
             "ascension": 5,
             "attack": 505.68130440000004,
             "level": 74,
-            "specialized": 0.545184
+            "specialized": 0.272592
         },
         "75": {
             "ascension": 5,
             "attack": 510.0911987999999,
             "level": 75,
-            "specialized": 0.574272
+            "specialized": 0.287136
         },
         "76": {
             "ascension": 5,
             "attack": 514.5010932,
             "level": 76,
-            "specialized": 0.574272
+            "specialized": 0.287136
         },
         "77": {
             "ascension": 5,
             "attack": 518.9109876,
             "level": 77,
-            "specialized": 0.574272
+            "specialized": 0.287136
         },
         "78": {
             "ascension": 5,
             "attack": 523.320882,
             "level": 78,
-            "specialized": 0.574272
+            "specialized": 0.287136
         },
         "79": {
             "ascension": 5,
             "attack": 527.7767128,
             "level": 79,
-            "specialized": 0.574272
+            "specialized": 0.287136
         },
         "8": {
             "ascension": 0,
             "attack": 73.5901128,
             "level": 8,
-            "specialized": 0.16732799999999998
+            "specialized": 0.08366399999999999
         },
         "80": {
             "ascension": 5,
             "attack": 532.2325436,
             "level": 80,
-            "specialized": 0.60336
+            "specialized": 0.30168
         },
         "80+": {
             "ascension": 6,
             "attack": 563.3325436,
             "level": 80,
-            "specialized": 0.60336
+            "specialized": 0.30168
         },
         "81": {
             "ascension": 6,
             "attack": 567.742438,
             "level": 81,
-            "specialized": 0.60336
+            "specialized": 0.30168
         },
         "82": {
             "ascension": 6,
             "attack": 572.1982687999999,
             "level": 82,
-            "specialized": 0.60336
+            "specialized": 0.30168
         },
         "83": {
             "ascension": 6,
             "attack": 576.6540996,
             "level": 83,
-            "specialized": 0.60336
+            "specialized": 0.30168
         },
         "84": {
             "ascension": 6,
             "attack": 581.1558668,
             "level": 84,
-            "specialized": 0.60336
+            "specialized": 0.30168
         },
         "85": {
             "ascension": 6,
             "attack": 585.6116976,
             "level": 85,
-            "specialized": 0.632448
+            "specialized": 0.316224
         },
         "86": {
             "ascension": 6,
             "attack": 590.1134648,
             "level": 86,
-            "specialized": 0.632448
+            "specialized": 0.316224
         },
         "87": {
             "ascension": 6,
             "attack": 594.5692956,
             "level": 87,
-            "specialized": 0.632448
+            "specialized": 0.316224
         },
         "88": {
             "ascension": 6,
             "attack": 599.0710627999999,
             "level": 88,
-            "specialized": 0.632448
+            "specialized": 0.316224
         },
         "89": {
             "ascension": 6,
             "attack": 603.57283,
             "level": 89,
-            "specialized": 0.632448
+            "specialized": 0.316224
         },
         "9": {
             "ascension": 0,
             "attack": 77.58657960000001,
             "level": 9,
-            "specialized": 0.16732799999999998
+            "specialized": 0.08366399999999999
         },
         "90": {
             "ascension": 6,
             "attack": 608.0745972,
             "level": 90,
-            "specialized": 0.661536
+            "specialized": 0.330768
         }
     },
-    "story": "That was in the distant past, in a time now known as legend, when the transgressor who dared name himself \"Sacred Lord\" turned his back on the alliance for the only god he loved.\nThen, the oaths between humans and Saurians had faded like dying bonfires, and the lone shadow of Cinder City had buried the deep Night under naught but fearful whispers,\nHarmony waned and the warm sunlight grew distant, for only a chilling night wind remained of the Python King's great, crazed dreams.\n\nIn those days, on the high cliffs that had descended into turmoil due to the loss of their master, the Flower-Feather Clan elder, who only ostensibly obeyed the King, banished a young man from the tribe,\nThat he, who desired to protect the Saurians, might escape the usurper's capture. Thus did this hero, valiant as a bird of prey, embark on a pilgrimage from that night on,\nHis red eyes burning like a sun in the gloom as they reflected only the cold, aqua-colored moon ring that hung high up in the sky above.\n\nPoets in later days would strum the eight-stringed nyatiti, extolling the legend of the red-eyed liberator with countless lovely songs,\nSuch poems born of fantasy are numerous as the bright stars, tales of adventure woven together over the ages on which all have a differing opinion—\n\n\"Come and hear my words, hark as I sing of the hero, our red-eyed savior, and of the old friend who went with him\"\n\"For the one who guided him on his journey was a noble scion who had once served the dragonlord, a red vulture whose eyes reflected the deep skies and the many stars\"\n\"I shall tell of how that holy bird was moved by his noble ideals, and gave of its flesh and blood to make this keenest of bows\"\n\"I shall sing of how it used its feathers to direct the blessed hero, leading him to meet our noble ancestor, Sakkuk.\"\nThus did the poets who did not believe that the young man's pilgrimage had been undertaken alone conceive of a guide who had never existed.\n\n\"The legend of which I shall sing differs from that of the Children of Echoes, for why would the crimson-eyed hero follow birdsong aimlessly through the forest?\"\n\"Surely he was never a mere mortal, but rather a thread of thought that came from the One Entombed With the Primal Fire, returning from the Night Realm to save the oppressed\"\n\"This longbow is proof that he came back from that taboo land which none can reach, for how could a mere mortal raze the accursed Cinder City?\"\n\"When Natlan faces crisis once more, he shall emerge from the Flame, to right this world's wrongs and guide us onward.\"\nThus did the lyricists who believed not that the young man was of mortal flesh opine, tying him back to that first human god.\n\nAnd it is because there are so many versions of the legend that there is no one song that all acknowledge as that hero's definitive tale.\nCountless years have passed like flowing moonlight, and yet the only consensus is that the red-eyed young man did once ascend to divinity.\nTo this day, the idea that \"humans can become gods\" has become accepted across the blazing plains, inscribed upon every Natlanese heart that aspires to heroism—\n\"There is no need to place your faith in so-called noble names, no need to offer futile prayers unto any but yourself\"\n\"Please erase my name, Sakkuk, such that all may know that every human can become the god that guides us\"\n\n\"You won't take me with you into the Flame... You won't even let my name accompany yours into history...\"\n\"...Everyone here sure likes making selfish decisions, huh? You and that fellow both.\"\n\"Hmph... In that case, let me do something out of my own insatiable greed, ■■■■■\"\n\"This feather you gave me — I shall cause it to be passed down in that homeland you could never return to, and so shall it be for a thousand years.\"",
-    "weaponType": "WEAPON_BOW"
+    "story": "\nTravels are full of meetings and partings.\nPerhaps the only trusty and inseparable companions of a Traveler,\nAre the sword in their hand and the dream in their heart.\n\nLight, even if it should last but an instant,\nCan shatter the eternal night.\nAnd thus, light descended.",
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
 }

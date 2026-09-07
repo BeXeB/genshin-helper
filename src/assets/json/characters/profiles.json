@@ -552,6 +552,29 @@
         "weaponType": "WEAPON_CATALYST"
     },
     {
+        "affiliation": "Korolevskiy Troupe",
+        "birthdaymmdd": "2/20",
+        "constellation": "Cygnus Olor",
+        "description": "A famed Snezhnayan ballerina who blossoms against the frozen landscape with a beauty as sharp as frost.",
+        "elementType": "ELEMENT_CRYO",
+        "id": 10000150,
+        "images": {
+            "filename_gachaSlice": "UI_Gacha_AvatarIcon_Odette",
+            "filename_gachaSplash": "UI_Gacha_AvatarImg_Odette",
+            "filename_icon": "UI_AvatarIcon_Odette",
+            "filename_iconCard": "UI_AvatarIcon_Odette_Card",
+            "filename_sideIcon": "UI_AvatarIcon_Side_Odette"
+        },
+        "name": "Odette",
+        "normalizedName": "odette",
+        "qualityType": "QUALITY_ORANGE",
+        "rarity": 5,
+        "sortId": 120,
+        "substatType": "FIGHT_PROP_CRITICAL_HURT",
+        "title": "Swirling Snow",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    {
         "affiliation": "Knights of Favonius",
         "birthdaymmdd": "7/27",
         "constellation": "Trifolium",
@@ -2712,5 +2735,28 @@
         "substatType": "FIGHT_PROP_CRITICAL",
         "title": "Mirrored Analysis",
         "weaponType": "WEAPON_CLAYMORE"
+    },
+    {
+        "affiliation": "Snezhnaya",
+        "birthdaymmdd": "2/9",
+        "constellation": "Canis Borzoides",
+        "description": "A \"professional hunter\" and master of the Snezhnayan snowfields. A fierce, distinct \"idealism\" burns beneath his calm demeanor.",
+        "elementType": "ELEMENT_ELECTRO",
+        "id": 10000148,
+        "images": {
+            "filename_gachaSlice": "UI_Gacha_AvatarIcon_Alyosha",
+            "filename_gachaSplash": "UI_Gacha_AvatarImg_Alyosha",
+            "filename_icon": "UI_AvatarIcon_Alyosha",
+            "filename_iconCard": "UI_AvatarIcon_Alyosha_Card",
+            "filename_sideIcon": "UI_AvatarIcon_Side_Alyosha"
+        },
+        "name": "Alyosha",
+        "normalizedName": "alyosha",
+        "qualityType": "QUALITY_PURPLE",
+        "rarity": 4,
+        "sortId": 119,
+        "substatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+        "title": "Swift-Striding Hound",
+        "weaponType": "WEAPON_POLE"
     }
 ]

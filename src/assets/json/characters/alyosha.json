@@ -1,0 +1,1633 @@
+{
+    "constellation": {
+        "c1": {
+            "descriptionRaw": "Alyosha regenerates 15 Elemental Energy when nearby party members trigger an <color=#FFACFFFF>Electro-related reaction</color> on an opponent. This effect can trigger once every 18s.",
+            "id": 1481,
+            "name": "Frostvale Thunderclap"
+        },
+        "c2": {
+            "descriptionRaw": "The duration of the Elemental Burst <color=#FFD780FF>Hunter's Advance</color> is extended by 6s.\nAdditionally, each time {LINK#N11480002}<color=#FFD780FF>Tugarin</color>{/LINK} attacks the opponent, he will also apply the {LINK#N11480001}<color=#FFD780FF>Hunter's Mark</color>{/LINK} to a target. This effect does not activate existing <color=#FFD780FF>Hunter's Marks</color>.",
+            "id": 1482,
+            "name": "Howl From Afar"
+        },
+        "c3": {
+            "descriptionRaw": "Increases the Level of the Elemental Skill <color=#FFD780FF>Thunderbolt Strike</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1483,
+            "name": "Friendly Call"
+        },
+        "c4": {
+            "descriptionRaw": "When {LINK#N11480002}<color=#FFD780FF>Tugarin</color>{/LINK} attacks, he will also restore 60% of Alyosha's ATK as HP to the nearby party member with the lowest HP by percentage.",
+            "id": 1484,
+            "name": "Harvest the Spoils"
+        },
+        "c5": {
+            "descriptionRaw": "Increases the Level of the Elemental Burst <color=#FFD780FF>Hunter's Advance</color> by 3.\nMaximum upgrade level is 15.",
+            "id": 1485,
+            "name": "When the Nightbird Falls Silent"
+        },
+        "c6": {
+            "descriptionRaw": "The <color=#FFD780FF>Hunter's Precision</color> effect obtained from activating a {LINK#N11480001}<color=#FFD780FF>Hunter's Mark</color>{/LINK} can now stack, max 2 stacks. When the stack count reaches 2, characters affected by <color=#FFD780FF>Hunter's Precision</color> will also have their Elemental Mastery increased by 100 if they are on the field.",
+            "id": 1486,
+            "name": "Standard Reclaimed"
+        },
+        "images": {
+            "filename_c1": "UI_Talent_S_Alyosha_01",
+            "filename_c2": "UI_Talent_S_Alyosha_02",
+            "filename_c3": "UI_Talent_U_Alyosha_01",
+            "filename_c4": "UI_Talent_S_Alyosha_03",
+            "filename_c5": "UI_Talent_U_Alyosha_02",
+            "filename_c6": "UI_Talent_S_Alyosha_04"
+        }
+    },
+    "profile": {
+        "affiliation": "Snezhnaya",
+        "birthdaymmdd": "2/9",
+        "constellation": "Canis Borzoides",
+        "costs": {
+            "ascend1": [
+                {
+                    "count": 20000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 1,
+                    "id": 104141,
+                    "name": "Vajrada Amethyst Sliver"
+                },
+                {
+                    "count": 3,
+                    "id": 101276,
+                    "name": "Flockingweed"
+                },
+                {
+                    "count": 3,
+                    "id": 112149,
+                    "name": "Chimeric Core"
+                }
+            ],
+            "ascend2": [
+                {
+                    "count": 40000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 3,
+                    "id": 104142,
+                    "name": "Vajrada Amethyst Fragment"
+                },
+                {
+                    "count": 2,
+                    "id": 113091,
+                    "name": "Severed Tail of the Sky-Roamer"
+                },
+                {
+                    "count": 10,
+                    "id": 101276,
+                    "name": "Flockingweed"
+                },
+                {
+                    "count": 15,
+                    "id": 112149,
+                    "name": "Chimeric Core"
+                }
+            ],
+            "ascend3": [
+                {
+                    "count": 60000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104142,
+                    "name": "Vajrada Amethyst Fragment"
+                },
+                {
+                    "count": 4,
+                    "id": 113091,
+                    "name": "Severed Tail of the Sky-Roamer"
+                },
+                {
+                    "count": 20,
+                    "id": 101276,
+                    "name": "Flockingweed"
+                },
+                {
+                    "count": 12,
+                    "id": 112150,
+                    "name": "Symbiotic Chimeric Nucleus"
+                }
+            ],
+            "ascend4": [
+                {
+                    "count": 80000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 3,
+                    "id": 104143,
+                    "name": "Vajrada Amethyst Chunk"
+                },
+                {
+                    "count": 8,
+                    "id": 113091,
+                    "name": "Severed Tail of the Sky-Roamer"
+                },
+                {
+                    "count": 30,
+                    "id": 101276,
+                    "name": "Flockingweed"
+                },
+                {
+                    "count": 18,
+                    "id": 112150,
+                    "name": "Symbiotic Chimeric Nucleus"
+                }
+            ],
+            "ascend5": [
+                {
+                    "count": 100000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104143,
+                    "name": "Vajrada Amethyst Chunk"
+                },
+                {
+                    "count": 12,
+                    "id": 113091,
+                    "name": "Severed Tail of the Sky-Roamer"
+                },
+                {
+                    "count": 45,
+                    "id": 101276,
+                    "name": "Flockingweed"
+                },
+                {
+                    "count": 12,
+                    "id": 112151,
+                    "name": "Prime Chimeric Nexus"
+                }
+            ],
+            "ascend6": [
+                {
+                    "count": 120000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104144,
+                    "name": "Vajrada Amethyst Gemstone"
+                },
+                {
+                    "count": 20,
+                    "id": 113091,
+                    "name": "Severed Tail of the Sky-Roamer"
+                },
+                {
+                    "count": 60,
+                    "id": 101276,
+                    "name": "Flockingweed"
+                },
+                {
+                    "count": 24,
+                    "id": 112151,
+                    "name": "Prime Chimeric Nexus"
+                }
+            ]
+        },
+        "description": "A \"professional hunter\" and master of the Snezhnayan snowfields. A fierce, distinct \"idealism\" burns beneath his calm demeanor.",
+        "elementType": "ELEMENT_ELECTRO",
+        "id": 10000148,
+        "images": {
+            "filename_gachaSlice": "UI_Gacha_AvatarIcon_Alyosha",
+            "filename_gachaSplash": "UI_Gacha_AvatarImg_Alyosha",
+            "filename_icon": "UI_AvatarIcon_Alyosha",
+            "filename_iconCard": "UI_AvatarIcon_Alyosha_Card",
+            "filename_sideIcon": "UI_AvatarIcon_Side_Alyosha"
+        },
+        "name": "Alyosha",
+        "normalizedName": "alyosha",
+        "qualityType": "QUALITY_PURPLE",
+        "rarity": 4,
+        "sortId": 119,
+        "substatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+        "title": "Swift-Striding Hound",
+        "weaponType": "WEAPON_POLE"
+    },
+    "skills": {
+        "combat1": {
+            "attributes": {
+                "labels": [
+                    "1-Hit DMG|{param1:F1P}",
+                    "2-Hit DMG|{param2:F1P}",
+                    "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+                    "4-Hit DMG|{param5:F1P}",
+                    "Charged Attack DMG|{param6:F1P}",
+                    "Charged Attack Stamina Cost|{param7:F1}",
+                    "Plunge DMG|{param8:F1P}",
+                    "Low/High Plunge DMG|{param9:F1P}/{param10:F1P}"
+                ],
+                "parameters": {
+                    "param1": [
+                        0.47816,
+                        0.51708,
+                        0.556,
+                        0.6116,
+                        0.65052,
+                        0.695,
+                        0.75616,
+                        0.81732,
+                        0.87848,
+                        0.9452,
+                        1.01192,
+                        1.07864,
+                        1.14536,
+                        1.21208,
+                        1.2788
+                    ],
+                    "param10": [
+                        1.596762,
+                        1.726731,
+                        1.8567,
+                        2.04237,
+                        2.172339,
+                        2.320875,
+                        2.525112,
+                        2.729349,
+                        2.933586,
+                        3.15639,
+                        3.379194,
+                        3.601998,
+                        3.824802,
+                        4.047606,
+                        4.27041
+                    ],
+                    "param2": [
+                        0.4816,
+                        0.5208,
+                        0.56,
+                        0.616,
+                        0.6552,
+                        0.7,
+                        0.7616,
+                        0.8232,
+                        0.8848,
+                        0.952,
+                        1.0192,
+                        1.0864,
+                        1.1536,
+                        1.2208,
+                        1.288
+                    ],
+                    "param3": [
+                        0.34228,
+                        0.37014,
+                        0.398,
+                        0.4378,
+                        0.46566,
+                        0.4975,
+                        0.54128,
+                        0.58506,
+                        0.62884,
+                        0.6766,
+                        0.72436,
+                        0.77212,
+                        0.81988,
+                        0.86764,
+                        0.9154
+                    ],
+                    "param4": [
+                        0.3182,
+                        0.3441,
+                        0.37,
+                        0.407,
+                        0.4329,
+                        0.4625,
+                        0.5032,
+                        0.5439,
+                        0.5846,
+                        0.629,
+                        0.6734,
+                        0.7178,
+                        0.7622,
+                        0.8066,
+                        0.851
+                    ],
+                    "param5": [
+                        0.75852,
+                        0.82026,
+                        0.882,
+                        0.9702,
+                        1.03194,
+                        1.1025,
+                        1.19952,
+                        1.29654,
+                        1.39356,
+                        1.4994,
+                        1.60524,
+                        1.71108,
+                        1.81692,
+                        1.92276,
+                        2.0286
+                    ],
+                    "param6": [
+                        1.11026,
+                        1.20063,
+                        1.291,
+                        1.4201,
+                        1.51047,
+                        1.61375,
+                        1.75576,
+                        1.89777,
+                        2.03978,
+                        2.1947,
+                        2.34962,
+                        2.50454,
+                        2.65946,
+                        2.81438,
+                        2.9693
+                    ],
+                    "param7": [
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0,
+                        25.0
+                    ],
+                    "param8": [
+                        0.639324,
+                        0.691362,
+                        0.7434,
+                        0.81774,
+                        0.869778,
+                        0.92925,
+                        1.011024,
+                        1.092798,
+                        1.174572,
+                        1.26378,
+                        1.352988,
+                        1.442196,
+                        1.531404,
+                        1.620612,
+                        1.70982
+                    ],
+                    "param9": [
+                        1.278377,
+                        1.382431,
+                        1.486485,
+                        1.635134,
+                        1.739187,
+                        1.858106,
+                        2.02162,
+                        2.185133,
+                        2.348646,
+                        2.527025,
+                        2.705403,
+                        2.883781,
+                        3.062159,
+                        3.240537,
+                        3.418915
+                    ]
+                }
+            },
+            "descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes and applies the {LINK#N11480001}<color=#FFD780FF>Hunter's Mark</color>{/LINK} to the opponent hit by the final strike.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents in his path.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "id": 11481,
+            "name": "Skirmishing Spear",
+            "proudSkillGroupId": 14831
+        },
+        "combat2": {
+            "attributes": {
+                "labels": [
+                    "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param1:F1P}",
+                    "Hold DMG|{param2:F1P}",
+                    "CD|{param3:F1}s",
+                    "Hunter's Mark Duration|{param4:F1}s",
+                    "Hunter's Precision ATK Bonus|{param5:F1P}",
+                    "Hunter's Precision Duration|{param6:F1}s"
+                ],
+                "parameters": {
+                    "param1": [
+                        2.8672,
+                        3.08224,
+                        3.29728,
+                        3.584,
+                        3.79904,
+                        4.01408,
+                        4.3008,
+                        4.58752,
+                        4.87424,
+                        5.16096,
+                        5.44768,
+                        5.7344,
+                        6.0928,
+                        6.4512,
+                        6.8096
+                    ],
+                    "param2": [
+                        3.584,
+                        3.8528,
+                        4.1216,
+                        4.48,
+                        4.7488,
+                        5.0176,
+                        5.376,
+                        5.7344,
+                        6.0928,
+                        6.4512,
+                        6.8096,
+                        7.168,
+                        7.616,
+                        8.064,
+                        8.512
+                    ],
+                    "param3": [
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0
+                    ],
+                    "param4": [
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0
+                    ],
+                    "param5": [
+                        0.1166,
+                        0.1272,
+                        0.1378,
+                        0.1484,
+                        0.159,
+                        0.1696,
+                        0.1802,
+                        0.1908,
+                        0.2014,
+                        0.212,
+                        0.22472,
+                        0.23744,
+                        0.25016,
+                        0.26288,
+                        0.2756
+                    ],
+                    "param6": [
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0,
+                        15.0
+                    ]
+                }
+            },
+            "descriptionRaw": "Follows his hunter's instincts. Tap or hold to produce different effects as well as apply the {LINK#N11480001}<color=#FFD780FF>Hunter's Mark</color>{/LINK} effect to the hit opponents.\n\n<color=#FFD780FF>Tapping</color>\nFires at opponents in front of him, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<color=#FFD780FF>Holding</color>\nEnters aiming mode, then targets opponents within a certain area in front of him. Alyosha's Interruption RES is enhanced when in this mode.\nAt the end of the button hold, he deals <color=#FFACFFFF>Electro DMG</color> to the targeted opponents.\n\n<i>The reckless hunter once reached for the spear's edge, and it was only after they survived a lesson paid in blood that they came to understand the harsh truths of survival on the frozen plains.</i>",
+            "id": 11482,
+            "name": "Thunderbolt Strike",
+            "proudSkillGroupId": 14832
+        },
+        "combat3": {
+            "attributes": {
+                "labels": [
+                    "Fulgurite Hunting Field DMG|{param1:F1P}",
+                    "Tugarin DMG|{param2:F1P}",
+                    "Duration|{param3:F1}s",
+                    "CD|{param4:F1}s",
+                    "Energy Cost|{param5:I}"
+                ],
+                "parameters": {
+                    "param1": [
+                        0.7496,
+                        0.80582,
+                        0.86204,
+                        0.937,
+                        0.99322,
+                        1.04944,
+                        1.1244,
+                        1.19936,
+                        1.27432,
+                        1.34928,
+                        1.42424,
+                        1.4992,
+                        1.5929,
+                        1.6866,
+                        1.7803
+                    ],
+                    "param2": [
+                        0.502232,
+                        0.539899,
+                        0.577567,
+                        0.62779,
+                        0.665457,
+                        0.703125,
+                        0.753348,
+                        0.803571,
+                        0.853794,
+                        0.904018,
+                        0.954241,
+                        1.004464,
+                        1.067243,
+                        1.130022,
+                        1.192801
+                    ],
+                    "param3": [
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0,
+                        14.0
+                    ],
+                    "param4": [
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0,
+                        18.0
+                    ],
+                    "param5": [
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0,
+                        70.0
+                    ]
+                }
+            },
+            "descriptionRaw": "Summons his trusted companion <color=#FFD780FF>Tugarin</color> to fight alongside him on the field. This also turns an area in front of him into a <color=#FFD780FF>Fulgurite Hunting Field</color> for a short time.\n\n<color=#FFD780FF>Fulgurite Hunting Field</color>\n· Continuously taunts nearby opponents to incite them to attack.\n· Every 2s, deals an instance of <color=#FFACFFFF>AoE Electro DMG</color> to any opponent that enters the field.\n\n<color=#FFD780FF>Tugarin</color>\n· If there are any opponents nearby, Tugarin will quickly move close to an opponent and maul them every 2s, dealing <color=#FFACFFFF>Electro DMG</color>.\n· If an opponent affected by the <color=#FFD780FF>Hunter's Mark</color> effect is hit, the <color=#FFD780FF>Hunter's Mark</color> will also be activated.\n· Where there are multiple opponents, Tugarin will attack those affected by the <color=#FFD780FF>Hunter's Mark</color> effect first.\n\n<i>Wait. Keep waiting until the impatience fades. That's when the red-bellied plover shall sweep across the birch grove and present itself before one's arrow.</i>",
+            "id": 11485,
+            "name": "Hunter's Advance",
+            "proudSkillGroupId": 14839
+        },
+        "costs": {
+            "lvl10": [
+                {
+                    "count": 700000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 16,
+                    "id": 104370,
+                    "name": "Philosophies of Fortitude"
+                },
+                {
+                    "count": 12,
+                    "id": 112151,
+                    "name": "Prime Chimeric Nexus"
+                },
+                {
+                    "count": 2,
+                    "id": 113083,
+                    "name": "Elixir of the Heretic"
+                },
+                {
+                    "count": 1,
+                    "id": 104319,
+                    "name": "Crown of Insight"
+                }
+            ],
+            "lvl2": [
+                {
+                    "count": 12500,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 3,
+                    "id": 104368,
+                    "name": "Teachings of Fortitude"
+                },
+                {
+                    "count": 6,
+                    "id": 112149,
+                    "name": "Chimeric Core"
+                }
+            ],
+            "lvl3": [
+                {
+                    "count": 17500,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 2,
+                    "id": 104369,
+                    "name": "Guide to Fortitude"
+                },
+                {
+                    "count": 3,
+                    "id": 112150,
+                    "name": "Symbiotic Chimeric Nucleus"
+                }
+            ],
+            "lvl4": [
+                {
+                    "count": 25000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 4,
+                    "id": 104369,
+                    "name": "Guide to Fortitude"
+                },
+                {
+                    "count": 4,
+                    "id": 112150,
+                    "name": "Symbiotic Chimeric Nucleus"
+                }
+            ],
+            "lvl5": [
+                {
+                    "count": 30000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104369,
+                    "name": "Guide to Fortitude"
+                },
+                {
+                    "count": 6,
+                    "id": 112150,
+                    "name": "Symbiotic Chimeric Nucleus"
+                }
+            ],
+            "lvl6": [
+                {
+                    "count": 37500,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 9,
+                    "id": 104369,
+                    "name": "Guide to Fortitude"
+                },
+                {
+                    "count": 9,
+                    "id": 112150,
+                    "name": "Symbiotic Chimeric Nucleus"
+                }
+            ],
+            "lvl7": [
+                {
+                    "count": 120000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 4,
+                    "id": 104370,
+                    "name": "Philosophies of Fortitude"
+                },
+                {
+                    "count": 4,
+                    "id": 112151,
+                    "name": "Prime Chimeric Nexus"
+                },
+                {
+                    "count": 1,
+                    "id": 113083,
+                    "name": "Elixir of the Heretic"
+                }
+            ],
+            "lvl8": [
+                {
+                    "count": 260000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 6,
+                    "id": 104370,
+                    "name": "Philosophies of Fortitude"
+                },
+                {
+                    "count": 6,
+                    "id": 112151,
+                    "name": "Prime Chimeric Nexus"
+                },
+                {
+                    "count": 1,
+                    "id": 113083,
+                    "name": "Elixir of the Heretic"
+                }
+            ],
+            "lvl9": [
+                {
+                    "count": 450000,
+                    "id": 202,
+                    "name": "Mora"
+                },
+                {
+                    "count": 12,
+                    "id": 104370,
+                    "name": "Philosophies of Fortitude"
+                },
+                {
+                    "count": 9,
+                    "id": 112151,
+                    "name": "Prime Chimeric Nexus"
+                },
+                {
+                    "count": 2,
+                    "id": 113083,
+                    "name": "Elixir of the Heretic"
+                }
+            ]
+        },
+        "images": {
+            "filename_combat1": "Skill_A_03",
+            "filename_combat2": "Skill_S_Alyosha_01",
+            "filename_combat3": "Skill_E_Alyosha_01",
+            "filename_passive1": "UI_Talent_S_Alyosha_05",
+            "filename_passive2": "UI_Talent_S_Alyosha_06",
+            "filename_passive3": "UI_Talent_S_Alyosha_07",
+            "filename_passive4": "UI_Talent_S_Alyosha_08"
+        },
+        "passive1": {
+            "descriptionRaw": "When {LINK#N11480002}<color=#FFD780FF>Tugarin</color>{/LINK} attacks, it will also restore HP to nearby active characters at 120% of Alyosha's ATK.",
+            "id": 1482101,
+            "name": "Awakened by the Baying Hounds"
+        },
+        "passive2": {
+            "descriptionRaw": "Increases the DMG Alyosha deals with his Elemental Skill and Elemental Burst by 0.35% for every 1% of his Energy Recharge. Up to a 70% increase can be obtained in this way.",
+            "id": 1482201,
+            "name": "Suffer the Winter Wheat Will"
+        },
+        "passive3": {
+            "descriptionRaw": "Alyosha will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state when inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The <color=#FFD780FF>Hunter's Precision</color> effect obtained when the {LINK#N11480001}<color=#FFD780FF>Hunter's Mark</color>{/LINK} is activated will also increase Stellar-Conduct reaction DMG dealt by the character when on the field by 20%.",
+            "id": 1482301,
+            "name": "Into the Fray"
+        },
+        "passive4": {
+            "descriptionRaw": "Displays the location of nearby <color=#FFD780FF>resources unique to Snezhnaya</color> on the mini-map.",
+            "id": 1482501,
+            "name": "Treetop Watch"
+        }
+    },
+    "stats": {
+        "1": {
+            "ascension": 0,
+            "attack": 22.26,
+            "defense": 58.94175,
+            "hp": 1002.9701,
+            "level": 1,
+            "specialized": 0.0
+        },
+        "10": {
+            "ascension": 0,
+            "attack": 38.79918000000001,
+            "defense": 102.73547025,
+            "hp": 1748.1768843000002,
+            "level": 10,
+            "specialized": 0.0
+        },
+        "100": {
+            "ascension": 6,
+            "attack": 333.23367,
+            "defense": 751.6241145,
+            "hp": 12789.8567974,
+            "level": 100,
+            "specialized": 0.2667
+        },
+        "11": {
+            "ascension": 0,
+            "attack": 40.64676000000001,
+            "defense": 107.6276355,
+            "hp": 1831.4234026000001,
+            "level": 11,
+            "specialized": 0.0
+        },
+        "12": {
+            "ascension": 0,
+            "attack": 42.47208,
+            "defense": 112.460859,
+            "hp": 1913.6669508,
+            "level": 12,
+            "specialized": 0.0
+        },
+        "13": {
+            "ascension": 0,
+            "attack": 44.319660000000006,
+            "defense": 117.35302425,
+            "hp": 1996.9134691000002,
+            "level": 13,
+            "specialized": 0.0
+        },
+        "14": {
+            "ascension": 0,
+            "attack": 46.144980000000004,
+            "defense": 122.18624774999999,
+            "hp": 2079.1570173,
+            "level": 14,
+            "specialized": 0.0
+        },
+        "15": {
+            "ascension": 0,
+            "attack": 47.992560000000005,
+            "defense": 127.07841300000001,
+            "hp": 2162.4035356,
+            "level": 15,
+            "specialized": 0.0
+        },
+        "16": {
+            "ascension": 0,
+            "attack": 49.84014,
+            "defense": 131.97057825,
+            "hp": 2245.6500539,
+            "level": 16,
+            "specialized": 0.0
+        },
+        "17": {
+            "ascension": 0,
+            "attack": 51.66546000000001,
+            "defense": 136.80380175000002,
+            "hp": 2327.8936021,
+            "level": 17,
+            "specialized": 0.0
+        },
+        "18": {
+            "ascension": 0,
+            "attack": 53.513040000000004,
+            "defense": 141.695967,
+            "hp": 2411.1401204,
+            "level": 18,
+            "specialized": 0.0
+        },
+        "19": {
+            "ascension": 0,
+            "attack": 55.33836000000001,
+            "defense": 146.5291905,
+            "hp": 2493.3836686000004,
+            "level": 19,
+            "specialized": 0.0
+        },
+        "2": {
+            "ascension": 0,
+            "attack": 24.107580000000002,
+            "defense": 63.83391525,
+            "hp": 1086.2166183,
+            "level": 2,
+            "specialized": 0.0
+        },
+        "20": {
+            "ascension": 0,
+            "attack": 57.18594,
+            "defense": 151.42135575,
+            "hp": 2576.6301869,
+            "level": 20,
+            "specialized": 0.0
+        },
+        "20+": {
+            "ascension": 1,
+            "attack": 73.81569,
+            "defense": 195.45385575,
+            "hp": 3325.9001869,
+            "level": 20,
+            "specialized": 0.0
+        },
+        "21": {
+            "ascension": 1,
+            "attack": 75.64101,
+            "defense": 200.28707924999998,
+            "hp": 3408.1437351,
+            "level": 21,
+            "specialized": 0.0
+        },
+        "22": {
+            "ascension": 1,
+            "attack": 77.48859,
+            "defense": 205.17924449999998,
+            "hp": 3491.3902534,
+            "level": 22,
+            "specialized": 0.0
+        },
+        "23": {
+            "ascension": 1,
+            "attack": 79.33617000000001,
+            "defense": 210.07140975000002,
+            "hp": 3574.6367717000003,
+            "level": 23,
+            "specialized": 0.0
+        },
+        "24": {
+            "ascension": 1,
+            "attack": 81.16149,
+            "defense": 214.90463325,
+            "hp": 3656.8803199,
+            "level": 24,
+            "specialized": 0.0
+        },
+        "25": {
+            "ascension": 1,
+            "attack": 83.00907000000001,
+            "defense": 219.7967985,
+            "hp": 3740.1268382000003,
+            "level": 25,
+            "specialized": 0.0
+        },
+        "26": {
+            "ascension": 1,
+            "attack": 84.83439000000001,
+            "defense": 224.630022,
+            "hp": 3822.3703864,
+            "level": 26,
+            "specialized": 0.0
+        },
+        "27": {
+            "ascension": 1,
+            "attack": 86.68197,
+            "defense": 229.52218724999997,
+            "hp": 3905.6169047,
+            "level": 27,
+            "specialized": 0.0
+        },
+        "28": {
+            "ascension": 1,
+            "attack": 88.50729000000001,
+            "defense": 234.35541075,
+            "hp": 3987.8604529,
+            "level": 28,
+            "specialized": 0.0
+        },
+        "29": {
+            "ascension": 1,
+            "attack": 90.35487,
+            "defense": 239.24757599999998,
+            "hp": 4071.1069712,
+            "level": 29,
+            "specialized": 0.0
+        },
+        "3": {
+            "ascension": 0,
+            "attack": 25.932900000000004,
+            "defense": 68.66713875,
+            "hp": 1168.4601665,
+            "level": 3,
+            "specialized": 0.0
+        },
+        "30": {
+            "ascension": 1,
+            "attack": 92.18019000000001,
+            "defense": 244.0807995,
+            "hp": 4153.3505194,
+            "level": 30,
+            "specialized": 0.0
+        },
+        "31": {
+            "ascension": 1,
+            "attack": 94.02777,
+            "defense": 248.97296475,
+            "hp": 4236.597037699999,
+            "level": 31,
+            "specialized": 0.0
+        },
+        "32": {
+            "ascension": 1,
+            "attack": 95.87535000000001,
+            "defense": 253.86513,
+            "hp": 4319.843556,
+            "level": 32,
+            "specialized": 0.0
+        },
+        "33": {
+            "ascension": 1,
+            "attack": 97.70067,
+            "defense": 258.6983535,
+            "hp": 4402.0871042,
+            "level": 33,
+            "specialized": 0.0
+        },
+        "34": {
+            "ascension": 1,
+            "attack": 99.54825000000001,
+            "defense": 263.59051875,
+            "hp": 4485.3336225,
+            "level": 34,
+            "specialized": 0.0
+        },
+        "35": {
+            "ascension": 1,
+            "attack": 101.37357,
+            "defense": 268.42374225000003,
+            "hp": 4567.5771707,
+            "level": 35,
+            "specialized": 0.0
+        },
+        "36": {
+            "ascension": 1,
+            "attack": 103.22115000000001,
+            "defense": 273.3159075,
+            "hp": 4650.823689000001,
+            "level": 36,
+            "specialized": 0.0
+        },
+        "37": {
+            "ascension": 1,
+            "attack": 105.04647000000001,
+            "defense": 278.149131,
+            "hp": 4733.0672372,
+            "level": 37,
+            "specialized": 0.0
+        },
+        "38": {
+            "ascension": 1,
+            "attack": 106.89405000000001,
+            "defense": 283.04129624999996,
+            "hp": 4816.313755499999,
+            "level": 38,
+            "specialized": 0.0
+        },
+        "39": {
+            "ascension": 1,
+            "attack": 108.74163,
+            "defense": 287.9334615,
+            "hp": 4899.5602738,
+            "level": 39,
+            "specialized": 0.0
+        },
+        "4": {
+            "ascension": 0,
+            "attack": 27.78048,
+            "defense": 73.559304,
+            "hp": 1251.7066848,
+            "level": 4,
+            "specialized": 0.0
+        },
+        "40": {
+            "ascension": 1,
+            "attack": 110.56695,
+            "defense": 292.76668499999994,
+            "hp": 4981.803822,
+            "level": 40,
+            "specialized": 0.0
+        },
+        "40+": {
+            "ascension": 2,
+            "attack": 122.382825,
+            "defense": 324.05293499999993,
+            "hp": 5514.179921999999,
+            "level": 40,
+            "specialized": 0.0667
+        },
+        "41": {
+            "ascension": 2,
+            "attack": 124.23040500000002,
+            "defense": 328.94510025,
+            "hp": 5597.4264403,
+            "level": 41,
+            "specialized": 0.0667
+        },
+        "42": {
+            "ascension": 2,
+            "attack": 126.055725,
+            "defense": 333.77832375,
+            "hp": 5679.6699885,
+            "level": 42,
+            "specialized": 0.0667
+        },
+        "43": {
+            "ascension": 2,
+            "attack": 127.90330500000002,
+            "defense": 338.670489,
+            "hp": 5762.9165068,
+            "level": 43,
+            "specialized": 0.0667
+        },
+        "44": {
+            "ascension": 2,
+            "attack": 129.728625,
+            "defense": 343.5037125,
+            "hp": 5845.160054999999,
+            "level": 44,
+            "specialized": 0.0667
+        },
+        "45": {
+            "ascension": 2,
+            "attack": 131.57620500000002,
+            "defense": 348.39587774999995,
+            "hp": 5928.4065733,
+            "level": 45,
+            "specialized": 0.0667
+        },
+        "46": {
+            "ascension": 2,
+            "attack": 133.423785,
+            "defense": 353.288043,
+            "hp": 6011.6530916,
+            "level": 46,
+            "specialized": 0.0667
+        },
+        "47": {
+            "ascension": 2,
+            "attack": 135.24910500000001,
+            "defense": 358.12126650000005,
+            "hp": 6093.8966398,
+            "level": 47,
+            "specialized": 0.0667
+        },
+        "48": {
+            "ascension": 2,
+            "attack": 137.096685,
+            "defense": 363.01343175,
+            "hp": 6177.143158100001,
+            "level": 48,
+            "specialized": 0.0667
+        },
+        "49": {
+            "ascension": 2,
+            "attack": 138.922005,
+            "defense": 367.84665525,
+            "hp": 6259.3867063,
+            "level": 49,
+            "specialized": 0.0667
+        },
+        "5": {
+            "ascension": 0,
+            "attack": 29.605800000000002,
+            "defense": 78.3925275,
+            "hp": 1333.950233,
+            "level": 5,
+            "specialized": 0.0
+        },
+        "50": {
+            "ascension": 2,
+            "attack": 140.769585,
+            "defense": 372.7388205,
+            "hp": 6342.6332246,
+            "level": 50,
+            "specialized": 0.0667
+        },
+        "50+": {
+            "ascension": 3,
+            "attack": 156.524087,
+            "defense": 414.4538205,
+            "hp": 7052.4679246000005,
+            "level": 50,
+            "specialized": 0.1333
+        },
+        "51": {
+            "ascension": 3,
+            "attack": 158.349407,
+            "defense": 419.287044,
+            "hp": 7134.711472800001,
+            "level": 51,
+            "specialized": 0.1333
+        },
+        "52": {
+            "ascension": 3,
+            "attack": 160.196987,
+            "defense": 424.17920925,
+            "hp": 7217.957991100001,
+            "level": 52,
+            "specialized": 0.1333
+        },
+        "53": {
+            "ascension": 3,
+            "attack": 162.044567,
+            "defense": 429.0713745,
+            "hp": 7301.2045094,
+            "level": 53,
+            "specialized": 0.1333
+        },
+        "54": {
+            "ascension": 3,
+            "attack": 163.869887,
+            "defense": 433.904598,
+            "hp": 7383.4480576000005,
+            "level": 54,
+            "specialized": 0.1333
+        },
+        "55": {
+            "ascension": 3,
+            "attack": 165.717467,
+            "defense": 438.79676324999997,
+            "hp": 7466.6945759,
+            "level": 55,
+            "specialized": 0.1333
+        },
+        "56": {
+            "ascension": 3,
+            "attack": 167.54278700000003,
+            "defense": 443.62998675,
+            "hp": 7548.938124100001,
+            "level": 56,
+            "specialized": 0.1333
+        },
+        "57": {
+            "ascension": 3,
+            "attack": 169.390367,
+            "defense": 448.52215199999995,
+            "hp": 7632.1846424,
+            "level": 57,
+            "specialized": 0.1333
+        },
+        "58": {
+            "ascension": 3,
+            "attack": 171.21568700000003,
+            "defense": 453.35537550000004,
+            "hp": 7714.428190600001,
+            "level": 58,
+            "specialized": 0.1333
+        },
+        "59": {
+            "ascension": 3,
+            "attack": 173.06326700000002,
+            "defense": 458.24754075,
+            "hp": 7797.6747089,
+            "level": 59,
+            "specialized": 0.1333
+        },
+        "6": {
+            "ascension": 0,
+            "attack": 31.453380000000003,
+            "defense": 83.28469275,
+            "hp": 1417.1967513,
+            "level": 6,
+            "specialized": 0.0
+        },
+        "60": {
+            "ascension": 3,
+            "attack": 174.91084700000002,
+            "defense": 463.139706,
+            "hp": 7880.9212272,
+            "level": 60,
+            "specialized": 0.1333
+        },
+        "60+": {
+            "ascension": 4,
+            "attack": 186.72672,
+            "defense": 494.425956,
+            "hp": 8413.2974272,
+            "level": 60,
+            "specialized": 0.1333
+        },
+        "61": {
+            "ascension": 4,
+            "attack": 188.55204,
+            "defense": 499.25917949999996,
+            "hp": 8495.5409754,
+            "level": 61,
+            "specialized": 0.1333
+        },
+        "62": {
+            "ascension": 4,
+            "attack": 190.39962,
+            "defense": 504.15134474999996,
+            "hp": 8578.7874937,
+            "level": 62,
+            "specialized": 0.1333
+        },
+        "63": {
+            "ascension": 4,
+            "attack": 192.22494,
+            "defense": 508.98456825,
+            "hp": 8661.0310419,
+            "level": 63,
+            "specialized": 0.1333
+        },
+        "64": {
+            "ascension": 4,
+            "attack": 194.07252,
+            "defense": 513.8767335,
+            "hp": 8744.2775602,
+            "level": 64,
+            "specialized": 0.1333
+        },
+        "65": {
+            "ascension": 4,
+            "attack": 195.89784,
+            "defense": 518.709957,
+            "hp": 8826.5211084,
+            "level": 65,
+            "specialized": 0.1333
+        },
+        "66": {
+            "ascension": 4,
+            "attack": 197.74542,
+            "defense": 523.60212225,
+            "hp": 8909.767626699999,
+            "level": 66,
+            "specialized": 0.1333
+        },
+        "67": {
+            "ascension": 4,
+            "attack": 199.59300000000002,
+            "defense": 528.4942874999999,
+            "hp": 8993.014145000001,
+            "level": 67,
+            "specialized": 0.1333
+        },
+        "68": {
+            "ascension": 4,
+            "attack": 201.41832,
+            "defense": 533.327511,
+            "hp": 9075.257693200001,
+            "level": 68,
+            "specialized": 0.1333
+        },
+        "69": {
+            "ascension": 4,
+            "attack": 203.26590000000002,
+            "defense": 538.21967625,
+            "hp": 9158.5042115,
+            "level": 69,
+            "specialized": 0.1333
+        },
+        "7": {
+            "ascension": 0,
+            "attack": 33.27870000000001,
+            "defense": 88.11791625000001,
+            "hp": 1499.4402995,
+            "level": 7,
+            "specialized": 0.0
+        },
+        "70": {
+            "ascension": 4,
+            "attack": 205.09122,
+            "defense": 543.05289975,
+            "hp": 9240.7477597,
+            "level": 70,
+            "specialized": 0.1333
+        },
+        "70+": {
+            "ascension": 5,
+            "attack": 216.9071,
+            "defense": 574.3391497499999,
+            "hp": 9773.1237597,
+            "level": 70,
+            "specialized": 0.2
+        },
+        "71": {
+            "ascension": 5,
+            "attack": 218.75468,
+            "defense": 579.231315,
+            "hp": 9856.370278,
+            "level": 71,
+            "specialized": 0.2
+        },
+        "72": {
+            "ascension": 5,
+            "attack": 220.57999999999998,
+            "defense": 584.0645385,
+            "hp": 9938.6138262,
+            "level": 72,
+            "specialized": 0.2
+        },
+        "73": {
+            "ascension": 5,
+            "attack": 222.42758000000003,
+            "defense": 588.95670375,
+            "hp": 10021.8603445,
+            "level": 73,
+            "specialized": 0.2
+        },
+        "74": {
+            "ascension": 5,
+            "attack": 224.27516000000003,
+            "defense": 593.8488689999999,
+            "hp": 10105.1068628,
+            "level": 74,
+            "specialized": 0.2
+        },
+        "75": {
+            "ascension": 5,
+            "attack": 226.10048,
+            "defense": 598.6820925,
+            "hp": 10187.350411,
+            "level": 75,
+            "specialized": 0.2
+        },
+        "76": {
+            "ascension": 5,
+            "attack": 227.94806,
+            "defense": 603.57425775,
+            "hp": 10270.5969293,
+            "level": 76,
+            "specialized": 0.2
+        },
+        "77": {
+            "ascension": 5,
+            "attack": 229.77338000000003,
+            "defense": 608.40748125,
+            "hp": 10352.840477500002,
+            "level": 77,
+            "specialized": 0.2
+        },
+        "78": {
+            "ascension": 5,
+            "attack": 231.62096000000003,
+            "defense": 613.2996464999999,
+            "hp": 10436.0869958,
+            "level": 78,
+            "specialized": 0.2
+        },
+        "79": {
+            "ascension": 5,
+            "attack": 233.44628,
+            "defense": 618.13287,
+            "hp": 10518.330544,
+            "level": 79,
+            "specialized": 0.2
+        },
+        "8": {
+            "ascension": 0,
+            "attack": 35.12628,
+            "defense": 93.0100815,
+            "hp": 1582.6868178,
+            "level": 8,
+            "specialized": 0.0
+        },
+        "80": {
+            "ascension": 5,
+            "attack": 235.29386,
+            "defense": 623.02503525,
+            "hp": 10601.577062299999,
+            "level": 80,
+            "specialized": 0.2
+        },
+        "80+": {
+            "ascension": 6,
+            "attack": 247.10973,
+            "defense": 654.31128525,
+            "hp": 11133.9531623,
+            "level": 80,
+            "specialized": 0.2667
+        },
+        "81": {
+            "ascension": 6,
+            "attack": 248.95731,
+            "defense": 659.2034505,
+            "hp": 11217.1996806,
+            "level": 81,
+            "specialized": 0.2667
+        },
+        "82": {
+            "ascension": 6,
+            "attack": 250.78263,
+            "defense": 664.036674,
+            "hp": 11299.4432288,
+            "level": 82,
+            "specialized": 0.2667
+        },
+        "83": {
+            "ascension": 6,
+            "attack": 252.63021,
+            "defense": 668.92883925,
+            "hp": 11382.6897471,
+            "level": 83,
+            "specialized": 0.2667
+        },
+        "84": {
+            "ascension": 6,
+            "attack": 254.45553,
+            "defense": 673.76206275,
+            "hp": 11464.9332953,
+            "level": 84,
+            "specialized": 0.2667
+        },
+        "85": {
+            "ascension": 6,
+            "attack": 256.30311,
+            "defense": 678.654228,
+            "hp": 11548.1798136,
+            "level": 85,
+            "specialized": 0.2667
+        },
+        "86": {
+            "ascension": 6,
+            "attack": 258.12843000000004,
+            "defense": 683.4874515,
+            "hp": 11630.423361800002,
+            "level": 86,
+            "specialized": 0.2667
+        },
+        "87": {
+            "ascension": 6,
+            "attack": 259.97601000000003,
+            "defense": 688.3796167500001,
+            "hp": 11713.6698801,
+            "level": 87,
+            "specialized": 0.2667
+        },
+        "88": {
+            "ascension": 6,
+            "attack": 261.80133,
+            "defense": 693.21284025,
+            "hp": 11795.9134283,
+            "level": 88,
+            "specialized": 0.2667
+        },
+        "89": {
+            "ascension": 6,
+            "attack": 263.64891,
+            "defense": 698.1050055000001,
+            "hp": 11879.159946599999,
+            "level": 89,
+            "specialized": 0.2667
+        },
+        "9": {
+            "ascension": 0,
+            "attack": 36.97386,
+            "defense": 97.90224675,
+            "hp": 1665.9333361000001,
+            "level": 9,
+            "specialized": 0.0
+        },
+        "90": {
+            "ascension": 6,
+            "attack": 265.49649,
+            "defense": 702.99717075,
+            "hp": 11962.4064649,
+            "level": 90,
+            "specialized": 0.2667
+        },
+        "95": {
+            "ascension": 6,
+            "attack": 299.35395,
+            "defense": 727.28117175,
+            "hp": 12375.630146099998,
+            "level": 95,
+            "specialized": 0.2667
+        }
+    }
+}

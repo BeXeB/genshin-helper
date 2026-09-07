@@ -6,7 +6,7 @@
         "story": "\nA hunter's hat without any blood stains.\nIn folklore, it belonged to the uncrowned queen of hunters — the Viridescent Venerer.\n\n\"Never become the foe of the earth and the forest.\" This was the hunters' rule.\nInstead, a hunter should become a silent part of nature.\nIt is said that a bird once built its nest in this hat.\n\nNone could ever bestow a crown upon the queen of hunters,\nsince the only one superior to her was nature itself.\n\nIn the crisis that soon followed, her hunter's hat became\na frightful sight for monsters to behold.\n"
     },
     "effect2Pc": "Anemo DMG Bonus +15%",
-    "effect4Pc": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
+    "effect4Pc": "Increases Swirl reaction DMG dealt by 60%, and Stellar Swirl reaction DMG dealt by 20%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s. Upon triggering a Stellar Swirl in the opponent, will also decrease their Cryo RES by 40%. RES debuffs of the same elemental type do not stack.",
     "flower": {
         "description": "",
         "name": "In Remembrance of Viridescent Fields",
