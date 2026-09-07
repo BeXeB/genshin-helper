@@ -1,0 +1,40 @@
+@if (cost) {
+  <div class="material-cost-container">
+    <!-- Mora Cost -->
+    @if (cost.totalMora > 0) {
+      <div class="mora-card card card-no-hover">
+        <img
+          src="assets/images/materials/xp-and-mora/mora.webp"
+          alt="Mora"
+          class="mora-icon"
+        />
+        <div class="mora-details">
+          <div class="mora-label">Mora</div>
+          <div class="mora-amount">{{ formatMora(cost.totalMora) }}</div>
+        </div>
+      </div>
+    }
+
+    <!-- Materials Grid -->
+    @if (cost.materials.length > 0) {
+      <div class="materials-section">
+        <h3>Materials Needed</h3>
+        <div class="materials-grid">
+          @for (material of cost.materials; track material.materialId) {
+            <div class="material-card card">
+              <img
+                [src]="getMaterialImagePath(material.materialId, material.materialName)"
+                [alt]="material.materialName"
+                class="material-image"
+              />
+              <div class="material-quantity">{{ material.quantity }}</div>
+              <div class="material-name">{{ material.materialName }}</div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <div class="no-cost">No data available</div>
+}

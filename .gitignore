@@ -44,3 +44,5 @@ Thumbs.db
 /raw_icons/
 
 .github/prompts/*
+
+.github/agent/*

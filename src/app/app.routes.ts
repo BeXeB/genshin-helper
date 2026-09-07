@@ -14,6 +14,7 @@ import { ArtifactDetailsComponent } from './pages/artifact-details/artifact-deta
 import { MaterialsComponent } from './pages/materials/materials.component';
 import { MaterialDetailsComponent } from './pages/material-details/material-details.component';
 import { TalentEditorComponent } from './pages/talent-editor/talent-editor.component';
+import { MaterialCalculatorComponent } from './pages/material-calculator/material-calculator.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,4 +32,5 @@ export const routes: Routes = [
   { path: 'tools', component: ToolsComponent },
   { path: 'tierlist-maker', component: TierlistMakerComponent },
   { path: 'talent-editor', component: TalentEditorComponent },
+  { path: 'material-calculator', component: MaterialCalculatorComponent },
 ];

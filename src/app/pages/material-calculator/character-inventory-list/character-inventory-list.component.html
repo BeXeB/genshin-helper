@@ -1,0 +1,59 @@
+<div class="inventory-list-container">
+  <div class="inventory-header">
+    <h3>Inventory</h3>
+    <button
+      class="add-character-btn"
+      (click)="toggleAddDropdown()"
+      title="Add character"
+    >
+      +
+    </button>
+  </div>
+
+  <!-- Add Character Dropdown -->
+  @if (showAddCharacterDropdown) {
+    <div class="add-character-dropdown">
+      @for (character of getAvailableCharacters(); track character.id) {
+        <button
+          class="character-option"
+          (click)="handleAddCharacter(character.id)"
+        >
+          {{ character.name }}
+        </button>
+      } @empty {
+        <div class="no-available">All characters added</div>
+      }
+    </div>
+  }
+
+  <!-- Inventory List -->
+  <div class="character-list">
+    @if (inventory && inventory.characters.length > 0) {
+      @for (progress of inventory.characters; track progress.characterId) {
+        @let profile = getCharacterProfile(progress.characterId);
+        <div
+          class="character-item"
+          [class.selected]="selectedCharacterId === progress.characterId"
+          (click)="selectCharacter(progress)"
+        >
+          <div class="character-name">{{ profile?.name || 'Unknown' }}</div>
+          <div class="character-level">
+            Lvl {{ progress.currentLevel }}→{{ progress.goalLevel }}
+          </div>
+          <div class="character-ascension">
+            Asc {{ progress.currentAscension }}→{{ progress.goalAscension }}
+          </div>
+          <button
+            class="remove-btn"
+            (click)="handleRemoveCharacter(progress.characterId, $event)"
+            title="Remove"
+          >
+            ✕
+          </button>
+        </div>
+      }
+    } @else {
+      <div class="empty-inventory">No characters yet</div>
+    }
+  </div>
+</div>

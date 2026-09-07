@@ -1,0 +1,52 @@
+<div class="material-calculator-container">
+  <h1>Material Calculator</h1>
+
+  <div class="calculator-layout">
+    <!-- Sidebar: Character Inventory List -->
+    <aside class="sidebar">
+      <app-character-inventory-list
+        [characters]="characters$ | async"
+        [inventory]="inventory$ | async"
+        [selectedCharacterId]="selectedCharacterProgress?.characterId || null"
+        (characterSelected)="onCharacterSelected($any($event))"
+        (addCharacter)="onAddCharacter($any($event))"
+        (removeCharacter)="onRemoveCharacter($any($event))"
+      />
+    </aside>
+
+    <!-- Main Area: Character Details & Calculations -->
+    <main class="main-content">
+      @if (selectedCharacterProfile && selectedCharacterProgress) {
+        <div class="character-details">
+          <div class="character-header">
+            <h2>{{ selectedCharacterProfile.name }}</h2>
+            <p class="character-subtitle">
+              Level {{ selectedCharacterProgress.currentLevel }} →
+              {{ selectedCharacterProgress.goalLevel }} | Ascension
+              {{ selectedCharacterProgress.currentAscension }} →
+              {{ selectedCharacterProgress.goalAscension }}
+            </p>
+          </div>
+
+          <!-- Character Progress Editor -->
+          <app-character-progress-editor
+            [characterProgress]="selectedCharacterProgress"
+            (progressUpdated)="onProgressUpdated($any($event))"
+          />
+
+          <!-- Material Cost Display -->
+          @if (calculatedCost) {
+            <app-material-cost-display
+              [cost]="calculatedCost"
+              [characterName]="selectedCharacterProfile.name"
+            />
+          }
+        </div>
+      } @else {
+        <div class="no-selection">
+          <p>Select a character from the list to view calculations</p>
+        </div>
+      }
+    </main>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+@if (characterProgress) {
+  <div class="progress-editor">
+    <!-- Leveling Section -->
+    <div class="editor-section">
+      <h3>Leveling Progress</h3>
+      <div class="form-row">
+        <!-- Current Level -->
+        <div class="form-group">
+          <label for="current-level">Current Level</label>
+          <select
+            id="current-level"
+            [value]="characterProgress.currentLevel"
+            (change)="onCurrentLevelChange($any($event.target).value)"
+            class="level-select"
+          >
+            @for (level of levelOptions; track level) {
+              <option [value]="level">{{ level }}</option>
+            }
+          </select>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <!-- Goal Level -->
+        <div class="form-group">
+          <label for="goal-level">Goal Level</label>
+          <select
+            id="goal-level"
+            [value]="characterProgress.goalLevel"
+            (change)="onGoalLevelChange($any($event.target).value)"
+            class="level-select"
+          >
+            @for (level of levelOptions; track level) {
+              <option [value]="level">{{ level }}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+}
